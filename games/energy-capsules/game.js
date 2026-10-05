@@ -20,8 +20,8 @@ function updateHud(){
  const cfg=modeCfg();const level=Math.max(1,Math.min(9,1+Math.floor(caught/12)));$('#speedText').textContent='Скорость '+level;
 }
 function updateFieldHero(){const h=HERO[hero],fieldHero=$('#fieldHero');if(!fieldHero)return;fieldHero.style.backgroundImage=`url("${h.sheet}")`;fieldHero.style.backgroundPosition=POSE_POS[selectedLane]||POSE_POS[0];fieldHero.setAttribute('aria-label',h.alt)}
-function setHero(id){hero=HERO[id]?id:'corgi';$('[data-hero]').forEach(b=>b.classList.toggle('on',b.dataset.hero===hero));const h=HERO[hero];$('#playerImg').src=h.src;$('#playerImg').alt=h.alt;updateFieldHero();}
-function selectLane(lane){if(!running||paused||!Number.isInteger(lane)||lane<0||lane>3)return;selectedLane=lane;$('.catchBtn').forEach(b=>b.classList.toggle('on',Number(b.dataset.lane)===lane));$('.catchPoint').forEach(p=>p.classList.toggle('on',Number(p.dataset.lane)===lane));const fieldHero=$('#fieldHero');if(fieldHero){fieldHero.classList.remove('reach-0','reach-1','reach-2','reach-3','reaching');fieldHero.classList.add(`reach-${lane}`);updateFieldHero();if(!window.matchMedia?.('(prefers-reduced-motion: reduce)').matches){void fieldHero.offsetWidth;fieldHero.classList.add('reaching')}}$('#fieldHint').textContent=['Верхний левый','Верхний правый','Нижний левый','Нижний правый'][lane];sound('move');}
+function setHero(id){hero=HERO[id]?id:'corgi';$$('[data-hero]').forEach(b=>b.classList.toggle('on',b.dataset.hero===hero));const h=HERO[hero];$('#playerImg').src=h.src;$('#playerImg').alt=h.alt;updateFieldHero();}
+function selectLane(lane){if(!running||paused||!Number.isInteger(lane)||lane<0||lane>3)return;selectedLane=lane;$$('.catchBtn').forEach(b=>b.classList.toggle('on',Number(b.dataset.lane)===lane));$$('.catchPoint').forEach(p=>p.classList.toggle('on',Number(p.dataset.lane)===lane));const fieldHero=$('#fieldHero');if(fieldHero){fieldHero.classList.remove('reach-0','reach-1','reach-2','reach-3','reaching');fieldHero.classList.add(`reach-${lane}`);updateFieldHero();if(!window.matchMedia?.('(prefers-reduced-motion: reduce)').matches){void fieldHero.offsetWidth;fieldHero.classList.add('reaching')}}$('#fieldHint').textContent=['Верхний левый','Верхний правый','Нижний левый','Нижний правый'][lane];sound('move');}
 function speedParams(){const cfg=modeCfg(),progress=Math.min(1,caught/70);return {spawn:Math.round(cfg.baseSpawn-(cfg.baseSpawn-cfg.minSpawn)*progress),travel:Math.round(cfg.baseTravel-(cfg.baseTravel-cfg.minTravel)*progress)}}
 function safeLane(travel){let lane=Math.floor(Math.random()*4),closest=null;for(const c of capsules){const remain=(1-c.p)*c.travel;if(Math.abs(remain-travel)<modeCfg().guard){closest=c.lane;break}}if(closest!=null)lane=closest;return lane;}
 function spawn(){const cfg=modeCfg();if(capsules.length>=cfg.maxActive)return false;const sp=speedParams(),lane=safeLane(sp.travel),bonus=Math.random()<0.085;const el=document.createElement('div');el.className='capsule'+(bonus?' bonus':'');el.dataset.lane=lane;el.dataset.id=String(++seq);$('#capsuleLayer').appendChild(el);capsules.push({id:seq,lane,p:0,travel:sp.travel*(bonus?.88:1),bonus,el});return true;}
@@ -44,9 +44,9 @@ function fullscreen(){if(document.fullscreenElement)document.exitFullscreen?.();
 function keyLane(k){return({q:0,Q:0,e:1,E:1,z:2,Z:2,c:3,C:3,'7':0,'9':1,'1':2,'3':3})[k]}
 function init(){
  $('#startBtn').addEventListener('click',()=>show('menu'));
- $$('[data-hero]').forEach(b=>b.addEventListener('click',()=>setHero(b.dataset.hero)));
+ $$$('[data-hero]').forEach(b=>b.addEventListener('click',()=>setHero(b.dataset.hero)));
  $$('.modeCard[data-mode]').forEach(b=>b.addEventListener('click',()=>startGame(b.dataset.mode)));
- $('.catchBtn,.laneHit').forEach(b=>b.addEventListener('pointerdown',e=>{e.preventDefault();selectLane(Number(b.dataset.lane))}));
+ $$('.catchBtn,.laneHit').forEach(b=>b.addEventListener('pointerdown',e=>{e.preventDefault();selectLane(Number(b.dataset.lane))}));
  $('#pauseBtn').addEventListener('click',()=>togglePause());
  $('#homeBtn').addEventListener('click',()=>{stopLoop();show('menu')});
  $('#newBtn').addEventListener('click',()=>startGame(mode));
