@@ -316,14 +316,14 @@
       "color": "pink",
       "cat": "arcade",
       "assets": {
-        "icon": "assets/icons/energy-capsules.webp",
+        "icon": "assets/icons/energy-capsules.png",
         "title": "assets/titles/energy-capsules.png",
-        "splash": "assets/splashes/energy-capsules.webp",
-        "iconActive": "assets/icons/energy-capsules-active.webp"
+        "splash": "assets/splashes/energy-capsules.png",
+        "iconActive": "assets/icons/energy-capsules-active.png"
       },
-      "version": "1.2.0"
+      "version": "1.2.1"
     }
   ],
   "leaderboard": "local-browser",
-  "version": "16.14"
+  "version": "16.14.1"
 }
