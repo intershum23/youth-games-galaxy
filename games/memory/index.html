@@ -132,7 +132,10 @@ let deck=[],first=null,second=null,lock=false,matches=0,moves=0,score=0,startTim
 const BAD=/\b(хуй|пизд|еба|ёба|бля|сука|мудак|долбо|fuck|shit|bitch)\b/i;
 function show(id){if(id!=='game')GameLifecycle.begin();$$('.screen').forEach(s=>s.classList.toggle('active',s.id===id))}
 function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('show');GameLifecycle.cancel(e._t);e._t=GameLifecycle.schedule(()=>e.classList.remove('show'),1600)}
-function beep(ok=true){if(!soundOn)return;try{const ac=new(window.AudioContext||window.webkitAudioContext)(),o=ac.createOscillator(),g=ac.createGain();o.connect(g);g.connect(ac.destination);o.frequency.value=ok?690:210;g.gain.value=.035;o.start();o.stop(ac.currentTime+.08)}catch(e){}}
+let memoryAudio=null;const memoryVoices=new Set();
+function stopBeeps(){for(const o of memoryVoices){try{o.stop()}catch{}}memoryVoices.clear();if(memoryAudio?.state==='running')memoryAudio.suspend().catch(()=>{})}
+function beep(ok=true){if(!soundOn)return;try{const ac=memoryAudio||(memoryAudio=new(window.AudioContext||window.webkitAudioContext)());ac.resume().catch(()=>{});const o=ac.createOscillator(),g=ac.createGain();memoryVoices.add(o);o.connect(g);g.connect(ac.destination);o.frequency.value=ok?690:210;g.gain.value=.035;o.onended=()=>{memoryVoices.delete(o);o.disconnect();g.disconnect()};o.start();o.stop(ac.currentTime+.08)}catch(e){}}
+addEventListener('pagehide',()=>{stopBeeps();memoryAudio?.close().catch(()=>{})});document.addEventListener('visibilitychange',()=>{if(document.hidden)stopBeeps()});
 function resultModal(...args){modal(...args);window.GalaxyPresentation?.result($('#modal'))}
 function modal(title,text,buttons=[['ОК',()=>{}]],extra=''){ $('#modal').classList.remove('galaxy-result'); $('#modal').querySelector('.galaxy-result-exit')?.remove(); $('#modalTitle').textContent=title;$('#modalText').innerHTML=text;$('#modalExtra').innerHTML=extra;const a=$('#modalActions');a.innerHTML='';buttons.forEach(([lab,fn])=>{const b=document.createElement('button');b.textContent=lab;b.onclick=()=>{$('#modal').classList.remove('open');fn&&fn()};a.appendChild(b)});$('#modal').classList.add('open') }
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
@@ -154,7 +157,7 @@ $('#startSplash').onclick=()=>show('menu');
 $$('.heroCard').forEach(b=>b.onclick=()=>{hero=b.dataset.hero;$$('.heroCard').forEach(x=>x.classList.toggle('on',x===b));$('#heroText').textContent=HERO[hero].name});
 $$('.modeCard').forEach(b=>b.onclick=()=>{mode=b.dataset.mode;$$('.modeCard').forEach(x=>x.classList.toggle('on',x===b))});
 $$('.sizeBtn').forEach(b=>b.onclick=()=>{size=b.dataset.size;$$('.sizeBtn').forEach(x=>x.classList.toggle('on',x===b))});
-$('#playBtn').onclick=startGame;$('#recordsBtn').onclick=showRecords;$('#homeBtn').onclick=()=>{GameLifecycle.cancel(timer);show('menu')};$('#newBtn').onclick=startGame;$('#screenBtn').onclick=()=>document.fullscreenElement?document.exitFullscreen?.():document.documentElement.requestFullscreen?.();$('#soundBtn').onclick=()=>{soundOn=!soundOn;$('#soundBtn').textContent=soundOn?'🔊':'🔇'};
+$('#playBtn').onclick=startGame;$('#recordsBtn').onclick=showRecords;$('#homeBtn').onclick=()=>{GameLifecycle.cancel(timer);show('menu')};$('#newBtn').onclick=startGame;$('#screenBtn').onclick=()=>document.fullscreenElement?document.exitFullscreen?.():document.documentElement.requestFullscreen?.();$('#soundBtn').onclick=()=>{soundOn=!soundOn;if(!soundOn)stopBeeps();$('#soundBtn').textContent=soundOn?'🔊':'🔇'};
 show('splash');
 
 window.GameLifecycle.engineInitialized=true;

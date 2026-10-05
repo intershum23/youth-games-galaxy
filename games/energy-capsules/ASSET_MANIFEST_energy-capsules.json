@@ -24,11 +24,11 @@
     {
       "path": "assets/titles/energy-capsules.png",
       "alpha": true,
-      "purpose": "final «Капсулы» wordmark in the shared warm ivory/peach, hot-pink/magenta and violet title style",
-      "bytes": 114849,
-      "sha256": "a31f7c387e61b255e33889158c3a4e908247b4a459405f66c6f42eaa8509173d",
-      "width": 600,
-      "height": 200
+      "purpose": "v16.18: прозрачное растровое название по референсу Судоку, иллюстрированная типографика",
+      "bytes": 1505656,
+      "sha256": "bfc528f9d06e7d696341381bee02d8d5e3ecb18e699b3c26c4b59eef160d5387",
+      "width": 2121,
+      "height": 741
     },
     {
       "path": "assets/splashes/energy-capsules.png",
@@ -56,15 +56,35 @@
       "sha256": "24db62620d34faf0cf9ab8f368a3ef383b2fcbf29f35f997c909346dc2c7aa3e",
       "width": 1254,
       "height": 1254
+    },
+    {
+      "path": "assets/retro-props/capsule-station.png",
+      "purpose": "v16.18: иллюстрированная игровая сцена без нарисованных кнопок и игровых данных",
+      "bytes": 2324964,
+      "sha256": "05fa7cf76461975dbfaa272467a8fb6da7eff0feeaaed55dcd679e77d4c2806d",
+      "width": 1254,
+      "height": 1254,
+      "alpha": false
+    },
+    {
+      "path": "assets/retro-props/capsule-station.webp",
+      "purpose": "v16.18: иллюстрированная игровая сцена без нарисованных кнопок и игровых данных",
+      "bytes": 357896,
+      "sha256": "e525f6cbda6a1283f95bbcacf6f1bacbe4b17e27dfe9dcd9a53ade2a15e9b72b",
+      "width": 1254,
+      "height": 1254,
+      "alpha": false
     }
   ],
-  "generatedBy": "image_gen + deterministic export",
+  "generatedBy": "Built-in image_gen: reference-matched raster wordmark and illustrated play scene; deterministic WebP export",
   "generation": "Existing catalog icon/title/splash preserved. Gameplay pose sheets regenerated with image_gen, then quadrants packed with transparent 10% edge insets for isolated 2x2 sprite rendering.",
   "notes": [
     "The internal game id remains energy-capsules for compatibility; visible UI title is «Капсулы».",
     "Catalog default and active poses are separate approved assets.",
     "Gameplay switches sprite-sheet position instead of stretching one static hero image.",
-    "All generated image files are installed in-repository and do not depend on external URLs."
+    "All generated image files are installed in-repository and do not depend on external URLs.",
+    "v16.18: все данные, символы адреса, сигнал, управление и исходы остаются живым HTML/движком. UI Montserrat/Unbounded; title PNG — иллюстрированное начертание по референсу, не сертификат конкретной шрифтовой гарнитуры.",
+    "v16.18: все данные, символы адреса, сигнал, управление и исходы остаются живым HTML/движком. UI Montserrat/Unbounded; title PNG — иллюстрированное начертание по референсу, не сертификат конкретной шрифтовой гарнитуры."
   ],
-  "presentationVersion": "16.17.0"
+  "presentationVersion": "16.18.0"
 }

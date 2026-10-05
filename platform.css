@@ -110,3 +110,12 @@ button:disabled{opacity:.5;cursor:default}
 
 /* Independent launch and rules targets, never a button inside another button. */
 .card>.gameLaunch{display:flex;flex-direction:column;flex:1;min-width:0;border-radius:26px 26px 0 0}.cardRules{position:relative;z-index:3;margin:0 16px 14px;padding:10px 13px;min-height:44px;display:flex;justify-content:space-between;gap:8px;align-items:center;border:1px solid #ffc1ed55;border-radius:14px;background:#9f55c522;color:#ffe2f3;font:700 12px var(--font-ui);text-align:left}.cardRules:hover{background:#c557ac35}.cardRules:focus-visible{outline:3px solid #9ceee8;outline-offset:2px}
+
+/* Music remains a real accessible control on desktop and phone. */
+.musicToggle{flex:none;display:flex;align-items:center;justify-content:center;gap:7px;min-width:44px;min-height:44px;padding:8px 12px;border:1px solid #ffc8ed55;border-radius:16px;background:#a253c52c;color:#ffe3f4;font:700 12px var(--font-ui)}
+.musicToggle>span:first-child{font-size:23px}.musicToggle[aria-pressed="false"]{opacity:.65}.musicToggle[data-playing="true"]{box-shadow:0 0 16px #e762ad33}.musicToggle:focus-visible{outline:3px solid #e9b4ff;outline-offset:3px}
+@media(max-width:700px){.musicToggle{padding:7px;width:44px}.musicLabel{display:none}.topbar{gap:8px}.brandButton{min-width:0}}
+/* Illustrated games use the available desktop width rather than a stretched phone column. */
+@media(min-width:1000px){.gameModal[data-game="energy-capsules"] .frameWrap,.gameModal[data-game="space-mail"] .frameWrap,.gameModal[data-game="radio-beacon"] .frameWrap{width:min(100%,1100px)}}
+
+.heroTools{position:relative;z-index:4;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px;margin-bottom:8px}.heroTools .seriesPill{margin:0}.heroTools .musicToggle{min-height:44px}

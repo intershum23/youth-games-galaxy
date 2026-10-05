@@ -20,6 +20,7 @@
     <button class="brand brandButton brandImageButton" data-panel="games" aria-label="На главную">
       <span class="brandTextOnly">✦ Игровая галактика</span>
     </button>
+
     <nav class="navActions desktopNav" aria-label="Навигация">
       <button class="navBtn active" data-panel="games">🎮 Игры</button>
       <button class="navBtn" data-panel="records">🏆 Мои рекорды</button>
@@ -32,7 +33,7 @@
     <section class="heroPortal">
       <div class="heroGlow"></div>
       <div class="heroCore heroCoreLogo">
-        <div class="seriesPill">🚀 19 игр • один космический мир</div>
+        <div class="heroTools"><div class="seriesPill">🚀 19 игр • один космический мир</div><button id="musicToggle" class="musicToggle" type="button" aria-pressed="true" aria-label="Выключить музыку" title="Космическая музыка"><span aria-hidden="true">♪</span><span class="musicLabel">Музыка</span></button></div>
         <img class="portalArt" src="assets/galaxy-hero-v16-11.webp" alt="Игровая галактика">
         <p>Выбирайте игру и запускайте её прямо в браузере. Никакой регистрации и установки.</p>
         <div class="heroSearch"><span>⌕</span><input id="search" placeholder="Найти игру..." aria-label="Поиск игры"><button id="searchFocus">Найти</button></div>
@@ -105,6 +106,6 @@
 
 <div id="infoModal" class="infoModal" aria-hidden="true"><div class="infoCard"><button class="infoClose" id="infoClose">✕</button><div class="infoIcon" id="infoIcon">✦</div><h3 class="u" id="infoTitle"></h3><div id="infoContent" class="infoContent"></div></div></div>
 <script src="records.js"></script>
-<script src="platform-config.js"></script><script src="catalog.generated.js"></script><script src="platform.js"></script>
+<script src="platform-config.js"></script><script src="catalog.generated.js"></script><script src="ambient-music.js"></script><script src="platform.js"></script>
 
 </body></html>

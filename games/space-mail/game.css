@@ -1,55 +1,43 @@
 @import url('../retro-orbit.css');
+/* Illustrated sorting terminal. The parcel label shares its image's aspect ratio. */
 body[data-game="space-mail"] #livesValue{font-family:var(--font-ui);letter-spacing:.08em;color:#ff94cd}
-body[data-game="space-mail"] .mailField{position:relative;width:100%;min-height:262px;padding:12px;border-radius:26px;overflow:hidden;background:var(--retro-glass);border:1px solid var(--retro-line);isolation:isolate}
-body[data-game="space-mail"] .mailStations{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;z-index:3}
-body[data-game="space-mail"] .mailStations>div{display:grid;place-content:center;gap:4px;min-height:56px;text-align:center;border:1px solid var(--retro-line);border-radius:14px;background:#8174e71a;transition:border-color .15s,background .15s}
-body[data-game="space-mail"] .mailStations span{font-size:22px;line-height:1;color:#ffc1e5}
-body[data-game="space-mail"] .mailStations b{font:600 9px var(--font-ui);color:#dce8ff}
-body[data-game="space-mail"] .mailStations .selected{border-color:#99f1ff;background:#59c9ec2c}
-body[data-game="space-mail"] .routingBeam{position:absolute;top:66px;left:50%;width:2px;height:88px;transform-origin:bottom center;background:linear-gradient(transparent,#b6f9ff);opacity:0;z-index:1;transition:transform .1s}
-body[data-game="space-mail"] .routingBeam[data-route="0"]{opacity:.5;transform:rotate(48deg)}
-body[data-game="space-mail"] .routingBeam[data-route="1"]{opacity:.5;transform:rotate(0)}
-body[data-game="space-mail"] .routingBeam[data-route="2"]{opacity:.5;transform:rotate(-48deg)}
-body[data-game="space-mail"] .parcelStage{display:flex;align-items:center;justify-content:center;gap:18px;position:relative;z-index:2;margin:14px 0 12px;min-height:92px}
-body[data-game="space-mail"] .parcel{position:relative;display:grid;place-content:center;gap:4px;width:112px;height:84px;padding:9px;border:2px solid #d199fb;border-radius:16px;background:linear-gradient(145deg,#7544a6aa,#a73b9677,#352763aa);box-shadow:inset 0 0 0 4px #eedfff22,0 4px 0 #180e443d;transform:rotate(-3deg)}
-body[data-game="space-mail"] .parcelGlyph{font:700 31px/1 var(--font-ui);text-align:center;color:#ffe0f0;text-shadow:0 0 8px #ff8beb66}
-body[data-game="space-mail"] .parcelName{font:700 10px/1.2 var(--font-ui);text-align:center}
-body[data-game="space-mail"] .parcel.empty{opacity:.35}
-body[data-game="space-mail"] .deadline{display:grid;gap:8px;width:95px;font:600 9px/1.3 var(--font-ui);color:#d7e7ff}
-body[data-game="space-mail"] #deadlineBar{height:9px;border-radius:9px;background:linear-gradient(90deg,#ff82cb,#91e8fb);transform-origin:left center}
-body[data-game="space-mail"] .deadline.urgent{color:#ff95bb}
-body[data-game="space-mail"] .deadline.urgent #deadlineBar{background:#ff95bb}
-body[data-game="space-mail"] .queueLabel{display:flex;justify-content:space-between;gap:8px;font:600 9px/1.3 var(--font-ui);color:#cbd8f1;margin-bottom:9px}
-body[data-game="space-mail"] .parcelQueue{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px;min-height:44px}
-body[data-game="space-mail"] .queueParcel{display:grid;place-content:center;text-align:center;gap:2px;height:42px;border:1px solid #dca8e978;border-radius:10px;background:#a068b322;font-size:20px;line-height:1}
-body[data-game="space-mail"] .queueParcel small{font:600 7px var(--font-ui)}
-body[data-game="space-mail"] .queueSlot{height:42px;border:1px dashed #c4e2ff30;border-radius:10px}
+body[data-game="space-mail"] #mailField{position:relative;width:100%;min-height:326px;padding:12px;border-radius:26px;overflow:hidden;background:linear-gradient(#180a3222,#140b3522),url('../../assets/retro-props/mail-terminal.webp') center/100% 100%;border:1px solid #ffc5e970;isolation:isolate}
+body[data-game="space-mail"] .mailStations{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;z-index:3}
+body[data-game="space-mail"] .mailStations>div{display:grid;place-content:center;gap:4px;min-height:65px;text-align:center;border:1px solid #ffc4df66;border-radius:17px;background:#21103d65;backdrop-filter:blur(4px);transition:filter .15s,border-color .15s,box-shadow .15s}
+body[data-game="space-mail"] .mailStations span{font-size:25px;line-height:1;color:#fff3d6;filter:drop-shadow(0 0 5px #ff68bd)}
+body[data-game="space-mail"] .mailStations b{font:700 10px var(--font-ui);color:#ffe7f6}
+body[data-game="space-mail"] .mailStations .selected{border-color:#fff0c4;box-shadow:0 0 17px #ff80c78a,inset 0 0 16px #f55aa044;filter:brightness(1.25)}
+body[data-game="space-mail"] .routingBeam{display:none}
+body[data-game="space-mail"] .parcelStage{display:flex;align-items:center;justify-content:center;gap:12px;position:relative;z-index:2;margin:6px 0;min-height:158px}
+body[data-game="space-mail"] .parcel{position:relative;width:158px;aspect-ratio:1312/1199;flex:none;filter:drop-shadow(0 5px 10px #dc56b966)}
+body[data-game="space-mail"] .parcelArt{display:block;width:100%;height:100%;object-fit:contain;pointer-events:none}
+body[data-game="space-mail"] .parcelLabel{position:absolute;left:41%;top:44%;width:39%;height:27%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;transform:skewY(-6deg);color:#63215c;overflow:hidden;container-type:inline-size}
+body[data-game="space-mail"] .parcelGlyph{font:800 clamp(17px,38cqi,30px)/1 var(--font-ui);color:#63215c;text-shadow:none}
+body[data-game="space-mail"] .parcelName{font:800 clamp(8px,16cqi,12px)/1.1 var(--font-ui);color:#63215c;white-space:nowrap}
+body[data-game="space-mail"] .parcel.empty{opacity:.25}
+body[data-game="space-mail"] .deadline{display:grid;gap:7px;width:88px;padding:10px 9px;border-radius:14px;background:#210e3ba6;border:1px solid #ffbfe85c;font:700 9px/1.3 var(--font-ui);color:#ffe4f4;box-shadow:0 5px 16px #08021c44}
+body[data-game="space-mail"] #deadlineBar{height:10px;border-radius:9px;background:linear-gradient(90deg,#f35fd3,#ff93b4,#ffccaa);transform-origin:left center;box-shadow:0 0 9px #ff6ca855}
+body[data-game="space-mail"] .deadline.urgent{color:#ffc08a;border-color:#ff939e}
+body[data-game="space-mail"] .deadline.urgent #deadlineBar{background:#ff779b}
+body[data-game="space-mail"] .queueLabel{display:flex;justify-content:space-between;gap:8px;font:700 9px/1.3 var(--font-ui);color:#ffe7f8;margin-bottom:5px;padding:5px 7px;border-radius:9px;background:#21103da1}
+body[data-game="space-mail"] .parcelQueue{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px;min-height:57px}
+body[data-game="space-mail"] .queueParcel{position:relative;display:grid;place-content:center;text-align:center;height:57px;border:1px solid #e6b0e48a;border-radius:12px;background:#3513487a;overflow:hidden}
+body[data-game="space-mail"] .queueParcel img{position:absolute;inset:0;width:100%;height:46px;object-fit:contain;opacity:.75}
+body[data-game="space-mail"] .queueParcel>span{position:relative;z-index:1;font:800 21px/1 var(--font-ui);text-shadow:0 1px 4px #16092b;color:#fff2d8;transform:translateY(-3px)}
+body[data-game="space-mail"] .queueParcel small{position:absolute;bottom:3px;left:0;right:0;z-index:2;font:700 7px var(--font-ui)}
+body[data-game="space-mail"] .queueParcel:first-child{border-color:#ffdfa9;box-shadow:inset 0 0 8px #ffb38944}
+body[data-game="space-mail"] .queueSlot{height:57px;border:1px solid #dabeef25;border-radius:12px;background:#20113b55}
 body[data-game="space-mail"] .routeControls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;width:min(100%,500px)}
-body[data-game="space-mail"] .routeBtn{display:grid;grid-template-columns:auto auto;align-items:center;justify-content:center;gap:3px 6px;min-height:54px;border-radius:16px}
-body[data-game="space-mail"] .routeBtn span{font:700 23px/1 var(--font-ui);grid-row:1/3;color:#ffd0ea}
+body[data-game="space-mail"] .routeBtn{display:grid;grid-template-columns:auto auto;align-items:center;justify-content:center;gap:3px 6px;min-height:54px;border-radius:16px;background:linear-gradient(145deg,#c461a139,#8757c52b);border-color:#f5afe46b;box-shadow:inset 0 1px 0 #fff3}
+body[data-game="space-mail"] .routeBtn span{font:700 23px/1 var(--font-ui);grid-row:1/3;color:#ffd4d4;filter:drop-shadow(0 0 4px #ff67b688)}
 body[data-game="space-mail"] .routeBtn b{font:700 10px var(--font-ui)}
-body[data-game="space-mail"] .routeBtn small{font:600 9px var(--font-ui);color:#cad9f6}
-body[data-game="space-mail"] .routeBtn[aria-pressed="true"]{border-color:#99f1ff;background:#469ebe35}
-body[data-game="space-mail"] #dispatchBtn{width:min(100%,500px);min-height:48px;padding:10px;border-radius:16px;background:linear-gradient(110deg,#b83393aa,#7659c499);font:700 13px var(--font-accent)}
-body[data-game="space-mail"] #dispatchBtn:disabled{opacity:.45;cursor:default}
-body[data-game="space-mail"] .pauseCurtain{display:none;position:absolute;inset:0;place-content:center;background:#11193799;font:700 17px var(--font-accent);z-index:9}
+body[data-game="space-mail"] .routeBtn small{font:600 9px var(--font-ui);color:#eed2f2}
+body[data-game="space-mail"] .routeBtn[aria-pressed="true"]{border-color:#ffdfa9;background:linear-gradient(145deg,#ed74b966,#9d59d144);box-shadow:0 0 12px #ed65b544,inset 0 1px 0 #fff6}
+body[data-game="space-mail"] #dispatchBtn{width:min(100%,500px);min-height:48px;padding:10px;border-radius:16px;background:linear-gradient(105deg,#da48a5dd,#b664d2cc,#ed907acc);font:700 12px var(--font-accent);border:1px solid #ffdbef88;box-shadow:0 4px 18px #ab398833}
+body[data-game="space-mail"] #dispatchBtn:disabled{opacity:.5;cursor:default}
+body[data-game="space-mail"] .pauseCurtain{display:none;position:absolute;inset:0;place-content:center;background:#170b3abf;font:700 17px var(--font-accent);z-index:9;backdrop-filter:blur(5px)}
 body[data-game="space-mail"].paused .pauseCurtain{display:grid}
-@media(min-width:700px) and (orientation:landscape){body[data-game="space-mail"] #game.screen.active{display:grid;grid-template-columns:minmax(280px,500px) minmax(190px,300px);grid-template-rows:auto auto auto auto auto auto;align-content:start;justify-content:center;column-gap:14px}body[data-game="space-mail"] #game .topbar,body[data-game="space-mail"] #game .hud{grid-column:1/-1;width:100%;max-width:814px}body[data-game="space-mail"] .gameArea{grid-column:1;grid-row:3/7}body[data-game="space-mail"] .mailField{min-height:320px;padding:18px}body[data-game="space-mail"] .parcelStage{margin:30px 0 24px;min-height:108px}body[data-game="space-mail"] #game .playerBar{grid-column:2;grid-row:3}body[data-game="space-mail"] .routeControls{grid-column:2;grid-row:4}body[data-game="space-mail"] #dispatchBtn{grid-column:2;grid-row:5}body[data-game="space-mail"] #game .controls{grid-column:2;grid-row:6}}
-@media(prefers-reduced-motion:reduce){body[data-game="space-mail"] .routingBeam,body[data-game="space-mail"] .mailStations>div{transition:none}}
-/* Two-line wordmark retains readable letter size instead of inheriting a one-line height. */
-body[data-game="space-mail"] #game .gameTitleArt{height:84px}
-@media(orientation:landscape) and (max-height:500px){body[data-game="space-mail"] #game .gameTitleArt{height:58px}}
-/* Real illustrated parcel and miniature destination planets retain engine symbols. */
-body[data-game="space-mail"] .mailField{background:radial-gradient(ellipse at 50% 48%,#d250ae30,transparent 60%),var(--retro-glass)}
-body[data-game="space-mail"] .mailStations>div{background:linear-gradient(160deg,#b96ab82e,#4a377a1c);border-color:#ffb1e65c;min-height:72px;gap:5px}
-body[data-game="space-mail"] .mailStations span{display:grid;place-content:center;width:38px;height:38px;margin:auto;border-radius:50%;font-size:22px;color:#fff5de;background:radial-gradient(circle at 30% 25%,#ffdab7,#ed71ba 45%,#6d35a7 85%);box-shadow:inset -5px -5px 9px #46126077,0 0 14px #db58b233}
-body[data-game="space-mail"] .mailStations [data-station="1"] span{background:radial-gradient(circle at 30% 25%,#e4d0ff,#aa7bd8 50%,#5b3785)}
-body[data-game="space-mail"] .mailStations [data-station="2"] span{background:radial-gradient(circle at 30% 25%,#fedbe6,#dc73bd 45%,#7c42ac);border:2px solid #f6b0e677}
-body[data-game="space-mail"] .parcelStage{min-height:134px;margin:10px 0}
-body[data-game="space-mail"] .parcel{width:150px;height:128px;border:0;border-radius:0;background:none;box-shadow:none;padding:0;transform:none;gap:0;display:block}
-body[data-game="space-mail"] .parcelArt{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 5px 12px #db66c444);pointer-events:none}
-body[data-game="space-mail"] .parcelGlyph{position:absolute;top:46%;left:58%;transform:translate(-50%,-50%);font-size:25px;color:#63215c;text-shadow:none}
-body[data-game="space-mail"] .parcelName{position:absolute;left:39%;top:62%;width:43%;font-size:9px;color:#63215c}
-body[data-game="space-mail"] .queueParcel{background:linear-gradient(140deg,#ec9bca44,#9b59c93b);border:1px solid #ffbce399;color:#fff0e8;box-shadow:inset 0 1px 0 #fff4,0 4px 10px #0002}
-body[data-game="space-mail"] .routeBtn[aria-pressed="true"]{background:linear-gradient(145deg,#de67b447,#8d52c233);border-color:#ffb3e2;box-shadow:0 0 12px #d954b02a}
-body[data-game="space-mail"] #dispatchBtn{background:linear-gradient(105deg,#d43e9ecc,#a859c7bb,#ed8569aa);border:1px solid #ffd2f477;box-shadow:0 4px 18px #ab398833}
+body[data-game="space-mail"] #game .gameTitleArt{height:90px}
+@media(min-width:700px) and (orientation:landscape){body[data-game="space-mail"] #game.screen.active{display:grid;grid-template-columns:minmax(280px,500px) minmax(190px,300px);grid-template-rows:auto auto auto;align-content:start;justify-content:center;gap:12px}body[data-game="space-mail"] #game .topbar,body[data-game="space-mail"] #game .hud{grid-column:1/-1;width:100%;max-width:814px}body[data-game="space-mail"] .gameArea{grid-column:1;grid-row:3/7}body[data-game="space-mail"] #mailField{min-height:390px;padding:16px}body[data-game="space-mail"] .parcelStage{min-height:205px;margin:10px 0}body[data-game="space-mail"] .parcel{width:208px}body[data-game="space-mail"] #game .playerBar{grid-column:2;grid-row:3}body[data-game="space-mail"] .routeControls{grid-column:2;grid-row:4}body[data-game="space-mail"] #dispatchBtn{grid-column:2;grid-row:5}body[data-game="space-mail"] #game .controls{grid-column:2;grid-row:6}}
+@media(orientation:landscape) and (max-height:500px){body[data-game="space-mail"] #game .gameTitleArt{height:62px}}
+@media(prefers-reduced-motion:reduce){body[data-game="space-mail"] .mailStations>div{transition:none}}

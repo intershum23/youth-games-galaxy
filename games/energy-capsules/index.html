@@ -1,6 +1,5 @@
 <!doctype html>
-<html lang="ru">
-<head>
+<html lang="ru"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
 <meta name="theme-color" content="#12053d">
@@ -67,11 +66,20 @@
       <div><span>Серия</span><b id="streakValue">0</b></div>
     </div>
 
-    <div class="playerBar" aria-label="Ваш герой">
+    <div class="missionConsole"><div class="playerBar" aria-label="Ваш герой">
       <img id="playerImg" src="../../assets/corgi.png" alt="Капитан Корги">
       <div class="missionStatus"><b id="stateText" role="status" aria-live="polite">Перехватывайте капсулы</b><span id="speedText">Скорость 1</span></div>
       <button class="pauseBtn" id="pauseBtn" type="button" aria-label="Пауза">Ⅱ</button>
-    </div>
+    </div><div class="catchControls" aria-label="Позиция перехвата">
+      <button class="catchBtn" data-lane="0" type="button" aria-label="Верхняя левая позиция"><span>↖</span><small>Q</small></button>
+      <button class="catchBtn" data-lane="1" type="button" aria-label="Верхняя правая позиция"><span>↗</span><small>E</small></button>
+      <button class="catchBtn" data-lane="2" type="button" aria-label="Нижняя левая позиция"><span>↙</span><small>Z</small></button>
+      <button class="catchBtn" data-lane="3" type="button" aria-label="Нижняя правая позиция"><span>↘</span><small>C</small></button>
+    </div><div class="controls">
+      <button id="homeBtn" type="button">В начало</button>
+      <button id="newBtn" type="button">Новая</button>
+      <button id="screenBtn" type="button">Экран</button>
+    </div></div>
 
     <div class="gameArea">
       <div class="catchField boardFrame" id="catchField" aria-label="Игровое поле энергокапсул">
@@ -91,18 +99,9 @@
       </div>
     </div>
 
-    <div class="catchControls" aria-label="Позиция перехвата">
-      <button class="catchBtn" data-lane="0" type="button" aria-label="Верхняя левая позиция"><span>↖</span><small>Q</small></button>
-      <button class="catchBtn" data-lane="1" type="button" aria-label="Верхняя правая позиция"><span>↗</span><small>E</small></button>
-      <button class="catchBtn" data-lane="2" type="button" aria-label="Нижняя левая позиция"><span>↙</span><small>Z</small></button>
-      <button class="catchBtn" data-lane="3" type="button" aria-label="Нижняя правая позиция"><span>↘</span><small>C</small></button>
-    </div>
+    
 
-    <div class="controls">
-      <button id="homeBtn" type="button">В начало</button>
-      <button id="newBtn" type="button">Новая</button>
-      <button id="screenBtn" type="button">Экран</button>
-    </div>
+    
   </section>
 
   <div class="overlay" id="resultOverlay" aria-hidden="true">
@@ -131,5 +130,6 @@
 <button id="allGames" type="button" aria-label="Вернуться в каталог">⌂ Все игры</button>
 <script src="game.js"></script>
 <script src="../../game-shell.js"></script>
-</body>
-</html>
+
+
+</body></html>

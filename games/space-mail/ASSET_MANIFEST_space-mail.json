@@ -1,7 +1,7 @@
 {
   "gameId": "space-mail",
   "version": "1.0.0",
-  "generatedBy": "Built-in image_gen for illustrations; actual Unbounded canvas export for title; WebP deterministic export",
+  "generatedBy": "Built-in image_gen: reference-matched raster wordmark and illustrated play scene; deterministic WebP export",
   "assets": [
     {
       "path": "assets/icons/space-mail.webp",
@@ -23,12 +23,12 @@
     },
     {
       "path": "assets/titles/space-mail.png",
-      "purpose": "Прозрачное название, реальный Unbounded 800",
+      "purpose": "v16.18: прозрачное растровое название по референсу Судоку, иллюстрированная типографика",
       "alpha": true,
-      "bytes": 1682081,
-      "sha256": "f2526ca681130289b43f25218c0248407630c32f939325386ef8a72a203db7ce",
-      "width": 2048,
-      "height": 680
+      "bytes": 1568300,
+      "sha256": "a960677a6a4ee0c148b99e43c8665c19127cb65ed3752c4828082fb6191d7f17",
+      "width": 1896,
+      "height": 830
     },
     {
       "path": "assets/splashes/space-mail.webp",
@@ -83,13 +83,33 @@
       "width": 2172,
       "height": 724,
       "alpha": true
+    },
+    {
+      "path": "assets/retro-props/mail-terminal.png",
+      "purpose": "v16.18: иллюстрированная игровая сцена без нарисованных кнопок и игровых данных",
+      "bytes": 2014041,
+      "sha256": "1419fb2de1e4f34b0d15f83e959a5cc2ece0c0def96a54332af1b02b2ff03727",
+      "width": 1254,
+      "height": 1254,
+      "alpha": false
+    },
+    {
+      "path": "assets/retro-props/mail-terminal.webp",
+      "purpose": "v16.18: иллюстрированная игровая сцена без нарисованных кнопок и игровых данных",
+      "bytes": 270278,
+      "sha256": "605e656995dabf37afd97b82170f4e35234486572c29dfe3e86087e6f38aa5bf",
+      "width": 1254,
+      "height": 1254,
+      "alpha": false
     }
   ],
   "notes": [
     "Иконки: одинаковый персонаж, ракурс и объекты; активная версия подмигивает.",
     "Космо-Кот на заставке белый, круглые оранжевые очки.",
     "Графика не определяет правила: очередь, сроки, маршруты и отправка принадлежат движку.",
-    "Новые позы ловли для почты не требуются: оператор распознаёт и маршрутизирует груз, а не перехватывает его телом."
+    "Новые позы ловли для почты не требуются: оператор распознаёт и маршрутизирует груз, а не перехватывает его телом.",
+    "v16.18: все данные, символы адреса, сигнал, управление и исходы остаются живым HTML/движком. UI Montserrat/Unbounded; title PNG — иллюстрированное начертание по референсу, не сертификат конкретной шрифтовой гарнитуры.",
+    "v16.18: все данные, символы адреса, сигнал, управление и исходы остаются живым HTML/движком. UI Montserrat/Unbounded; title PNG — иллюстрированное начертание по референсу, не сертификат конкретной шрифтовой гарнитуры."
   ],
-  "presentationVersion": "16.17.0"
+  "presentationVersion": "16.18.0"
 }

@@ -1,7 +1,7 @@
 {
   "gameId": "radio-beacon",
   "version": "1.0.0",
-  "generatedBy": "image_gen for illustrations; actual local Unbounded 800 canvas title; deterministic WebP export",
+  "generatedBy": "Built-in image_gen: reference-matched raster wordmark and illustrated play scene; deterministic WebP export",
   "assets": [
     {
       "path": "assets/icons/radio-beacon.png",
@@ -59,12 +59,12 @@
     },
     {
       "path": "assets/titles/radio-beacon.png",
-      "purpose": "actual Unbounded PNG title",
-      "width": 2048,
-      "height": 680,
+      "purpose": "v16.18: прозрачное растровое название по референсу Судоку, иллюстрированная типографика",
+      "width": 2172,
+      "height": 724,
       "alpha": true,
-      "bytes": 1686697,
-      "sha256": "0ce943ffd179a766c6b04d3da463fdafe024b0ea37a1088e816469506fd574d1"
+      "bytes": 1259570,
+      "sha256": "4dc80574747283274176273e1f6c83353a01625f3981b290747d61334aab682e"
     },
     {
       "path": "assets/retro-props/radio-receiver.webp",
@@ -83,7 +83,28 @@
       "width": 2172,
       "height": 724,
       "alpha": true
+    },
+    {
+      "path": "assets/retro-props/radio-observatory.png",
+      "purpose": "v16.18: иллюстрированная игровая сцена без нарисованных кнопок и игровых данных",
+      "bytes": 2015063,
+      "sha256": "d97ddeb64548670275c3717c1425a69528efc049e665a2b65bacef6445b59bf9",
+      "width": 1254,
+      "height": 1254,
+      "alpha": false
+    },
+    {
+      "path": "assets/retro-props/radio-observatory.webp",
+      "purpose": "v16.18: иллюстрированная игровая сцена без нарисованных кнопок и игровых данных",
+      "bytes": 290142,
+      "sha256": "546fc465ffb10dca57666e7a963a3bac0612da076973b97db8e924481e6802ab",
+      "width": 1254,
+      "height": 1254,
+      "alpha": false
     }
   ],
-  "presentationVersion": "16.17.0"
+  "presentationVersion": "16.18.0",
+  "notes": [
+    "v16.18: все данные, символы адреса, сигнал, управление и исходы остаются живым HTML/движком. UI Montserrat/Unbounded; title PNG — иллюстрированное начертание по референсу, не сертификат конкретной шрифтовой гарнитуры."
+  ]
 }
