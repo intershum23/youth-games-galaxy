@@ -1,6 +1,7 @@
 (()=>{'use strict';
 const id=document.body.dataset.game;
-const splashUrl=new URL(`../../assets/splashes/${id}.webp`,document.baseURI).href;
+const splashExt=document.body.dataset.splashExt||'webp';
+const splashUrl=new URL(`../../assets/splashes/${id}.${splashExt}`,document.baseURI).href;
 document.documentElement.style.setProperty('--game-splash',`url("${splashUrl}")`);
 const splashEl=document.getElementById('splash');if(splashEl)splashEl.style.backgroundImage=`url("${splashUrl}")`;
 function exitToCatalog(){if(parent!==window)parent.postMessage({type:'mm-exit-to-platform',game:id},location.origin);else location.href='../../index.html#games'}
