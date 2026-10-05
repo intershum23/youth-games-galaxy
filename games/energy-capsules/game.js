@@ -6,7 +6,7 @@ const MODE={
  b:{label:'GAME B',baseSpawn:920,minSpawn:450,baseTravel:2350,minTravel:1500,maxActive:2,guard:430,scoreMul:1},
  turbo:{label:'TURBO',baseSpawn:720,minSpawn:300,baseTravel:1950,minTravel:1050,maxActive:3,guard:300,scoreMul:2}
 };
-const HERO={corgi:{src:'../../assets/corgi.png',alt:'Капитан Корги',sheet:'assets/corgi-poses.webp'},cat:{src:'../../assets/cat.png',alt:'Космо-Кот',sheet:'assets/cat-poses.webp'}};
+const HERO={corgi:{src:'../../assets/corgi.png',alt:'Капитан Корги',sheet:'assets/corgi-poses.png'},cat:{src:'../../assets/cat.png',alt:'Космо-Кот',sheet:'assets/cat-poses.png'}};
 const POSE_POS=['0% 0%','100% 0%','0% 100%','100% 100%'];
 const LANE_POINTS=[{sx:5,sy:15,ex:39,ey:47},{sx:95,sy:15,ex:61,ey:47},{sx:5,sy:52,ex:39,ey:70},{sx:95,sy:52,ex:61,ey:70}];
 let hero='corgi',mode='a',running=false,paused=false,autoPaused=false,score=0,lives=3,streak=0,bestStreak=0,caught=0,missed=0,selectedLane=0,capsules=[],spawnElapsed=0,lastTs=0,raf=0,seq=0,resultSaved=false,soundOn=true,actx=null;
