@@ -1,6 +1,8 @@
 (()=>{'use strict';
 const id=document.body.dataset.game;
-document.documentElement.style.setProperty('--game-splash',`url('../../assets/splashes/${id}.webp')`);
+const splashUrl=new URL(`../../assets/splashes/${id}.webp`,document.baseURI).href;
+document.documentElement.style.setProperty('--game-splash',`url("${splashUrl}")`);
+const splashEl=document.getElementById('splash');if(splashEl)splashEl.style.backgroundImage=`url("${splashUrl}")`;
 function exitToCatalog(){if(parent!==window)parent.postMessage({type:'mm-exit-to-platform',game:id},location.origin);else location.href='../../index.html#games'}
 document.getElementById('allGames').addEventListener('click',exitToCatalog);
 // Presentation only: engines retain game state, timers, scoring and restart handlers.
@@ -65,6 +67,6 @@ addEventListener('message',e=>{if(e.source===parent&&e.origin===location.origin&
 addEventListener('DOMContentLoaded',async()=>{
  const reportScreen=()=>{const screen=document.querySelector('.screen.active')?.id||'splash';if(parent!==window)parent.postMessage({type:'mm-game-screen',game:id,launch:Number(new URLSearchParams(location.search).get('launch')),screen},location.origin)};
  for(const screen of document.querySelectorAll('.screen'))new MutationObserver(reportScreen).observe(screen,{attributes:true,attributeFilter:['class']});
- try{const image=new Image();image.src=`../../assets/splashes/${id}.webp`;await image.decode();await Promise.all([...document.querySelectorAll('.gameTitleArt')].map(img=>img.decode()));await document.fonts.ready;document.body.classList.add('galaxy-ready');reportScreen();window.GameLifecycle?.ready(id)}catch(error){window.GameLifecycle?.fail('Не загружена заставка или название игры')}
+ try{const image=new Image();image.src=splashUrl;await image.decode();await Promise.all([...document.querySelectorAll('.gameTitleArt')].map(img=>img.decode()));await document.fonts.ready;document.body.classList.add('galaxy-ready');reportScreen();window.GameLifecycle?.ready(id)}catch(error){window.GameLifecycle?.fail('Не загружена заставка или название игры')}
 });
 })();
