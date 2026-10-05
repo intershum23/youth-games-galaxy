@@ -76,6 +76,7 @@
     <div class="gameArea">
       <div class="catchField boardFrame" id="catchField" aria-label="Игровое поле энергокапсул">
         <div class="reactor" aria-hidden="true"><span></span></div>
+        <img id="fieldHero" class="fieldHero reach-0" src="../../assets/corgi.png" alt="" aria-hidden="true">
         <div class="track t0" aria-hidden="true"></div>
         <div class="track t1" aria-hidden="true"></div>
         <div class="track t2" aria-hidden="true"></div>
@@ -84,6 +85,10 @@
         <div class="catchPoint p1" data-lane="1" aria-hidden="true"></div>
         <div class="catchPoint p2" data-lane="2" aria-hidden="true"></div>
         <div class="catchPoint p3" data-lane="3" aria-hidden="true"></div>
+        <button class="laneHit h0" data-lane="0" type="button" aria-label="Тянуться к верхней левой линии"><span class="sr-only">Верхняя левая линия</span></button>
+        <button class="laneHit h1" data-lane="1" type="button" aria-label="Тянуться к верхней правой линии"><span class="sr-only">Верхняя правая линия</span></button>
+        <button class="laneHit h2" data-lane="2" type="button" aria-label="Тянуться к нижней левой линии"><span class="sr-only">Нижняя левая линия</span></button>
+        <button class="laneHit h3" data-lane="3" type="button" aria-label="Тянуться к нижней правой линии"><span class="sr-only">Нижняя правая линия</span></button>
         <div id="capsuleLayer" aria-hidden="true"></div>
         <div class="fieldHint" id="fieldHint">Выберите позицию</div>
       </div>
