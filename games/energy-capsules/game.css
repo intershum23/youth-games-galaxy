@@ -167,25 +167,4 @@ body[data-game="energy-capsules"] .fieldHint{z-index:8;pointer-events:none}
   body[data-game="energy-capsules"] .fieldHero{transition:none}
 }
 
-body[data-game="energy-capsules"] #splash::before{
-  content:"";
-  position:absolute;
-  left:0;right:0;top:0;
-  height:28%;
-  background:linear-gradient(180deg,rgba(4,8,42,.82),rgba(4,8,42,.72) 68%,rgba(4,8,42,0));
-  z-index:1;
-  pointer-events:none;
-}
-body[data-game="energy-capsules"] #splash .splashTitleArt{
-  position:absolute;
-  left:50%;
-  top:clamp(24px,5.5dvh,58px);
-  transform:translateX(-50%);
-  width:min(82%,560px);
-  height:auto;
-  object-fit:contain;
-  z-index:2;
-  filter:drop-shadow(0 0 14px rgba(255,92,189,.32));
-  pointer-events:none;
-}
-body[data-game="energy-capsules"] #splash #startBtn{z-index:3}
+
