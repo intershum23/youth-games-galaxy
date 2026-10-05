@@ -1,0 +1,62 @@
+{
+  "gameId": "space-mail",
+  "version": "1.0.0",
+  "generatedBy": "Built-in image_gen for illustrations; actual Unbounded canvas export for title; WebP deterministic export",
+  "assets": [
+    {
+      "path": "assets/icons/space-mail.webp",
+      "purpose": "Основная иконка: корги с почтовой посылкой",
+      "alpha": true,
+      "bytes": 90688,
+      "sha256": "487c7a43e88eac4a3da0e3e1dde21d8483f4845fac32c03b3a86e95f83a62443"
+    },
+    {
+      "path": "assets/icons/space-mail-active.webp",
+      "purpose": "Та же сцена, подмигивание",
+      "alpha": true,
+      "bytes": 80690,
+      "sha256": "e7b4628a30a46708444632fbaa3f4d9d6c2d56d3b46493fde80ef347967ee1f3"
+    },
+    {
+      "path": "assets/titles/space-mail.png",
+      "purpose": "Прозрачное название, реальный Unbounded 800",
+      "alpha": true,
+      "bytes": 305865,
+      "sha256": "f3a9552d434bb460c84b3ef43b9ccf58a949920ac0618f1d2280f4e444c08b43"
+    },
+    {
+      "path": "assets/splashes/space-mail.webp",
+      "purpose": "Заставка с двумя эталонными героями, без UI-кнопок",
+      "alpha": false,
+      "bytes": 506156,
+      "sha256": "66696f33abab884b20df982670b43d053ac32d01f7563c155239627f648f358b"
+    },
+    {
+      "path": "assets/icons/space-mail.png",
+      "purpose": "PNG-оригинал основной генерации",
+      "alpha": true,
+      "bytes": 2081507,
+      "sha256": "f0a2edd8b172d13686475a5ddd4795aa261087dcb433b86029e9460449ae8bff"
+    },
+    {
+      "path": "assets/icons/space-mail-active.png",
+      "purpose": "PNG-оригинал активной генерации",
+      "alpha": true,
+      "bytes": 2010200,
+      "sha256": "2de0d2b7ccd03a5c83296d4fd500b282c8331059223f1336ccbed77f8ce52523"
+    },
+    {
+      "path": "assets/splashes/space-mail.png",
+      "purpose": "PNG-оригинал заставки",
+      "alpha": false,
+      "bytes": 2775584,
+      "sha256": "efb7ad43bbd7fac3e046fee8f8cde4320832daad68c6459880f40787542a06d0"
+    }
+  ],
+  "notes": [
+    "Иконки: одинаковый персонаж, ракурс и объекты; активная версия подмигивает.",
+    "Космо-Кот на заставке белый, круглые оранжевые очки.",
+    "Графика не определяет правила: очередь, сроки, маршруты и отправка принадлежат движку.",
+    "Новые позы ловли для почты не требуются: оператор распознаёт и маршрутизирует груз, а не перехватывает его телом."
+  ]
+}

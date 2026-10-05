@@ -248,3 +248,11 @@ body:has(#splash.active) #allGames,body:not(.galaxy-ready) #allGames{display:non
 #game .topbar> :has(.gameTitleArt),#game .topBar> :has(.gameTitleArt){grid-column:2;grid-row:1;text-align:center;width:100%;min-width:0}
 #game .topbar>button,#game .topBar>button{grid-column:3;grid-row:1}
 #menu .gameTitleArt,#game .gameTitleArt{object-position:center;transform-origin:center}
+
+/* Standalone load failure has a visible recovery path outside the hidden app. */
+.game-load-error{position:fixed;inset:0;z-index:200;display:grid;place-items:center;padding:20px;background:#080c2e;color:#fff}
+.game-load-error>div{width:min(100%,440px);padding:24px;border:1px solid #c4e2ff40;border-radius:24px;background:rgba(30,44,77,.65)}
+.game-load-error h2{font:700 23px/1.3 var(--font-accent);margin:0 0 16px}
+.game-load-error p{font:400 14px/1.5 var(--font-ui);overflow-wrap:anywhere}
+.game-load-error button,.game-load-error a{display:flex;align-items:center;justify-content:center;width:100%;min-height:48px;margin-top:12px;border:1px solid #a0b8f366;border-radius:14px;background:#393777;color:#fff;text-decoration:none;font:700 14px var(--font-ui);cursor:pointer}
+.game-load-error button:focus-visible,.game-load-error a:focus-visible{outline:3px solid #8eeaff;outline-offset:3px}

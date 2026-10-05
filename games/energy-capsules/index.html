@@ -11,7 +11,7 @@
 <script src="../../game-lifecycle.js"></script>
 <script src="../../records.js"></script>
 </head>
-<body data-game="energy-capsules" data-splash-ext="png">
+<body class="retro-game" data-game="energy-capsules" data-splash-ext="png">
 <div id="app">
   <section id="splash" class="screen active">
     <button id="startBtn" type="button" aria-label="Начать игру Капсулы">Начать игру</button>
@@ -30,17 +30,17 @@
         <div class="heroRow">
           <button class="heroOption on" data-hero="corgi" type="button" aria-label="Выбрать Капитана Корги">
             <div class="heroPortrait"><img src="../../assets/corgi.png" alt="Капитан Корги"></div>
-            <div class="heroName">Капитан<br>Корги</div>
+
           </button>
           <button class="heroOption" data-hero="cat" type="button" aria-label="Выбрать Космо-Кота">
             <div class="heroPortrait"><img src="../../assets/cat.png" alt="Космо-Кот"></div>
-            <div class="heroName">Космо-<br>Кот</div>
+
           </button>
         </div>
       </div>
 
       <div class="modeGrid" aria-label="Выберите режим">
-        <button class="modeCard" data-mode="a" type="button"><strong>GAME A</strong><span>Спокойный старт: одна капсула на линии, скорость растёт постепенно.</span></button>
+        <button class="modeCard" data-mode="a" type="button"><strong>GAME A</strong><span>Спокойный старт: одна капсула на поле, скорость растёт постепенно.</span></button>
         <button class="modeCard" data-mode="b" type="button"><strong>GAME B</strong><span>До двух капсул одновременно, меньше времени на смену позиции.</span></button>
         <button class="modeCard" data-mode="turbo" type="button"><strong>TURBO</strong><span>Быстрый режим на рекорд: до трёх капсул и постоянное ускорение.</span></button>
       </div>
@@ -57,7 +57,7 @@
         </div>
         <div id="modeBadge">GAME A</div>
       </div>
-      <button class="iconBtn" id="soundBtn" type="button" aria-label="Выключить звук">🔊</button>
+      <button class="iconBtn" id="soundBtn" type="button" aria-label="Выключить звук">♪</button>
     </div>
 
     <div class="hud" aria-label="Игровые показатели">
@@ -69,7 +69,7 @@
 
     <div class="playerBar" aria-label="Ваш герой">
       <img id="playerImg" src="../../assets/corgi.png" alt="Капитан Корги">
-      <div class="missionStatus"><b id="stateText">Перехватывайте капсулы</b><span id="speedText">Скорость 1</span></div>
+      <div class="missionStatus"><b id="stateText" role="status" aria-live="polite">Перехватывайте капсулы</b><span id="speedText">Скорость 1</span></div>
       <button class="pauseBtn" id="pauseBtn" type="button" aria-label="Пауза">Ⅱ</button>
     </div>
 
@@ -77,10 +77,7 @@
       <div class="catchField boardFrame" id="catchField" aria-label="Игровое поле энергокапсул">
         <div class="reactor" aria-hidden="true"><span></span></div>
         <div id="fieldHero" class="fieldHero reach-0" aria-hidden="true"></div>
-        <div class="track t0" aria-hidden="true"></div>
-        <div class="track t1" aria-hidden="true"></div>
-        <div class="track t2" aria-hidden="true"></div>
-        <div class="track t3" aria-hidden="true"></div>
+        <svg id="laneTracks" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg>
         <div class="catchPoint p0" data-lane="0" aria-hidden="true"></div>
         <div class="catchPoint p1" data-lane="1" aria-hidden="true"></div>
         <div class="catchPoint p2" data-lane="2" aria-hidden="true"></div>
@@ -102,9 +99,9 @@
     </div>
 
     <div class="controls">
-      <button id="homeBtn" type="button">⌂<br>В начало</button>
-      <button id="newBtn" type="button">✦<br>Новая</button>
-      <button id="screenBtn" type="button">⛶<br>Экран</button>
+      <button id="homeBtn" type="button">В начало</button>
+      <button id="newBtn" type="button">Новая</button>
+      <button id="screenBtn" type="button">Экран</button>
     </div>
   </section>
 
@@ -125,6 +122,7 @@
     <div class="sheet">
       <h3>Рекорды</h3>
       <p>Лучшие результаты на этом устройстве.</p>
+      <div class="recordTabs" aria-label="Режим рекордов"><button data-record-mode="a" type="button">GAME A</button><button data-record-mode="b" type="button">GAME B</button><button data-record-mode="turbo" type="button">TURBO</button></div>
       <div class="recordsList" id="recordsList"></div>
       <button class="go" id="recordsClose" type="button">Закрыть</button>
     </div>

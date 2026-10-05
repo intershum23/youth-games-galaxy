@@ -1,0 +1,43 @@
+/* Scoped material and control system for Retro Orbit. No legacy overrides. */
+body.retro-game{--retro-pink:#ff61b5;--retro-line:#c4e2ff40;--retro-glass:rgba(24,34,74,.34)}
+body.retro-game button{cursor:pointer;color:#fff;border:1px solid var(--retro-line);background:var(--retro-glass);font-family:var(--font-ui);-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+body.retro-game button:focus-visible{outline:3px solid #93eeff;outline-offset:3px}
+body.retro-game #game.screen.active{gap:6px}
+body.retro-game #game .gameTitleArt{height:58px}
+body.retro-game #game .hud>div{display:grid;gap:3px;min-height:42px;place-content:center;background:var(--retro-glass)}
+body.retro-game #game .hud span{font:600 9px/1.2 var(--font-ui);color:#cbd8f6}
+body.retro-game #game .hud b{font:700 16px/1.2 var(--font-accent);font-variant-numeric:tabular-nums}
+body.retro-game #game .playerBar{background:var(--retro-glass);border:1px solid var(--retro-line);border-radius:18px;min-height:52px;padding:4px 8px}
+body.retro-game .missionStatus{display:grid;min-width:0;flex:1;gap:3px}
+body.retro-game .missionStatus b{font:600 11px/1.3 var(--font-ui);overflow-wrap:anywhere}
+body.retro-game .missionStatus span{font:500 10px/1.3 var(--font-ui);color:#cbd8f6}
+body.retro-game .playerBar .galaxy-player{width:48px;min-width:48px}
+body.retro-game .playerBar .galaxy-player-label{display:none}
+body.retro-game #game #playerImg{width:44px;height:44px}
+body.retro-game .pauseBtn{flex:none;width:44px;height:44px;border-radius:14px;font:700 19px var(--font-accent)}
+body.retro-game .overlay{position:fixed;inset:0;display:none;place-items:center;padding:64px 14px 16px;background:rgba(3,4,26,.65);backdrop-filter:blur(8px);z-index:95}
+body.retro-game .overlay.open{display:grid}
+body.retro-game .sheet{width:min(100%,460px);max-height:calc(100dvh - 90px);overflow:auto;padding:20px;border-radius:26px;background:rgba(28,39,77,.72);border:1px solid var(--retro-line);box-shadow:0 20px 60px #0006}
+body.retro-game .sheet h3{margin:0 0 10px;font:700 clamp(20px,6vw,26px)/1.2 var(--font-accent)}
+body.retro-game .sheet p{margin:0 0 14px;font:400 13px/1.45 var(--font-ui);color:#d3def8}
+body.retro-game .resultStats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:12px 0 16px}
+body.retro-game .resultStats div{padding:10px 4px;border-radius:14px;background:var(--retro-glass);border:1px solid var(--retro-line);text-align:center}
+body.retro-game .resultStats span{display:block;font:500 9px var(--font-ui);color:#cedbf5}
+body.retro-game .resultStats b{display:block;margin-top:5px;font:700 16px var(--font-accent)}
+body.retro-game .resultActions{display:grid;grid-template-columns:1fr 1.25fr;gap:8px}
+body.retro-game .ghost,body.retro-game .go{min-height:48px;padding:10px;border-radius:16px;font:700 13px var(--font-accent)}
+body.retro-game .go{background:linear-gradient(120deg,#dc258f,#aa40c9)}
+body.retro-game .recordTabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-bottom:12px}
+body.retro-game .recordTabs button{min-height:44px;border-radius:12px;font:700 10px var(--font-accent)}
+body.retro-game .recordTabs button[aria-pressed="true"]{border-color:#8eeaff;background:rgba(73,181,211,.25)}
+body.retro-game .recordsList{display:grid;gap:7px;max-height:45dvh;overflow:auto}
+body.retro-game .record{display:grid;grid-template-columns:24px 1fr auto;gap:8px;align-items:center;padding:10px;border-radius:14px;border:1px solid var(--retro-line);background:var(--retro-glass);font:600 11px/1.4 var(--font-ui)}
+body.retro-game .record span:last-child{font:700 14px var(--font-accent)}
+body.retro-game #recordsClose{width:100%;margin-top:12px}
+body.retro-game .gameArea{width:min(100%,500px);display:block}
+body.retro-game .controls button{background:var(--retro-glass)}
+body.retro-game .fieldHint{position:absolute;left:50%;top:6%;transform:translateX(-50%);padding:7px 10px;border-radius:999px;background:rgba(15,12,63,.42);border:1px solid var(--retro-line);font:600 10px/1.2 var(--font-ui);white-space:nowrap;z-index:8;pointer-events:none}
+@media(orientation:landscape) and (max-height:500px){body.retro-game #game.screen.active{padding-inline:12px}body.retro-game #game .gameTitleArt{height:44px}body.retro-game .gameArea{max-width:440px}}
+body.retro-game #game .playerBar .galaxy-player{width:48px;min-width:48px;max-width:48px;height:44px;padding:0;background:none;border:0;box-shadow:none;backdrop-filter:none}
+body.retro-game #game .playerBar .galaxy-player-label{display:none}
+body.retro-game #game .playerBar #playerImg{width:44px;height:44px}

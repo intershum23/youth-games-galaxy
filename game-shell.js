@@ -68,6 +68,6 @@ addEventListener('message',e=>{if(e.source===parent&&e.origin===location.origin&
 addEventListener('DOMContentLoaded',async()=>{
  const reportScreen=()=>{const screen=document.querySelector('.screen.active')?.id||'splash';if(parent!==window)parent.postMessage({type:'mm-game-screen',game:id,launch:Number(new URLSearchParams(location.search).get('launch')),screen},location.origin)};
  for(const screen of document.querySelectorAll('.screen'))new MutationObserver(reportScreen).observe(screen,{attributes:true,attributeFilter:['class']});
- try{const image=new Image();image.src=splashUrl;await image.decode();await Promise.all([...document.querySelectorAll('.gameTitleArt')].map(img=>img.decode()));await document.fonts.ready;document.body.classList.add('galaxy-ready');reportScreen();window.GameLifecycle?.ready(id)}catch(error){window.GameLifecycle?.fail('Не загружена заставка или название игры')}
+ try{const image=new Image();image.src=splashUrl;await image.decode();await Promise.all([...document.querySelectorAll('.gameTitleArt')].map(img=>img.decode()).concat((window.GameLifecycle?.requiredImages||[]).map(async src=>{const asset=new Image();asset.src=new URL(src,document.baseURI).href;await asset.decode()})));await document.fonts.ready;document.body.classList.add('galaxy-ready');reportScreen();window.GameLifecycle?.ready(id)}catch(error){window.GameLifecycle?.fail('Не загружен обязательный ресурс игры: заставка, название или персонаж')}
 });
 })();

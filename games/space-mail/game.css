@@ -1,0 +1,41 @@
+@import url('../retro-orbit.css');
+body[data-game="space-mail"] #livesValue{font-family:var(--font-ui);letter-spacing:.08em;color:#ff94cd}
+body[data-game="space-mail"] .mailField{position:relative;width:100%;min-height:262px;padding:12px;border-radius:26px;overflow:hidden;background:var(--retro-glass);border:1px solid var(--retro-line);isolation:isolate}
+body[data-game="space-mail"] .mailStations{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;z-index:3}
+body[data-game="space-mail"] .mailStations>div{display:grid;place-content:center;gap:4px;min-height:56px;text-align:center;border:1px solid var(--retro-line);border-radius:14px;background:#8174e71a;transition:border-color .15s,background .15s}
+body[data-game="space-mail"] .mailStations span{font-size:22px;line-height:1;color:#ffc1e5}
+body[data-game="space-mail"] .mailStations b{font:600 9px var(--font-ui);color:#dce8ff}
+body[data-game="space-mail"] .mailStations .selected{border-color:#99f1ff;background:#59c9ec2c}
+body[data-game="space-mail"] .routingBeam{position:absolute;top:66px;left:50%;width:2px;height:88px;transform-origin:bottom center;background:linear-gradient(transparent,#b6f9ff);opacity:0;z-index:1;transition:transform .1s}
+body[data-game="space-mail"] .routingBeam[data-route="0"]{opacity:.5;transform:rotate(48deg)}
+body[data-game="space-mail"] .routingBeam[data-route="1"]{opacity:.5;transform:rotate(0)}
+body[data-game="space-mail"] .routingBeam[data-route="2"]{opacity:.5;transform:rotate(-48deg)}
+body[data-game="space-mail"] .parcelStage{display:flex;align-items:center;justify-content:center;gap:18px;position:relative;z-index:2;margin:14px 0 12px;min-height:92px}
+body[data-game="space-mail"] .parcel{position:relative;display:grid;place-content:center;gap:4px;width:112px;height:84px;padding:9px;border:2px solid #d199fb;border-radius:16px;background:linear-gradient(145deg,#7544a6aa,#a73b9677,#352763aa);box-shadow:inset 0 0 0 4px #eedfff22,0 4px 0 #180e443d;transform:rotate(-3deg)}
+body[data-game="space-mail"] .parcelGlyph{font:700 31px/1 var(--font-ui);text-align:center;color:#ffe0f0;text-shadow:0 0 8px #ff8beb66}
+body[data-game="space-mail"] .parcelName{font:700 10px/1.2 var(--font-ui);text-align:center}
+body[data-game="space-mail"] .parcel.empty{opacity:.35}
+body[data-game="space-mail"] .deadline{display:grid;gap:8px;width:95px;font:600 9px/1.3 var(--font-ui);color:#d7e7ff}
+body[data-game="space-mail"] #deadlineBar{height:9px;border-radius:9px;background:linear-gradient(90deg,#ff82cb,#91e8fb);transform-origin:left center}
+body[data-game="space-mail"] .deadline.urgent{color:#ff95bb}
+body[data-game="space-mail"] .deadline.urgent #deadlineBar{background:#ff95bb}
+body[data-game="space-mail"] .queueLabel{display:flex;justify-content:space-between;gap:8px;font:600 9px/1.3 var(--font-ui);color:#cbd8f1;margin-bottom:9px}
+body[data-game="space-mail"] .parcelQueue{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px;min-height:44px}
+body[data-game="space-mail"] .queueParcel{display:grid;place-content:center;text-align:center;gap:2px;height:42px;border:1px solid #dca8e978;border-radius:10px;background:#a068b322;font-size:20px;line-height:1}
+body[data-game="space-mail"] .queueParcel small{font:600 7px var(--font-ui)}
+body[data-game="space-mail"] .queueSlot{height:42px;border:1px dashed #c4e2ff30;border-radius:10px}
+body[data-game="space-mail"] .routeControls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;width:min(100%,500px)}
+body[data-game="space-mail"] .routeBtn{display:grid;grid-template-columns:auto auto;align-items:center;justify-content:center;gap:3px 6px;min-height:54px;border-radius:16px}
+body[data-game="space-mail"] .routeBtn span{font:700 23px/1 var(--font-ui);grid-row:1/3;color:#ffd0ea}
+body[data-game="space-mail"] .routeBtn b{font:700 10px var(--font-ui)}
+body[data-game="space-mail"] .routeBtn small{font:600 9px var(--font-ui);color:#cad9f6}
+body[data-game="space-mail"] .routeBtn[aria-pressed="true"]{border-color:#99f1ff;background:#469ebe35}
+body[data-game="space-mail"] #dispatchBtn{width:min(100%,500px);min-height:48px;padding:10px;border-radius:16px;background:linear-gradient(110deg,#b83393aa,#7659c499);font:700 13px var(--font-accent)}
+body[data-game="space-mail"] #dispatchBtn:disabled{opacity:.45;cursor:default}
+body[data-game="space-mail"] .pauseCurtain{display:none;position:absolute;inset:0;place-content:center;background:#11193799;font:700 17px var(--font-accent);z-index:9}
+body[data-game="space-mail"].paused .pauseCurtain{display:grid}
+@media(min-width:700px) and (orientation:landscape){body[data-game="space-mail"] #game.screen.active{display:grid;grid-template-columns:minmax(280px,500px) minmax(190px,300px);grid-template-rows:auto auto auto auto auto auto;align-content:start;justify-content:center;column-gap:14px}body[data-game="space-mail"] #game .topbar,body[data-game="space-mail"] #game .hud{grid-column:1/-1;width:100%;max-width:814px}body[data-game="space-mail"] .gameArea{grid-column:1;grid-row:3/7}body[data-game="space-mail"] .mailField{min-height:320px;padding:18px}body[data-game="space-mail"] .parcelStage{margin:30px 0 24px;min-height:108px}body[data-game="space-mail"] #game .playerBar{grid-column:2;grid-row:3}body[data-game="space-mail"] .routeControls{grid-column:2;grid-row:4}body[data-game="space-mail"] #dispatchBtn{grid-column:2;grid-row:5}body[data-game="space-mail"] #game .controls{grid-column:2;grid-row:6}}
+@media(prefers-reduced-motion:reduce){body[data-game="space-mail"] .routingBeam,body[data-game="space-mail"] .mailStations>div{transition:none}}
+/* Two-line wordmark retains readable letter size instead of inheriting a one-line height. */
+body[data-game="space-mail"] #game .gameTitleArt{height:84px}
+@media(orientation:landscape) and (max-height:500px){body[data-game="space-mail"] #game .gameTitleArt{height:58px}}

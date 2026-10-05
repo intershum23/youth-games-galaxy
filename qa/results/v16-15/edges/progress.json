@@ -1,0 +1,86 @@
+[
+  {
+    "name": "energy-capsules standalone 360×800",
+    "status": "PASS"
+  },
+  {
+    "name": "energy-capsules standalone 390×844",
+    "status": "PASS"
+  },
+  {
+    "name": "energy-capsules standalone 430×932",
+    "status": "PASS"
+  },
+  {
+    "name": "energy-capsules standalone 1280×800",
+    "status": "PASS"
+  },
+  {
+    "name": "energy-capsules standalone 1920×1080",
+    "status": "PASS"
+  },
+  {
+    "name": "space-mail standalone 360×800",
+    "status": "PASS"
+  },
+  {
+    "name": "space-mail standalone 390×844",
+    "status": "PASS"
+  },
+  {
+    "name": "space-mail standalone 430×932",
+    "status": "PASS"
+  },
+  {
+    "name": "space-mail standalone 1280×800",
+    "status": "PASS"
+  },
+  {
+    "name": "space-mail standalone 1920×1080",
+    "status": "PASS"
+  },
+  {
+    "name": "missing gameplay sprite: loader reports error instead of incomplete field",
+    "status": "PASS"
+  },
+  {
+    "name": "capsule sprite anchors: all four poses for both heroes are inside field",
+    "status": "PASS"
+  },
+  {
+    "name": "standalone missing sprite: visible recovery UI and successful retry",
+    "status": "PASS"
+  },
+  {
+    "name": "delayed title: readiness waits for asset; no intermediate splash paints",
+    "status": "PASS"
+  },
+  {
+    "name": "missing title: explicit error, retry, catalog recovery",
+    "status": "PASS"
+  },
+  {
+    "name": "energy-capsules corrupt storage fixture",
+    "status": "PASS"
+  },
+  {
+    "name": "space-mail corrupt storage fixture",
+    "status": "PASS"
+  },
+  {
+    "name": "energy-capsules blocked storage fixture",
+    "status": "PASS"
+  },
+  {
+    "name": "space-mail blocked storage fixture",
+    "status": "PASS"
+  },
+  {
+    "name": "mail no-input expiry/overflow causes natural terminal loss",
+    "status": "PASS"
+  },
+  {
+    "name": "touch swipe on catalog does not launch; first tap does",
+    "status": "PASS"
+  }
+]

@@ -1,2414 +1,3227 @@
 {
-  "version": "v16.13 ENERGY CAPSULES QA CANDIDATE",
-  "fileCount": 602,
+  "version": "v16.15.0 RETRO ORBIT — CAPSULES REWORK + SPACE MAIL",
+  "scope": "repository source; ignored browser screenshot exports are additional release ZIP evidence",
+  "exclusions": [
+    "FILE_MAP.json",
+    "FILE_MAP.txt",
+    "FILES_SHA256SUMS.txt"
+  ],
+  "fileCount": 643,
   "files": [
     {
+      "path": ".gitignore",
+      "size": 104,
+      "sha256": "d22e80d9acd7248bff94847a2b39c3f2e5c5212d5d15a960d2ee6ba41ecc7d6a"
+    },
+    {
       "path": "ADDING_GAMES_RU.md",
-      "size": 4507
+      "size": 6452,
+      "sha256": "55c2a759017e474c5076242044b3943925e530afcbc36ce854d40baf89f8d001"
     },
     {
       "path": "API_CONTRACT.md",
-      "size": 1183
-    },
-    {
-      "path": "FILE_MAP.json",
-      "size": 89253
-    },
-    {
-      "path": "FILE_MAP.txt",
-      "size": 19123
+      "size": 1183,
+      "sha256": "4451a588fd83fff789d012cf6c22bd83231ec2edb51c35cd0a35bb427a250ced"
     },
     {
       "path": "NEW_GAME_PROMPT_RU.md",
-      "size": 6559
+      "size": 6559,
+      "sha256": "05e45760550ec311f0abcc9294a93f4928acfe66d43883b558dcdc53e71b5f1b"
     },
     {
       "path": "QA_LIVE_V16_3_RU.md",
-      "size": 10761
+      "size": 10761,
+      "sha256": "864216fe6d600ef778e35a1a0bab18a95fbef972b58707ce8d37639441d9f422"
     },
     {
       "path": "QA_TITLE_GLASS_V16_5_RU.md",
-      "size": 7174
+      "size": 7174,
+      "sha256": "28ae4b9c91d42a87aefffb32a3475de4cf27d80563afe448ebdd8467c00871cb"
     },
     {
       "path": "QA_TYPOGRAPHY_V16_2_RU.md",
-      "size": 3127
+      "size": 3127,
+      "sha256": "1bde68bd37882ad2b25d350684ca276a35c62c5cab1bee88872d5c92f7bf7e58"
     },
     {
       "path": "QA_V15_RU.md",
-      "size": 23438
+      "size": 23438,
+      "sha256": "6aff27863fa3f71bebe0c5d706823698b3eb1e255f416d9874bb620c6307f3b7"
     },
     {
       "path": "QA_V16_6_INTERACTIVE_ICONS_RU.md",
-      "size": 9694
+      "size": 9694,
+      "sha256": "02b18db42a3a26edbe038b4de17ac147512002623acf79b96fd6dac638d71ded"
     },
     {
       "path": "QA_V16_7_VISUAL_INTERACTION_RU.md",
-      "size": 8288
+      "size": 8288,
+      "sha256": "e17ca59b4e88f91083d968ce034b326b1c7b86e12ac1b1a92b8c88f474cb0ca9"
     },
     {
       "path": "QA_V16_RU.md",
-      "size": 15290
+      "size": 15290,
+      "sha256": "9902f42830a368bf71b799eb47a0406c6df3f70c01f3c614107b731436b890d9"
     },
     {
       "path": "QA_VISUAL_V16_4_RU.md",
-      "size": 15534
+      "size": 15534,
+      "sha256": "6120938c0016a111e633f9d7b387a4bf8829249b73dcf74bd197775db8e106b9"
     },
     {
       "path": "QA_v16_10_RU.md",
-      "size": 2469
+      "size": 2469,
+      "sha256": "8796d27d2c9e90a9a4054d7caa03df40bc434f38b7be5d1135155379dd4a4dc5"
     },
     {
       "path": "QA_v16_11_RU.md",
-      "size": 6949
+      "size": 6949,
+      "sha256": "bdb45d229d54834aba7dc05b566ca80c41cbd0d26916070d72c19c3eb1f80b84"
     },
     {
       "path": "QA_v16_12_RU.md",
-      "size": 7754
+      "size": 7754,
+      "sha256": "42e27a33813cdd896913b5c0d09540d26d4a8da8bf54aee1ab61e00f1ea83932"
     },
     {
       "path": "QA_v16_13_ENERGY_CAPSULES_RU.md",
-      "size": 7369
+      "size": 7369,
+      "sha256": "afe41daca0ac391d857ec8305de505953b065aed0e64dfbd9c45e5ca4c6f7639"
+    },
+    {
+      "path": "QA_v16_15_RETRO_ORBIT_RU.md",
+      "size": 10910,
+      "sha256": "f393bfac9a22bb23b96feaab04e9c0fffbbce5b52b735ef527c77878702ee9a2"
     },
     {
       "path": "QA_v16_8_RU.md",
-      "size": 6484
+      "size": 6484,
+      "sha256": "6963190077736c0af9be71162acfdca195454aa6107d9df482ce2a6d7d325a1c"
     },
     {
       "path": "QA_v16_9_RU.md",
-      "size": 7654
+      "size": 7654,
+      "sha256": "9dca789996bd07b75bd7ce76e7fc13af6c64ecafbbd68b3d8d773346702e052a"
     },
     {
       "path": "README_FINAL_RU.txt",
-      "size": 863
+      "size": 863,
+      "sha256": "b27291b3754286dcc498b87f80a4b20e9301f08a6c5278b83bed24d63308d37e"
     },
     {
       "path": "README_RU.txt",
-      "size": 863
+      "size": 863,
+      "sha256": "b27291b3754286dcc498b87f80a4b20e9301f08a6c5278b83bed24d63308d37e"
     },
     {
       "path": "RECORDS_MODEL_RU.md",
-      "size": 1842
+      "size": 1842,
+      "sha256": "65ccd742929fea6978a726d440d27fd259ae3ec87c665fdaf8549d94e2c54682"
     },
     {
       "path": "REQUIREMENTS_RU.md",
-      "size": 34674
+      "size": 34674,
+      "sha256": "4d0ffb209461c483296d28899c08db5d5487bd76e2c9e9a579da4994b4248b7a"
+    },
+    {
+      "path": "RETRO_ORBIT_CATALOG_RU.md",
+      "size": 51254,
+      "sha256": "e63a420f08719a3b0338e20cff6cd4a79a315dc72811cce13e8f84446e973b1b"
     },
     {
       "path": "SOURCE_SHA256.txt",
-      "size": 116
+      "size": 116,
+      "sha256": "b908bb82abe5a2aa9efede3e11c4c2c9d21a74a2980400f7fe85676d3ddb1a0a"
     },
     {
       "path": "SOURCE_V15_SHA256.txt",
-      "size": 108
+      "size": 108,
+      "sha256": "30d82a044917ae10af96b9a8bc2a8b1b2a84313b90b3a1fcb8712f8464f897e7"
     },
     {
       "path": "SOURCE_V16_12_SHA256.txt",
-      "size": 125
+      "size": 125,
+      "sha256": "42b245ff51e6ca1dbd9aae65b3b86c6374939ecf894f6e19533d9e4a6271e145"
     },
     {
       "path": "SOURCE_V16_1_SHA256.txt",
-      "size": 121
+      "size": 121,
+      "sha256": "e95d9dd806779483044daa94f25a06e814faa0a6e3f5f5367b2f6d7af278d139"
     },
     {
       "path": "SOURCE_V16_2_SHA256.txt",
-      "size": 118
+      "size": 118,
+      "sha256": "5ff32ceec3ca6b948f2ed97e0d8ea9ef1d8718ec9a904c38f61d9310db3ef139"
     },
     {
       "path": "SOURCE_V16_3_SHA256.txt",
-      "size": 125
+      "size": 125,
+      "sha256": "1752204346eabfb389f748869cb762d9a10e8a2366c8ecc0f1b3b862d75d38d6"
     },
     {
       "path": "SOURCE_V16_4_SHA256.txt",
-      "size": 125
+      "size": 125,
+      "sha256": "d395c8aea9068de61b17c94f52c1bf7db16ac44257900a5614416c8577c6b607"
     },
     {
       "path": "SOURCE_V16_5_SHA256.txt",
-      "size": 127
+      "size": 127,
+      "sha256": "ce1d444b5647383d5131f58b8310d69f67599f04a4f067d6bc0f4084b2fc00bd"
     },
     {
       "path": "SOURCE_V16_6_SHA256.txt",
-      "size": 123
+      "size": 123,
+      "sha256": "0ec18f3e23ef2904224c33af3c852bb652c4c1da9d67f2c62d6f5af5d9b5a396"
     },
     {
       "path": "SOURCE_V16_8_SHA256.txt",
-      "size": 65
+      "size": 65,
+      "sha256": "56e40d0c8680e1efd5668f21ec026771a4d82f37040bbc986016199439721202"
     },
     {
       "path": "SOURCE_V16_SHA256.txt",
-      "size": 119
+      "size": 119,
+      "sha256": "463760ce25b173660df777a7bbe3b1421fbf351f69858249afdfdbe87a6bb218"
     },
     {
       "path": "TITLE_ART_V16_7_PREVIEW.png",
-      "size": 332085
+      "size": 332085,
+      "sha256": "eae70a3d167cbda9f214047978fae5c0bee655706fb7e93e98726ed04753daf0"
     },
     {
       "path": "TITLE_ART_V16_9_PREVIEW.png",
-      "size": 2267852
+      "size": 2267852,
+      "sha256": "2bd25ab0e8a4dde4d22daf07364970b7ddcc872bf5c88721756c904fa7b889cb"
     },
     {
       "path": "TITLE_GENERATION_PROMPTS.json",
-      "size": 21634
+      "size": 21634,
+      "sha256": "883f39b12facc18a2f093f5636fddb652b0e03796ea67221e87c8ef2b944f08d"
     },
     {
       "path": "VERSION.txt",
-      "size": 36
+      "size": 54,
+      "sha256": "97abf71511c408487905653d423e21dca1fccec7cf128f34759fded7ed9c16d2"
     },
     {
       "path": "assets/cat.png",
-      "size": 1956428
+      "size": 1956428,
+      "sha256": "bc4d7e52fb155b2430111ffeabe4e6a93a6a39d33185deb4ae2a44d3db3e6e98"
     },
     {
       "path": "assets/corgi.png",
-      "size": 2021824
+      "size": 2021824,
+      "sha256": "dda30695302a654a58a5d6b92ee293c3fbc211cdccb34e4d0c0271d822abecf0"
     },
     {
       "path": "assets/embedded/0a942b0dbe729ae3ecd6.png",
-      "size": 92095
+      "size": 92095,
+      "sha256": "0a942b0dbe729ae3ecd6d1e1704b21e469f0f1caf2a6e7a4b93bca348784437d"
     },
     {
       "path": "assets/embedded/1ea0c05410c52130778a.png",
-      "size": 105424
+      "size": 105424,
+      "sha256": "1ea0c05410c52130778af54388e76fe0783fa02f53feabe9f2580f2eb4c96133"
     },
     {
       "path": "assets/embedded/3cd3c46f81fd5cc4ee44.png",
-      "size": 359736
+      "size": 359736,
+      "sha256": "3cd3c46f81fd5cc4ee44af650b56d2125d9c993b87787e3770e5dd69487d2ba1"
     },
     {
       "path": "assets/embedded/3d92c2f2fe6a7f3236a1.png",
-      "size": 77022
+      "size": 77022,
+      "sha256": "3d92c2f2fe6a7f3236a18e5cda918f82223cdda9e6095ff6beef969f1f6f6445"
     },
     {
       "path": "assets/embedded/5d2efbb67c1e1f32fe5d.png",
-      "size": 93005
+      "size": 93005,
+      "sha256": "5d2efbb67c1e1f32fe5d19fd291c4cc6fe6efc8c5cbb17b04557c75df75cf512"
     },
     {
       "path": "assets/embedded/707e234bccb1ae16a4bb.png",
-      "size": 362170
+      "size": 362170,
+      "sha256": "707e234bccb1ae16a4bba9419642afc03bb2e85124a635e6d19a60a4c616e49f"
     },
     {
       "path": "assets/embedded/81013af2c9c2ef70c2a9.png",
-      "size": 90094
+      "size": 90094,
+      "sha256": "81013af2c9c2ef70c2a9f464ff9912bc32bee9d871d7d697a0c21d03b5c06431"
     },
     {
       "path": "assets/embedded/81cd0e5fa0ddfbd48c88.png",
-      "size": 78290
+      "size": 78290,
+      "sha256": "81cd0e5fa0ddfbd48c881c02cac1e618431218b7fedaa79e8696d459827de8f0"
     },
     {
       "path": "assets/embedded/845c343af45fa69d67b9.png",
-      "size": 82494
+      "size": 82494,
+      "sha256": "845c343af45fa69d67b9b5865239d311f5f8065e7dad519153c15f704302e4b0"
     },
     {
       "path": "assets/embedded/8f487e99804f37137434.png",
-      "size": 182761
+      "size": 182761,
+      "sha256": "8f487e99804f37137434e702eab46aec5d872f46d45be2aaaf0ed3e553bce08d"
     },
     {
       "path": "assets/embedded/8f7ffdf05df121f17d2e.png",
-      "size": 89095
+      "size": 89095,
+      "sha256": "8f7ffdf05df121f17d2e81569a82ca90b9641ba3e9da6ec1d0b7ba82c05aaf97"
     },
     {
       "path": "assets/embedded/aef5ee378724920b3d19.png",
-      "size": 68145
+      "size": 68145,
+      "sha256": "aef5ee378724920b3d19f94b53d531ecacb79fe778211851925ac6795e199869"
     },
     {
       "path": "assets/embedded/bd34406673213571c437.png",
-      "size": 294972
+      "size": 294972,
+      "sha256": "bd34406673213571c43745d4ebe77155e78b9860f7ae035771d43b6cd1c3a43d"
     },
     {
       "path": "assets/embedded/e30c408057a75e6c49e3.png",
-      "size": 77528
+      "size": 77528,
+      "sha256": "e30c408057a75e6c49e3d509bdbcd0b1d7c57a92d517c6430841deaa029b0fe5"
     },
     {
       "path": "assets/fonts/FONT_SOURCES.json",
-      "size": 2957
+      "size": 2957,
+      "sha256": "92d376fd842c85fce7e38f8ae506a5c05e3ab0dd31cdf4e7bdbbe40ec6ee0e3d"
     },
     {
       "path": "assets/fonts/MONTSERRAT-OFL.txt",
-      "size": 4509
+      "size": 4509,
+      "sha256": "f429f739351287574c0c3175a9222bb3e49c7cad3f568a04f2c08d74c107724e"
     },
     {
       "path": "assets/fonts/UNBOUNDED-OFL.txt",
-      "size": 4390
+      "size": 4390,
+      "sha256": "48a780bc857729859e54d1e691b05792894a26634edc1c4b5dbeabffe6941758"
     },
     {
       "path": "assets/fonts/montserrat-cyrillic-400-normal.woff2",
-      "size": 10980
+      "size": 10980,
+      "sha256": "b2e276e2401a1539faea5639b69df0bfed888c2b26178d990c7af37a420a678b"
     },
     {
       "path": "assets/fonts/montserrat-cyrillic-500-normal.woff2",
-      "size": 11128
+      "size": 11128,
+      "sha256": "7d2f0315ec3282dd809e7d3cefccaf501113a2076a18fa0293cf70b931a463ad"
     },
     {
       "path": "assets/fonts/montserrat-cyrillic-600-normal.woff2",
-      "size": 11120
+      "size": 11120,
+      "sha256": "12fe2b174f70b732553c46dae097be6a70b3f4a3d3cf305dbbbf236ac3b182b7"
     },
     {
       "path": "assets/fonts/montserrat-cyrillic-700-normal.woff2",
-      "size": 11160
+      "size": 11160,
+      "sha256": "c6880741986ff5648d6b6c08ebbacfe7ba77861a002bff2643b8af4221f40d34"
     },
     {
       "path": "assets/fonts/montserrat-cyrillic-800-normal.woff2",
-      "size": 11180
+      "size": 11180,
+      "sha256": "e9796e8de1954ee72e8d5de23d26bb8f577d4b903abae1fe11db8904279516ef"
     },
     {
       "path": "assets/fonts/montserrat-cyrillic-900-normal.woff2",
-      "size": 10908
+      "size": 10908,
+      "sha256": "d7197257ad3cbc21bf3527e867355206b2399d74652a88372a523e19df630edf"
     },
     {
       "path": "assets/fonts/montserrat-cyrillic-ext-400-normal.woff2",
-      "size": 11940
+      "size": 11940,
+      "sha256": "d2b0f62ec1a296267618c01aae126ee87540b548f647776cd12dd9ef2a533265"
     },
     {
       "path": "assets/fonts/montserrat-cyrillic-ext-500-normal.woff2",
-      "size": 11956
+      "size": 11956,
+      "sha256": "630211df38da5158405937d8f947e8f22b4c676185a673631667da59115c4692"
     },
     {
       "path": "assets/fonts/montserrat-cyrillic-ext-600-normal.woff2",
-      "size": 12060
+      "size": 12060,
+      "sha256": "5cdc3c54c076ef8ce55a8e21e306c9a57720c48b5f77853e28a6abd62aa23c15"
     },
     {
       "path": "assets/fonts/montserrat-cyrillic-ext-700-normal.woff2",
-      "size": 12060
+      "size": 12060,
+      "sha256": "b930b83240c1c3e2aa3c81e24b828c8e68bba79f7d23483f6346cdb5fce5173f"
     },
     {
       "path": "assets/fonts/montserrat-cyrillic-ext-800-normal.woff2",
-      "size": 12144
+      "size": 12144,
+      "sha256": "f61413d2fbb61e639bdb53e4e47b7b6f275953b408b18eeb0b200fb66d55c4cf"
     },
     {
       "path": "assets/fonts/montserrat-cyrillic-ext-900-normal.woff2",
-      "size": 11572
+      "size": 11572,
+      "sha256": "522cebe603650541da7c59fa833d4a5b110dee8fbc977c688ccb3b33ae2ac7f1"
     },
     {
       "path": "assets/fonts/montserrat-latin-400-normal.woff2",
-      "size": 18780
+      "size": 18780,
+      "sha256": "e66bcd2761ab6924b25ce70dafe10e57a39193c4fea1516730bd9cb5240af6c8"
     },
     {
       "path": "assets/fonts/montserrat-latin-500-normal.woff2",
-      "size": 18748
+      "size": 18748,
+      "sha256": "2b53300fb9471520df2f4905847fb7a209879b2029ae893c05c6ee346b1320cd"
     },
     {
       "path": "assets/fonts/montserrat-latin-600-normal.woff2",
-      "size": 18688
+      "size": 18688,
+      "sha256": "d857325c360f7128b347ca924c1974967aaa886ba47dad22e4042d6c38b26a83"
     },
     {
       "path": "assets/fonts/montserrat-latin-700-normal.woff2",
-      "size": 18824
+      "size": 18824,
+      "sha256": "f9d9e65b15372cebcafc3acd1e664a564c5c4b23278de4d5760de9a13c530371"
     },
     {
       "path": "assets/fonts/montserrat-latin-800-normal.woff2",
-      "size": 19012
+      "size": 19012,
+      "sha256": "ba826fb84c2e961578adf3a08b5778b87905d4443445d1d56d84f9f157d5ea4b"
     },
     {
       "path": "assets/fonts/montserrat-latin-900-normal.woff2",
-      "size": 18020
+      "size": 18020,
+      "sha256": "5b6958520638bb8609f9eacb17c4d189563efeae96d5da49f7c2043988697205"
     },
     {
       "path": "assets/fonts/montserrat-latin-ext-400-normal.woff2",
-      "size": 32272
+      "size": 32272,
+      "sha256": "30f166cea0894715f7b1342798306dd4206bc1d0331440d543f6e7f7fff04539"
     },
     {
       "path": "assets/fonts/montserrat-latin-ext-500-normal.woff2",
-      "size": 32292
+      "size": 32292,
+      "sha256": "e28f60d292d6574d2cb5c0b63fd3e893ae6d9a17d698afc9d037643dcfde4228"
     },
     {
       "path": "assets/fonts/montserrat-latin-ext-600-normal.woff2",
-      "size": 33192
+      "size": 33192,
+      "sha256": "1d8a4af6a50cc4f7561e8484d5bff39acda90016b8e8cbb5cee69c253bb02750"
     },
     {
       "path": "assets/fonts/montserrat-latin-ext-700-normal.woff2",
-      "size": 33532
+      "size": 33532,
+      "sha256": "a59fcc944a712e213a2f3bd994367129217c75f24a9155a5a3c1a0f5fd2cc9a7"
     },
     {
       "path": "assets/fonts/montserrat-latin-ext-800-normal.woff2",
-      "size": 33624
+      "size": 33624,
+      "sha256": "59f6ebeb71a14c64edc538eba78a010c1c9ef680a66a559ec3cf4b0d12db1a8b"
     },
     {
       "path": "assets/fonts/montserrat-latin-ext-900-normal.woff2",
-      "size": 32420
+      "size": 32420,
+      "sha256": "f4fcedc59ae41e24d67bcbd406c7a5f0b6e21ab57d2f4c198e1b1486f3832330"
     },
     {
       "path": "assets/fonts/montserrat-vietnamese-400-normal.woff2",
-      "size": 7896
+      "size": 7896,
+      "sha256": "575aa330708efd0385558f2649d4deedcfdab42059eeffbd5e53dcacddf614b0"
     },
     {
       "path": "assets/fonts/montserrat-vietnamese-500-normal.woff2",
-      "size": 7872
+      "size": 7872,
+      "sha256": "47a7333ad07599329dabfdfe109196e3b3ccd778fb223ec7b9e9facff4855da7"
     },
     {
       "path": "assets/fonts/montserrat-vietnamese-600-normal.woff2",
-      "size": 7904
+      "size": 7904,
+      "sha256": "c4875c3754e594f283a2dbec1086da519d784f559cb7062b6d4d9721b667acd8"
     },
     {
       "path": "assets/fonts/montserrat-vietnamese-700-normal.woff2",
-      "size": 7904
+      "size": 7904,
+      "sha256": "da6ed50e8a351c07e86d912207c8dd7a336c644ff6dbf2a40555a08f2406519e"
     },
     {
       "path": "assets/fonts/montserrat-vietnamese-800-normal.woff2",
-      "size": 7900
+      "size": 7900,
+      "sha256": "24f149c36fd7d848a1f7beb294f829a8764927181d3002f7b02021295e75f8fd"
     },
     {
       "path": "assets/fonts/montserrat-vietnamese-900-normal.woff2",
-      "size": 7832
+      "size": 7832,
+      "sha256": "ed5d0076eab375fb05ab8aed3aefecb6ae43c560f93fbeedb9931fbf2d2e2ac6"
     },
     {
       "path": "assets/fonts/unbounded-cyrillic-400-normal.woff2",
-      "size": 12208
+      "size": 12208,
+      "sha256": "31c19470c8a693349096bb2a4edb6bcad23d2c73b1af03178a738c7699cef001"
     },
     {
       "path": "assets/fonts/unbounded-cyrillic-500-normal.woff2",
-      "size": 12500
+      "size": 12500,
+      "sha256": "22c6ac3bf08e4d8bc627f2bc466038f97e87add08f634c535e12556697154596"
     },
     {
       "path": "assets/fonts/unbounded-cyrillic-600-normal.woff2",
-      "size": 12516
+      "size": 12516,
+      "sha256": "59a9e6e0927fa85035046eda050bbb7f44383c48cf18c00f1388cb201c635ddd"
     },
     {
       "path": "assets/fonts/unbounded-cyrillic-700-normal.woff2",
-      "size": 12812
+      "size": 12812,
+      "sha256": "fdc2a84527e81dd450c7476e982306ac083d72a800018716073cf3526d453641"
     },
     {
       "path": "assets/fonts/unbounded-cyrillic-800-normal.woff2",
-      "size": 13156
+      "size": 13156,
+      "sha256": "a535053f07dcb5d168ecea735d37ff7e49e8bbc0666cb62763dc58f5df12ff47"
     },
     {
       "path": "assets/fonts/unbounded-cyrillic-900-normal.woff2",
-      "size": 12900
+      "size": 12900,
+      "sha256": "47cf6520d0ac057a7b1d5deed45a0f7dfcfc569898e3d59942c31159c784ee3a"
     },
     {
       "path": "assets/fonts/unbounded-cyrillic-ext-400-normal.woff2",
-      "size": 1052
+      "size": 1052,
+      "sha256": "fa95fa96ac873a0d53865755f542bcddeae769f69b5afcc54d748dcab28b58f4"
     },
     {
       "path": "assets/fonts/unbounded-cyrillic-ext-500-normal.woff2",
-      "size": 1068
+      "size": 1068,
+      "sha256": "ccf780389853df8b5dd48c048234ea6ed04195f9559dd98b763cbc9d2f554b93"
     },
     {
       "path": "assets/fonts/unbounded-cyrillic-ext-600-normal.woff2",
-      "size": 1084
+      "size": 1084,
+      "sha256": "b9b7f9e289499cb2ffa242adadfa571cf745d25d612d9c612481fe1812f0d32b"
     },
     {
       "path": "assets/fonts/unbounded-cyrillic-ext-700-normal.woff2",
-      "size": 1036
+      "size": 1036,
+      "sha256": "296af6f0ab6bc1a93895060e40c68f8848bf92c1ec5cc6bed3c3b94b5395aefa"
     },
     {
       "path": "assets/fonts/unbounded-cyrillic-ext-800-normal.woff2",
-      "size": 1064
+      "size": 1064,
+      "sha256": "6ca6a4a371dab73c2791c00560459d59bf3e50bb38a975b4ae6548e8e7bfca53"
     },
     {
       "path": "assets/fonts/unbounded-cyrillic-ext-900-normal.woff2",
-      "size": 1068
+      "size": 1068,
+      "sha256": "41cfdf863abebf6039f19393d2ff94c1f3c28da82403127d6d4cf9807f6fc139"
     },
     {
       "path": "assets/fonts/unbounded-latin-400-normal.woff2",
-      "size": 19980
+      "size": 19980,
+      "sha256": "b0a91553c77f72f04eb4e8756003d926a0414c1710236caeb42fa4854bf6217e"
     },
     {
       "path": "assets/fonts/unbounded-latin-500-normal.woff2",
-      "size": 20740
+      "size": 20740,
+      "sha256": "be65bb9b1a340d1647024392fe3fbf3c21e595eda0395da3138932a01e6a183a"
     },
     {
       "path": "assets/fonts/unbounded-latin-600-normal.woff2",
-      "size": 20952
+      "size": 20952,
+      "sha256": "616878858361f1a4c44fc62b69e2391793a4dc063283cf225f5fc872dfdecdc8"
     },
     {
       "path": "assets/fonts/unbounded-latin-700-normal.woff2",
-      "size": 21092
+      "size": 21092,
+      "sha256": "477fa23002517a32f232316d859e7b672a044f20073babec8ed3dbcfdb8e041a"
     },
     {
       "path": "assets/fonts/unbounded-latin-800-normal.woff2",
-      "size": 21828
+      "size": 21828,
+      "sha256": "fe6d4ea7ed9647abf1e100a703786338d7898d56d0bedcdfdbc325e8fb02c834"
     },
     {
       "path": "assets/fonts/unbounded-latin-900-normal.woff2",
-      "size": 21112
+      "size": 21112,
+      "sha256": "d84ca6bdf94ebb12a42e2d6f08ceb3437c6b8b1411575fcd0a370d60b54c0040"
     },
     {
       "path": "assets/fonts/unbounded-latin-ext-400-normal.woff2",
-      "size": 45592
+      "size": 45592,
+      "sha256": "1bb66849641cc2e5be7f41988d4174196eaf7332183bbfff8a6e17cfc6e5a12c"
     },
     {
       "path": "assets/fonts/unbounded-latin-ext-500-normal.woff2",
-      "size": 49052
+      "size": 49052,
+      "sha256": "3b916fe1843ab4bbcd460b11d8a592624ab238b568dd96224b86753ff26d3b3b"
     },
     {
       "path": "assets/fonts/unbounded-latin-ext-600-normal.woff2",
-      "size": 49520
+      "size": 49520,
+      "sha256": "42cebe48e87b78b6f6980f062922a285f032259cc40193a6bed95e58a9fab565"
     },
     {
       "path": "assets/fonts/unbounded-latin-ext-700-normal.woff2",
-      "size": 49924
+      "size": 49924,
+      "sha256": "886ac002ab58cad1db918be20757a20c2a2abae4d0b76a92ab570f71ff70bebf"
     },
     {
       "path": "assets/fonts/unbounded-latin-ext-800-normal.woff2",
-      "size": 54284
+      "size": 54284,
+      "sha256": "c623718098663cd545bfd3329f30d79bff46c0764fa70b29dc6cf78c3f68d9cb"
     },
     {
       "path": "assets/fonts/unbounded-latin-ext-900-normal.woff2",
-      "size": 52500
+      "size": 52500,
+      "sha256": "def8fe6f8e8f706a7882b8ae1e074df640d8c0f1724190742f48fe99fd6a499c"
     },
     {
       "path": "assets/fonts/unbounded-vietnamese-400-normal.woff2",
-      "size": 5892
+      "size": 5892,
+      "sha256": "d26ebab58b22fc1a370e1a1e493bf04411ea4e5394b8e0fb03cc4d048c8a36b7"
     },
     {
       "path": "assets/fonts/unbounded-vietnamese-500-normal.woff2",
-      "size": 6124
+      "size": 6124,
+      "sha256": "9da0a302a62c5a6d0bcea3e17e1063885e42f31e5e9f01dd623b79f79109c888"
     },
     {
       "path": "assets/fonts/unbounded-vietnamese-600-normal.woff2",
-      "size": 6064
+      "size": 6064,
+      "sha256": "3752321af5793aa8196909a68853a04dce02e016256bd67535da561f74860c4e"
     },
     {
       "path": "assets/fonts/unbounded-vietnamese-700-normal.woff2",
-      "size": 6128
+      "size": 6128,
+      "sha256": "555c025f3b62c971a296cc9c008106233325931537dfb83e9d99df24cd785551"
     },
     {
       "path": "assets/fonts/unbounded-vietnamese-800-normal.woff2",
-      "size": 6608
+      "size": 6608,
+      "sha256": "f581d893c27caaca1d37abf029678cddbe1e88fa4e3c833527d2c66ac38a10e8"
     },
     {
       "path": "assets/fonts/unbounded-vietnamese-900-normal.woff2",
-      "size": 6288
+      "size": 6288,
+      "sha256": "92faaf013cd65e61b7b25136e8251921ddb4514aef8f1d9ddfa3be69a23bbed3"
     },
     {
       "path": "assets/galaxy-hero-v16-11.webp",
-      "size": 614276
+      "size": 614276,
+      "sha256": "950a231a9e428def11de03c4a74aa728c9685dc261daa6993a8f9f8ffd86d1d8"
     },
     {
       "path": "assets/galaxy_bg_4k.webp",
-      "size": 490606
+      "size": 490606,
+      "sha256": "c98b1cc31a8fe86fb43f3251c9709e086ce7098ac493bc3b0e4a98269aefeebe"
     },
     {
       "path": "assets/icons/2048-active.webp",
-      "size": 69564
+      "size": 69564,
+      "sha256": "fab00d1b6c537386fb61a8f099768d91e71f2c6ec711c7a92bbffefb0caf3396"
     },
     {
       "path": "assets/icons/2048.webp",
-      "size": 67906
+      "size": 67906,
+      "sha256": "a580e9e669a36d34dd9ada52130ebf157d0cfb3a17ee794755cab03e52216b40"
     },
     {
       "path": "assets/icons/backgammon-active.webp",
-      "size": 61340
+      "size": 61340,
+      "sha256": "670233dc2a7af50ba3b2ff9ee6d6ba0a613f7b9d76161b50ddd002e70fd8560d"
     },
     {
       "path": "assets/icons/backgammon.webp",
-      "size": 58258
+      "size": 58258,
+      "sha256": "0cc80ea82e06274b00989d2df424b89c19ae34794ce17d9a2c7f44c7a919c54a"
     },
     {
       "path": "assets/icons/checkers-active.webp",
-      "size": 61364
+      "size": 61364,
+      "sha256": "9f8bb59b9b7d5b58d6ac061d737c5d10eecf669e256a582dbf440c9d92191f0c"
     },
     {
       "path": "assets/icons/checkers.webp",
-      "size": 62336
+      "size": 62336,
+      "sha256": "db257bfc188479f90ec59fd2976fae958bb71b9ab0c113c06e8049995fb81604"
     },
     {
       "path": "assets/icons/chess-active.webp",
-      "size": 67384
+      "size": 67384,
+      "sha256": "5273ab58555b8a08412a8c7d67537df8dcd26e8537335cc8fa006710cebb415e"
     },
     {
       "path": "assets/icons/chess.webp",
-      "size": 60000
+      "size": 60000,
+      "sha256": "a402b7a77f07b916b33fabed0ccf13559e858667249bbe8ddbb324768b205983"
     },
     {
       "path": "assets/icons/connect4-active.webp",
-      "size": 56560
+      "size": 56560,
+      "sha256": "4d555154251a33e1c4159891e0ee4288b4d90063e72980583102f7e3c5d7f355"
     },
     {
       "path": "assets/icons/connect4.webp",
-      "size": 52702
+      "size": 52702,
+      "sha256": "14decfad8be82c0aec9da271ba197b7e68b438d27ac9d7155b2598cc74e182a5"
     },
     {
       "path": "assets/icons/corners-active.webp",
-      "size": 59630
+      "size": 59630,
+      "sha256": "fc87aebef029a35b9fd54e83ffebf1ed32a9d5fe263ba3624ac284918b4906ad"
     },
     {
       "path": "assets/icons/corners.webp",
-      "size": 57542
+      "size": 57542,
+      "sha256": "a74598562f828befad2c1a80bd6297f0a3f359ae1769cdfac0d0a10c56a349c2"
     },
     {
       "path": "assets/icons/domino-active.webp",
-      "size": 67900
+      "size": 67900,
+      "sha256": "f1e355cfba3bdd50f834212f8237597e76c3cc1b7ac56400d385e79720bfabdf"
     },
     {
       "path": "assets/icons/domino.webp",
-      "size": 65520
+      "size": 65520,
+      "sha256": "27576dd82955d600c647cb110143efcbbc2def571e54010463f69c5479e04649"
+    },
+    {
+      "path": "assets/icons/energy-capsules-active.png",
+      "size": 81630,
+      "sha256": "aa6f860f49bb3f5560f636e2bf04dda985b24f0333f60dadca10d54047a0079d"
     },
     {
       "path": "assets/icons/energy-capsules-active.webp",
-      "size": 254922
+      "size": 4827,
+      "sha256": "2dcacf66ead9b2369bd4efdd9ee766d5d0fe4a6d467514186c08284f8f969694"
+    },
+    {
+      "path": "assets/icons/energy-capsules.png",
+      "size": 80511,
+      "sha256": "aec3f08e444601236b66bb0c6c8abdca08a0d8592f07f3dea3b2ddcf3cb03b01"
     },
     {
       "path": "assets/icons/energy-capsules.webp",
-      "size": 252040
+      "size": 7500,
+      "sha256": "ccee5dc6da03392a199078e04799730c086fdda78f27f1418d06e73fb697206a"
     },
     {
       "path": "assets/icons/fifteen-active.webp",
-      "size": 59310
+      "size": 59310,
+      "sha256": "37356a8a64dfe1cea98c380bf4526a6743b9323173d22967726c93aa38a3e0d7"
     },
     {
       "path": "assets/icons/fifteen.webp",
-      "size": 56458
+      "size": 56458,
+      "sha256": "560bcb1765385165621695932b50805fb7a3ae7c8725943266aeb448e55c7b8a"
     },
     {
       "path": "assets/icons/gomoku-active.webp",
-      "size": 54624
+      "size": 54624,
+      "sha256": "2c7bd6f0ebec36e165bc248403503807d80bc93d4983a669dd99b6d227bfae93"
     },
     {
       "path": "assets/icons/gomoku.webp",
-      "size": 53076
+      "size": 53076,
+      "sha256": "5f50a8d617e431b66b8743973253ac4a258dd688e7891046b414a31c1d19fea8"
     },
     {
       "path": "assets/icons/mahjong-active.webp",
-      "size": 60774
+      "size": 60774,
+      "sha256": "8638d2552194137b8396e86f7eed79af856cac908f3f3786ac364083d2189865"
     },
     {
       "path": "assets/icons/mahjong.webp",
-      "size": 57022
+      "size": 57022,
+      "sha256": "3c3e7d7ec898102a90fcf15f6554e6c38be4b1d55284c6496b5fd5c7f8a4f083"
     },
     {
       "path": "assets/icons/memory-active.webp",
-      "size": 60636
+      "size": 60636,
+      "sha256": "9db3b98ef829e87c0f7522e7d6d69e1736af2a20f583873b6a2ddb5a5f3a3741"
     },
     {
       "path": "assets/icons/memory.webp",
-      "size": 59440
+      "size": 59440,
+      "sha256": "e066eab63330ec87b8d11c369c388657e68db3ee24ce1c35f9d71b79fe8f66b4"
     },
     {
       "path": "assets/icons/reversi-active.webp",
-      "size": 61416
+      "size": 61416,
+      "sha256": "9a4d2560c6002fbb64a120d7d11b666a790abdc22d21e26ef1889cd1379aed63"
     },
     {
       "path": "assets/icons/reversi.webp",
-      "size": 58290
+      "size": 58290,
+      "sha256": "2a21f3356dbadef223e9f01ac6c5a42edf49396db06e4f14ac82fbf11436b832"
     },
     {
       "path": "assets/icons/solitaire-active.webp",
-      "size": 63980
+      "size": 63980,
+      "sha256": "a4acf722f2fd324743c811b69f072be456de25736dc6d53e7338be6d227e47e7"
     },
     {
       "path": "assets/icons/solitaire.webp",
-      "size": 62082
+      "size": 62082,
+      "sha256": "72f4c49c690ed8ed4f7818e970937276617311512d37379742549186a173f8dd"
+    },
+    {
+      "path": "assets/icons/space-mail-active.png",
+      "size": 2010200,
+      "sha256": "2de0d2b7ccd03a5c83296d4fd500b282c8331059223f1336ccbed77f8ce52523"
+    },
+    {
+      "path": "assets/icons/space-mail-active.webp",
+      "size": 80690,
+      "sha256": "e7b4628a30a46708444632fbaa3f4d9d6c2d56d3b46493fde80ef347967ee1f3"
+    },
+    {
+      "path": "assets/icons/space-mail.png",
+      "size": 2081507,
+      "sha256": "f0a2edd8b172d13686475a5ddd4795aa261087dcb433b86029e9460449ae8bff"
+    },
+    {
+      "path": "assets/icons/space-mail.webp",
+      "size": 90688,
+      "sha256": "487c7a43e88eac4a3da0e3e1dde21d8483f4845fac32c03b3a86e95f83a62443"
     },
     {
       "path": "assets/icons/starbattle-active.webp",
-      "size": 67496
+      "size": 67496,
+      "sha256": "1f3028ac535e731d3b7228481e105aa83f3ae068e0ca1a2ea3a900c464982a53"
     },
     {
       "path": "assets/icons/starbattle.webp",
-      "size": 64804
+      "size": 64804,
+      "sha256": "79e5b8ffa71d00389e0e87aa7903b25d81af6d1f0c840f94728ce8c3db1e0ab9"
     },
     {
       "path": "assets/icons/sudoku-active.webp",
-      "size": 60848
+      "size": 60848,
+      "sha256": "3b7d9a382ad88e6be169a96a0cb9dbf097eb3d0d15ddd3ead191001637631ac9"
     },
     {
       "path": "assets/icons/sudoku.webp",
-      "size": 59550
+      "size": 59550,
+      "sha256": "f40c75ea24180f5da5e61354c79b695324279e3e9b197d9b387c1201f6c0100a"
     },
     {
       "path": "assets/icons/tictactoe-active.webp",
-      "size": 67298
+      "size": 67298,
+      "sha256": "c2dfe4b1bb6d53d29ec7bdb80431741746e5b95c73220a3870bbf98aea1f23bf"
     },
     {
       "path": "assets/icons/tictactoe.webp",
-      "size": 62768
+      "size": 62768,
+      "sha256": "add0236ca8cdb21df54e1382d7f75ecb164dd5b5eda99b529e33ec68fa071b01"
     },
     {
       "path": "assets/source/galaxy-hero-v16-11.png",
-      "size": 2320489
+      "size": 2320489,
+      "sha256": "340076a38c7c904d8ccc02318041478bf829a1c42f8214ad31fc965c3e08668c"
     },
     {
       "path": "assets/splashes/2048.webp",
-      "size": 387958
+      "size": 387958,
+      "sha256": "189a9b4df7cebc241c254fe38b53cbdf2b33b717d25ef0a86879322c0ecc7be0"
     },
     {
       "path": "assets/splashes/backgammon.webp",
-      "size": 389664
+      "size": 389664,
+      "sha256": "483b25175e48a4c238b7555cdc6815446afa389feb5fe198952b2e9a639a09d3"
     },
     {
       "path": "assets/splashes/checkers.webp",
-      "size": 370294
+      "size": 370294,
+      "sha256": "5bc4219538b566440c2df297beff0882d921fec9440ad72b0da431a39a254c01"
     },
     {
       "path": "assets/splashes/chess.webp",
-      "size": 393954
+      "size": 393954,
+      "sha256": "452a715b63d9ba55c1717f8786ddb67af4550d0d7558a373ef89d303b4ab95e5"
     },
     {
       "path": "assets/splashes/connect4.webp",
-      "size": 372252
+      "size": 372252,
+      "sha256": "2d4e349728bf2507d6e5dea18af6235e8d2f1363d1d1c08561aef8ed6d35d16c"
     },
     {
       "path": "assets/splashes/corners.webp",
-      "size": 385262
+      "size": 385262,
+      "sha256": "a39f8bcefb5a4da5ae3dbe4f05c0bda2cceeedc5e0e1aebc899ce8a491270b14"
     },
     {
       "path": "assets/splashes/domino.webp",
-      "size": 371024
+      "size": 371024,
+      "sha256": "135f330f8ceb40952aeaba5eb2a715c988a0444608a2d047b60e24a79739aae1"
+    },
+    {
+      "path": "assets/splashes/energy-capsules.png",
+      "size": 34353,
+      "sha256": "cfaaf5044c2e0ee46f06037c0e666c2a4816475641534a277dc16b0090ecf6cf"
     },
     {
       "path": "assets/splashes/energy-capsules.webp",
-      "size": 460584
+      "size": 460584,
+      "sha256": "223380dade15d361e971913fcf69276f3dec0fe79a58f387097e29d966981530"
     },
     {
       "path": "assets/splashes/fifteen.webp",
-      "size": 345790
+      "size": 345790,
+      "sha256": "c83cd29e90de63f4204bbec42d36f6f9eafc2b5df4e5c00713b836f494917731"
     },
     {
       "path": "assets/splashes/gomoku.webp",
-      "size": 341880
+      "size": 341880,
+      "sha256": "6ab7f535687d060a50b7c12b545915f09ce4ed01d3cf7760985a712d4fcac469"
     },
     {
       "path": "assets/splashes/mahjong.webp",
-      "size": 322242
+      "size": 322242,
+      "sha256": "1923679fd8b2929e9ae24f4390e836ff7a57f53a9df93ac95ff7ce4584e455a0"
     },
     {
       "path": "assets/splashes/memory.webp",
-      "size": 367420
+      "size": 367420,
+      "sha256": "5eae3684bc1311208c3fce27fac6b0822dcaefff40b61ba3f887f2ff3d124be4"
     },
     {
       "path": "assets/splashes/reversi.webp",
-      "size": 317084
+      "size": 317084,
+      "sha256": "52466694c899d9b8dfdb90ec253c20ee83b8067d88b10b812a015f30402dd2c9"
     },
     {
       "path": "assets/splashes/solitaire.webp",
-      "size": 323082
+      "size": 323082,
+      "sha256": "56acc76552c0836da867ec1d4ed4aa6b55ef3737fdc2df602d32687f699e58c8"
+    },
+    {
+      "path": "assets/splashes/space-mail.png",
+      "size": 2775584,
+      "sha256": "efb7ad43bbd7fac3e046fee8f8cde4320832daad68c6459880f40787542a06d0"
+    },
+    {
+      "path": "assets/splashes/space-mail.webp",
+      "size": 506156,
+      "sha256": "66696f33abab884b20df982670b43d053ac32d01f7563c155239627f648f358b"
     },
     {
       "path": "assets/splashes/starbattle.webp",
-      "size": 397768
+      "size": 397768,
+      "sha256": "509b688468db60037283b41afaf27b7178e2a2085691058a0c0f76ae6e1aedb4"
     },
     {
       "path": "assets/splashes/sudoku.webp",
-      "size": 385508
+      "size": 385508,
+      "sha256": "fe877ded24af44f17c3f2a42a614d60e8d9ee0c1b3e49e3fac9085d980cd59f3"
     },
     {
       "path": "assets/splashes/tictactoe.webp",
-      "size": 370436
+      "size": 370436,
+      "sha256": "bf275ebe63d243c27b28c86f00b54bc74b7d0ff1d0e15beef42af3051e1e9153"
     },
     {
       "path": "assets/titles/2048.png",
-      "size": 663573
+      "size": 663573,
+      "sha256": "4d259d05a15699b7cdca45566e41f5d3b2979fc541ad59d453dc321a38eb1189"
     },
     {
       "path": "assets/titles/2048.svg",
-      "size": 4705
+      "size": 4705,
+      "sha256": "0eb979debf6e7efb5b8a00eb0738de7c4aaf9b059a0e5ee0ce0c01ae8ea5b1af"
     },
     {
       "path": "assets/titles/backgammon.png",
-      "size": 656840
+      "size": 656840,
+      "sha256": "f7252f28406f1445ea7254530454013d7ef466031b1ee91262c22199627c6fe6"
     },
     {
       "path": "assets/titles/backgammon.svg",
-      "size": 5053
+      "size": 5053,
+      "sha256": "9f3b78df9c518fbbc1da386659096a48022635a322b58558127de42003349107"
     },
     {
       "path": "assets/titles/checkers.png",
-      "size": 605182
+      "size": 605182,
+      "sha256": "6990ddcad26ee4296718785ba2f2c17a85c5690b8786a5b14eaf7f866553f485"
     },
     {
       "path": "assets/titles/checkers.svg",
-      "size": 3517
+      "size": 3517,
+      "sha256": "e94d6d2b5f64d8b18e2852166857bf06807c10d32b1cdb37776aa198d190fb67"
     },
     {
       "path": "assets/titles/chess.png",
-      "size": 657456
+      "size": 657456,
+      "sha256": "c37bec56266c5210bd995a67ea71e18f917f6742eea0e14d8142eedbbcaac4fe"
     },
     {
       "path": "assets/titles/chess.svg",
-      "size": 5209
+      "size": 5209,
+      "sha256": "305e6f7150cff463e88127a5c5098634bd62e8712cb05b3757c08a5645312a61"
     },
     {
       "path": "assets/titles/connect4.png",
-      "size": 543844
+      "size": 543844,
+      "sha256": "59e9b7272a769efbeb36d6e580c305327e7b36784072c6340002c1420a9e27ee"
     },
     {
       "path": "assets/titles/connect4.svg",
-      "size": 8970
+      "size": 8970,
+      "sha256": "6982b26b32099aa737e2f88c13e965c6174e1e32beb11c31bb5a66c80d5b800d"
     },
     {
       "path": "assets/titles/corners.png",
-      "size": 611674
+      "size": 611674,
+      "sha256": "855c57037733cc6ae4194473551604b322a2ada3d0be6c092b286ca2ef2fa267"
     },
     {
       "path": "assets/titles/corners.svg",
-      "size": 3857
+      "size": 3857,
+      "sha256": "d10be4a91511c350aeb60455c8b2e1ed98082df01e3779eb79c4c47738edcb6e"
     },
     {
       "path": "assets/titles/domino.png",
-      "size": 592316
+      "size": 592316,
+      "sha256": "3ab0bd9283eafe13f6700b0bd906417cf6da0354b9a8285d4c39dc367f4714ef"
     },
     {
       "path": "assets/titles/domino.svg",
-      "size": 4840
+      "size": 4840,
+      "sha256": "29639699a398d2a6c9c7eb8c087d585eb947f15e39bc3a711c1a398c82a0be52"
     },
     {
       "path": "assets/titles/energy-capsules.png",
-      "size": 191017
+      "size": 114849,
+      "sha256": "a31f7c387e61b255e33889158c3a4e908247b4a459405f66c6f42eaa8509173d"
     },
     {
       "path": "assets/titles/fifteen.png",
-      "size": 627475
+      "size": 627475,
+      "sha256": "a0ee62588291f78b6b0364e1279826d8313004229e2998a0fcba13381efd6b22"
     },
     {
       "path": "assets/titles/fifteen.svg",
-      "size": 4600
+      "size": 4600,
+      "sha256": "86d0032e97a45c5afdba83f579e8ccecbcd1ec41fff5d131aa37fd269d6ebf0c"
     },
     {
       "path": "assets/titles/gomoku.png",
-      "size": 634485
+      "size": 634485,
+      "sha256": "45f84d645ff7766a77fe28e523695e9b7232b1850a8c9d9bbe2d1b59c24b7372"
     },
     {
       "path": "assets/titles/gomoku.svg",
-      "size": 6197
+      "size": 6197,
+      "sha256": "3c30e34b6177aacfd1c8bd77f31c45b733070efbb8682170b72b1040b15110cb"
     },
     {
       "path": "assets/titles/mahjong.png",
-      "size": 617851
+      "size": 617851,
+      "sha256": "54fa1eadd8eefcc7378fe667b1c76656e32bdf7281f01b07334cf3f0c34df1b5"
     },
     {
       "path": "assets/titles/mahjong.svg",
-      "size": 5157
+      "size": 5157,
+      "sha256": "730c0502d4c71cf848f19f1db400b67a82ba08c03176e9297b5dbd423b7c9b36"
     },
     {
       "path": "assets/titles/memory.png",
-      "size": 628131
+      "size": 628131,
+      "sha256": "0638bb717ee2f20933d016d904922d35dad1a8b7cd60fa40a5644d9f1e0d0de2"
     },
     {
       "path": "assets/titles/memory.svg",
-      "size": 5371
+      "size": 5371,
+      "sha256": "0436c45ed699a7c5e465c5c8462aaccd4fd26df2fc21cc9954b21a6eea32b76a"
     },
     {
       "path": "assets/titles/reversi.png",
-      "size": 571621
+      "size": 571621,
+      "sha256": "40f202d40178df147318b565e1a420072025e8269ad4c6347fadd3196ab5fa1c"
     },
     {
       "path": "assets/titles/reversi.svg",
-      "size": 6933
+      "size": 6933,
+      "sha256": "e1472d7d6ce21153656e248d3d8c58b3626a241d26288e84abdd3f8f77705cd1"
     },
     {
       "path": "assets/titles/solitaire.png",
-      "size": 634507
+      "size": 634507,
+      "sha256": "eec2bfe48a2b62dae2464d7475fd272d5b7f32731f6d44f41511252fb32d92ef"
     },
     {
       "path": "assets/titles/solitaire.svg",
-      "size": 5908
+      "size": 5908,
+      "sha256": "ce69eb4609b59a824948fcf231364d9c58fe0ba71679b137d79a5fa670d67937"
     },
     {
       "path": "assets/titles/source/2048.svg",
-      "size": 4000
+      "size": 4000,
+      "sha256": "a682e373c5442b18fdf6fb9767277b4500d27c91dfd609a8612aca64e77106c9"
     },
     {
       "path": "assets/titles/source/backgammon.svg",
-      "size": 4316
+      "size": 4316,
+      "sha256": "b15fda085d9f1eb40e67e3f1975d4d34246253a21c25fa9a356e9631dd323976"
     },
     {
       "path": "assets/titles/source/checkers.svg",
-      "size": 2838
+      "size": 2838,
+      "sha256": "246385c4a3c3744caa7367964349a349363b1838708195ace57564a9dbf4404c"
     },
     {
       "path": "assets/titles/source/chess.svg",
-      "size": 4618
+      "size": 4618,
+      "sha256": "a8fed8f31f74c2bb20d85c9c11c3c622a279f63dfc0839e40538c93758b2cf9b"
     },
     {
       "path": "assets/titles/source/connect4.svg",
-      "size": 8270
+      "size": 8270,
+      "sha256": "beb37557e8e3df5768463bf4bbc785a7a61a9263facc2c00f9fc43c9c32c35de"
     },
     {
       "path": "assets/titles/source/corners.svg",
-      "size": 3236
+      "size": 3236,
+      "sha256": "72f11d44f7968c534122064699b3a5d045ec7439769f2825e3744659b64de2cb"
     },
     {
       "path": "assets/titles/source/domino.svg",
-      "size": 4136
+      "size": 4136,
+      "sha256": "cb25c6f5d77cad0f7ecb41fb05b656d5fc1321d4858d893a80321869fe8da4e8"
     },
     {
       "path": "assets/titles/source/fifteen.svg",
-      "size": 3864
+      "size": 3864,
+      "sha256": "f6698d79129879ea8ee34207e9f5122023ffadce2e4b62bc53ac46edd7e7f303"
     },
     {
       "path": "assets/titles/source/gomoku.svg",
-      "size": 5456
+      "size": 5456,
+      "sha256": "8da0f041d2a9358b5e92822180008c1f467afbe71a37f868182c6831de67ccf8"
     },
     {
       "path": "assets/titles/source/mahjong.svg",
-      "size": 4520
+      "size": 4520,
+      "sha256": "bf477f4db522f5144ddc3f6fa4db7f3bf34cbda97eba604909d85a49f71df722"
     },
     {
       "path": "assets/titles/source/memory.svg",
-      "size": 4602
+      "size": 4602,
+      "sha256": "6e2b90de31139a981142b92533f78796cb1dbc84b761ad3a9118ae614ebb3005"
     },
     {
       "path": "assets/titles/source/reversi.svg",
-      "size": 6350
+      "size": 6350,
+      "sha256": "230d8d74be4139825acbccf5bd5c462c469be84470da2815678aa1aba8ff6e18"
     },
     {
       "path": "assets/titles/source/solitaire.svg",
-      "size": 5316
+      "size": 5316,
+      "sha256": "d33f319d08ea0985fd52f0b59de1e40171d49ff19864c1d165a4c8c7cd91710f"
     },
     {
       "path": "assets/titles/source/starbattle.svg",
-      "size": 10694
+      "size": 10694,
+      "sha256": "cb6f928e5ab1c01c2cf3209d2e86aa1189a094d0361d65a3ccd6dccc14606051"
     },
     {
       "path": "assets/titles/source/sudoku.svg",
-      "size": 4680
+      "size": 4680,
+      "sha256": "c6f1989f3ce7538a64f9f80d96108ef65a862edab5e60dcdd056adec7c410e78"
     },
     {
       "path": "assets/titles/source/tictactoe.svg",
-      "size": 7822
+      "size": 7822,
+      "sha256": "0dacc3806f4d3c88187b6e41555339fb83be2a97988e00a968dc9732c94dccb3"
+    },
+    {
+      "path": "assets/titles/space-mail.png",
+      "size": 305865,
+      "sha256": "f3a9552d434bb460c84b3ef43b9ccf58a949920ac0618f1d2280f4e444c08b43"
     },
     {
       "path": "assets/titles/starbattle.png",
-      "size": 643128
+      "size": 643128,
+      "sha256": "b679a3c8b5cfb8af4299386a2a3cb4b069775b3005b8523b84f5a60c283ddcfa"
     },
     {
       "path": "assets/titles/starbattle.svg",
-      "size": 11321
+      "size": 11321,
+      "sha256": "5abbc82a9856dacb496c28a40d029b31f8e3ef38134bceb92e706d2aee9b5f01"
     },
     {
       "path": "assets/titles/sudoku.png",
-      "size": 674518
+      "size": 674518,
+      "sha256": "2729679c34eaf5a82a2f752bfa0cf7ccd1a6ef771301c9cfcb49be090b85786c"
     },
     {
       "path": "assets/titles/sudoku.svg",
-      "size": 5359
+      "size": 5359,
+      "sha256": "2f916911b48f3aa967995ec43c185b88564d689451afb16d2961ac565a28b79b"
     },
     {
       "path": "assets/titles/tictactoe.png",
-      "size": 582910
+      "size": 582910,
+      "sha256": "ba2133390589735d49a7fbcdb8efbf301cb5a9dde896d1138b7a6fd5684911a5"
     },
     {
       "path": "assets/titles/tictactoe.svg",
-      "size": 8474
+      "size": 8474,
+      "sha256": "385659737651a3e310c95a230d7e1fe766c89f05a0c5689c10230fff57e46b43"
     },
     {
       "path": "assets/v12_platform_bg.webp",
-      "size": 297484
+      "size": 297484,
+      "sha256": "ed3e5c7f2bf636684939e96d6569cf5481501fd3579d4a2fcc258cfd2d7095a1"
     },
     {
       "path": "assets/v13_space_bg.webp",
-      "size": 264598
+      "size": 264598,
+      "sha256": "2ee2fdfed70387a568bb836eb4b5523d8b087d5c2d526a7d5de7d7acc0dfcf34"
     },
     {
       "path": "assets/v14_portal_art.webp",
-      "size": 161416
+      "size": 161416,
+      "sha256": "a56b45eca7c7de5fbd2f373359a70562b7c508ffab0df1802a4902d32095203a"
     },
     {
       "path": "assets/v14_space_bg.webp",
-      "size": 275004
+      "size": 275004,
+      "sha256": "104da6f002443443100015e376c28398ce997b51f6961c8205b56da2bd1879c9"
     },
     {
       "path": "catalog.generated.js",
-      "size": 8278
+      "size": 8896,
+      "sha256": "c13fdd981f1c7bb2a2479e47ba89733090f5bfd99f9114db76ee8966b4548c37"
     },
     {
       "path": "game-lifecycle.js",
-      "size": 1576
+      "size": 2557,
+      "sha256": "104f257e7847c3f0819c2a264c81591db623172d7bde946daef4d34896527743"
     },
     {
       "path": "game-shell.css",
-      "size": 31557
+      "size": 32451,
+      "sha256": "4e3786172bb7c8ebaf27d119c1faf5954f31b749caf1a92385d429b13767fa56"
     },
     {
       "path": "game-shell.js",
-      "size": 6192
-    },
-    {
-      "path": "games/2048/assets/cat_head.png",
-      "size": 359736
-    },
-    {
-      "path": "games/2048/assets/dog_head.png",
-      "size": 362170
-    },
-    {
-      "path": "games/2048/assets/splash_2048.png",
-      "size": 2133712
-    },
-    {
-      "path": "games/2048/index.html",
-      "size": 29655
-    },
-    {
-      "path": "games/backgammon/index.html",
-      "size": 48386
-    },
-    {
-      "path": "games/checkers/assets/space_logo.png",
-      "size": 1928904
-    },
-    {
-      "path": "games/checkers/index.html",
-      "size": 41088
-    },
-    {
-      "path": "games/chess/assets/logo.png",
-      "size": 1347053
-    },
-    {
-      "path": "games/chess/index.html",
-      "size": 73257
-    },
-    {
-      "path": "games/connect4/assets/splash_custom.png",
-      "size": 1578020
-    },
-    {
-      "path": "games/connect4/index.html",
-      "size": 36079
-    },
-    {
-      "path": "games/corners/assets/splash_custom.png",
-      "size": 2470096
-    },
-    {
-      "path": "games/corners/index.html",
-      "size": 31676
-    },
-    {
-      "path": "games/domino/assets/splash.png",
-      "size": 2500120
-    },
-    {
-      "path": "games/domino/index.html",
-      "size": 47620
-    },
-    {
-      "path": "games/energy-capsules/ASSET_MANIFEST_energy-capsules.json",
-      "size": 1331
-    },
-    {
-      "path": "games/energy-capsules/SPEC_energy-capsules.md",
-      "size": 6088
-    },
-    {
-      "path": "games/energy-capsules/assets/catalog-composition-source.png",
-      "size": 418358
-    },
-    {
-      "path": "games/energy-capsules/game.css",
-      "size": 11501
-    },
-    {
-      "path": "games/energy-capsules/game.js",
-      "size": 11356
-    },
-    {
-      "path": "games/energy-capsules/index.html",
-      "size": 7315
-    },
-    {
-      "path": "games/fifteen/assets/splash_fifteen.png",
-      "size": 2221809
-    },
-    {
-      "path": "games/fifteen/index.html",
-      "size": 26090
-    },
-    {
-      "path": "games/gomoku/assets/cat_head.png",
-      "size": 359736
-    },
-    {
-      "path": "games/gomoku/assets/dog_head.png",
-      "size": 362170
-    },
-    {
-      "path": "games/gomoku/assets/splash_poster.png",
-      "size": 2051688
-    },
-    {
-      "path": "games/gomoku/index.html",
-      "size": 33464
-    },
-    {
-      "path": "games/mahjong/assets/splash.png",
-      "size": 2493905
-    },
-    {
-      "path": "games/mahjong/assets/tile_cat.png",
-      "size": 140328
-    },
-    {
-      "path": "games/mahjong/assets/tile_cat_helmet.png",
-      "size": 150592
-    },
-    {
-      "path": "games/mahjong/assets/tile_comet.png",
-      "size": 126091
-    },
-    {
-      "path": "games/mahjong/assets/tile_dog.png",
-      "size": 147922
-    },
-    {
-      "path": "games/mahjong/assets/tile_dog_helmet.png",
-      "size": 150998
-    },
-    {
-      "path": "games/mahjong/assets/tile_duo.png",
-      "size": 146725
-    },
-    {
-      "path": "games/mahjong/assets/tile_galaxy.png",
-      "size": 152360
-    },
-    {
-      "path": "games/mahjong/assets/tile_helmet.png",
-      "size": 139206
-    },
-    {
-      "path": "games/mahjong/assets/tile_moon.png",
-      "size": 120449
-    },
-    {
-      "path": "games/mahjong/assets/tile_paw_orange.png",
-      "size": 141597
-    },
-    {
-      "path": "games/mahjong/assets/tile_paw_pink.png",
-      "size": 134631
-    },
-    {
-      "path": "games/mahjong/assets/tile_planet.png",
-      "size": 122546
-    },
-    {
-      "path": "games/mahjong/assets/tile_rocket.png",
-      "size": 126399
-    },
-    {
-      "path": "games/mahjong/assets/tile_satellite.png",
-      "size": 150277
-    },
-    {
-      "path": "games/mahjong/assets/tile_star.png",
-      "size": 108324
-    },
-    {
-      "path": "games/mahjong/assets/tile_ufo.png",
-      "size": 135296
-    },
-    {
-      "path": "games/mahjong/index.html",
-      "size": 26467
-    },
-    {
-      "path": "games/memory/assets/splash_v2.png",
-      "size": 2573212
-    },
-    {
-      "path": "games/memory/index.html",
-      "size": 26768
-    },
-    {
-      "path": "games/reversi/index.html",
-      "size": 35811
-    },
-    {
-      "path": "games/solitaire/assets/splash.png",
-      "size": 2450000
-    },
-    {
-      "path": "games/solitaire/index.html",
-      "size": 30937
-    },
-    {
-      "path": "games/starbattle/index.html",
-      "size": 43753
-    },
-    {
-      "path": "games/sudoku/assets/splash.png",
-      "size": 2493854
-    },
-    {
-      "path": "games/sudoku/index.html",
-      "size": 29436
-    },
-    {
-      "path": "games/tictactoe/index.html",
-      "size": 32138
+      "size": 6624,
+      "sha256": "f96fa7eb149460d54462f42a0da63f0384c40aa14bee97bf7ea7c84abf811a81"
     },
     {
       "path": "games-manifest.json",
-      "size": 10802
+      "size": 11589,
+      "sha256": "7fa623d55dce8a4d4d26245a3bbcc4a34ede63ffe972a8c647c41d1f7801c1cc"
+    },
+    {
+      "path": "games/2048/assets/cat_head.png",
+      "size": 359736,
+      "sha256": "3cd3c46f81fd5cc4ee44af650b56d2125d9c993b87787e3770e5dd69487d2ba1"
+    },
+    {
+      "path": "games/2048/assets/dog_head.png",
+      "size": 362170,
+      "sha256": "707e234bccb1ae16a4bba9419642afc03bb2e85124a635e6d19a60a4c616e49f"
+    },
+    {
+      "path": "games/2048/assets/splash_2048.png",
+      "size": 2133712,
+      "sha256": "0d754ac88d6be2763539a484a7685a41c90d2d8bef5b84cb2719820738567ef0"
+    },
+    {
+      "path": "games/2048/index.html",
+      "size": 29655,
+      "sha256": "5847bd05bad5649f96c6a9a0e63a3fd106ab87a2659917aefc3e37dd941c86f9"
+    },
+    {
+      "path": "games/backgammon/index.html",
+      "size": 48386,
+      "sha256": "64d13ad09b8348e480db1fd135a97c7d358d1b83c4048f71d6f7eabeba9d0368"
+    },
+    {
+      "path": "games/checkers/assets/space_logo.png",
+      "size": 1928904,
+      "sha256": "6b8ec0e94f52ad100b61171bb26ceb7be94bfa4175c495d096ebdd49c2d2740a"
+    },
+    {
+      "path": "games/checkers/index.html",
+      "size": 41088,
+      "sha256": "f40b51e95e2d2d3cdc9e8cc89b39e0cc367ce2e75423048677e660ed88ba2f05"
+    },
+    {
+      "path": "games/chess/assets/logo.png",
+      "size": 1347053,
+      "sha256": "2106a1e5d89700b87f87488eeb07f0c97a0f8563cee4530877e45ef50d486fdc"
+    },
+    {
+      "path": "games/chess/index.html",
+      "size": 73257,
+      "sha256": "4f4fe2ae29ccac6ef6f65d8decd954c3109f644bf720c6d5b4f5dc70ae4d19f5"
+    },
+    {
+      "path": "games/connect4/assets/splash_custom.png",
+      "size": 1578020,
+      "sha256": "2327369a181517a23446c7691a58ed6d79ba4cebe8d9b0de3d15842349c57357"
+    },
+    {
+      "path": "games/connect4/index.html",
+      "size": 36079,
+      "sha256": "b94488367a0d6c49966cc2502ddb67a42e9a7a3e0b90dc9c5905b18bcff3377b"
+    },
+    {
+      "path": "games/corners/assets/splash_custom.png",
+      "size": 2470096,
+      "sha256": "5b4aafa6127795413a28bb276e258fe3f07ab5100a31a622a14a537a9635c640"
+    },
+    {
+      "path": "games/corners/index.html",
+      "size": 31676,
+      "sha256": "d899f393484d8b824e68289b7e64cf8ee3ce5dd2f694eb09723e1d555efe927e"
+    },
+    {
+      "path": "games/domino/assets/splash.png",
+      "size": 2500120,
+      "sha256": "ac7c80245e6bdbdf1bd16db7cbe4a7c147ce291e11d05d3a7f8bec9e3d3a1cd1"
+    },
+    {
+      "path": "games/domino/index.html",
+      "size": 47620,
+      "sha256": "6ec793c9d5df62ed791147e8d90a1f0d1f6df3a56d8e03a31cdcdda68acd2e55"
+    },
+    {
+      "path": "games/energy-capsules/ART_PROMPTS_v16_15_RU.md",
+      "size": 1399,
+      "sha256": "4747b10b830770cafa3ca7247d8f31eba52df40bf26cdaca5c757c8b904798a2"
+    },
+    {
+      "path": "games/energy-capsules/ASSET_MANIFEST_energy-capsules.json",
+      "size": 2655,
+      "sha256": "2ddd3faf16f3326596970392335c13cfe6971be7577b784d2b7fbcc2f9da5cf7"
+    },
+    {
+      "path": "games/energy-capsules/SPEC_energy-capsules.md",
+      "size": 9551,
+      "sha256": "c21e6fc6e3eb1d74101853d0bc46668ca578cb5de3e8f02b18577d95f14f6481"
+    },
+    {
+      "path": "games/energy-capsules/assets/cat-poses.png",
+      "size": 1283017,
+      "sha256": "24db62620d34faf0cf9ab8f368a3ef383b2fcbf29f35f997c909346dc2c7aa3e"
+    },
+    {
+      "path": "games/energy-capsules/assets/cat-poses.webp",
+      "size": 7500,
+      "sha256": "6c3490e56b46ffbe5325a486bc4c8458eb4749d39c82d02eefd4daca208b4d17"
+    },
+    {
+      "path": "games/energy-capsules/assets/catalog-composition-source.png",
+      "size": 418358,
+      "sha256": "c2418beaba246db7135e07ccb6e703e6087661f5a3e047e59e2f9919a92ef8e3"
+    },
+    {
+      "path": "games/energy-capsules/assets/corgi-poses.png",
+      "size": 1379990,
+      "sha256": "fade2f1d86a31afd35d47926345b8092c3c006ee0ac8caa541105e46e122aa9d"
+    },
+    {
+      "path": "games/energy-capsules/assets/corgi-poses.webp",
+      "size": 7500,
+      "sha256": "28a5a73da8a5b9ee1d704163770b9da23b2cfb9da8b143cdb69be7121a91fff8"
+    },
+    {
+      "path": "games/energy-capsules/game.css",
+      "size": 4890,
+      "sha256": "babdfaa0278e3885332a2003f446bc395ba9618fea12d3f284890ad792424938"
+    },
+    {
+      "path": "games/energy-capsules/game.js",
+      "size": 11940,
+      "sha256": "f31539c923c0bf3cfd54990d8be09417f5fc5525b855fa4b7970f71248cd47bd"
+    },
+    {
+      "path": "games/energy-capsules/index.html",
+      "size": 8223,
+      "sha256": "84996939b295321ac1adaf638f1858847395b6a872cd4a63c91a2d764fde3f30"
+    },
+    {
+      "path": "games/fifteen/assets/splash_fifteen.png",
+      "size": 2221809,
+      "sha256": "9a9134cdf86d91628897248b5ffca13dbaaf9af068a5fb5a707e52749a72382a"
+    },
+    {
+      "path": "games/fifteen/index.html",
+      "size": 26090,
+      "sha256": "3a9028448992eb0616b96f01d508338b38d29d4cce08ba8cd545483becc00a71"
+    },
+    {
+      "path": "games/gomoku/assets/cat_head.png",
+      "size": 359736,
+      "sha256": "3cd3c46f81fd5cc4ee44af650b56d2125d9c993b87787e3770e5dd69487d2ba1"
+    },
+    {
+      "path": "games/gomoku/assets/dog_head.png",
+      "size": 362170,
+      "sha256": "707e234bccb1ae16a4bba9419642afc03bb2e85124a635e6d19a60a4c616e49f"
+    },
+    {
+      "path": "games/gomoku/assets/splash_poster.png",
+      "size": 2051688,
+      "sha256": "4512f8ba2ebcf00c1fa99ba3fc91e565c2b6e9183e21cc203667bec34ec9f4b5"
+    },
+    {
+      "path": "games/gomoku/index.html",
+      "size": 33464,
+      "sha256": "c82d55bd3514c162a2b1438be8e295925a1f8d9e217d2a3c41d0fa2e35b0965d"
+    },
+    {
+      "path": "games/mahjong/assets/splash.png",
+      "size": 2493905,
+      "sha256": "eabbf300b7e938fefacdbe7f0350b32ccf4a3b5b6938c4caa1441da33a7e0a93"
+    },
+    {
+      "path": "games/mahjong/assets/tile_cat.png",
+      "size": 140328,
+      "sha256": "b1d479fcb41e485a2f1947a326d5e00977c4311ebc798d76566250c6d643beb4"
+    },
+    {
+      "path": "games/mahjong/assets/tile_cat_helmet.png",
+      "size": 150592,
+      "sha256": "e5d1fa7f7239aab6e4fdde6ed8c2e8715fa83d8bceaf17224ec8b51217409aef"
+    },
+    {
+      "path": "games/mahjong/assets/tile_comet.png",
+      "size": 126091,
+      "sha256": "942b8b949c457d768473b9620f9475ca9fea4abd951fc21acf98c388465f0a88"
+    },
+    {
+      "path": "games/mahjong/assets/tile_dog.png",
+      "size": 147922,
+      "sha256": "9fe50c59aed39bf04278a869f206f81b38c57d7c08dbfc319ca8d4aa4d1a9543"
+    },
+    {
+      "path": "games/mahjong/assets/tile_dog_helmet.png",
+      "size": 150998,
+      "sha256": "7e78f061b61c203e2def527ed9e46c821f9b6ae2b1d6e566dd5e1cb9523e6f98"
+    },
+    {
+      "path": "games/mahjong/assets/tile_duo.png",
+      "size": 146725,
+      "sha256": "a2ba54cb815f579cbde876a679bf8111bdf6bb2f3d988383a86a3406f15e776c"
+    },
+    {
+      "path": "games/mahjong/assets/tile_galaxy.png",
+      "size": 152360,
+      "sha256": "f20a15cc9cca4b4a4ce7bafd0ce719deeb1a578749761e32c9aa00161c341eae"
+    },
+    {
+      "path": "games/mahjong/assets/tile_helmet.png",
+      "size": 139206,
+      "sha256": "1a6afac580b2f8c8f921d748b053150072e7cc19e87bb646666ec0874734eb61"
+    },
+    {
+      "path": "games/mahjong/assets/tile_moon.png",
+      "size": 120449,
+      "sha256": "83694ad7e14cba9343356f216577072adcc407e9d14dd6657e6c5261b4268052"
+    },
+    {
+      "path": "games/mahjong/assets/tile_paw_orange.png",
+      "size": 141597,
+      "sha256": "a76166fc40ba6d416f9667cbc448b2c0ad0e616301b45087d5d5fa4751551105"
+    },
+    {
+      "path": "games/mahjong/assets/tile_paw_pink.png",
+      "size": 134631,
+      "sha256": "91975e98d2b0c32cdaac0b7b1936063ba2684a5f103376bd9759ec720c390240"
+    },
+    {
+      "path": "games/mahjong/assets/tile_planet.png",
+      "size": 122546,
+      "sha256": "eaa642d98e21a034e3980119f6fcc7c7a6360c1f723c7034f3629a1e1ab5eb68"
+    },
+    {
+      "path": "games/mahjong/assets/tile_rocket.png",
+      "size": 126399,
+      "sha256": "86b47f8ff99323ccd09931142ad289eefba2eb7193410949ca0fd20a86397a98"
+    },
+    {
+      "path": "games/mahjong/assets/tile_satellite.png",
+      "size": 150277,
+      "sha256": "e047cf399a1f74017f0331eed8e4eb49f8b87d42a1eb66b14dc88e1acf80fbc2"
+    },
+    {
+      "path": "games/mahjong/assets/tile_star.png",
+      "size": 108324,
+      "sha256": "fae4155d22c73ff402df8105764084a84cbc4669d3eef58859b3179337ff1c1d"
+    },
+    {
+      "path": "games/mahjong/assets/tile_ufo.png",
+      "size": 135296,
+      "sha256": "dbdfb1746b0dfa527f9ec4aab3900ca9b95c1d2ffac9b8e71eaa271ae17f39ae"
+    },
+    {
+      "path": "games/mahjong/index.html",
+      "size": 26467,
+      "sha256": "67bc10fc8a693a502d89dab4470a757e2e436ec7d0b1e3117cc93af3a081596e"
+    },
+    {
+      "path": "games/memory/assets/splash_v2.png",
+      "size": 2573212,
+      "sha256": "e484445e4ca9fbe410d7629cc8ae9bf731a160a52288330415cdd0428c4b7347"
+    },
+    {
+      "path": "games/memory/index.html",
+      "size": 26768,
+      "sha256": "e7389738d09b509e267b2798b9815b85bd456122b0da448aab46f7ed92ce7ada"
+    },
+    {
+      "path": "games/retro-orbit.css",
+      "size": 4592,
+      "sha256": "900a32d4f69e74b455c7ae1f418d9837577f9474413cc4942056b3b145cc7d70"
+    },
+    {
+      "path": "games/reversi/index.html",
+      "size": 35811,
+      "sha256": "06e456113a774b54dc355c1214b9a5797bb20c30bdb9620e25bc485efe05bde1"
+    },
+    {
+      "path": "games/solitaire/assets/splash.png",
+      "size": 2450000,
+      "sha256": "941b82b923b15969de8a6658c2828fdb0fb10a6342a0700812817e64752ca663"
+    },
+    {
+      "path": "games/solitaire/index.html",
+      "size": 30937,
+      "sha256": "1de4124eaa6b00b5d15e4908ef231202ce43d63d8c1debaa6250bf5ce858b55a"
+    },
+    {
+      "path": "games/space-mail/ART_PROMPTS_RU.md",
+      "size": 5718,
+      "sha256": "f8911abdc40b5e1d88b985be39fab693844eafc83741715a1f5207a324a7403f"
+    },
+    {
+      "path": "games/space-mail/ASSET_MANIFEST_space-mail.json",
+      "size": 2743,
+      "sha256": "b115f8fd6291da7a1ea5c4127692b29e3c41f22ead9a7164f4110d96a1ca77cc"
+    },
+    {
+      "path": "games/space-mail/SPEC_space-mail.md",
+      "size": 8185,
+      "sha256": "a0114304069fc05c7ee3e09153eefe348c445eb901ca3ff22a87f7c27a548df8"
+    },
+    {
+      "path": "games/space-mail/game.css",
+      "size": 5884,
+      "sha256": "c49f0ccc3305764cec38530fa4efea8e11a5fdab29a9192dcbe1735a83b53f76"
+    },
+    {
+      "path": "games/space-mail/game.js",
+      "size": 12190,
+      "sha256": "e88991395b0a45a9039775db78e68de6c31a6d8304ef5bc3e1155b7baa4c6228"
+    },
+    {
+      "path": "games/space-mail/index.html",
+      "size": 6870,
+      "sha256": "47ef6836d94beb50422c1653df3f01cc42551da25ce5c9495b28d2dda851ac78"
+    },
+    {
+      "path": "games/starbattle/index.html",
+      "size": 43753,
+      "sha256": "0c9b236e200cd767e83e8d31cdcaa6192d8b16ea453152730f6be8a58470bab5"
+    },
+    {
+      "path": "games/sudoku/assets/splash.png",
+      "size": 2493854,
+      "sha256": "0e2f40d170d5c6130cde52938dbbdce4e1489c9ea64baa12f385a4c3df9bbfe9"
+    },
+    {
+      "path": "games/sudoku/index.html",
+      "size": 29436,
+      "sha256": "da91a2eec49097320b1b3fee40d90cedc6228d147b2aa453b029ca90a7e3bc09"
+    },
+    {
+      "path": "games/tictactoe/index.html",
+      "size": 32138,
+      "sha256": "9033255806c44ce31f3864209ccaa6605b9802cfe6b38b85598f066b0c26443f"
     },
     {
       "path": "image-qa-results.json",
-      "size": 34
+      "size": 34,
+      "sha256": "db478087430a23f0cca1e4eb514d4a6c2724e3391b964db63845804970be4f0a"
     },
     {
       "path": "index.html",
-      "size": 6382
+      "size": 6470,
+      "sha256": "841ba1be70d4d030aa1e9af1644da39fecec2cee16abe28d56ada01c5b826081"
     },
     {
       "path": "platform-config.js",
-      "size": 63
+      "size": 63,
+      "sha256": "a99ea39975848c0bda6584622199ba1d4f1dfddef4674ca45309fc83c8a6ff4b"
     },
     {
       "path": "platform.css",
-      "size": 27328
+      "size": 27330,
+      "sha256": "d33655e31b9528997e714c7a69e1ff1a8438edf90253ccac48a79a7cc888ea20"
     },
     {
       "path": "platform.js",
-      "size": 17045
+      "size": 17396,
+      "sha256": "9460a647d7764d826787c288cf8d55235acdb79a857379c6343463def4496139"
     },
     {
       "path": "pruned-assets.json",
-      "size": 6288
+      "size": 6288,
+      "sha256": "f6f49d9dce68ef9d8546634a2fba46da7abaa577486d3d611f86ee4302d1ec6a"
     },
     {
       "path": "qa/README_RU.md",
-      "size": 2898
+      "size": 2898,
+      "sha256": "ee6f018c042e43defd9f5a387610449d618741b3d4c028a47f38df3287038fba"
     },
     {
       "path": "qa/browser-qa.cjs",
-      "size": 14207
+      "size": 14513,
+      "sha256": "54371755956cd8161c5cdf51f71e37b9b2c529756159e350f00fcd1140edb979"
     },
     {
       "path": "qa/cards-symbols-qa.cjs",
-      "size": 3549
+      "size": 3549,
+      "sha256": "4a00b07debf1d3d75a8e229acbc2943135c5214807975fa425ffa1cbf2bd9944"
     },
     {
       "path": "qa/catalog-art-qa.cjs",
-      "size": 2638
+      "size": 2638,
+      "sha256": "20e14e918edea42016d7febb71963e1d64e3c6db144efb18b12a227092ad57f6"
     },
     {
       "path": "qa/desktop-splash-qa.cjs",
-      "size": 2393
+      "size": 2393,
+      "sha256": "f71c337f19c66c4a967f88d597d7dc0c79c18dcdfcb03728668008e0bfe7c9de"
     },
     {
       "path": "qa/dom-qa.cjs",
-      "size": 11517
+      "size": 11517,
+      "sha256": "15a19a24a82b1380f7bb97bea8dfeb6c3e19a83838c0b5cd792d490f30299715"
     },
     {
       "path": "qa/first-tap-qa.cjs",
-      "size": 2149
+      "size": 2149,
+      "sha256": "93d71cf60ae077f38bdd5f6af466778c30973347e746fb677f67aebe30586156"
     },
     {
       "path": "qa/foundations-qa.cjs",
-      "size": 3648
+      "size": 3706,
+      "sha256": "f79ab018e39da29b04d33f03d4101728245e6bd78609139aa9614d4f117bc67d"
     },
     {
       "path": "qa/gesture-delay-qa.cjs",
-      "size": 4314
+      "size": 4314,
+      "sha256": "296467ed559c572054253ae1da9ec30052b5b046233d8cbc9f16251f56c5c1f8"
     },
     {
       "path": "qa/hero-qa.cjs",
-      "size": 1984
+      "size": 1984,
+      "sha256": "8613c1923923f7710339dab97862d4c281463422f42cbe254f9d9869a4f3ac0e"
     },
     {
       "path": "qa/mobile-lab.html",
-      "size": 2508
+      "size": 2508,
+      "sha256": "914350ad3e0f20765854e3ae77bc9fb58aa14ff28191389e558b17a684053a63"
     },
     {
       "path": "qa/package.json",
-      "size": 265
+      "size": 265,
+      "sha256": "eff15b051dd30e7acc4701398179ebcae16788839ed737018f541c6dc6b935d1"
     },
     {
       "path": "qa/poses-browser-qa.cjs",
-      "size": 5448
+      "size": 5448,
+      "sha256": "f7d0a5aefbeed74769d6514406b27e02fb7654c769c13fa9c328eaa32d4951ae"
     },
     {
       "path": "qa/presentation-qa.cjs",
-      "size": 5681
+      "size": 5681,
+      "sha256": "2f0217e771a7c947a8b0b155ba936ee47afa121650e63393a867299ba8f6c282"
     },
     {
       "path": "qa/protocol-qa.cjs",
-      "size": 4600
+      "size": 4600,
+      "sha256": "292d1089ed602ea523e43906880407cf1a9dfb8b96099a4577027f3ff5815c5d"
     },
     {
       "path": "qa/results/2048-360-game.webp",
-      "size": 24620
+      "size": 24620,
+      "sha256": "0ee0bf94c643f2c1bd1fcd1338ea787784ac6ebfe3565ae12a93a3050fbbd8e6"
     },
     {
       "path": "qa/results/2048-360-landscape.webp",
-      "size": 17078
+      "size": 17078,
+      "sha256": "d52c5b48a9b2d44274562aa6f7e8a7bf7d89d6b4a5b4e4c32095af08bd2963df"
     },
     {
       "path": "qa/results/2048-360-menu.webp",
-      "size": 37494
+      "size": 37494,
+      "sha256": "b260bb3ce1ba5d09eb6a0adbf772cef3b54cd5519a46e7537348801bfc0ecba6"
     },
     {
       "path": "qa/results/2048-360-splash.webp",
-      "size": 50848
+      "size": 50848,
+      "sha256": "eb0fba11b2aefd9400701a56c7e3efc6dca89180a6d0ab6963f864f8a162b693"
     },
     {
       "path": "qa/results/2048-390-game.webp",
-      "size": 25832
+      "size": 25832,
+      "sha256": "b197b159cf625c7a33bd51d21670c6569f6705e8e3629f852637b0efd6e5e5f1"
     },
     {
       "path": "qa/results/2048-390-landscape.webp",
-      "size": 17414
+      "size": 17414,
+      "sha256": "4bba5979b40299e20a211142d489471fe1c31b170c976a9a10c80a8875967974"
     },
     {
       "path": "qa/results/2048-390-menu.webp",
-      "size": 39106
+      "size": 39106,
+      "sha256": "3998e46004977303ff6ebf248c8ca01b4f9155210d57d1800c02887577aea361"
     },
     {
       "path": "qa/results/2048-390-splash.webp",
-      "size": 57294
+      "size": 57294,
+      "sha256": "2268453639a5b700ab2137d3078d90521c8e72bb0dd0c43956cd649bea6b9ea2"
     },
     {
       "path": "qa/results/2048-430-game.webp",
-      "size": 28332
+      "size": 28332,
+      "sha256": "4c3cb498efc4ffab188c5967d1a7225d7c8f5d32447361330a9a7f8769f44f06"
     },
     {
       "path": "qa/results/2048-430-landscape.webp",
-      "size": 17486
+      "size": 17486,
+      "sha256": "1ec6b1a669edcffb52acf765c499df4326c42797477ff9768c1b5f5a7b64869a"
     },
     {
       "path": "qa/results/2048-430-menu.webp",
-      "size": 41646
+      "size": 41646,
+      "sha256": "37f6f57a3ca325963472e0792431b8bb821103e3a0cb3b7e7755108657532c1f"
     },
     {
       "path": "qa/results/2048-430-splash.webp",
-      "size": 64760
+      "size": 64760,
+      "sha256": "2da566002dcaaf6e4ae2dd5a18a042cd9fdea42f8aa5139073f099db0353cf9e"
     },
     {
       "path": "qa/results/all-game-390-contact.webp",
-      "size": 179290
+      "size": 179290,
+      "sha256": "d800650d51d2d6061e9aa718c93e76d61327ad35b11ca34b85a0d1cbf2395488"
     },
     {
       "path": "qa/results/all-menu-390-contact.webp",
-      "size": 191302
+      "size": 191302,
+      "sha256": "6ab1ecf3b96c81543dc2217d3faa58b0d7678fd8c4d6513d4d916f63c9523aed"
     },
     {
       "path": "qa/results/backgammon-360-game.webp",
-      "size": 36952
+      "size": 36952,
+      "sha256": "c542f5f4c8714bf698ba74c98a6f22600062bc434140f5b0bc11ccd9447edda5"
     },
     {
       "path": "qa/results/backgammon-360-landscape.webp",
-      "size": 21918
+      "size": 21918,
+      "sha256": "bb9d8b5d7ff696ba9fba09a20ab8ded181d3dc5df4677d9ed87bcd08ff3066ce"
     },
     {
       "path": "qa/results/backgammon-360-menu.webp",
-      "size": 34948
+      "size": 34948,
+      "sha256": "c63d7e8d3dbdc0e1d288eefae84ad3f87a96f8a7b6e3c01766338dc24ce299d9"
     },
     {
       "path": "qa/results/backgammon-360-settings.webp",
-      "size": 9998
+      "size": 9998,
+      "sha256": "0ec2dc589e7da7d69ab1787f0d77dc6c4484b58fbd30c4a56f41c64b295f5bea"
     },
     {
       "path": "qa/results/backgammon-360-splash.webp",
-      "size": 52200
+      "size": 52200,
+      "sha256": "0d0abc1f88bdae8967209c8d541d1de9a636189d4923a26153d92bc275834a08"
     },
     {
       "path": "qa/results/backgammon-390-game.webp",
-      "size": 40154
+      "size": 40154,
+      "sha256": "6d46abf5a810d1f7c7b9ffcf4b5685a2d04ef963f22f702c4e1858e3a62ef521"
     },
     {
       "path": "qa/results/backgammon-390-landscape.webp",
-      "size": 24046
+      "size": 24046,
+      "sha256": "f0b55375cddd728c2c185e2b96176b14c6981aa4204e09986ca72c240581c4a5"
     },
     {
       "path": "qa/results/backgammon-390-menu.webp",
-      "size": 37458
+      "size": 37458,
+      "sha256": "93b3d83f827f5814f6c2662284eec41d8b2de5b37a3a1732f1b7b21f34a7a3c0"
     },
     {
       "path": "qa/results/backgammon-390-settings.webp",
-      "size": 9962
+      "size": 9962,
+      "sha256": "d975538ddb127c10aec81127548b8dc28ca651785a34785ef68ffb3f765bcda7"
     },
     {
       "path": "qa/results/backgammon-390-splash.webp",
-      "size": 58560
+      "size": 58560,
+      "sha256": "3e9b222e7d475487db7feec4ac873ee396010de1e4eeabae89a96f6f4ee099ba"
     },
     {
       "path": "qa/results/backgammon-430-game.webp",
-      "size": 43470
+      "size": 43470,
+      "sha256": "ec4e166da0e3752380c373d50e0e6b9671015845797298662081089fde2b1835"
     },
     {
       "path": "qa/results/backgammon-430-landscape.webp",
-      "size": 25884
+      "size": 25884,
+      "sha256": "bdd104ad2afb90872a9eb9d7da9f92c914c001dcab9d35ad3b50fddb715c8f6a"
     },
     {
       "path": "qa/results/backgammon-430-menu.webp",
-      "size": 39834
+      "size": 39834,
+      "sha256": "0b6adca7da83f517d99f3f47a7b8a6c9ab74cc14917baf1083b4e85a5ee10133"
     },
     {
       "path": "qa/results/backgammon-430-settings.webp",
-      "size": 10386
+      "size": 10386,
+      "sha256": "9d5ca5749c6b70583f932779cc8c250704d41fb90675db87c495f2d5a1b34987"
     },
     {
       "path": "qa/results/backgammon-430-splash.webp",
-      "size": 66084
+      "size": 66084,
+      "sha256": "39e90e1b7cff549926f352c2ac23f3c98e8056ffb9386c58431974ccf5fb7953"
     },
     {
       "path": "qa/results/browser-results-progress.json",
-      "size": 12492
+      "size": 12492,
+      "sha256": "068305e7b79c31e9168207a0b4326bcf7b8b58f6d458f16ae126b407aa1f5158"
     },
     {
       "path": "qa/results/browser-results.json",
-      "size": 12591
+      "size": 12591,
+      "sha256": "43fce727591c4aee4ad38b1d69207baa46a135d350bf0d0892d04cbafb1cf1cc"
     },
     {
       "path": "qa/results/cards-symbols-results.json",
-      "size": 25424
+      "size": 25424,
+      "sha256": "000a26b72d5f0dbf524703540e29dd4951bd3a3573580edf3a55356fb3fbb7d4"
     },
     {
       "path": "qa/results/catalog-360-footer.webp",
-      "size": 23864
+      "size": 23864,
+      "sha256": "76c928e01d0ef9d11291b79e2c32d50fb08a05d28eb209251b09b6b19d03db3b"
     },
     {
       "path": "qa/results/catalog-360-hero.webp",
-      "size": 41602
+      "size": 41602,
+      "sha256": "ef8ddf09b7778c289faef3742b40737c7d01060f815ffb19e7b70a12c86446d0"
     },
     {
       "path": "qa/results/catalog-390-footer.webp",
-      "size": 29924
+      "size": 29924,
+      "sha256": "c6752eea6b4a38727736b976ee0c0e6267ed59256e4ec4f7be9d2182cef06c03"
     },
     {
       "path": "qa/results/catalog-390-hero.webp",
-      "size": 45952
+      "size": 45952,
+      "sha256": "a57f510fe00ac2abf4580eef2c859b991c82be5aabe1ec893abbe30e291788d3"
     },
     {
       "path": "qa/results/catalog-430-footer.webp",
-      "size": 35564
+      "size": 35564,
+      "sha256": "f77fd14ca425592622c3afce4bb407d349c6b8b0b334c4abbabe340e7df9e44f"
     },
     {
       "path": "qa/results/catalog-430-hero.webp",
-      "size": 53274
+      "size": 53274,
+      "sha256": "4a7f6c13d5105e777848c0f361b5653ace93a76289d96b958abd6b9deaf4dba1"
     },
     {
       "path": "qa/results/checkers-360-game.webp",
-      "size": 35158
+      "size": 35158,
+      "sha256": "12ed47865243a886f1b7edb2df0dd8a6cce01e58f33e067bad792b54627b3bed"
     },
     {
       "path": "qa/results/checkers-360-landscape.webp",
-      "size": 19846
+      "size": 19846,
+      "sha256": "116436b218c7a92e4b5bffc9682323a8ee8bb77e12c03b51b4b08225dbda1a98"
     },
     {
       "path": "qa/results/checkers-360-menu.webp",
-      "size": 34102
+      "size": 34102,
+      "sha256": "0f8037b1c500767374fa73de8aca6f0c8b6b302bf73d17adbd47a0779571e854"
     },
     {
       "path": "qa/results/checkers-360-settings.webp",
-      "size": 9962
+      "size": 9962,
+      "sha256": "6601b526371fd5819150c53b062328d892e1216fe1ee3b49ef2a4c6f95c77781"
     },
     {
       "path": "qa/results/checkers-360-splash.webp",
-      "size": 49838
+      "size": 49838,
+      "sha256": "d7658abdc5de401ae78eab73c66792ad1797f6f0c4f00fdc01ad873bb1704885"
     },
     {
       "path": "qa/results/checkers-390-game.webp",
-      "size": 37418
+      "size": 37418,
+      "sha256": "7c72bd45966f30055b86e019274037273b758c638d1723e162dc9748595cb131"
     },
     {
       "path": "qa/results/checkers-390-landscape.webp",
-      "size": 21644
+      "size": 21644,
+      "sha256": "7f9e9fd433e139d0e80b07326cbb09b3c64a4aa3d0f39d5cfcb36752b419c800"
     },
     {
       "path": "qa/results/checkers-390-menu.webp",
-      "size": 35386
+      "size": 35386,
+      "sha256": "0ef42c1a8ef5407808b6828c51c5c2e7bb79b21643bdc061fb8ed6b168b33709"
     },
     {
       "path": "qa/results/checkers-390-settings.webp",
-      "size": 9832
+      "size": 9832,
+      "sha256": "3ec950162491c5a38ab8aa88660fd9606cd15c8138b15b1c12820f98efe9690f"
     },
     {
       "path": "qa/results/checkers-390-splash.webp",
-      "size": 55888
+      "size": 55888,
+      "sha256": "9077261e0e865abd89a80c1b294a958754fa5841fc2e237ed4502be6992fe14b"
     },
     {
       "path": "qa/results/checkers-430-game.webp",
-      "size": 41116
+      "size": 41116,
+      "sha256": "94f752ead7609beaccf953f5a8f8674f86f4d59e1f6d685dc735bca836cd6c73"
     },
     {
       "path": "qa/results/checkers-430-landscape.webp",
-      "size": 23474
+      "size": 23474,
+      "sha256": "27429821c222a13c686f240723e5f043d39e1d160259ad78b6a325542b424df1"
     },
     {
       "path": "qa/results/checkers-430-menu.webp",
-      "size": 38252
+      "size": 38252,
+      "sha256": "582f54ab83ec39fbfff448c80928eea6987573f6847ad7fc6c4e59d6ef4f2aae"
     },
     {
       "path": "qa/results/checkers-430-settings.webp",
-      "size": 10588
+      "size": 10588,
+      "sha256": "37ab42dbc72ba5d4e01a587ed3a1ae72435a6fee5830670f7a2a62ffbf8ad00f"
     },
     {
       "path": "qa/results/checkers-430-splash.webp",
-      "size": 63914
+      "size": 63914,
+      "sha256": "dd442be11d9d02040db828545f20316e6adfc037006e2a2964a09937292f8e62"
     },
     {
       "path": "qa/results/chess-360-game.webp",
-      "size": 34596
+      "size": 34596,
+      "sha256": "e7afefafb8a8a9c6d0a0133fdd38f6caa25253b60944fdbb1146614d2380bb0d"
     },
     {
       "path": "qa/results/chess-360-landscape.webp",
-      "size": 20734
+      "size": 20734,
+      "sha256": "c83eea6befa5ca9641d97f111d281ee9c8e498b9e3e05dcf0ec44d16d2cc99cf"
     },
     {
       "path": "qa/results/chess-360-menu.webp",
-      "size": 36006
+      "size": 36006,
+      "sha256": "5f65b9922758339964eb16dc286cd7238bf1dc9e580b565ce019b80d1dff1ae3"
     },
     {
       "path": "qa/results/chess-360-settings.webp",
-      "size": 10026
+      "size": 10026,
+      "sha256": "3b31082e9112b9f01c3b619e5f80005a8c6087023c360ed1c3ff91a67ccc8bc0"
     },
     {
       "path": "qa/results/chess-360-splash.webp",
-      "size": 52102
+      "size": 52102,
+      "sha256": "29bdf6bb00ce28c19fb4bb03cce48923fbabfb009b6b8ef459e5a99bb9ba1648"
     },
     {
       "path": "qa/results/chess-390-game.webp",
-      "size": 37622
+      "size": 37622,
+      "sha256": "53ca121da78556046abae8ee9bb09ec41a7e566a4d2b8ebd7a4e0f7395553ada"
     },
     {
       "path": "qa/results/chess-390-landscape.webp",
-      "size": 22758
+      "size": 22758,
+      "sha256": "730bdb2a5ace97bde112cf5ea393f92120be5f1ed65fb80350409bb2a828fbea"
     },
     {
       "path": "qa/results/chess-390-menu.webp",
-      "size": 37442
+      "size": 37442,
+      "sha256": "ffaaeda2c89b76d32d3d90efa9750e25ab21c4c1c83b32132cd7db3e18030df6"
     },
     {
       "path": "qa/results/chess-390-settings.webp",
-      "size": 9844
+      "size": 9844,
+      "sha256": "e28a935eb319819e2a3a4c7e58e9954042931d22e7386e1d3c870c4e49757649"
     },
     {
       "path": "qa/results/chess-390-splash.webp",
-      "size": 58908
+      "size": 58908,
+      "sha256": "5b4d133825d49cbd7ef6545b004a351b408ddb195302787925969d7ea3ec927d"
     },
     {
       "path": "qa/results/chess-430-game.webp",
-      "size": 40798
+      "size": 40798,
+      "sha256": "e97112e8932329e2823d64f6294e204a0e70b19d53e13e8df7f3731957513a18"
     },
     {
       "path": "qa/results/chess-430-landscape.webp",
-      "size": 24814
+      "size": 24814,
+      "sha256": "373623d9f05afbe9bed929af32e7f25ac85aa29e1cc73c8cd3a15486f906eb9c"
     },
     {
       "path": "qa/results/chess-430-menu.webp",
-      "size": 39774
+      "size": 39774,
+      "sha256": "8d7e0e5986929ec2f6f764c0c73e86278e49e0c541df6d90215490088242ef71"
     },
     {
       "path": "qa/results/chess-430-settings.webp",
-      "size": 10604
+      "size": 10604,
+      "sha256": "ca30111afec98a1be21ec123f125d49c719a886a70362dac9857c891ed3a899c"
     },
     {
       "path": "qa/results/chess-430-splash.webp",
-      "size": 66016
+      "size": 66016,
+      "sha256": "f18f2fc11925206a17a7ccd7a33214f12dcaca5ae9fa37c8745837b892fff3a3"
     },
     {
       "path": "qa/results/connect4-360-game.webp",
-      "size": 27592
+      "size": 27592,
+      "sha256": "f03eb14314bbc2cae7105e7a0c1545ca28d89e2320a73f4be7ea7e2d487e5fa5"
     },
     {
       "path": "qa/results/connect4-360-landscape.webp",
-      "size": 19148
+      "size": 19148,
+      "sha256": "a0372bb90b54d3638e27395002473aa5885e018f95bf81d8363dba30acc090bd"
     },
     {
       "path": "qa/results/connect4-360-menu.webp",
-      "size": 34556
+      "size": 34556,
+      "sha256": "ee002ef74289337a2569f889c958a6270f5f6681d63f955055b9d4eb203eb60b"
     },
     {
       "path": "qa/results/connect4-360-settings.webp",
-      "size": 9210
+      "size": 9210,
+      "sha256": "64022dc1c1ae6fab095c7e81e750d9145ef31f08be379bcc615771aafcfe0add"
     },
     {
       "path": "qa/results/connect4-360-splash.webp",
-      "size": 50720
+      "size": 50720,
+      "sha256": "8a29907399de40f2265bec9a7d3f23c570381e24867a760f2c7e68a3bfd9ab76"
     },
     {
       "path": "qa/results/connect4-390-game.webp",
-      "size": 29790
+      "size": 29790,
+      "sha256": "575ab2536efe4f7f2b994c7db887f0ab5b08e6eab86b94a04bfaaa84155627dc"
     },
     {
       "path": "qa/results/connect4-390-landscape.webp",
-      "size": 20184
+      "size": 20184,
+      "sha256": "cdf483cb41d50a9523c0c24c2e6278c4511fc41a8203ce6efda4f9c9ffd0788d"
     },
     {
       "path": "qa/results/connect4-390-menu.webp",
-      "size": 35974
+      "size": 35974,
+      "sha256": "ff40db39d57be3e97bf0ad7305d672d11d69010c24a4173f05543d41daa8db65"
     },
     {
       "path": "qa/results/connect4-390-settings.webp",
-      "size": 9718
+      "size": 9718,
+      "sha256": "ea4ad7a78e864c05179da75db6720860931afcbefa81251efc20ad860c186b17"
     },
     {
       "path": "qa/results/connect4-390-splash.webp",
-      "size": 57186
+      "size": 57186,
+      "sha256": "4e9483da93ab9a5cde7e63ba2048f1caa3aa0866d959c8405a3ce4801356061d"
     },
     {
       "path": "qa/results/connect4-430-game.webp",
-      "size": 33254
+      "size": 33254,
+      "sha256": "0f247a9cdc83098e2907e1b56c462c0c0484f8cfe61fd4511a155ccc85ed2ebf"
     },
     {
       "path": "qa/results/connect4-430-landscape.webp",
-      "size": 20964
+      "size": 20964,
+      "sha256": "475cd3c30802e5448ab99a9b53214186b80c0b2ea0e3c191b4cf7c305b54427a"
     },
     {
       "path": "qa/results/connect4-430-menu.webp",
-      "size": 38360
+      "size": 38360,
+      "sha256": "b64eac24312367b3e0e4504aa85871d87f4c4d7f30033f3bb531a147be4b7e30"
     },
     {
       "path": "qa/results/connect4-430-settings.webp",
-      "size": 10282
+      "size": 10282,
+      "sha256": "f41b834fb800f2c49a8221cea2b3457505e3ab5f06d6bdfcfa61cedf904f3e5b"
     },
     {
       "path": "qa/results/connect4-430-splash.webp",
-      "size": 64374
+      "size": 64374,
+      "sha256": "7b4f06f9b2fd838c69464072f12a1e82d01370ece211d6dd27575ed50f2a87dc"
     },
     {
       "path": "qa/results/corners-360-game.webp",
-      "size": 33666
+      "size": 33666,
+      "sha256": "1bef30b9a2d155dde2c8b5a8ecaa0f049a31a24d67a8596140e2983ffea5c613"
     },
     {
       "path": "qa/results/corners-360-landscape.webp",
-      "size": 19422
+      "size": 19422,
+      "sha256": "5c1249c2c9dde320973be8b55a08938e916d6c3324532ccc16c6b856d5e93fa4"
     },
     {
       "path": "qa/results/corners-360-menu.webp",
-      "size": 37012
+      "size": 37012,
+      "sha256": "d54dbe66f0b4f38693eba4e678f63ee098c671141448c70ae878f3aa89ec5205"
     },
     {
       "path": "qa/results/corners-360-settings.webp",
-      "size": 8158
+      "size": 8158,
+      "sha256": "227d651fbfb28696859284d8494f035986b09933f507e237849d84636f9d9249"
     },
     {
       "path": "qa/results/corners-360-splash.webp",
-      "size": 50396
+      "size": 50396,
+      "sha256": "e6eba4717c95a6d382b85d87439b8a3fcc3ed287f246db1feed2b03e7a6fde37"
     },
     {
       "path": "qa/results/corners-390-game.webp",
-      "size": 36420
+      "size": 36420,
+      "sha256": "af9d0578b54ced2b2d6fe5f3c513672dcc168dc081651677490997009fc63e61"
     },
     {
       "path": "qa/results/corners-390-landscape.webp",
-      "size": 20536
+      "size": 20536,
+      "sha256": "8de777142750202c2a000c31077787d3bc307a5721df7d1ea5d31a77b7d242a4"
     },
     {
       "path": "qa/results/corners-390-menu.webp",
-      "size": 38026
+      "size": 38026,
+      "sha256": "f884ffc71cf1fefbc5fa2d87487a17dab79aa4826bd49a973ab3d1ac5b9a45d8"
     },
     {
       "path": "qa/results/corners-390-settings.webp",
-      "size": 8682
+      "size": 8682,
+      "sha256": "6b56a8f35afdff5e66acb8d923baeaa06b9d8e4ccc80b6a92adb86a2e85b9234"
     },
     {
       "path": "qa/results/corners-390-splash.webp",
-      "size": 56898
+      "size": 56898,
+      "sha256": "735a052d8bf4155a289e56f2f1b2d0f2a8dd10916028426f5df9142c17c48ad4"
     },
     {
       "path": "qa/results/corners-430-game.webp",
-      "size": 39978
+      "size": 39978,
+      "sha256": "9b7266eb2a73e27806a758e55740f9c1d724491d75f00bff0948fa3c439d6d10"
     },
     {
       "path": "qa/results/corners-430-landscape.webp",
-      "size": 22340
+      "size": 22340,
+      "sha256": "a5b902658e8219f4340db88192215c95e673f7ae128ac9895c5ec4265e40491f"
     },
     {
       "path": "qa/results/corners-430-menu.webp",
-      "size": 40966
+      "size": 40966,
+      "sha256": "28162bd011ad542c91f798bda60513aab9052823dfb5c66da0081edc26019a64"
     },
     {
       "path": "qa/results/corners-430-settings.webp",
-      "size": 9360
+      "size": 9360,
+      "sha256": "be8da653233f0924068bca7165c4e204e5147b0962abe7c84c47bec7cfb38899"
     },
     {
       "path": "qa/results/corners-430-splash.webp",
-      "size": 64090
+      "size": 64090,
+      "sha256": "8080dda1f46c54ceab3db85b764da4808eb91d4287b2800090551e594d5c1563"
     },
     {
       "path": "qa/results/delayed-launch.webp",
-      "size": 56884
+      "size": 56884,
+      "sha256": "5a5c82ed36560aef2cd3b0a62a8ef6328a6337dc487d7e57d6a4fcc5c5752cce"
     },
     {
       "path": "qa/results/domino-360-game.webp",
-      "size": 26494
+      "size": 26494,
+      "sha256": "02b0b2c9b19e53f6cfec63fb8829d53caed9855812ee5353d2cfdaf1f1974736"
     },
     {
       "path": "qa/results/domino-360-landscape.webp",
-      "size": 18190
+      "size": 18190,
+      "sha256": "e72a3451a795e5340848fbf3a3d856e8a3d516789fc0f1dc714d065bb3acce54"
     },
     {
       "path": "qa/results/domino-360-menu.webp",
-      "size": 38230
+      "size": 38230,
+      "sha256": "844751e23f58d0cab760a9cddcc665558529503427ef7bbb097e9b2e77ebe1df"
     },
     {
       "path": "qa/results/domino-360-settings.webp",
-      "size": 9410
+      "size": 9410,
+      "sha256": "08e46672f12ee12f63cc800eb33f57635c31f69e4d2d48a30755991079cd5b3a"
     },
     {
       "path": "qa/results/domino-360-splash.webp",
-      "size": 50828
+      "size": 50828,
+      "sha256": "2dbd441e42ecff40b7401673891c633f68a4a27a0123d04f6b7bb87571e8ceec"
     },
     {
       "path": "qa/results/domino-390-game.webp",
-      "size": 29092
+      "size": 29092,
+      "sha256": "2cc478950e92950de5dead9377f6ab1aabe583b98a9aae59a96270b1154e57d7"
     },
     {
       "path": "qa/results/domino-390-landscape.webp",
-      "size": 18332
+      "size": 18332,
+      "sha256": "7c1f4e96e726851ccbb74eef5008dcb30c4fb770068beae9497ec63aca4a3ee1"
     },
     {
       "path": "qa/results/domino-390-menu.webp",
-      "size": 39146
+      "size": 39146,
+      "sha256": "af190d616c0f6b05ce3b62750462bbdce4c072d8884d78075b191ed88b500c64"
     },
     {
       "path": "qa/results/domino-390-settings.webp",
-      "size": 9296
+      "size": 9296,
+      "sha256": "e211deda56ee803a56a8278168e3b2839526bf40aa109e60301487a0276f6267"
     },
     {
       "path": "qa/results/domino-390-splash.webp",
-      "size": 57596
+      "size": 57596,
+      "sha256": "0b801821569eaac8b913c7b204ac80f6b29719cd5d2a5b72689a445f9f009ac3"
     },
     {
       "path": "qa/results/domino-430-game.webp",
-      "size": 32510
+      "size": 32510,
+      "sha256": "9d69dc6115b559b0c6dc59aa26845353c75a5279ea90f2cc78baa10b20338b53"
     },
     {
       "path": "qa/results/domino-430-landscape.webp",
-      "size": 20056
+      "size": 20056,
+      "sha256": "3bbd1b333bf438fe2d17d931219f4df431d85e1501e330cd52ee5fd5f675b494"
     },
     {
       "path": "qa/results/domino-430-menu.webp",
-      "size": 42488
+      "size": 42488,
+      "sha256": "ad78a6926c73da2ac2f1fb7bdec2c7e25438f3cb3925d87b31192c640f82b068"
     },
     {
       "path": "qa/results/domino-430-settings.webp",
-      "size": 9868
+      "size": 9868,
+      "sha256": "aefb059834b05d105e28c3a72ea2471a74fe718e8c1fe26e2fb60330e88fb22e"
     },
     {
       "path": "qa/results/domino-430-splash.webp",
-      "size": 65200
+      "size": 65200,
+      "sha256": "ffc580c514d1634a6781f005ffa104cce59c7aa6eccf2932897fd399f1d75a8a"
     },
     {
       "path": "qa/results/energy-capsules/1280-desktop.png",
-      "size": 970829
+      "size": 970829,
+      "sha256": "bcde7a317f6184227d6cf873b62894ea88059e6ae31bf5692272038f079c87e3"
     },
     {
       "path": "qa/results/energy-capsules/1920-desktop.png",
-      "size": 1663625
+      "size": 1663625,
+      "sha256": "9086739e8ce08f9d0405c42a0e878586e87316c22ab01f395647d70ef28d5fbc"
     },
     {
       "path": "qa/results/energy-capsules/360-failure.png",
-      "size": 425098
+      "size": 425098,
+      "sha256": "415cda976bf88e5ff428ed2c5b8f24f342b68366c860ab9f382eaca2c4e3fcec"
     },
     {
       "path": "qa/results/energy-capsules/360-game.png",
-      "size": 349289
+      "size": 349289,
+      "sha256": "fb14c36a5652615302af60fa4b633670932293dc6035214b59a610b23952784b"
     },
     {
       "path": "qa/results/energy-capsules/360-landscape.png",
-      "size": 289460
+      "size": 289460,
+      "sha256": "3fb12a160489ee2285e085c246537f9bbcf4b658291f55ccbf1cd1657b03cb98"
     },
     {
       "path": "qa/results/energy-capsules/360-menu.png",
-      "size": 389713
+      "size": 389713,
+      "sha256": "0d9e8c05e896904e931fec225b18b65fa84abf460fe5034d57070df8b0604192"
     },
     {
       "path": "qa/results/energy-capsules/360-result.png",
-      "size": 94658
+      "size": 94658,
+      "sha256": "c62dbe46288a107200d7244c42824cedc123e0e3f661d6db6f612ed8e1b2ca97"
     },
     {
       "path": "qa/results/energy-capsules/360-splash.png",
-      "size": 425098
+      "size": 425098,
+      "sha256": "415cda976bf88e5ff428ed2c5b8f24f342b68366c860ab9f382eaca2c4e3fcec"
     },
     {
       "path": "qa/results/energy-capsules/390-failure.png",
-      "size": 487220
+      "size": 487220,
+      "sha256": "20ae093a8e5c89c215f409d51e4d318807753443e0b52302819f8cf23d1b5d6e"
     },
     {
       "path": "qa/results/energy-capsules/390-game.png",
-      "size": 388644
+      "size": 388644,
+      "sha256": "76098ecbb997dbbf4e14c065063b826ec6ff2f52c5f3b489b10152da7ae481ed"
     },
     {
       "path": "qa/results/energy-capsules/390-landscape.png",
-      "size": 318758
+      "size": 318758,
+      "sha256": "0d773bad855d46014658f5b28c2cddc9ea1c6d13325f3b90f19e3fa58a155693"
     },
     {
       "path": "qa/results/energy-capsules/390-menu.png",
-      "size": 427677
+      "size": 427677,
+      "sha256": "c0e7bbaae7365ee6ca53434614676372bd651bdee55211afd3267eb8e5291968"
     },
     {
       "path": "qa/results/energy-capsules/390-result.png",
-      "size": 102902
+      "size": 102902,
+      "sha256": "e04d50121cff960c632137c56b5d08a5466461f5b1670bdbf7fa736fabcba828"
     },
     {
       "path": "qa/results/energy-capsules/390-splash.png",
-      "size": 487220
+      "size": 487220,
+      "sha256": "20ae093a8e5c89c215f409d51e4d318807753443e0b52302819f8cf23d1b5d6e"
     },
     {
       "path": "qa/results/energy-capsules/430-game.png",
-      "size": 456952
+      "size": 456952,
+      "sha256": "31227493f1b37758d02f0d04e536cd1f4f5cb78f332c1c53239e99232162aa45"
     },
     {
       "path": "qa/results/energy-capsules/430-landscape.png",
-      "size": 366883
+      "size": 366883,
+      "sha256": "750245840c47c7aa98586f59080e9205487c152aa8d7257a190212cd9fa0c51b"
     },
     {
       "path": "qa/results/energy-capsules/430-menu.png",
-      "size": 499522
+      "size": 499522,
+      "sha256": "52882c13d8f49648baf3b38a4e89fadf13ddbdc51b77fb81d9f0b47ebefa088c"
     },
     {
       "path": "qa/results/energy-capsules/430-splash.png",
-      "size": 572744
+      "size": 572744,
+      "sha256": "99a7e630c0870300385cb19ae137bff8bd34d42a98b708f4af7e8d46670d3c22"
     },
     {
       "path": "qa/results/energy-capsules/catalog-synthetic-results.json",
-      "size": 562
+      "size": 562,
+      "sha256": "7d16e64204d83553eb6427864a0f64178a2733a0a9c96d68dca1000c47416901"
     },
     {
       "path": "qa/results/energy-capsules/static-results.json",
-      "size": 328
+      "size": 328,
+      "sha256": "09ce31a201dbb37f6b9178c1b1dc052d51f531b8858900a48997ced5774105c2"
     },
     {
       "path": "qa/results/energy-capsules/synthetic-browser-results.json",
-      "size": 1027
+      "size": 1027,
+      "sha256": "bec992be652491dcf2164dd8f6783f8416089d6827bc9970fc9adf5fce029739"
     },
     {
       "path": "qa/results/fifteen-360-game.webp",
-      "size": 33568
+      "size": 33568,
+      "sha256": "966d179118027d6df7cbd2633aa0be193dc4fc58cf3035e902ad1f19cd8420fa"
     },
     {
       "path": "qa/results/fifteen-360-landscape.webp",
-      "size": 18658
+      "size": 18658,
+      "sha256": "54a69bf6d72316722220ffb844b638aa23a36b647c88677a16616c039e0d1604"
     },
     {
       "path": "qa/results/fifteen-360-menu.webp",
-      "size": 35598
+      "size": 35598,
+      "sha256": "54218678c5cfe263d66e851c0887f06f42e47b395822607f0f2b862369f2e2a6"
     },
     {
       "path": "qa/results/fifteen-360-splash.webp",
-      "size": 50028
+      "size": 50028,
+      "sha256": "c49534adac4082c2cb168cf4e03067a54226cd4d41111193d8e4ad9043e4f500"
     },
     {
       "path": "qa/results/fifteen-390-game.webp",
-      "size": 35420
+      "size": 35420,
+      "sha256": "a4f86363ea9319bdbe70f5526802c9d4b4b9f6e0818b31e122271803d1f3a168"
     },
     {
       "path": "qa/results/fifteen-390-landscape.webp",
-      "size": 20028
+      "size": 20028,
+      "sha256": "be84f2ea2b0a1940386fe7dbcaea0f3f37bb54e9666aa8d7b01fd2e8597dcc83"
     },
     {
       "path": "qa/results/fifteen-390-menu.webp",
-      "size": 36952
+      "size": 36952,
+      "sha256": "16aa9ad254cf5c4ac6a74eaaac3537963f528475118dce74ee0236cd532b3e5a"
     },
     {
       "path": "qa/results/fifteen-390-splash.webp",
-      "size": 56194
+      "size": 56194,
+      "sha256": "1e01606c28ff3cb09ceb7652d16d78963a653a814ec533f2d736364d37f39651"
     },
     {
       "path": "qa/results/fifteen-430-game.webp",
-      "size": 37766
+      "size": 37766,
+      "sha256": "11024463881041ef9ae801565c923261f40bdaea2de39c32f12dcdd1edfa9d33"
     },
     {
       "path": "qa/results/fifteen-430-landscape.webp",
-      "size": 20596
+      "size": 20596,
+      "sha256": "bc6ac93862442fef3a17b7ce5e637f80dcca187df115deefa47bb8305cffacc9"
     },
     {
       "path": "qa/results/fifteen-430-menu.webp",
-      "size": 39642
+      "size": 39642,
+      "sha256": "bfa165bd6664e09345dc3cbbf7ec705e5a62ca54f725923aac6449fe909b159e"
     },
     {
       "path": "qa/results/fifteen-430-splash.webp",
-      "size": 63834
+      "size": 63834,
+      "sha256": "b49e8656eee2f89e861b873405c47e802130e4a4bfd7329a39c136baabdbaf1a"
     },
     {
       "path": "qa/results/first-tap-results.json",
-      "size": 6347
+      "size": 6347,
+      "sha256": "cb9674b70c0a0aa42fcd98af123e42866b79e99dcaebb88f6960a5fff9e51e76"
     },
     {
       "path": "qa/results/foundations-results.json",
-      "size": 2496
+      "size": 2496,
+      "sha256": "65bfa683adedd69c3ceca53b10dc3c3a18fb25f27553b55d61033dedb0cdd0d9"
     },
     {
       "path": "qa/results/generated-title-checks.json",
-      "size": 2317
+      "size": 2317,
+      "sha256": "54f4572e65bf02dfff3cf23ad6cff66a77d634a5e06a5aeab7d11fdcf8b290d0"
     },
     {
       "path": "qa/results/gesture-delay-results.json",
-      "size": 234
+      "size": 234,
+      "sha256": "9e0db69e61cc4766d884eef10ab30924250dde5c447ceb2c15049b9cc6a2eb2f"
     },
     {
       "path": "qa/results/gomoku-360-game.webp",
-      "size": 32882
+      "size": 32882,
+      "sha256": "f53941fe5a117d08914d329cb5de44031b0795693f14225b627b5b9f442eabb9"
     },
     {
       "path": "qa/results/gomoku-360-landscape.webp",
-      "size": 20776
+      "size": 20776,
+      "sha256": "5198f26517a3611acb043663d70fb6ac13d9c65f94fed6913c49e99a2e467aab"
     },
     {
       "path": "qa/results/gomoku-360-menu.webp",
-      "size": 37844
+      "size": 37844,
+      "sha256": "174eb35ab87f0e838082812a5c42bcb18707fdf14fd02796e33bc42b6d0b054a"
     },
     {
       "path": "qa/results/gomoku-360-settings.webp",
-      "size": 8356
+      "size": 8356,
+      "sha256": "1d2c19851e9bc377e3dd42d71ca6e130c61457bc8fb578102bd854ff5db3e6ad"
     },
     {
       "path": "qa/results/gomoku-360-splash.webp",
-      "size": 46218
+      "size": 46218,
+      "sha256": "8f45997bd0d3de707c593383530fc7c9843e85e19ed8ed0f34a0a3c44d45ff66"
     },
     {
       "path": "qa/results/gomoku-390-game.webp",
-      "size": 35206
+      "size": 35206,
+      "sha256": "8fa618ea95d852c0e02aa298fbc33ba78c619be57a7ef3f01b67347295271e62"
     },
     {
       "path": "qa/results/gomoku-390-landscape.webp",
-      "size": 22414
+      "size": 22414,
+      "sha256": "b0c037d011aa0d361769ffb7ab0588be613a6577cbf6541fcecaabd152301e93"
     },
     {
       "path": "qa/results/gomoku-390-menu.webp",
-      "size": 39172
+      "size": 39172,
+      "sha256": "aa184af938baae07d3702956a6287a8e0820033df57c9eaa55a048c75d8afbf0"
     },
     {
       "path": "qa/results/gomoku-390-settings.webp",
-      "size": 8970
+      "size": 8970,
+      "sha256": "a623947c218f56a9dd2bdd55c014c14f50a8586f6d3d861e083c14dfe584dbd8"
     },
     {
       "path": "qa/results/gomoku-390-splash.webp",
-      "size": 51400
+      "size": 51400,
+      "sha256": "09c579120b11d4d1dc3df265bfa0b4558c9be72039a0ac48cdaa54f9eca838d6"
     },
     {
       "path": "qa/results/gomoku-430-game.webp",
-      "size": 39894
+      "size": 39894,
+      "sha256": "6b9d8aac54608e1433923c17f2ae7134920dfa82d326b5f45bb75dc1e01b6690"
     },
     {
       "path": "qa/results/gomoku-430-landscape.webp",
-      "size": 23364
+      "size": 23364,
+      "sha256": "5cdbc33f23d1a0de24e632626a4852770d0fa3235ce219f85ce3e791e10a5c79"
     },
     {
       "path": "qa/results/gomoku-430-menu.webp",
-      "size": 41998
+      "size": 41998,
+      "sha256": "3ee05279a1e5be63904c4aead71c3dbfe5fda7bb44781b5236c190792f84f5d6"
     },
     {
       "path": "qa/results/gomoku-430-settings.webp",
-      "size": 9500
+      "size": 9500,
+      "sha256": "3c45d523f32b0b3075f94f4b6628dba47b7f6b1aad014f70213e3d93f4f0250d"
     },
     {
       "path": "qa/results/gomoku-430-splash.webp",
-      "size": 59624
+      "size": 59624,
+      "sha256": "6fdedfba4b8a386deebd8b352cbf5b454eed155ad6f0c9ec7ebd55460ffb0a5f"
     },
     {
       "path": "qa/results/hero-results.json",
-      "size": 1496
+      "size": 1496,
+      "sha256": "9a80ba4a4ea2f2a6f7e7b2bb9380f4887a8343c2f4288e17f8128ebd0954edc2"
     },
     {
       "path": "qa/results/large-pose-preview-mobile.webp",
-      "size": 32592
+      "size": 32592,
+      "sha256": "e6ac1db1f0e2dc4a74266d37657d2ea09c3f90eb4776b22703c8088bde6b53b0"
     },
     {
       "path": "qa/results/mahjong-360-game.webp",
-      "size": 43076
+      "size": 43076,
+      "sha256": "162ab32a200683115c06049c1fe52435160be52733a4227f5cd7d7c887ccd8a4"
     },
     {
       "path": "qa/results/mahjong-360-landscape.webp",
-      "size": 21168
+      "size": 21168,
+      "sha256": "3f213477f7ec6d22d23a57e1ce2d4c3e7e09156ebcae6ba85cfcb5713a75d8a9"
     },
     {
       "path": "qa/results/mahjong-360-menu.webp",
-      "size": 36420
+      "size": 36420,
+      "sha256": "ba694dc26c11269097e28c31c1070ffc777e2803769321dc1e48b6152ec2b3f1"
     },
     {
       "path": "qa/results/mahjong-360-splash.webp",
-      "size": 48860
+      "size": 48860,
+      "sha256": "48ee9a87f858d2b35791f6b74971e39bec5bd8e4547ec9d24c0c037ed98c2ed9"
     },
     {
       "path": "qa/results/mahjong-390-game.webp",
-      "size": 50628
+      "size": 50628,
+      "sha256": "5a9f2359c78220f5e434b83b77567c8547dc1d27a5e94df96ecda7f55e1720b3"
     },
     {
       "path": "qa/results/mahjong-390-landscape.webp",
-      "size": 23660
+      "size": 23660,
+      "sha256": "1e03b0f97dfa238ce9b70114fb5318c23a447fc904f0ca59d402d990345794fb"
     },
     {
       "path": "qa/results/mahjong-390-menu.webp",
-      "size": 38390
+      "size": 38390,
+      "sha256": "82fe3b1d75a16c567182f54f0392ca1d4c40c2fb8a063d283fa3970dff72dd10"
     },
     {
       "path": "qa/results/mahjong-390-splash.webp",
-      "size": 54162
+      "size": 54162,
+      "sha256": "005f0c1b0c17b5402ced8f749fda1595955b6ca740a97efc261353ff701fbe57"
     },
     {
       "path": "qa/results/mahjong-430-game.webp",
-      "size": 57370
+      "size": 57370,
+      "sha256": "e4d812be11d67cbede22293a02434c6153142671a2d8097a38317153b17d0a4d"
     },
     {
       "path": "qa/results/mahjong-430-landscape.webp",
-      "size": 28562
+      "size": 28562,
+      "sha256": "7e0faea11dbf01d04f1876e413507d49f4d276605db5f72657443b5955a71a99"
     },
     {
       "path": "qa/results/mahjong-430-menu.webp",
-      "size": 40150
+      "size": 40150,
+      "sha256": "11540b9c5392c4015cc2b257aff129e240566d887b50db5bd96369e30124c9e4"
     },
     {
       "path": "qa/results/mahjong-430-splash.webp",
-      "size": 61286
+      "size": 61286,
+      "sha256": "89f7658cc1d8b39a3eb2d8dd94ce001a6049dd8be1876ebdfb1c3b79709b4a91"
     },
     {
       "path": "qa/results/memory-360-game.webp",
-      "size": 30696
+      "size": 30696,
+      "sha256": "d377360cbb2edc21b1500a886b0dca3f36816a9ce97d31807fe8dca18da66aeb"
     },
     {
       "path": "qa/results/memory-360-landscape.webp",
-      "size": 18002
+      "size": 18002,
+      "sha256": "45399a08e9af9de1ad821778a96690444ede6e947038bdacbd55fea97dfa566e"
     },
     {
       "path": "qa/results/memory-360-menu.webp",
-      "size": 37172
+      "size": 37172,
+      "sha256": "10dd7f8e33b953f4634d5681183f8784a84f90198b72cd996a3d78f8be3bf915"
     },
     {
       "path": "qa/results/memory-360-splash.webp",
-      "size": 50350
+      "size": 50350,
+      "sha256": "fe06fbfd7ab4a944564fc493595ddd9842596b891a89562c375ced25179f4e79"
     },
     {
       "path": "qa/results/memory-390-game.webp",
-      "size": 32894
+      "size": 32894,
+      "sha256": "c72043fdfce041875f20b6f6e77ec157a66cb47178b06e64399f2385f1954678"
     },
     {
       "path": "qa/results/memory-390-landscape.webp",
-      "size": 19168
+      "size": 19168,
+      "sha256": "c56b65ab8c13389f5af4e24f8fc4237628832383c941b7bd032d410712d60564"
     },
     {
       "path": "qa/results/memory-390-menu.webp",
-      "size": 39134
+      "size": 39134,
+      "sha256": "fb9551ea207d9913b2f91860138d27ba83390cb80201368147bacd543711aa6c"
     },
     {
       "path": "qa/results/memory-390-splash.webp",
-      "size": 56884
+      "size": 56884,
+      "sha256": "5a5c82ed36560aef2cd3b0a62a8ef6328a6337dc487d7e57d6a4fcc5c5752cce"
     },
     {
       "path": "qa/results/memory-430-game.webp",
-      "size": 34944
+      "size": 34944,
+      "sha256": "9d699f2926c96c4677a27fc864e3a524c058d759ec2ddcdca0f0a03c81ea845b"
     },
     {
       "path": "qa/results/memory-430-landscape.webp",
-      "size": 20166
+      "size": 20166,
+      "sha256": "2cbe76c0930f1599e17dc935d30cac34bb671386325989ca98be65dcf739aa96"
     },
     {
       "path": "qa/results/memory-430-menu.webp",
-      "size": 42240
+      "size": 42240,
+      "sha256": "61a4d8f5ccda7d5c45fa1fcb54da35c4cf11a888f1c6c7e149cb8c63bc7bc084"
     },
     {
       "path": "qa/results/memory-430-splash.webp",
-      "size": 64440
+      "size": 64440,
+      "sha256": "767ab3fe097d952372ab5519f1955de455fd7847378e7f14201a68c6a5d9500f"
     },
     {
       "path": "qa/results/poses-desktop.webp",
-      "size": 96912
+      "size": 96912,
+      "sha256": "8526026b1a288fed150591c90e4e36b19879a1db4e118705a7ff0b5b40f6ee0e"
     },
     {
       "path": "qa/results/preserved-splashes-engines.json",
-      "size": 3656
+      "size": 3656,
+      "sha256": "72f0634f94c90470ae29d411f7a75b8d9bbc809db0c89b67193756307af6850b"
     },
     {
       "path": "qa/results/reversi-360-game.webp",
-      "size": 27600
+      "size": 27600,
+      "sha256": "78edc104c8ca96e84a1c949fe3f738abc13c79cde905a3ba6a37036810698204"
     },
     {
       "path": "qa/results/reversi-360-landscape.webp",
-      "size": 17064
+      "size": 17064,
+      "sha256": "7f69bf6ac8c12dcf631c4335447f69b69e9522dbe395f68d1e7c55ffd5e979e8"
     },
     {
       "path": "qa/results/reversi-360-menu.webp",
-      "size": 36054
+      "size": 36054,
+      "sha256": "da301754ee05c9131a07cb2a8fc317480bfeb43b6fc693e97e6b25e083580eb7"
     },
     {
       "path": "qa/results/reversi-360-settings.webp",
-      "size": 9606
+      "size": 9606,
+      "sha256": "7dabd4aee1adb17570d801f0ff542238cb68090aa7d128054415923b3e39dc77"
     },
     {
       "path": "qa/results/reversi-360-splash.webp",
-      "size": 45944
+      "size": 45944,
+      "sha256": "4a6bf5572188566350a67a5b2e4fdf8534b704f9f2a550deaab9dad957dd6fab"
     },
     {
       "path": "qa/results/reversi-390-game.webp",
-      "size": 28972
+      "size": 28972,
+      "sha256": "446f493015c7274a83286865d5ad39f65f863a42d4007d43be925c33823f8889"
     },
     {
       "path": "qa/results/reversi-390-landscape.webp",
-      "size": 17586
+      "size": 17586,
+      "sha256": "08b2c0c23862d999bb86e34509a2e371f30041b708d8ebd92c410c3ba710f4d7"
     },
     {
       "path": "qa/results/reversi-390-menu.webp",
-      "size": 37728
+      "size": 37728,
+      "sha256": "8781b10e4c743aa6e5dde5019be6d52100e7724ba77b9c46cb45bde5f7e5f699"
     },
     {
       "path": "qa/results/reversi-390-settings.webp",
-      "size": 9806
+      "size": 9806,
+      "sha256": "a59723f2d9a89dbd8849f16507d21c31e1e70d48ffc299d366aab2a10c830e2c"
     },
     {
       "path": "qa/results/reversi-390-splash.webp",
-      "size": 51512
+      "size": 51512,
+      "sha256": "2c12464275e62785203d09a4e4f75fa51cedd358e1e8de0c535b7d17fca4e8d6"
     },
     {
       "path": "qa/results/reversi-430-game.webp",
-      "size": 32118
+      "size": 32118,
+      "sha256": "0c44e794cb8ac36deff0050e34c05839352b1a551a05b9c5b41a6f4bd368651d"
     },
     {
       "path": "qa/results/reversi-430-landscape.webp",
-      "size": 18238
+      "size": 18238,
+      "sha256": "91e83d6b4d15ebabb6b3ee1e23002b63fdcc96fe8bfcb3cc811a1c05b4b06284"
     },
     {
       "path": "qa/results/reversi-430-menu.webp",
-      "size": 40008
+      "size": 40008,
+      "sha256": "c95e1921bbd291cf696c01fd1db4c0cf8c2b23c09c4b6a0148c3377d8efe1186"
     },
     {
       "path": "qa/results/reversi-430-settings.webp",
-      "size": 10636
+      "size": 10636,
+      "sha256": "55685389982f1aa21cc3734cbb78f966831c4ffc814ca319ccf99dcdc9213a4d"
     },
     {
       "path": "qa/results/reversi-430-splash.webp",
-      "size": 58600
+      "size": 58600,
+      "sha256": "1c80c52fe799b358b66cbbf1d6d3c42900eba72747905ecf7793fdccb313c45d"
     },
     {
       "path": "qa/results/solitaire-360-game.webp",
-      "size": 33722
+      "size": 33722,
+      "sha256": "70d6574c5976265efc7cfc9c4a5f9b4d3b783762c90e23cb9023e6fcb6f56ec9"
     },
     {
       "path": "qa/results/solitaire-360-landscape.webp",
-      "size": 19212
+      "size": 19212,
+      "sha256": "f6d9969ba90ff80ef6f1fcf7daf754418b171a9bcd1d822a10f721e8957433f6"
     },
     {
       "path": "qa/results/solitaire-360-menu.webp",
-      "size": 38488
+      "size": 38488,
+      "sha256": "bdc6fd451cb7325dc0d3dbc7ebe3a40848a622ce2cec5b871156f054a69d039d"
     },
     {
       "path": "qa/results/solitaire-360-splash.webp",
-      "size": 46238
+      "size": 46238,
+      "sha256": "05b4d32112793da19417b043a272a18a3d26c1d009ba2608b68a69f8b98ce0c1"
     },
     {
       "path": "qa/results/solitaire-390-game.webp",
-      "size": 35250
+      "size": 35250,
+      "sha256": "6f53b8105e65816b8d2af387a53489a578ee53d4ed9a89c81844a24be2efe1a6"
     },
     {
       "path": "qa/results/solitaire-390-landscape.webp",
-      "size": 20470
+      "size": 20470,
+      "sha256": "9183638810d52ceff599cae07a3abfabfca7c1e03d4359d72a39126efb438ea1"
     },
     {
       "path": "qa/results/solitaire-390-menu.webp",
-      "size": 40342
+      "size": 40342,
+      "sha256": "320c766ef7db5ec07af47eb60a0207a170a1d60335fafa94a4f59681909d9db8"
     },
     {
       "path": "qa/results/solitaire-390-splash.webp",
-      "size": 52014
+      "size": 52014,
+      "sha256": "864612973de1aab37bfe5638690fb88c2c21d48e14322eac76186df984fa8f07"
     },
     {
       "path": "qa/results/solitaire-430-game.webp",
-      "size": 39184
+      "size": 39184,
+      "sha256": "bd36c412761f211ce00c29795445dcbc4e592b2c360dc893269af200f1e0eab3"
     },
     {
       "path": "qa/results/solitaire-430-landscape.webp",
-      "size": 22238
+      "size": 22238,
+      "sha256": "61dfb8321283066bf0b2255982efc82ec8d33a04f16fda1d11d7d66867a79ff0"
     },
     {
       "path": "qa/results/solitaire-430-menu.webp",
-      "size": 42656
+      "size": 42656,
+      "sha256": "903bd98ae4172164f447a4baf5f1941facf378ff4a0bac9ca692879d7bf33e17"
     },
     {
       "path": "qa/results/solitaire-430-splash.webp",
-      "size": 58816
+      "size": 58816,
+      "sha256": "f46b6ed94c6d92a2d54811afa456067ad754a708e74e6f4382683e7831b2a7a2"
     },
     {
       "path": "qa/results/splash-readiness-results.json",
-      "size": 13604
+      "size": 13604,
+      "sha256": "7dc081d5d5f0291a932c81f1a56823f41cb7c5fb64fb18dd6167c59afb23b9e8"
     },
     {
       "path": "qa/results/starbattle-360-game.webp",
-      "size": 33444
+      "size": 33444,
+      "sha256": "abc51e0459b7950434b48248eb822cf20fdf050c78b171407a283c6adbf5f7b9"
     },
     {
       "path": "qa/results/starbattle-360-landscape.webp",
-      "size": 19918
+      "size": 19918,
+      "sha256": "96356de084e84cec65ae231aea66053e782e7711491171879911c0d73e6c3bee"
     },
     {
       "path": "qa/results/starbattle-360-menu.webp",
-      "size": 35830
+      "size": 35830,
+      "sha256": "6701f78140555a1e68851ab8ea1faf14ada0d473b888b410e4d24b17d564b041"
     },
     {
       "path": "qa/results/starbattle-360-settings.webp",
-      "size": 8322
+      "size": 8322,
+      "sha256": "442e303f34fc654efc39969932742fe35529c1f0f5d432c132034a0afef61de1"
     },
     {
       "path": "qa/results/starbattle-360-splash.webp",
-      "size": 52496
+      "size": 52496,
+      "sha256": "23ce62dcf3f35ec7719b36aa925db1d3c3be1b62f563cfd1a6e8fdf7ca43f298"
     },
     {
       "path": "qa/results/starbattle-390-game.webp",
-      "size": 36196
+      "size": 36196,
+      "sha256": "fa6cf5b9ef26263bd6ef364b58508d95cbb427135ffa54c85c149683ad566b6c"
     },
     {
       "path": "qa/results/starbattle-390-landscape.webp",
-      "size": 20920
+      "size": 20920,
+      "sha256": "0064628768255c972466c75caaf9bfe7d172de7dcaf205540cda571c8a72f275"
     },
     {
       "path": "qa/results/starbattle-390-menu.webp",
-      "size": 37322
+      "size": 37322,
+      "sha256": "aa38a3cfae8b894fe67c669a07f0aef8280b02552b86af886feb80deaaebfb65"
     },
     {
       "path": "qa/results/starbattle-390-settings.webp",
-      "size": 8762
+      "size": 8762,
+      "sha256": "69d3f33277998db4d295eda73ea0371613a1d66670b40983bae9f199c5a345b7"
     },
     {
       "path": "qa/results/starbattle-390-splash.webp",
-      "size": 59908
+      "size": 59908,
+      "sha256": "2a2b02b5b4d51a6a6fb513ff55c41d53293f6c2f2ee2376c2b4af36a49a489ed"
     },
     {
       "path": "qa/results/starbattle-430-game.webp",
-      "size": 40304
+      "size": 40304,
+      "sha256": "3d380d56477c5bac640967133080c8f6f1d88e0f9d13041a5a1e1f6244212e8a"
     },
     {
       "path": "qa/results/starbattle-430-landscape.webp",
-      "size": 21292
+      "size": 21292,
+      "sha256": "4b141edd540953bdc2ba388e159ff5c7cf0357a0f4f71da4712b55534efc093b"
     },
     {
       "path": "qa/results/starbattle-430-menu.webp",
-      "size": 39412
+      "size": 39412,
+      "sha256": "1ba36e2ccc57a29371ba74d4f3c5d84f82d1a7c72936a44d22b7c1bdf37fcb24"
     },
     {
       "path": "qa/results/starbattle-430-settings.webp",
-      "size": 9100
+      "size": 9100,
+      "sha256": "7ac991ffea1e763b8c2fb0b34490daa2ce262fcd086893108d3072bce9b90e84"
     },
     {
       "path": "qa/results/starbattle-430-splash.webp",
-      "size": 67568
+      "size": 67568,
+      "sha256": "df9bd0858d86130095daab8b9516f47f7ce3fdaafcbe0cd08a4947b8549163fc"
     },
     {
       "path": "qa/results/sudoku-360-game.webp",
-      "size": 32392
+      "size": 32392,
+      "sha256": "7cfc829133578cf04c6b8b922a6fbf88b3ccb35b4e0454fd83a74ff8243d0641"
     },
     {
       "path": "qa/results/sudoku-360-landscape.webp",
-      "size": 18898
+      "size": 18898,
+      "sha256": "b6fd3e21c00e51b88b2945847825ed0c8bb465e8ee7de96a5c3fd3f599a2fd29"
     },
     {
       "path": "qa/results/sudoku-360-menu.webp",
-      "size": 39358
+      "size": 39358,
+      "sha256": "fc773bb1e195f3fb4739f4db38511200dcd911ca2c3fd4ab5224af0976f39961"
     },
     {
       "path": "qa/results/sudoku-360-settings.webp",
-      "size": 8254
+      "size": 8254,
+      "sha256": "12da25084a3c003102e0113c131509ae3648fbd60285f5b28fa004f5aba70b37"
     },
     {
       "path": "qa/results/sudoku-360-splash.webp",
-      "size": 52180
+      "size": 52180,
+      "sha256": "a7bb9c91903ff4553d6075d3a0d3781bd7d203c15cd21e383a0241e42370c92b"
     },
     {
       "path": "qa/results/sudoku-390-game.webp",
-      "size": 35396
+      "size": 35396,
+      "sha256": "1e4f02dd6cb2183fe2e680c732e777f5bf97d737213713828c06d0709ffeddec"
     },
     {
       "path": "qa/results/sudoku-390-landscape.webp",
-      "size": 19786
+      "size": 19786,
+      "sha256": "3b8014e24bbeab0bd7662726b55af6fb50218f9a81600c350bebed952e841a77"
     },
     {
       "path": "qa/results/sudoku-390-menu.webp",
-      "size": 41414
+      "size": 41414,
+      "sha256": "fb4b1c98a38770391336ccf1fd2d0fb1263381de923c056e189845333a8567e9"
     },
     {
       "path": "qa/results/sudoku-390-settings.webp",
-      "size": 8480
+      "size": 8480,
+      "sha256": "7607eea7874dbc3696bdbe9a9d7d14eb949a59a0813c16d6e783c12f3f71db44"
     },
     {
       "path": "qa/results/sudoku-390-splash.webp",
-      "size": 58816
+      "size": 58816,
+      "sha256": "62e0749035d924944e57d3e4afd15fa8d6aac2bd153f5dcff38a320a2920dcdc"
     },
     {
       "path": "qa/results/sudoku-430-game.webp",
-      "size": 38356
+      "size": 38356,
+      "sha256": "e44899bcd0c17cae5420fba54cc282335131242dbcea2598c2f714726ca1d6b4"
     },
     {
       "path": "qa/results/sudoku-430-landscape.webp",
-      "size": 20308
+      "size": 20308,
+      "sha256": "7f25c6437d20056dcfeff5ce1e01251668da4f0859d1cc848efaf1efd9a082ac"
     },
     {
       "path": "qa/results/sudoku-430-menu.webp",
-      "size": 44176
+      "size": 44176,
+      "sha256": "176f77838510593d0bcb8c526a68328719916b441e60e5a3808a60603e1b763f"
     },
     {
       "path": "qa/results/sudoku-430-settings.webp",
-      "size": 8958
+      "size": 8958,
+      "sha256": "07741694302de74a519dfefa05eab5a29c89284087743e5195568fefcbf7a3e7"
     },
     {
       "path": "qa/results/sudoku-430-splash.webp",
-      "size": 66062
+      "size": 66062,
+      "sha256": "6e38b80b1ade0686f1479cf45d597146ea865a69e765b948fb68c1d5d36e0158"
     },
     {
       "path": "qa/results/tictactoe-360-game.webp",
-      "size": 24510
+      "size": 24510,
+      "sha256": "6f01c08369d1ac1f9992ae92f43620b4221c90f4e65b18f4b457b0ea3752a676"
     },
     {
       "path": "qa/results/tictactoe-360-landscape.webp",
-      "size": 17770
+      "size": 17770,
+      "sha256": "8d05fa4db81b1e5c4d961d97ccae795430e28aaf8cd439928370f9a1a913baa4"
     },
     {
       "path": "qa/results/tictactoe-360-menu.webp",
-      "size": 35548
+      "size": 35548,
+      "sha256": "b08f55e893decd158a592fbc242c2b995cea9be1adff7b5cd5cdc5568de7158b"
     },
     {
       "path": "qa/results/tictactoe-360-settings.webp",
-      "size": 10354
+      "size": 10354,
+      "sha256": "fe67b914fc176dc2686b3a59c210140788a87a9ae0289f947e1dda4c12e203e3"
     },
     {
       "path": "qa/results/tictactoe-360-splash.webp",
-      "size": 50428
+      "size": 50428,
+      "sha256": "873954d128ac845820d36ea56335ba1c5c58ae4153207e7fb753a5edbf57f5a4"
     },
     {
       "path": "qa/results/tictactoe-390-game.webp",
-      "size": 25828
+      "size": 25828,
+      "sha256": "0de33cd6f667d10f61ea6206ebc11f7cc5162b34d3cf845ec2749e8d59c6f484"
     },
     {
       "path": "qa/results/tictactoe-390-landscape.webp",
-      "size": 18894
+      "size": 18894,
+      "sha256": "3e0bc718ee9d009a6005c98fdb2b9e4bd849011e60d63f9474b0b4cdd3f50cf7"
     },
     {
       "path": "qa/results/tictactoe-390-menu.webp",
-      "size": 36914
+      "size": 36914,
+      "sha256": "9727f315dc892d346400e959db8c666dd6f094a32eb236cd86effce0e8452c11"
     },
     {
       "path": "qa/results/tictactoe-390-settings.webp",
-      "size": 10918
+      "size": 10918,
+      "sha256": "29386d4d26564e4f9a5836b15a56c79a889247f8491734cb1a8821771d5fd016"
     },
     {
       "path": "qa/results/tictactoe-390-splash.webp",
-      "size": 56464
+      "size": 56464,
+      "sha256": "e943f406042f933b0b74817aeb703f61975667198c21cac4c064f72f4cdfdd21"
     },
     {
       "path": "qa/results/tictactoe-430-game.webp",
-      "size": 28686
+      "size": 28686,
+      "sha256": "c1e2774a18fa4a5233ad616341e343f8c2900c838eeca63ea335e4fb643e0bf0"
     },
     {
       "path": "qa/results/tictactoe-430-landscape.webp",
-      "size": 19306
+      "size": 19306,
+      "sha256": "8c8c52b1a7e413e21de6e483932a67f0b919dfe305bc33c8edf6b554c9cef86f"
     },
     {
       "path": "qa/results/tictactoe-430-menu.webp",
-      "size": 39526
+      "size": 39526,
+      "sha256": "97001ef41a829bf2070996af6202eebe4f5019c9eff1402b4e76bc365df407b9"
     },
     {
       "path": "qa/results/tictactoe-430-settings.webp",
-      "size": 11080
+      "size": 11080,
+      "sha256": "134477e3584c90e2ac248fbde766043193a106439bb5a6f33c174d66b4e10047"
     },
     {
       "path": "qa/results/tictactoe-430-splash.webp",
-      "size": 63836
+      "size": 63836,
+      "sha256": "ca7daeb55c8d3b2920b9f632c8989fb2b6f205e7ac23ab5791b7ec0630dc0a00"
     },
     {
       "path": "qa/results/title-center-results.json",
-      "size": 12107
+      "size": 12107,
+      "sha256": "8e531ddc903339fedce925f1a05894eba467c146973c2988137fe6308ece5990"
     },
     {
       "path": "qa/results/title-reference-checks.json",
-      "size": 1960
+      "size": 1960,
+      "sha256": "613fdb2ee2a1759f7752237bf60cf59aecc038aede3a225ad0b2cbe963a5798b"
     },
     {
       "path": "qa/results/v16-11-hero-1280.webp",
-      "size": 78820
+      "size": 78820,
+      "sha256": "2f3fa0bb18184804d450d679a6731114b4f61ad74c7cf780776e60939d150b00"
     },
     {
       "path": "qa/results/v16-11-hero-1920.webp",
-      "size": 128074
+      "size": 128074,
+      "sha256": "d103aefd5d2d7b203367ef96f0a0e56ef9083e15701f8a9116afc9b088559549"
     },
     {
       "path": "qa/results/v16-11-hero-360.webp",
-      "size": 41606
+      "size": 41606,
+      "sha256": "e5763349a8c5070e35c91b857e65d1ef9cc41c75c3b789fd225efab8d9578a41"
     },
     {
       "path": "qa/results/v16-11-hero-390.webp",
-      "size": 45996
+      "size": 45996,
+      "sha256": "06c659557012d85056f99a018ea3a9a568303a4d4a24072116f880c064b79946"
     },
     {
       "path": "qa/results/v16-11-hero-430.webp",
-      "size": 53306
+      "size": 53306,
+      "sha256": "a4bcbf41cead3b146abbfbec945d79ed52a08bfb667404887371c3ecc04efa7a"
     },
     {
       "path": "qa/results/v16-11-solitaire-1280.webp",
-      "size": 52678
+      "size": 52678,
+      "sha256": "f8a1df63e9c35d2edf075229c98002790b185c311fe2cdad967645e28eb3c17a"
     },
     {
       "path": "qa/results/v16-11-solitaire-1920.webp",
-      "size": 69244
+      "size": 69244,
+      "sha256": "9a375bbb016c8e5c129835f02a42e0de4c9e4480649c523cdfd2dad722d059c8"
     },
     {
       "path": "qa/results/v16-11-solitaire-360.webp",
-      "size": 33136
+      "size": 33136,
+      "sha256": "6fa77a6f9ff58bdb6a6ce293de6672304701d6e6069a949d8485ae71cc511c25"
     },
     {
       "path": "qa/results/v16-11-solitaire-390.webp",
-      "size": 35938
+      "size": 35938,
+      "sha256": "ebd5479a876bd96159d1584741e0f04bf7b2bf8a266b337c75fbd54e676435ef"
     },
     {
       "path": "qa/results/v16-11-solitaire-430.webp",
-      "size": 39428
+      "size": 39428,
+      "sha256": "665f40066fe2df0bc60fed0b445e74e7604533be885986212bd0586645679ebe"
     },
     {
       "path": "qa/results/v16-11-tictactoe-1280.webp",
-      "size": 39732
+      "size": 39732,
+      "sha256": "f7fa1e48527ad6965f7e52c4ed1967d0e12f9de86649eed59c1243f84568029a"
     },
     {
       "path": "qa/results/v16-11-tictactoe-1920.webp",
-      "size": 62592
+      "size": 62592,
+      "sha256": "7bca7ce7cdb6cb336b8ae0be48ad4aaba58343579268299961d8c7cd0a8dde07"
     },
     {
       "path": "qa/results/v16-11-tictactoe-360.webp",
-      "size": 27588
+      "size": 27588,
+      "sha256": "419a1e1e6e353f8a20b16b61750fe5684f8c6b1bd13515f9eca76cb5894b3ae5"
     },
     {
       "path": "qa/results/v16-11-tictactoe-390.webp",
-      "size": 28714
+      "size": 28714,
+      "sha256": "577e1dd1d0c2df8701cae950b6b4f4e8712549d2d522826fecf4bf3500799f90"
     },
     {
       "path": "qa/results/v16-11-tictactoe-430.webp",
-      "size": 32274
+      "size": 32274,
+      "sha256": "5055bf32ecde296a2e40840a124c20c8be75b996fadc8b51798bb8b8cb3e8325"
     },
     {
       "path": "qa/results/v16-12-foundations-1280.webp",
-      "size": 54722
+      "size": 54722,
+      "sha256": "a50f8d539169b1f7ca892321c60876fade937c79a0696d0b397bb6752a63eab6"
     },
     {
       "path": "qa/results/v16-12-foundations-1920.webp",
-      "size": 69318
+      "size": 69318,
+      "sha256": "297cc3f5e6000a9e1b0e4a5b7b377e5c675729b714ac2e6b72e2d9deae4ce13e"
     },
     {
       "path": "qa/results/v16-12-foundations-360.webp",
-      "size": 35894
+      "size": 35894,
+      "sha256": "0b18cb17f576abd5088d10a3846955456f6a20cbd07c4085d7d548cf1857c9e7"
     },
     {
       "path": "qa/results/v16-12-foundations-390.webp",
-      "size": 36396
+      "size": 36396,
+      "sha256": "76d0707caee42fb483dc7cb269460137c9543db1cc98d5f515b54aeb867a56da"
     },
     {
       "path": "qa/results/v16-12-foundations-430.webp",
-      "size": 40804
+      "size": 40804,
+      "sha256": "3ec3d9ebe3c162d4e667e1a820ec79fd90e205a9e69ad0458ca7438fefd7dc36"
+    },
+    {
+      "path": "qa/results/v16-15/controls.json",
+      "size": 913,
+      "sha256": "76d6bd4e75879f224dcbd024c51e1f95420668cebe51ed9d04fe81a7a444807c"
+    },
+    {
+      "path": "qa/results/v16-15/edges/progress.json",
+      "size": 1893,
+      "sha256": "8bbd111a791d1e7607cd721356960ff332dc06f45bc2b22eb35b40da5888ce41"
+    },
+    {
+      "path": "qa/results/v16-15/edges/results.json",
+      "size": 2116,
+      "sha256": "2151d405abc0628eeaeb1bd22a5c637873bac077cb3b583977b2435ca695c32b"
+    },
+    {
+      "path": "qa/results/v16-15/foundations/results.json",
+      "size": 3106,
+      "sha256": "44edcf79d8a3351b759584c3090fc72985baa71a5c261c1e635895e48097032e"
+    },
+    {
+      "path": "qa/results/v16-15/records-unit.json",
+      "size": 3346,
+      "sha256": "346d85bb005b6984021ce41929346e60c6aa761720a0ba807e537917088b900b"
+    },
+    {
+      "path": "qa/results/v16-15/regression/browser-launch-error.txt",
+      "size": 1001,
+      "sha256": "34014f07e6326dda6c1015a5284f8c4a8782fdfdf51a9cd97319aa10fe64f96e"
+    },
+    {
+      "path": "qa/results/v16-15/regression/browser-results-progress.json",
+      "size": 14025,
+      "sha256": "feefa53843ea4868a84256761f8adf06c07eb421252d995e4edb6a8560c9b751"
+    },
+    {
+      "path": "qa/results/v16-15/regression/browser-results.json",
+      "size": 14124,
+      "sha256": "092df3ae3ccba1714a17468211e82d688316717ddf571824e6070dcee05d33fc"
+    },
+    {
+      "path": "qa/results/v16-15/retro/results.json",
+      "size": 21461,
+      "sha256": "47ee0f8fae0ae9d6ced790a480ec379c05991ce133ea7f844b3ed0b463b1ca42"
+    },
+    {
+      "path": "qa/retro-controls-qa.cjs",
+      "size": 2999,
+      "sha256": "3a8e6e9ee6daa406c0b9f12884eb99fe5397c13f1f8f76e9b241ee8a3dcf9026"
+    },
+    {
+      "path": "qa/retro-edge-qa.cjs",
+      "size": 9533,
+      "sha256": "d26c266f27a83c87955eec42b8182f600ce8cbf864cb32371967a4de4ae83a39"
+    },
+    {
+      "path": "qa/retro-orbit-qa.cjs",
+      "size": 10475,
+      "sha256": "a668683a51535d09b44bde443ce15b2adb68aab6caf6694fe823d27181e42ccd"
+    },
+    {
+      "path": "qa/retro-published-qa.cjs",
+      "size": 2528,
+      "sha256": "98f84cae49b57ea3663f82b710711e43d34bf36042374091510e461462c72235"
+    },
+    {
+      "path": "qa/retro-records-unit.cjs",
+      "size": 1550,
+      "sha256": "97a2b8e5e28310ce6a51c05ed89ec5ec5a8b477d3be986bdf786c9b0e31ce6d2"
+    },
+    {
+      "path": "qa/retro-server.cjs",
+      "size": 886,
+      "sha256": "4df95f42e8e0562b243e0ef9b156f9b75db085cbd27ed5a7bfdb8e7857c7ceae"
     },
     {
       "path": "qa/splash-readiness-qa.cjs",
-      "size": 3549
+      "size": 3549,
+      "sha256": "af394b68e210df9e74fef6d38b51fe486676dff6d01ee77070bf7f10f254cc7b"
     },
     {
       "path": "qa/title-center-qa.cjs",
-      "size": 2905
+      "size": 2905,
+      "sha256": "61dfa515799ff5615194a44495c1dc78b7f6b430df1e29ae1ca13db1f9b3af2c"
     },
     {
       "path": "qa/variant-qa.cjs",
-      "size": 11530
+      "size": 11530,
+      "sha256": "21c4598be15fb7b7e105dfe48d50d9dcfe177faa74dfbdbabcd38760b22bba82"
     },
     {
       "path": "records.js",
-      "size": 3658
+      "size": 3821,
+      "sha256": "ed4a685fceb282e3a6150a98f2a06fb657ae1cb9cb35a60f03e2eed2726997ae"
     },
     {
       "path": "static-qa-results.json",
-      "size": 2286
+      "size": 2286,
+      "sha256": "35345ab90bfd65a00b24d7afa7ce67c53982c31b626423003c6dc4dadfcdea63"
     },
     {
       "path": "tools/build-catalog.cjs",
-      "size": 858
+      "size": 1081,
+      "sha256": "9da808dd3ad18a4769a87648b199bcdf95fb53c7af02c6df934fc0928ac423fa"
     },
     {
       "path": "tools/build-energy-capsules-art.py",
-      "size": 9329
+      "size": 9329,
+      "sha256": "31df2623d55b57b41e9ce97ebca909fb3ebc6bb789ae54b6a6716d3a20bcccd5"
+    },
+    {
+      "path": "tools/build-file-map.cjs",
+      "size": 1384,
+      "sha256": "be428d9428ef5890a0f8c19134e57a4e41d2e94aea8d3b52648455e1dd090b7e"
+    },
+    {
+      "path": "tools/build-retro-titles.cjs",
+      "size": 2065,
+      "sha256": "1cd4a466e24397fae68e5c00105d5f4ff2d766fff0ec0fcaf30a0e384f4f790a"
     },
     {
       "path": "tools/build-title-art.cjs",
-      "size": 4807
+      "size": 4807,
+      "sha256": "9e2a0be4c703ee82470182e19b7314bce3774327cc06b8ce24665ad27f2dbea4"
+    },
+    {
+      "path": "tools/export-space-mail-art.cjs",
+      "size": 1044,
+      "sha256": "e78060eec1bc493943510a6c4b01e0e22921633187d29c1845a182c6685f39de"
     },
     {
       "path": "typography.css",
-      "size": 19743
+      "size": 19743,
+      "sha256": "53a789340d5acc9eef8f2330cd9020f173738981f67bc743fe5cd47f78687eef"
     }
   ]
 }

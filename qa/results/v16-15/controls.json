@@ -1,0 +1,28 @@
+{
+  "rows": [
+    {
+      "gameId": "energy-capsules",
+      "status": "PASS",
+      "controls": [
+        "real sound toggle/audio graph suspend",
+        "fullscreen enter/exit",
+        "field zones and keyboard activation when applicable",
+        "menu cancels frame"
+      ],
+      "visibilityFixture": "PASS: synthetic document.hidden + visibilitychange; requires physical device retest",
+      "audibleSound": "NOT_RUN: headless audio output muted"
+    },
+    {
+      "gameId": "space-mail",
+      "status": "PASS",
+      "controls": [
+        "real sound toggle/audio graph suspend",
+        "fullscreen enter/exit",
+        "field zones and keyboard activation when applicable",
+        "menu cancels frame"
+      ],
+      "visibilityFixture": "PASS: synthetic document.hidden + visibilitychange; requires physical device retest",
+      "audibleSound": "NOT_RUN: headless audio output muted"
+    }
+  ]
+}

@@ -314,16 +314,37 @@
       "entry": "games/energy-capsules/index.html",
       "desc": "Ловите капсулы с четырёх линий и удерживайте реактор в рабочем состоянии.",
       "color": "pink",
-      "cat": "arcade",
+      "cat": "retro",
       "assets": {
         "icon": "assets/icons/energy-capsules.png",
         "title": "assets/titles/energy-capsules.png",
         "splash": "assets/splashes/energy-capsules.png",
         "iconActive": "assets/icons/energy-capsules-active.png"
       },
-      "version": "1.2.1"
+      "version": "1.3.0",
+      "recordsFormat": "retro-score",
+      "recordUnit": "капсул"
+    },
+    {
+      "id": "space-mail",
+      "title": "Космическая почта",
+      "full": "Космическая почта",
+      "keys": [],
+      "entry": "games/space-mail/index.html",
+      "desc": "Сортируйте посылки по адресам, подтверждайте отправку и управляйте очередью.",
+      "color": "pink",
+      "cat": "retro",
+      "assets": {
+        "icon": "assets/icons/space-mail.webp",
+        "title": "assets/titles/space-mail.png",
+        "splash": "assets/splashes/space-mail.webp",
+        "iconActive": "assets/icons/space-mail-active.webp"
+      },
+      "version": "1.0.0",
+      "recordsFormat": "retro-score",
+      "recordUnit": "доставок"
     }
   ],
   "leaderboard": "local-browser",
-  "version": "16.14.1"
+  "version": "16.15.0"
 }
