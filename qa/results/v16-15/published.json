@@ -1,0 +1,55 @@
+{
+  "base": "https://intershum23.github.io/youth-games-galaxy/",
+  "engine": "Chromium 153",
+  "date": "2026-10-05T12:08:22.856Z",
+  "rows": [
+    {
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "published catalog 18",
+        "actual capsule catch",
+        "actual mail delivery",
+        "both games return to catalog",
+        "no console/page/HTTP errors"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "published catalog 18",
+        "actual capsule catch",
+        "actual mail delivery",
+        "both games return to catalog",
+        "no console/page/HTTP errors"
+      ]
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "published catalog 18",
+        "actual capsule catch",
+        "actual mail delivery",
+        "both games return to catalog",
+        "no console/page/HTTP errors"
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "published catalog 18",
+        "actual capsule catch",
+        "actual mail delivery",
+        "both games return to catalog",
+        "no console/page/HTTP errors"
+      ]
+    }
+  ]
+}

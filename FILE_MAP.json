@@ -90,8 +90,8 @@
     },
     {
       "path": "QA_v16_15_RETRO_ORBIT_RU.md",
-      "size": 10910,
-      "sha256": "f393bfac9a22bb23b96feaab04e9c0fffbbce5b52b735ef527c77878702ee9a2"
+      "size": 12215,
+      "sha256": "809b5b9144d0909374216e80a619ceecf569983cbf1f60412e9b37f93a7ffc39"
     },
     {
       "path": "QA_v16_8_RU.md",
@@ -3109,14 +3109,14 @@
       "sha256": "44edcf79d8a3351b759584c3090fc72985baa71a5c261c1e635895e48097032e"
     },
     {
+      "path": "qa/results/v16-15/published.json",
+      "size": 1260,
+      "sha256": "5cd892386f1baf807b7652ff9e7a676f4dd22135d0943804c5ff4b39134863c6"
+    },
+    {
       "path": "qa/results/v16-15/records-unit.json",
       "size": 3346,
       "sha256": "346d85bb005b6984021ce41929346e60c6aa761720a0ba807e537917088b900b"
-    },
-    {
-      "path": "qa/results/v16-15/regression/browser-launch-error.txt",
-      "size": 1001,
-      "sha256": "34014f07e6326dda6c1015a5284f8c4a8782fdfdf51a9cd97319aa10fe64f96e"
     },
     {
       "path": "qa/results/v16-15/regression/browser-results-progress.json",
@@ -3150,8 +3150,8 @@
     },
     {
       "path": "qa/retro-published-qa.cjs",
-      "size": 2528,
-      "sha256": "98f84cae49b57ea3663f82b710711e43d34bf36042374091510e461462c72235"
+      "size": 2647,
+      "sha256": "b0af092b2dee3bd42ca0a11bc8cfb79df2bc3ff7936101b39961ac99b5585a60"
     },
     {
       "path": "qa/retro-records-unit.cjs",
