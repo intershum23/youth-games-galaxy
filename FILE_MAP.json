@@ -1,22 +1,22 @@
 {
-  "version": "v16.15.0 RETRO ORBIT — CAPSULES REWORK + SPACE MAIL",
+  "version": "v16.16.0 RETRO ORBIT — RADIO BEACON",
   "scope": "repository source; ignored browser screenshot exports are additional release ZIP evidence",
   "exclusions": [
     "FILE_MAP.json",
     "FILE_MAP.txt",
     "FILES_SHA256SUMS.txt"
   ],
-  "fileCount": 643,
+  "fileCount": 670,
   "files": [
     {
       "path": ".gitignore",
-      "size": 104,
-      "sha256": "d22e80d9acd7248bff94847a2b39c3f2e5c5212d5d15a960d2ee6ba41ecc7d6a"
+      "size": 208,
+      "sha256": "01b11cbae279eb71ff302ccaeb4676da38be2d99b7db16668c0d05d1c68d083e"
     },
     {
       "path": "ADDING_GAMES_RU.md",
-      "size": 6452,
-      "sha256": "55c2a759017e474c5076242044b3943925e530afcbc36ce854d40baf89f8d001"
+      "size": 6872,
+      "sha256": "ae63af647e1d12e9934d983fe73cbdf7bf59abfcc7e9f91f0ced59e3583c75f4"
     },
     {
       "path": "API_CONTRACT.md",
@@ -94,6 +94,11 @@
       "sha256": "809b5b9144d0909374216e80a619ceecf569983cbf1f60412e9b37f93a7ffc39"
     },
     {
+      "path": "QA_v16_16_RADIO_BEACON_RU.md",
+      "size": 10913,
+      "sha256": "39ab001487db00f3d4aeabd07911bda531b30ff4a544ff3e01f55e81a867149a"
+    },
+    {
       "path": "QA_v16_8_RU.md",
       "size": 6484,
       "sha256": "6963190077736c0af9be71162acfdca195454aa6107d9df482ce2a6d7d325a1c"
@@ -125,8 +130,8 @@
     },
     {
       "path": "RETRO_ORBIT_CATALOG_RU.md",
-      "size": 51254,
-      "sha256": "e63a420f08719a3b0338e20cff6cd4a79a315dc72811cce13e8f84446e973b1b"
+      "size": 51354,
+      "sha256": "b75549c790898956d9a8b571b9ab07eefb02c617419326ef6f8c4ae5800812eb"
     },
     {
       "path": "SOURCE_SHA256.txt",
@@ -200,8 +205,8 @@
     },
     {
       "path": "VERSION.txt",
-      "size": 54,
-      "sha256": "97abf71511c408487905653d423e21dca1fccec7cf128f34759fded7ed9c16d2"
+      "size": 38,
+      "sha256": "ca5252720c1413164b2bc38fa532ee2e65c25b7bd8c5fb9f4db4b2e0779e494e"
     },
     {
       "path": "assets/cat.png",
@@ -739,6 +744,26 @@
       "sha256": "e066eab63330ec87b8d11c369c388657e68db3ee24ce1c35f9d71b79fe8f66b4"
     },
     {
+      "path": "assets/icons/radio-beacon-active.png",
+      "size": 2165036,
+      "sha256": "1d8ec458b0698523b94acaa25fb9ae940e6a974fa89e7314cb558310aae94c36"
+    },
+    {
+      "path": "assets/icons/radio-beacon-active.webp",
+      "size": 97308,
+      "sha256": "34b712dea475aa8c17039724e4304568714c8b0ba666a66b2150f26edb6e5506"
+    },
+    {
+      "path": "assets/icons/radio-beacon.png",
+      "size": 2054525,
+      "sha256": "e01dc0c30a026d47018b82b31875be50ee6b534125181a090c3db7ef05b0e0e8"
+    },
+    {
+      "path": "assets/icons/radio-beacon.webp",
+      "size": 91390,
+      "sha256": "28f63afb7ca4ec6f2aac42d46164cd4ff61db789fc7e3583b6a03c4940e956d3"
+    },
+    {
       "path": "assets/icons/reversi-active.webp",
       "size": 61416,
       "sha256": "9a4d2560c6002fbb64a120d7d11b666a790abdc22d21e26ef1889cd1379aed63"
@@ -877,6 +902,16 @@
       "path": "assets/splashes/memory.webp",
       "size": 367420,
       "sha256": "5eae3684bc1311208c3fce27fac6b0822dcaefff40b61ba3f887f2ff3d124be4"
+    },
+    {
+      "path": "assets/splashes/radio-beacon.png",
+      "size": 2762768,
+      "sha256": "7c15147b67e9a29097f0e434742921b2a5bb46532a3fc69fc05256bdadc91d4d"
+    },
+    {
+      "path": "assets/splashes/radio-beacon.webp",
+      "size": 508522,
+      "sha256": "4d002cc508090ad611d5856e67bbc767ead20a8683358a8ef73d4ac5e10e48d1"
     },
     {
       "path": "assets/splashes/reversi.webp",
@@ -1027,6 +1062,11 @@
       "path": "assets/titles/memory.svg",
       "size": 5371,
       "sha256": "0436c45ed699a7c5e465c5c8462aaccd4fd26df2fc21cc9954b21a6eea32b76a"
+    },
+    {
+      "path": "assets/titles/radio-beacon.png",
+      "size": 283455,
+      "sha256": "c785ed3abcb0964d4b0f6f76f83dff41d6616cc8a8c12807be621ad94231b9ae"
     },
     {
       "path": "assets/titles/reversi.png",
@@ -1185,8 +1225,8 @@
     },
     {
       "path": "catalog.generated.js",
-      "size": 8896,
-      "sha256": "c13fdd981f1c7bb2a2479e47ba89733090f5bfd99f9114db76ee8966b4548c37"
+      "size": 9563,
+      "sha256": "1f795afd38ccbb872e6ec92fe14cf8ece56a969c724e091208e141d8d829ab4b"
     },
     {
       "path": "game-lifecycle.js",
@@ -1205,8 +1245,8 @@
     },
     {
       "path": "games-manifest.json",
-      "size": 11589,
-      "sha256": "7fa623d55dce8a4d4d26245a3bbcc4a34ede63ffe972a8c647c41d1f7801c1cc"
+      "size": 12451,
+      "sha256": "3f9b7fb8b5a64ab748c21639e210d89e50ba8e13feabb72fce062764261d7b69"
     },
     {
       "path": "games/2048/assets/cat_head.png",
@@ -1469,6 +1509,36 @@
       "sha256": "e7389738d09b509e267b2798b9815b85bd456122b0da448aab46f7ed92ce7ada"
     },
     {
+      "path": "games/radio-beacon/ART_PROMPTS_RU.md",
+      "size": 2603,
+      "sha256": "3ece60e05ce37e7db8717bb510cd4f1012e74c683d9f2344d9bd4d12916feeb0"
+    },
+    {
+      "path": "games/radio-beacon/ASSET_MANIFEST_radio-beacon.json",
+      "size": 2104,
+      "sha256": "7607736c83aa2c8ceea80cbdcfd20b1869738109e388c6cf8aeddc56da011010"
+    },
+    {
+      "path": "games/radio-beacon/SPEC_radio-beacon.md",
+      "size": 7197,
+      "sha256": "628553cb81f2f47f526b256149e037ed2ec56ae56bd1557e1adfb37d15b2adbd"
+    },
+    {
+      "path": "games/radio-beacon/game.css",
+      "size": 4247,
+      "sha256": "c4bada9d893e7b8bf5f1edc2d32ed3a59f4d40cbbb29a1aa0a3bdc6be0eac9ff"
+    },
+    {
+      "path": "games/radio-beacon/game.js",
+      "size": 12377,
+      "sha256": "e11b8a0273f89078ddda65249617f940ad743ec61584c0b70e85375043141092"
+    },
+    {
+      "path": "games/radio-beacon/index.html",
+      "size": 7612,
+      "sha256": "4f6da473a4d43993603b9a731861c7dd3d51abf8511e4a884089ff69d18a91e0"
+    },
+    {
       "path": "games/retro-orbit.css",
       "size": 4592,
       "sha256": "900a32d4f69e74b455c7ae1f418d9837577f9474413cc4942056b3b145cc7d70"
@@ -1546,7 +1616,7 @@
     {
       "path": "index.html",
       "size": 6470,
-      "sha256": "841ba1be70d4d030aa1e9af1644da39fecec2cee16abe28d56ada01c5b826081"
+      "sha256": "871d40b2fe56d692ae6bd32bc231ffd7a44c0dadab92e535dba53637b42097d5"
     },
     {
       "path": "platform-config.js",
@@ -1560,8 +1630,8 @@
     },
     {
       "path": "platform.js",
-      "size": 17396,
-      "sha256": "9460a647d7764d826787c288cf8d55235acdb79a857379c6343463def4496139"
+      "size": 17629,
+      "sha256": "ddc0d928249bf5f91877b273bc2a9bf6b9dfb6eaf260d77c0cf46cf760d10d88"
     },
     {
       "path": "pruned-assets.json",
@@ -1575,8 +1645,8 @@
     },
     {
       "path": "qa/browser-qa.cjs",
-      "size": 14513,
-      "sha256": "54371755956cd8161c5cdf51f71e37b9b2c529756159e350f00fcd1140edb979"
+      "size": 14744,
+      "sha256": "d6156b5e083c1aafda20ba10a2dcbb35d80bdd7e1a0fe712b71989d126a40da9"
     },
     {
       "path": "qa/cards-symbols-qa.cjs",
@@ -1642,6 +1712,26 @@
       "path": "qa/protocol-qa.cjs",
       "size": 4600,
       "sha256": "292d1089ed602ea523e43906880407cf1a9dfb8b96099a4577027f3ff5815c5d"
+    },
+    {
+      "path": "qa/radio-beacon-edge-qa.cjs",
+      "size": 6625,
+      "sha256": "14cc7a26879b2f4cb61839996061969d9883cc1068287753ded514239da935fc"
+    },
+    {
+      "path": "qa/radio-beacon-platform-qa.cjs",
+      "size": 2321,
+      "sha256": "3f76dcc264827acff41241589b9603bcea33d640549945068e6c6d064cf8a859"
+    },
+    {
+      "path": "qa/radio-beacon-published-qa.cjs",
+      "size": 2956,
+      "sha256": "83a6602ba624f54eadd63c946b6c15bc2a7f88f686fd1b9fc2017303826febe6"
+    },
+    {
+      "path": "qa/radio-beacon-qa.cjs",
+      "size": 7763,
+      "sha256": "5b8b03b5139fe2ff56077597e11559b0949b114afb4d6d40ddc27a12b19d8235"
     },
     {
       "path": "qa/results/2048-360-game.webp",
@@ -3134,6 +3224,41 @@
       "sha256": "47ee0f8fae0ae9d6ced790a480ec379c05991ce133ea7f844b3ed0b463b1ca42"
     },
     {
+      "path": "qa/results/v16-16/beacon/progress.json",
+      "size": 13383,
+      "sha256": "d4229b071d730dab7137baee859b8d4cbc1c7f21d23567751e1598982c778c31"
+    },
+    {
+      "path": "qa/results/v16-16/beacon/results.json",
+      "size": 14545,
+      "sha256": "0d4627d89d1560014fe7235fdc1d49c2e37818b1632bb823515b6941f61f3ef5"
+    },
+    {
+      "path": "qa/results/v16-16/edges/results.json",
+      "size": 1162,
+      "sha256": "bc967c546048572c8d2ae7ceea263f93547a1d768582ce706c58f78cbc46ca4d"
+    },
+    {
+      "path": "qa/results/v16-16/platform.json",
+      "size": 371,
+      "sha256": "b4dcdfb53f021e76520c689f059f98166e9101abc775dd05a242e50a27ab05b9"
+    },
+    {
+      "path": "qa/results/v16-16/records-unit.json",
+      "size": 3532,
+      "sha256": "967b9d65094e349fad166b4d46c0784451d0fb887df4a394e016e5010e0d9657"
+    },
+    {
+      "path": "qa/results/v16-16/regression/browser-results-progress.json",
+      "size": 14790,
+      "sha256": "ac19ba72266db7daabc32a5926fb0e63aaaa4c6dd81d3c8b2f99bae8e43b2e02"
+    },
+    {
+      "path": "qa/results/v16-16/regression/browser-results.json",
+      "size": 14889,
+      "sha256": "94a9c55dd32853415918da51d3a2aacbee396d79b7e90fc4c50874b5e4ccfe82"
+    },
+    {
       "path": "qa/retro-controls-qa.cjs",
       "size": 2999,
       "sha256": "3a8e6e9ee6daa406c0b9f12884eb99fe5397c13f1f8f76e9b241ee8a3dcf9026"
@@ -3155,8 +3280,8 @@
     },
     {
       "path": "qa/retro-records-unit.cjs",
-      "size": 1550,
-      "sha256": "97a2b8e5e28310ce6a51c05ed89ec5ec5a8b477d3be986bdf786c9b0e31ce6d2"
+      "size": 1578,
+      "sha256": "609d89d326a5e52849f70af381f68e9dfee6136e1ea38fa66d2e25f48301ce40"
     },
     {
       "path": "qa/retro-server.cjs",
@@ -3204,6 +3329,11 @@
       "sha256": "be428d9428ef5890a0f8c19134e57a4e41d2e94aea8d3b52648455e1dd090b7e"
     },
     {
+      "path": "tools/build-radio-beacon-title.cjs",
+      "size": 2027,
+      "sha256": "f170124c9451bc3ab66e3e3326c69280a5b58771b00405ebc234ca90dd150c3c"
+    },
+    {
       "path": "tools/build-retro-titles.cjs",
       "size": 2065,
       "sha256": "1cd4a466e24397fae68e5c00105d5f4ff2d766fff0ec0fcaf30a0e384f4f790a"
@@ -3212,6 +3342,11 @@
       "path": "tools/build-title-art.cjs",
       "size": 4807,
       "sha256": "9e2a0be4c703ee82470182e19b7314bce3774327cc06b8ce24665ad27f2dbea4"
+    },
+    {
+      "path": "tools/export-radio-beacon-art.cjs",
+      "size": 1050,
+      "sha256": "c848f31050077edca967eaaa55bd90f275c9801d777526312bd8013272ff376b"
     },
     {
       "path": "tools/export-space-mail-art.cjs",

@@ -1,0 +1,119 @@
+{
+  "engine": "Node VM, canonical storage unit fixtures",
+  "rows": [
+    {
+      "gameId": "2048",
+      "status": "PASS",
+      "scenario": "malformed best/nonfinite/negative/monotonic best/unrelated keys preserved",
+      "fixture": true
+    },
+    {
+      "gameId": "backgammon",
+      "status": "PASS",
+      "scenario": "malformed best/nonfinite/negative/monotonic best/unrelated keys preserved",
+      "fixture": true
+    },
+    {
+      "gameId": "checkers",
+      "status": "PASS",
+      "scenario": "malformed best/nonfinite/negative/monotonic best/unrelated keys preserved",
+      "fixture": true
+    },
+    {
+      "gameId": "chess",
+      "status": "PASS",
+      "scenario": "malformed best/nonfinite/negative/monotonic best/unrelated keys preserved",
+      "fixture": true
+    },
+    {
+      "gameId": "connect4",
+      "status": "PASS",
+      "scenario": "malformed best/nonfinite/negative/monotonic best/unrelated keys preserved",
+      "fixture": true
+    },
+    {
+      "gameId": "corners",
+      "status": "PASS",
+      "scenario": "malformed best/nonfinite/negative/monotonic best/unrelated keys preserved",
+      "fixture": true
+    },
+    {
+      "gameId": "domino",
+      "status": "PASS",
+      "scenario": "malformed best/nonfinite/negative/monotonic best/unrelated keys preserved",
+      "fixture": true
+    },
+    {
+      "gameId": "fifteen",
+      "status": "PASS",
+      "scenario": "malformed best/nonfinite/negative/monotonic best/unrelated keys preserved",
+      "fixture": true
+    },
+    {
+      "gameId": "gomoku",
+      "status": "PASS",
+      "scenario": "malformed best/nonfinite/negative/monotonic best/unrelated keys preserved",
+      "fixture": true
+    },
+    {
+      "gameId": "mahjong",
+      "status": "PASS",
+      "scenario": "malformed best/nonfinite/negative/monotonic best/unrelated keys preserved",
+      "fixture": true
+    },
+    {
+      "gameId": "memory",
+      "status": "PASS",
+      "scenario": "malformed best/nonfinite/negative/monotonic best/unrelated keys preserved",
+      "fixture": true
+    },
+    {
+      "gameId": "reversi",
+      "status": "PASS",
+      "scenario": "malformed best/nonfinite/negative/monotonic best/unrelated keys preserved",
+      "fixture": true
+    },
+    {
+      "gameId": "solitaire",
+      "status": "PASS",
+      "scenario": "malformed best/nonfinite/negative/monotonic best/unrelated keys preserved",
+      "fixture": true
+    },
+    {
+      "gameId": "starbattle",
+      "status": "PASS",
+      "scenario": "malformed best/nonfinite/negative/monotonic best/unrelated keys preserved",
+      "fixture": true
+    },
+    {
+      "gameId": "sudoku",
+      "status": "PASS",
+      "scenario": "malformed best/nonfinite/negative/monotonic best/unrelated keys preserved",
+      "fixture": true
+    },
+    {
+      "gameId": "tictactoe",
+      "status": "PASS",
+      "scenario": "malformed best/nonfinite/negative/monotonic best/unrelated keys preserved",
+      "fixture": true
+    },
+    {
+      "gameId": "energy-capsules",
+      "status": "PASS",
+      "scenario": "malformed best/nonfinite/negative/monotonic best/unrelated keys preserved",
+      "fixture": true
+    },
+    {
+      "gameId": "space-mail",
+      "status": "PASS",
+      "scenario": "malformed best/nonfinite/negative/monotonic best/unrelated keys preserved",
+      "fixture": true
+    },
+    {
+      "gameId": "radio-beacon",
+      "status": "PASS",
+      "scenario": "malformed best/nonfinite/negative/monotonic best/unrelated keys preserved",
+      "fixture": true
+    }
+  ]
+}

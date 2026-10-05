@@ -1,0 +1,30 @@
+@import url('../retro-orbit.css');
+body[data-game="radio-beacon"] .beaconField{position:relative;width:100%;min-height:306px;padding:12px;border:1px solid var(--retro-line);border-radius:26px;background:var(--retro-glass);overflow:hidden}
+body[data-game="radio-beacon"] .antennaScene{position:relative;height:76px;color:#ffa6d8;display:flex;justify-content:center}
+body[data-game="radio-beacon"] .antennaScene svg{width:230px;height:76px;filter:drop-shadow(0 0 7px #f65bac55)}
+body[data-game="radio-beacon"] .linkBadge{position:absolute;right:0;top:8px;padding:5px 8px;border:1px solid var(--retro-line);border-radius:12px;font:700 9px var(--font-ui);background:#985fa522}
+body[data-game="radio-beacon"] .frequencyDisplay{text-align:center;display:grid;gap:4px;margin-bottom:10px}
+body[data-game="radio-beacon"] .frequencyDisplay>span{font:500 10px var(--font-ui);color:#d3e0f9}
+body[data-game="radio-beacon"] .frequencyDisplay b{font:700 27px/1.2 var(--font-accent);color:#ffe2eb;font-variant-numeric:tabular-nums}
+body[data-game="radio-beacon"] .frequencyDisplay small{font:600 10px var(--font-ui)}
+body[data-game="radio-beacon"] .signalReadout,body[data-game="radio-beacon"] .transferReadout{display:flex;justify-content:space-between;gap:8px;font:600 10px var(--font-ui);margin:7px 0}
+body[data-game="radio-beacon"] .meter{height:10px;background:#dadcff16;border:1px solid #ffffff26;border-radius:12px;overflow:hidden}
+body[data-game="radio-beacon"] .meter>div{height:100%;width:0;background:linear-gradient(90deg,#f57bbf,#cab2ff);border-radius:12px}
+body[data-game="radio-beacon"] .bandLabels{display:flex;justify-content:space-between;font:500 8px var(--font-ui);color:#d3e0f9;margin:4px 0 10px}
+body[data-game="radio-beacon"] .tuningSlider{display:grid;gap:4px;font:500 9px var(--font-ui);color:#d3e0f9}
+body[data-game="radio-beacon"] input[type="range"]{width:100%;height:26px;margin:0;accent-color:#ff87cf;touch-action:pan-y}
+body[data-game="radio-beacon"] .stepControls{display:flex;align-items:center;gap:7px;margin:4px 0;font:500 10px var(--font-ui)}
+body[data-game="radio-beacon"] .stepControls button{min-height:44px;padding:4px 12px;border-radius:12px;font:600 10px var(--font-ui)}
+body[data-game="radio-beacon"] .stepControls button[aria-pressed="true"]{border-color:#f8a1dc;background:#d461a62a}
+body[data-game="radio-beacon"] .interference{min-height:28px;margin:9px 0 0;font:600 10px/1.4 var(--font-ui);color:#d4dff5}
+body[data-game="radio-beacon"] .interference.warning{color:#ffa9c6}
+body[data-game="radio-beacon"] .tuneControls{width:min(100%,500px);display:grid;grid-template-columns:64px minmax(0,1fr) 64px;gap:8px}
+body[data-game="radio-beacon"] .tuneControls button{min-height:56px;border-radius:16px;font:700 24px var(--font-accent);display:grid;place-content:center}
+body[data-game="radio-beacon"] .tuneControls small{font:500 8px var(--font-ui)}
+body[data-game="radio-beacon"] #lockBtn{font:700 12px var(--font-accent);padding:8px}
+body[data-game="radio-beacon"] #lockBtn[aria-pressed="true"]{border-color:#f8a1dc;background:#d461a62a}
+body[data-game="radio-beacon"] .pauseCurtain{display:none;position:absolute;inset:0;place-content:center;background:#14152baf;font:700 17px var(--font-accent);z-index:5}
+body[data-game="radio-beacon"].paused .pauseCurtain{display:grid}
+@media(min-width:700px) and (orientation:landscape){body[data-game="radio-beacon"] #game.screen.active{display:grid;grid-template-columns:minmax(280px,500px) minmax(190px,300px);grid-template-rows:auto auto auto auto auto;align-content:start;justify-content:center;gap:12px}body[data-game="radio-beacon"] #game .topbar,body[data-game="radio-beacon"] #game .hud{grid-column:1/-1;width:100%;max-width:814px}body[data-game="radio-beacon"] .gameArea{grid-column:1;grid-row:3/6}body[data-game="radio-beacon"] .beaconField{padding:20px;min-height:360px}body[data-game="radio-beacon"] #game .playerBar{grid-column:2;grid-row:3}body[data-game="radio-beacon"] .tuneControls{grid-column:2;grid-row:4}body[data-game="radio-beacon"] #game .controls{grid-column:2;grid-row:5}}
+body[data-game="radio-beacon"] #game .gameTitleArt{height:70px}
+@media(orientation:landscape) and (max-height:500px){body[data-game="radio-beacon"] #game .gameTitleArt{height:48px}}

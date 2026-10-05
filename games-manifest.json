@@ -343,8 +343,32 @@
       "version": "1.0.0",
       "recordsFormat": "retro-score",
       "recordUnit": "доставок"
+    },
+    {
+      "id": "radio-beacon",
+      "title": "Радиомаяк",
+      "full": "Радиомаяк",
+      "keys": [],
+      "entry": "games/radio-beacon/index.html",
+      "desc": "Найдите частоту, удерживайте сигнал и передайте сообщения сквозь дрейф и помехи.",
+      "color": "pink",
+      "cat": "retro",
+      "assets": {
+        "icon": "assets/icons/radio-beacon.webp",
+        "title": "assets/titles/radio-beacon.png",
+        "splash": "assets/splashes/radio-beacon.webp",
+        "iconActive": "assets/icons/radio-beacon-active.webp"
+      },
+      "version": "1.0.0",
+      "recordsFormat": "retro-score",
+      "recordUnit": "сообщений",
+      "recordUnits": [
+        "сообщение",
+        "сообщения",
+        "сообщений"
+      ]
     }
   ],
   "leaderboard": "local-browser",
-  "version": "16.15.0"
+  "version": "16.16.0"
 }

@@ -1,0 +1,70 @@
+{
+  "gameId": "radio-beacon",
+  "version": "1.0.0",
+  "generatedBy": "image_gen for illustrations; actual local Unbounded 800 canvas title; deterministic WebP export",
+  "assets": [
+    {
+      "path": "assets/icons/radio-beacon.png",
+      "purpose": "original default illustration",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "bytes": 2054525,
+      "sha256": "e01dc0c30a026d47018b82b31875be50ee6b534125181a090c3db7ef05b0e0e8"
+    },
+    {
+      "path": "assets/icons/radio-beacon-active.png",
+      "purpose": "original wink illustration",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "bytes": 2165036,
+      "sha256": "1d8ec458b0698523b94acaa25fb9ae940e6a974fa89e7314cb558310aae94c36"
+    },
+    {
+      "path": "assets/splashes/radio-beacon.png",
+      "purpose": "original portrait splash",
+      "width": 941,
+      "height": 1672,
+      "alpha": false,
+      "bytes": 2762768,
+      "sha256": "7c15147b67e9a29097f0e434742921b2a5bb46532a3fc69fc05256bdadc91d4d"
+    },
+    {
+      "path": "assets/icons/radio-beacon.webp",
+      "purpose": "catalog default",
+      "width": 480,
+      "height": 480,
+      "alpha": true,
+      "bytes": 91390,
+      "sha256": "28f63afb7ca4ec6f2aac42d46164cd4ff61db789fc7e3583b6a03c4940e956d3"
+    },
+    {
+      "path": "assets/icons/radio-beacon-active.webp",
+      "purpose": "catalog active",
+      "width": 480,
+      "height": 480,
+      "alpha": true,
+      "bytes": 97308,
+      "sha256": "34b712dea475aa8c17039724e4304568714c8b0ba666a66b2150f26edb6e5506"
+    },
+    {
+      "path": "assets/splashes/radio-beacon.webp",
+      "purpose": "splash",
+      "width": 941,
+      "height": 1672,
+      "alpha": false,
+      "bytes": 508522,
+      "sha256": "4d002cc508090ad611d5856e67bbc767ead20a8683358a8ef73d4ac5e10e48d1"
+    },
+    {
+      "path": "assets/titles/radio-beacon.png",
+      "purpose": "actual Unbounded PNG title",
+      "width": 1600,
+      "height": 500,
+      "alpha": true,
+      "bytes": 283455,
+      "sha256": "c785ed3abcb0964d4b0f6f76f83dff41d6616cc8a8c12807be621ad94231b9ae"
+    }
+  ]
+}

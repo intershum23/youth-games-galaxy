@@ -1,0 +1,16 @@
+{
+  "engine": "Chromium 153",
+  "rows": [
+    {
+      "status": "PASS",
+      "checks": [
+        "retro category 3",
+        "search one result",
+        "first touchscreen tap launches",
+        "natural 3-message victory",
+        "My Records displays GAME A and 3 messages and actual score",
+        "reload preserves unrelated key and one record"
+      ]
+    }
+  ]
+}

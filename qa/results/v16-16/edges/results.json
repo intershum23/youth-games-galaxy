@@ -1,0 +1,57 @@
+{
+  "engine": "Chromium 153",
+  "rows": [
+    {
+      "name": "natural energy depletion turbo",
+      "status": "PASS"
+    },
+    {
+      "name": "natural energy depletion b",
+      "status": "PASS"
+    },
+    {
+      "name": "natural energy depletion a",
+      "status": "PASS"
+    },
+    {
+      "name": "standalone controls 360",
+      "status": "PASS"
+    },
+    {
+      "name": "standalone controls 390",
+      "status": "PASS"
+    },
+    {
+      "name": "standalone controls 430",
+      "status": "PASS"
+    },
+    {
+      "name": "standalone controls 1280",
+      "status": "PASS"
+    },
+    {
+      "name": "standalone controls 1920",
+      "status": "PASS"
+    },
+    {
+      "name": "noise warning/active and locked energy penalty",
+      "status": "PASS"
+    },
+    {
+      "name": "missing splash recovery and retry",
+      "status": "PASS"
+    },
+    {
+      "name": "corrupt storage fixture + natural victory",
+      "status": "PASS"
+    },
+    {
+      "name": "blocked storage fixture + natural victory",
+      "status": "PASS"
+    },
+    {
+      "name": "synthetic visibility fixture pause and explicit resume",
+      "status": "PASS"
+    }
+  ]
+}

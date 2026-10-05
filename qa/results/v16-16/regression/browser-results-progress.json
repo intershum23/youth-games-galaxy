@@ -1,0 +1,657 @@
+{
+  "catalog": [
+    {
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "hero, safe artwork bounds, credit"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "hero, safe artwork bounds, credit"
+      ]
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "hero, safe artwork bounds, credit"
+      ]
+    }
+  ],
+  "matrix": [
+    {
+      "game": "2048",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "2048",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "2048",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "backgammon",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "backgammon",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "backgammon",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "checkers",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "checkers",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "checkers",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "chess",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "chess",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "chess",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "connect4",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "connect4",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "connect4",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "corners",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "corners",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "corners",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "domino",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "domino",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "domino",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "fifteen",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "fifteen",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "fifteen",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "gomoku",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "gomoku",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "gomoku",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "mahjong",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "mahjong",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "mahjong",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "memory",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "memory",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "memory",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "reversi",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "reversi",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "reversi",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "solitaire",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "solitaire",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "solitaire",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "starbattle",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "starbattle",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "starbattle",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "sudoku",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "sudoku",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "sudoku",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "tictactoe",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "tictactoe",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "tictactoe",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "energy-capsules",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "energy-capsules",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "energy-capsules",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "space-mail",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "space-mail",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "space-mail",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "radio-beacon",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "radio-beacon",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    },
+    {
+      "game": "radio-beacon",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "real gameplay action",
+        "layout, rotation, new, menu, exit, reload storage equality"
+      ],
+      "errors": []
+    }
+  ]
+}
