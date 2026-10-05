@@ -44,7 +44,7 @@ function fullscreen(){if(document.fullscreenElement)document.exitFullscreen?.();
 function keyLane(k){return({q:0,Q:0,e:1,E:1,z:2,Z:2,c:3,C:3,'7':0,'9':1,'1':2,'3':3})[k]}
 function init(){
  $('#startBtn').addEventListener('click',()=>show('menu'));
- $$$('[data-hero]').forEach(b=>b.addEventListener('click',()=>setHero(b.dataset.hero)));
+ $('[data-hero]').forEach(b=>b.addEventListener('click',()=>setHero(b.dataset.hero)));
  $$('.modeCard[data-mode]').forEach(b=>b.addEventListener('click',()=>startGame(b.dataset.mode)));
  $$('.catchBtn,.laneHit').forEach(b=>b.addEventListener('pointerdown',e=>{e.preventDefault();selectLane(Number(b.dataset.lane))}));
  $('#pauseBtn').addEventListener('click',()=>togglePause());
