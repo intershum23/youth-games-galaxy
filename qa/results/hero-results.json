@@ -1,0 +1,77 @@
+[
+  {
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "image": {
+      "naturalWidth": 1086,
+      "naturalHeight": 1448,
+      "width": 338,
+      "height": 450.65625,
+      "left": 11,
+      "right": 349,
+      "src": "assets/galaxy-hero-v16-11.webp",
+      "fit": "contain"
+    }
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "image": {
+      "naturalWidth": 1086,
+      "naturalHeight": 1448,
+      "width": 368,
+      "height": 490.65625,
+      "left": 11,
+      "right": 379,
+      "src": "assets/galaxy-hero-v16-11.webp",
+      "fit": "contain"
+    }
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "image": {
+      "naturalWidth": 1086,
+      "naturalHeight": 1448,
+      "width": 408,
+      "height": 544,
+      "left": 11,
+      "right": 419,
+      "src": "assets/galaxy-hero-v16-11.webp",
+      "fit": "contain"
+    }
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "image": {
+      "naturalWidth": 1086,
+      "naturalHeight": 1448,
+      "width": 732,
+      "height": 976,
+      "left": 274,
+      "right": 1006,
+      "src": "assets/galaxy-hero-v16-11.webp",
+      "fit": "contain"
+    }
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "status": "PASS",
+    "image": {
+      "naturalWidth": 1086,
+      "naturalHeight": 1448,
+      "width": 732,
+      "height": 976,
+      "left": 594,
+      "right": 1326,
+      "src": "assets/galaxy-hero-v16-11.webp",
+      "fit": "contain"
+    }
+  }
+]

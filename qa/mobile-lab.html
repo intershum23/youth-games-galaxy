@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Игровая галактика — мобильный QA</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#11172b;color:#f0f5ff;font:15px/1.4 var(--font-ui)}header{padding:16px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;border-bottom:1px solid #536386}h1{margin:0;font-size:20px;font-family:var(--font-accent)}label{display:flex;align-items:center;gap:8px}select,button{font:inherit;padding:9px;border:1px solid #637daa;border-radius:8px;background:#202c49;color:#fff}button{cursor:pointer}main{padding:18px;overflow:auto}#viewport{display:block;border:0;width:360px;height:800px;max-width:none;background:#04082a;box-shadow:0 0 0 2px #637daa}p{margin:0 16px 10px;color:#b9c9e7}.note{padding:12px 0}#sizeLabel{font-variant-numeric:tabular-nums}
+</style><link rel="stylesheet" href="../typography.css">
+</head><body>
+<header><h1>Мобильный QA v16</h1><label>Размер <select id="size"><option value="360,800">360×800</option><option value="390,844">390×844</option><option value="430,932">430×932</option></select></label><button id="rotate">Повернуть</button><button id="reload">Перезагрузить приложение</button><b id="sizeLabel">360×800 • portrait</b></header>
+<p class="note">Внутреннее окно имеет точные CSS-размеры. Это браузерная проверка layout, а не проверка физического Android. Прокручивайте внешнюю страницу, чтобы увидеть окно полностью.</p>
+<main><iframe id="viewport" src="../index.html" title="Платформа в контрольном viewport"></iframe></main>
+<script>
+const frame=document.getElementById('viewport'),size=document.getElementById('size'),label=document.getElementById('sizeLabel');let landscape=false;
+function resize(){let [width,height]=size.value.split(',').map(Number);if(landscape)[width,height]=[height,width];frame.style.width=width+'px';frame.style.height=height+'px';label.textContent=width+'×'+height+' • '+(landscape?'landscape':'portrait');}
+size.addEventListener('change',resize);document.getElementById('rotate').addEventListener('click',()=>{landscape=!landscape;resize()});document.getElementById('reload').addEventListener('click',()=>{frame.src=frame.getAttribute('src')});resize();
+</script></body></html>

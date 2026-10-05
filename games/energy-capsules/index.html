@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#12053d">
+<title>Энергокапсулы</title>
+<link rel="stylesheet" href="../../typography.css">
+<link rel="stylesheet" href="../../game-shell.css">
+<link rel="stylesheet" href="game.css">
+<script src="../../game-lifecycle.js"></script>
+<script src="../../records.js"></script>
+</head>
+<body data-game="energy-capsules">
+<div id="app">
+  <section id="splash" class="screen active">
+    <button id="startBtn" type="button" aria-label="Начать игру Энергокапсулы">Начать игру</button>
+  </section>
+
+  <section id="menu" class="screen scroll">
+    <div class="menuWrap">
+      <h1>
+        <span class="sr-only">Энергокапсулы</span>
+        <img class="gameTitleArt" src="../../assets/titles/energy-capsules.png" alt="" aria-hidden="true">
+      </h1>
+      <p class="sub">Ретро-орбита: ловите энергокапсулы с четырёх линий и удерживайте реактор в рабочем состоянии.</p>
+
+      <div class="heroChooser">
+        <div class="heroChooserHead"><strong>Выберите героя</strong></div>
+        <div class="heroRow">
+          <button class="heroOption on" data-hero="corgi" type="button" aria-label="Выбрать Капитана Корги">
+            <div class="heroPortrait"><img src="../../assets/corgi.png" alt="Капитан Корги"></div>
+            <div class="heroName">Капитан<br>Корги</div>
+          </button>
+          <button class="heroOption" data-hero="cat" type="button" aria-label="Выбрать Космо-Кота">
+            <div class="heroPortrait"><img src="../../assets/cat.png" alt="Космо-Кот"></div>
+            <div class="heroName">Космо-<br>Кот</div>
+          </button>
+        </div>
+      </div>
+
+      <div class="modeGrid" aria-label="Выберите режим">
+        <button class="modeCard" data-mode="a" type="button"><strong>GAME A</strong><span>Спокойный старт: одна капсула на линии, скорость растёт постепенно.</span></button>
+        <button class="modeCard" data-mode="b" type="button"><strong>GAME B</strong><span>До двух капсул одновременно, меньше времени на смену позиции.</span></button>
+        <button class="modeCard" data-mode="turbo" type="button"><strong>TURBO</strong><span>Быстрый режим на рекорд: до трёх капсул и постоянное ускорение.</span></button>
+      </div>
+      <button class="recordsBtn" id="recordsBtn" type="button">🏆 Рекорды</button>
+    </div>
+  </section>
+
+  <section id="game" class="screen">
+    <div class="topbar">
+      <div class="titleStack">
+        <div class="gameTitle galaxy-title" role="heading" aria-level="1">
+          <span class="sr-only">Энергокапсулы</span>
+          <img class="gameTitleArt" src="../../assets/titles/energy-capsules.png" alt="" aria-hidden="true">
+        </div>
+        <div id="modeBadge">GAME A</div>
+      </div>
+      <button class="iconBtn" id="soundBtn" type="button" aria-label="Выключить звук">🔊</button>
+    </div>
+
+    <div class="hud" aria-label="Игровые показатели">
+      <div><span>Очки</span><b id="scoreValue">0</b></div>
+      <div><span>Рекорд</span><b id="bestValue">0</b></div>
+      <div><span>Жизни</span><b id="livesValue">●●●</b></div>
+      <div><span>Серия</span><b id="streakValue">0</b></div>
+    </div>
+
+    <div class="playerBar" aria-label="Ваш герой">
+      <img id="playerImg" src="../../assets/corgi.png" alt="Капитан Корги">
+      <div class="missionStatus"><b id="stateText">Перехватывайте капсулы</b><span id="speedText">Скорость 1</span></div>
+      <button class="pauseBtn" id="pauseBtn" type="button" aria-label="Пауза">Ⅱ</button>
+    </div>
+
+    <div class="gameArea">
+      <div class="catchField boardFrame" id="catchField" aria-label="Игровое поле энергокапсул">
+        <div class="reactor" aria-hidden="true"><span></span></div>
+        <div class="track t0" aria-hidden="true"></div>
+        <div class="track t1" aria-hidden="true"></div>
+        <div class="track t2" aria-hidden="true"></div>
+        <div class="track t3" aria-hidden="true"></div>
+        <div class="catchPoint p0" data-lane="0" aria-hidden="true"></div>
+        <div class="catchPoint p1" data-lane="1" aria-hidden="true"></div>
+        <div class="catchPoint p2" data-lane="2" aria-hidden="true"></div>
+        <div class="catchPoint p3" data-lane="3" aria-hidden="true"></div>
+        <div id="capsuleLayer" aria-hidden="true"></div>
+        <div class="fieldHint" id="fieldHint">Выберите позицию</div>
+      </div>
+    </div>
+
+    <div class="catchControls" aria-label="Позиция перехвата">
+      <button class="catchBtn" data-lane="0" type="button" aria-label="Верхняя левая позиция"><span>↖</span><small>Q</small></button>
+      <button class="catchBtn" data-lane="1" type="button" aria-label="Верхняя правая позиция"><span>↗</span><small>E</small></button>
+      <button class="catchBtn" data-lane="2" type="button" aria-label="Нижняя левая позиция"><span>↙</span><small>Z</small></button>
+      <button class="catchBtn" data-lane="3" type="button" aria-label="Нижняя правая позиция"><span>↘</span><small>C</small></button>
+    </div>
+
+    <div class="controls">
+      <button id="homeBtn" type="button">⌂<br>В начало</button>
+      <button id="newBtn" type="button">✦<br>Новая</button>
+      <button id="screenBtn" type="button">⛶<br>Экран</button>
+    </div>
+  </section>
+
+  <div class="overlay" id="resultOverlay" aria-hidden="true">
+    <div class="sheet">
+      <h3 id="resultTitle">Раунд завершён</h3>
+      <p id="resultText">Реактор сохранил энергию.</p>
+      <div class="resultStats">
+        <div><span>Очки</span><b id="resultScore">0</b></div>
+        <div><span>Поймано</span><b id="resultCaught">0</b></div>
+        <div><span>Лучшая серия</span><b id="resultCombo">0</b></div>
+      </div>
+      <div class="resultActions"><button class="ghost" id="resultMenu" type="button">Меню</button><button class="go" id="resultReplay" type="button">Ещё раз</button></div>
+    </div>
+  </div>
+
+  <div class="overlay" id="recordsOverlay" aria-hidden="true">
+    <div class="sheet">
+      <h3>Рекорды</h3>
+      <p>Лучшие результаты на этом устройстве.</p>
+      <div class="recordsList" id="recordsList"></div>
+      <button class="go" id="recordsClose" type="button">Закрыть</button>
+    </div>
+  </div>
+</div>
+<button id="allGames" type="button" aria-label="Вернуться в каталог">⌂ Все игры</button>
+<script src="game.js"></script>
+<script src="../../game-shell.js"></script>
+</body>
+</html>

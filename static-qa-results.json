@@ -1,0 +1,131 @@
+{
+  "checks": [
+    {
+      "file": "records.js",
+      "script": 0,
+      "ok": true
+    },
+    {
+      "file": "platform.js",
+      "script": 0,
+      "ok": true
+    },
+    {
+      "file": "game-shell.js",
+      "script": 0,
+      "ok": true
+    },
+    {
+      "file": "platform-config.js",
+      "script": 0,
+      "ok": true
+    },
+    {
+      "file": "game-lifecycle.js",
+      "script": 0,
+      "ok": true
+    },
+    {
+      "file": "qa/mobile-lab.html",
+      "script": 0,
+      "ok": true
+    },
+    {
+      "file": "games/chess/index.html",
+      "script": 1,
+      "ok": true
+    },
+    {
+      "file": "games/chess/index.html",
+      "script": 2,
+      "ok": true
+    },
+    {
+      "file": "games/fifteen/index.html",
+      "script": 1,
+      "ok": true
+    },
+    {
+      "file": "games/reversi/index.html",
+      "script": 1,
+      "ok": true
+    },
+    {
+      "file": "games/solitaire/index.html",
+      "script": 1,
+      "ok": true
+    },
+    {
+      "file": "games/sudoku/index.html",
+      "script": 1,
+      "ok": true
+    },
+    {
+      "file": "games/domino/index.html",
+      "script": 1,
+      "ok": true
+    },
+    {
+      "file": "games/memory/index.html",
+      "script": 1,
+      "ok": true
+    },
+    {
+      "file": "games/corners/index.html",
+      "script": 1,
+      "ok": true
+    },
+    {
+      "file": "games/corners/index.html",
+      "script": 2,
+      "ok": true
+    },
+    {
+      "file": "games/tictactoe/index.html",
+      "script": 1,
+      "ok": true
+    },
+    {
+      "file": "games/checkers/index.html",
+      "script": 1,
+      "ok": true
+    },
+    {
+      "file": "games/2048/index.html",
+      "script": 1,
+      "ok": true
+    },
+    {
+      "file": "games/connect4/index.html",
+      "script": 1,
+      "ok": true
+    },
+    {
+      "file": "games/connect4/index.html",
+      "script": 2,
+      "ok": true
+    },
+    {
+      "file": "games/mahjong/index.html",
+      "script": 1,
+      "ok": true
+    },
+    {
+      "file": "games/gomoku/index.html",
+      "script": 1,
+      "ok": true
+    },
+    {
+      "file": "games/backgammon/index.html",
+      "script": 1,
+      "ok": true
+    },
+    {
+      "file": "games/starbattle/index.html",
+      "script": 1,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "resource_references": 540
+}

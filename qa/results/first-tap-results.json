@@ -1,0 +1,386 @@
+[
+  {
+    "game": "2048",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "tapTarget": "icon",
+    "taps": 1
+  },
+  {
+    "game": "backgammon",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "tapTarget": "icon",
+    "taps": 1
+  },
+  {
+    "game": "checkers",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "tapTarget": "icon",
+    "taps": 1
+  },
+  {
+    "game": "chess",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "tapTarget": "icon",
+    "taps": 1
+  },
+  {
+    "game": "connect4",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "tapTarget": "icon",
+    "taps": 1
+  },
+  {
+    "game": "corners",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "tapTarget": "icon",
+    "taps": 1
+  },
+  {
+    "game": "domino",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "tapTarget": "icon",
+    "taps": 1
+  },
+  {
+    "game": "fifteen",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "tapTarget": "icon",
+    "taps": 1
+  },
+  {
+    "game": "gomoku",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "tapTarget": "icon",
+    "taps": 1
+  },
+  {
+    "game": "mahjong",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "tapTarget": "icon",
+    "taps": 1
+  },
+  {
+    "game": "memory",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "tapTarget": "icon",
+    "taps": 1
+  },
+  {
+    "game": "reversi",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "tapTarget": "icon",
+    "taps": 1
+  },
+  {
+    "game": "solitaire",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "tapTarget": "icon",
+    "taps": 1
+  },
+  {
+    "game": "starbattle",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "tapTarget": "icon",
+    "taps": 1
+  },
+  {
+    "game": "sudoku",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "tapTarget": "icon",
+    "taps": 1
+  },
+  {
+    "game": "tictactoe",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "tapTarget": "icon",
+    "taps": 1
+  },
+  {
+    "game": "2048",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "tapTarget": "title",
+    "taps": 1
+  },
+  {
+    "game": "backgammon",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "tapTarget": "title",
+    "taps": 1
+  },
+  {
+    "game": "checkers",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "tapTarget": "title",
+    "taps": 1
+  },
+  {
+    "game": "chess",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "tapTarget": "title",
+    "taps": 1
+  },
+  {
+    "game": "connect4",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "tapTarget": "title",
+    "taps": 1
+  },
+  {
+    "game": "corners",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "tapTarget": "title",
+    "taps": 1
+  },
+  {
+    "game": "domino",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "tapTarget": "title",
+    "taps": 1
+  },
+  {
+    "game": "fifteen",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "tapTarget": "title",
+    "taps": 1
+  },
+  {
+    "game": "gomoku",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "tapTarget": "title",
+    "taps": 1
+  },
+  {
+    "game": "mahjong",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "tapTarget": "title",
+    "taps": 1
+  },
+  {
+    "game": "memory",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "tapTarget": "title",
+    "taps": 1
+  },
+  {
+    "game": "reversi",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "tapTarget": "title",
+    "taps": 1
+  },
+  {
+    "game": "solitaire",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "tapTarget": "title",
+    "taps": 1
+  },
+  {
+    "game": "starbattle",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "tapTarget": "title",
+    "taps": 1
+  },
+  {
+    "game": "sudoku",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "tapTarget": "title",
+    "taps": 1
+  },
+  {
+    "game": "tictactoe",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "tapTarget": "title",
+    "taps": 1
+  },
+  {
+    "game": "2048",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "tapTarget": "card body",
+    "taps": 1
+  },
+  {
+    "game": "backgammon",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "tapTarget": "card body",
+    "taps": 1
+  },
+  {
+    "game": "checkers",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "tapTarget": "card body",
+    "taps": 1
+  },
+  {
+    "game": "chess",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "tapTarget": "card body",
+    "taps": 1
+  },
+  {
+    "game": "connect4",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "tapTarget": "card body",
+    "taps": 1
+  },
+  {
+    "game": "corners",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "tapTarget": "card body",
+    "taps": 1
+  },
+  {
+    "game": "domino",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "tapTarget": "card body",
+    "taps": 1
+  },
+  {
+    "game": "fifteen",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "tapTarget": "card body",
+    "taps": 1
+  },
+  {
+    "game": "gomoku",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "tapTarget": "card body",
+    "taps": 1
+  },
+  {
+    "game": "mahjong",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "tapTarget": "card body",
+    "taps": 1
+  },
+  {
+    "game": "memory",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "tapTarget": "card body",
+    "taps": 1
+  },
+  {
+    "game": "reversi",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "tapTarget": "card body",
+    "taps": 1
+  },
+  {
+    "game": "solitaire",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "tapTarget": "card body",
+    "taps": 1
+  },
+  {
+    "game": "starbattle",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "tapTarget": "card body",
+    "taps": 1
+  },
+  {
+    "game": "sudoku",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "tapTarget": "card body",
+    "taps": 1
+  },
+  {
+    "game": "tictactoe",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "tapTarget": "card body",
+    "taps": 1
+  }
+]

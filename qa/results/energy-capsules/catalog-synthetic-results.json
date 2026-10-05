@@ -1,0 +1,11 @@
+{
+  "engine": "Playwright + system Chromium 144, set_content synthetic catalog document",
+  "status": "PASS",
+  "checks": [
+    "catalog renders 17 cards from generated catalog",
+    "energy-capsules card exists",
+    "single short touch pointerup sets iframe entry to games/energy-capsules/index.html?launch=<epoch>",
+    "touch movement >10px does not launch the card"
+  ],
+  "limitation": "The environment blocks HTTP/file navigation with net::ERR_BLOCKED_BY_ADMINISTRATOR, so the iframe target itself could not be navigated through the real platform URL."
+}

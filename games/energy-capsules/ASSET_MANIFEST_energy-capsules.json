@@ -1,0 +1,22 @@
+{
+  "gameId": "energy-capsules",
+  "generation": "Deterministic local composition from canonical platform assets; no external font or image dependency.",
+  "sourceBuilder": "tools/build-energy-capsules-art.py",
+  "sources": [
+    "assets/corgi.png",
+    "assets/cat.png",
+    "assets/v14_space_bg.webp",
+    "assets/fonts/unbounded-cyrillic-800-normal.woff2"
+  ],
+  "assets": [
+    {"path":"assets/icons/energy-capsules.webp","size":"512x512","alpha":true,"purpose":"catalog default illustration"},
+    {"path":"assets/icons/energy-capsules-active.webp","size":"512x512","alpha":true,"purpose":"catalog interaction composition"},
+    {"path":"assets/titles/energy-capsules.png","size":"1024x341","alpha":true,"purpose":"catalog/menu/game wordmark using actual local Unbounded source"},
+    {"path":"assets/splashes/energy-capsules.webp","size":"1080x1920","alpha":false,"purpose":"portrait splash; no UI buttons baked into artwork"}
+  ],
+  "notes": [
+    "Canonical hero PNG files are reused; standard hero selection assets were not regenerated.",
+    "The title text is rasterized from the local Unbounded 800 font and then composited with game-specific vector-like capsule/orbit effects.",
+    "Catalog illustrations preserve transparent background and safe margins; gameplay hitboxes do not depend on image transparency."
+  ]
+}

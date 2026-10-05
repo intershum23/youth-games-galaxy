@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Молодёжный Пасьянс</title>
+<style>
+:root{
+  --bg1:#06002b; --bg2:#0c1b7a; --bg3:#35118f; --panel:rgba(52,54,165,.72); --panel2:rgba(32,24,118,.88);
+  --stroke:rgba(122,159,255,.45); --neon:#70dcff; --pink:#ff62d3; --text:#fff; --muted:#c9d1ff; --good:#69f0ae;
+  --danger:#ff7b9f; --yellow:#ffd45e; --cardW:min(11vw,72px); --cardH:calc(var(--cardW) * 1.42);
+  --safeTop: env(safe-area-inset-top, 0px); --safeBottom: env(safe-area-inset-bottom, 0px);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;margin:0;font-family:var(--font-ui);background:radial-gradient(circle at 30% 0%, #213ea8 0, #120f70 40%, #06002b 100%);color:var(--text);overflow:hidden}
+body::before, body::after{content:"";position:fixed;border-radius:50%;filter:blur(2px);pointer-events:none;z-index:0}
+body::before{width:42vh;height:42vh;left:-18vh;bottom:8vh;background:radial-gradient(circle,#33b5ff 0,#2768ff 50%,transparent 72%);opacity:.45}
+body::after{width:44vh;height:44vh;right:-16vh;top:-10vh;background:radial-gradient(circle,#c45cff 0,#8c3cff 55%,transparent 75%);opacity:.35}
+.screen{position:absolute;inset:0;display:none;flex-direction:column;align-items:center;overflow:auto;z-index:1;padding:calc(var(--safeTop) + 14px) 14px calc(var(--safeBottom) + 14px)}
+.screen.active{display:flex}
+.hidden{display:none}
+.panel{background:linear-gradient(180deg,rgba(54,62,175,.82),rgba(34,27,122,.9));border:1.5px solid var(--stroke);box-shadow:0 10px 35px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.08);border-radius:28px}
+.glowBtn,.modeCard,.heroCard,.miniBtn,.bottomBtn,.metric{transition:.18s transform,.18s box-shadow,.18s border-color}
+.glowBtn:active,.modeCard:active,.heroCard:active,.miniBtn:active,.bottomBtn:active,.metric:active{transform:scale(.985)}
+.logo{width:70px;height:70px;object-fit:contain;filter:drop-shadow(0 6px 12px rgba(0,0,0,.25))}
+.title{font-size:clamp(38px,8vw,72px);line-height:.92;font-weight:900;text-align:center;letter-spacing:-1.5px;margin:10px 0 14px;text-shadow:0 4px 18px rgba(0,0,0,.22)}
+.subtitle{max-width:760px;text-align:center;color:#dbe3ff;font-size:clamp(18px,3.3vw,28px);line-height:1.28;margin:0 8px 18px}
+.glowBtn{border:none;border-radius:34px;padding:18px 34px;font-weight:900;font-size:clamp(26px,5vw,44px);color:#fff;background:linear-gradient(90deg,#ff34d2,#8344ff,#00d4ff);box-shadow:0 0 0 4px rgba(255,255,255,.12),0 10px 28px rgba(19,188,255,.38);cursor:pointer}
+.heroWrap{width:min(96vw,820px);padding:18px;margin-top:6px}
+.heroTop{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}
+.sectionH{font-size:clamp(28px,5vw,48px);font-weight:900;line-height:1;margin:0}
+.smallText{color:#d7dcff;font-size:clamp(16px,2.8vw,28px)}
+.heroRow{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.heroCard{border-radius:24px;padding:14px;display:flex;gap:12px;align-items:center;background:linear-gradient(90deg,rgba(67,88,206,.72),rgba(87,46,176,.72));border:2px solid rgba(122,159,255,.15);cursor:pointer;position:relative}
+.heroCard.selected{border-color:#5ed2ff;box-shadow:0 0 0 3px rgba(78,220,255,.12), inset 0 0 20px rgba(255,255,255,.06)}
+.heroCard img{width:74px;height:74px;object-fit:contain;border-radius:18px;background:rgba(17,15,92,.45)}
+.heroLabel{font-weight:900;font-size:clamp(20px,4vw,34px);line-height:1.02}
+.badge{position:absolute;right:14px;top:12px;background:#58d6ff;color:#fff;font-weight:900;padding:6px 10px;border-radius:999px;font-size:15px}
+.modes{width:min(96vw,820px);display:grid;gap:16px;margin-top:16px}
+.modeCard{padding:18px;display:flex;justify-content:space-between;align-items:center;gap:18px;min-height:132px;cursor:pointer}
+.modeCard.selected{border-color:#65deff;box-shadow:0 0 0 3px rgba(78,220,255,.12)}
+.modeTitle{font-size:clamp(28px,5vw,54px);font-weight:900;line-height:1}
+.modeDesc{margin-top:6px;color:#d9ddff;font-size:clamp(16px,3vw,26px);line-height:1.22;max-width:75%}
+.modeIcon{font-size:58px;line-height:1;filter:drop-shadow(0 0 10px rgba(135,244,255,.33))}
+.recordsBtn{margin-top:18px;padding:16px 34px;border-radius:26px;background:linear-gradient(180deg,rgba(62,55,164,.92),rgba(43,31,129,.98));border:1.5px solid rgba(114,140,255,.45);color:#fff;font-weight:900;font-size:clamp(22px,4vw,34px)}
+#splash.screen{padding:0}
+.splashBg{position:absolute;inset:0;background:url('assets/splash.png') center/cover no-repeat;filter:saturate(1.05)}
+.splashOverlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,6,38,.05),rgba(7,6,38,.22) 35%,rgba(7,6,38,.52));display:flex;flex-direction:column;justify-content:flex-end;align-items:center;padding:16px calc(16px + var(--safeBottom)) 24px}
+.splashPanel{width:min(92vw,520px);display:flex;flex-direction:column;gap:14px;align-items:center}
+.topBar{width:min(96vw,860px);display:grid;grid-template-columns:64px 1fr 64px;align-items:center;gap:10px;margin-bottom:10px}
+.topBar .titleGame{font-size:clamp(28px,5.5vw,54px);font-weight:900;line-height:.94;text-align:center}
+.roundIcon{width:54px;height:54px;border-radius:18px;border:1.5px solid rgba(144,165,255,.34);background:rgba(72,71,165,.34);display:grid;place-items:center;color:#fff;font-size:28px}
+.metrics{width:min(96vw,860px);display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.metric{padding:14px 10px;text-align:center;border-radius:24px;background:linear-gradient(180deg,rgba(69,92,226,.95),rgba(46,52,171,.88));border:1.5px solid rgba(120,154,255,.4);font-size:clamp(16px,3vw,27px);font-weight:900}
+.heroBar{width:min(96vw,860px);display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center;padding:12px 14px;margin-top:10px}
+.heroMini{display:flex;align-items:center;gap:12px}
+.heroMini img{width:56px;height:56px;object-fit:contain;border-radius:16px;background:rgba(18,13,89,.5)}
+.heroMini .name{font-size:clamp(18px,3.8vw,32px);font-weight:900;line-height:1.04}
+.heroMini .sub{color:#d6ddff;font-size:clamp(14px,2.6vw,20px)}
+.miniBtn{width:56px;height:56px;border-radius:18px;border:1.5px solid rgba(120,154,255,.32);background:rgba(74,67,177,.35);display:grid;place-items:center;color:#fff;font-size:26px}
+.boardShell{width:min(96vw,860px);margin-top:14px;padding:16px;border-radius:34px;background:linear-gradient(180deg,#5d42ff,#2e2ca6);box-shadow:inset 0 1px 0 rgba(255,255,255,.1)}
+.boardInner{background:linear-gradient(180deg,#1a237e,#121f75);border-radius:30px;padding:16px;min-height:460px}
+.topPiles{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-bottom:14px}
+.slot{height:var(--cardH);border:2px dashed rgba(148,181,255,.18);border-radius:16px;position:relative;display:flex;align-items:center;justify-content:center;color:#b0c9ff;font-weight:700;background:rgba(255,255,255,.03)}
+.slot.stock,.slot.waste,.slot.foundation{cursor:pointer}
+.slot.foundation::after{content:attr(data-suit);position:absolute;inset:0;display:grid;place-items:center;font-size:24px;opacity:.3;pointer-events:none}
+.slot.foundation:has(.card)::after{content:none}
+.tableau{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;align-items:flex-start}
+.tableauCol{position:relative;min-height:420px;border-radius:18px;padding-top:2px;cursor:pointer}
+.card{position:relative;width:var(--cardW);height:var(--cardH);border-radius:14px;background:#fff;border:2px solid #dfe6ff;box-shadow:0 5px 12px rgba(0,0,0,.18);display:flex;flex-direction:column;justify-content:space-between;padding:6px 7px;font-weight:900;user-select:none}
+.card.red{color:#ef405f}.card.black{color:#20305e}
+.card .big{display:flex;align-items:center;justify-content:center;font-size:clamp(26px,5vw,36px);flex:1}
+.card .corner{font-size:clamp(12px,2vw,16px);line-height:1.02}
+.card.back{background:linear-gradient(135deg,#5f4eff,#2bc6ff);border-color:#9bc4ff;overflow:hidden}
+.card.back::before{content:"";position:absolute;inset:7px;border-radius:10px;border:2px solid rgba(255,255,255,.5)}
+.card.back::after{content:"✦";position:absolute;inset:0;display:grid;place-items:center;font-size:34px;color:#fff;text-shadow:0 0 14px rgba(255,255,255,.45)}
+.card.selected{outline:4px solid #70dcff;box-shadow:0 0 0 4px rgba(112,220,255,.16),0 10px 18px rgba(0,0,0,.24)}
+.card.autoHint{outline:3px solid #ffd45e}
+.bottomBar{width:min(96vw,860px);display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px;margin-bottom:4px}
+.bottomBtn{padding:16px 10px;border-radius:24px;border:1.5px solid rgba(130,152,255,.36);background:rgba(18,16,73,.92);text-align:center;font-size:clamp(18px,3.2vw,28px);font-weight:900;color:#fff}
+.num{letter-spacing:-.5px}
+.modal{position:fixed;inset:0;background:rgba(4,8,34,.72);display:none;align-items:center;justify-content:center;padding:20px;z-index:6}
+.modal.show{display:flex}
+.modalCard{width:min(92vw,420px);padding:22px;text-align:center}
+.modalCard h3{font-size:32px;margin:8px 0 10px}
+.modalCard p{font-size:19px;color:#dbe3ff;line-height:1.35}
+.modalActions{display:grid;gap:10px;margin-top:16px}
+.modalActions button{padding:14px;border:none;border-radius:18px;font-size:20px;font-weight:900;color:#fff;background:linear-gradient(90deg,#ff34d2,#6a58ff,#00d4ff)}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:rgba(15,20,76,.92);border:1px solid rgba(126,150,255,.4);color:#fff;padding:10px 16px;border-radius:999px;z-index:7;display:none}
+.toast.show{display:block}
+@media (max-width:700px){
+  .metrics{grid-template-columns:repeat(2,1fr)}
+  .heroBar{grid-template-columns:1fr auto auto}
+  .topPiles,.tableau{gap:6px}
+  .boardInner{padding:12px}
+  .heroRow{grid-template-columns:1fr 1fr}
+  .titleGame{font-size:38px}
+}
+
+</style>
+
+
+  
+
+
+
+
+<link rel="stylesheet" href="../../game-shell.css">
+<script src="../../game-lifecycle.js"></script>
+<link rel="stylesheet" href="../../typography.css">
+</head>
+<body data-game="solitaire">
+<div id="splash" class="screen active"><button id="startSplash" class="v12Start" type="button" aria-label="Начать игру">Начать игру</button></div>
+
+<div id="menu" class="screen">
+
+  
+  <div class="title" role="heading" aria-level="1"><span class="sr-only">Пасьянс</span><img class="gameTitleArt" src="../../assets/titles/solitaire.png" alt="" aria-hidden="true"></div>
+  <div class="subtitle">Молодёжный пасьянс  «Косынка» • разложите карты по мастям от туза до короля</div>
+  <div class="panel heroWrap">
+    <div class="heroTop">
+      <div class="sectionH">Выберите героя</div>
+      <div class="smallText">Выбран герой: <span id="chosenHeroLabel">Капитан Корги</span></div>
+    </div>
+    <div class="heroRow">
+      <div class="heroCard selected" data-hero="dog">
+        <img src='../../assets/corgi.png' alt="dog"><div class="heroLabel">Капитан<br>Корги</div><div class="badge">ВЫБРАН</div>
+      </div>
+      <div class="heroCard" data-hero="cat">
+        <img src='../../assets/cat.png' alt="cat"><div class="heroLabel">Космо-<br>Кот</div>
+      </div>
+    </div>
+  </div>
+  <div class="modes">
+    <div class="panel modeCard selected" data-mode="classic">
+      <div>
+        <div class="modeTitle">Классика</div>
+        <div class="modeDesc">Обычная раскладка • свободный темп • перетасуйте все карты по мастям</div>
+      </div>
+      <div class="modeIcon">♠♥</div>
+    </div>
+    <div class="panel modeCard" data-mode="timed">
+      <div>
+        <div class="modeTitle">На время</div>
+        <div class="modeDesc">Пройдите пасьянс до окончания таймера и наберите максимум очков</div>
+      </div>
+      <div class="modeIcon">⏱</div>
+    </div>
+  </div>
+  <button class="recordsBtn" id="recordsBtn">🏆 Рекорды</button>
+  <div style="height:18px"></div>
+</div>
+
+<div id="game" class="screen">
+  <div class="topBar">
+    
+    <div class="titleGame galaxy-title" role="heading" aria-level="1"><span class="sr-only">Пасьянс</span><img class="gameTitleArt" src="../../assets/titles/solitaire.png" alt="" aria-hidden="true"></div>
+    <button class="roundIcon" id="soundBtn">🔊</button>
+  </div>
+  <div class="smallText" id="gameSub" style="margin-top:-8px;margin-bottom:8px">Классика</div>
+  <div class="metrics">
+    <div class="metric" id="metricGoal">Соберите масти</div>
+    <div class="metric" id="metricTimer">00:00</div>
+    <div class="metric" id="metricMoves">Ходы 0</div>
+    <div class="metric" id="metricScore">Очки 0</div>
+  </div>
+  <div class="panel heroBar">
+    <div class="heroMini">
+      <img id="heroImgMini" src='../../assets/corgi.png' alt="hero"><div><div class="name" id="heroNameMini">Капитан Корги</div><div class="sub">Ваш космический напарник</div></div>
+    </div>
+    <button class="miniBtn" id="hintBtn">💡</button>
+    <button class="miniBtn" id="autoBtn">✓</button>
+  </div>
+  <div class="boardShell">
+    <div class="boardInner">
+      <div class="topPiles">
+        <div class="slot stock" id="stockSlot">Колода</div>
+        <div class="slot waste" id="wasteSlot">Сброс</div>
+        <div class="slot foundation" id="foundation0" data-foundation="0" data-suit="♠"></div>
+        <div class="slot foundation" id="foundation1" data-foundation="1" data-suit="♥"></div>
+        <div class="slot foundation" id="foundation2" data-foundation="2" data-suit="♦"></div>
+        <div class="slot foundation" id="foundation3" data-foundation="3" data-suit="♣"></div>
+        <div class="slot" id="modeSlot">1 карта</div>
+      </div>
+      <div class="tableau" id="tableau"></div>
+    </div>
+  </div>
+  <div class="bottomBar">
+    <button class="bottomBtn" id="backMenuBtn">В начало</button>
+    <button class="bottomBtn" id="newGameBtn">Новая</button>
+    <button class="bottomBtn" id="restartBtn">Экран</button>
+  </div>
+</div>
+
+<div class="modal" id="modal">
+  <div class="panel modalCard">
+    <h3 id="modalTitle">Рекорды</h3>
+    <p id="modalText"></p>
+    <div class="modalActions" id="modalActions"></div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const SUITS = ['♠','♥','♦','♣'];
+const SUIT_NAMES = ['Пики','Черви','Бубны','Трефы'];
+const RANKS = [null,'A','2','3','4','5','6','7','8','9','10','J','Q','K'];
+const COLOR = { '♠':'black','♣':'black','♥':'red','♦':'red' };
+const HEROES = {
+  dog: {name:'Капитан Корги', img:'../../assets/corgi.png'},
+  cat: {name:'Космо-Кот', img:'../../assets/cat.png'}
+};
+const state = {
+  hero:'dog', mode:'classic', sound:true,
+  stock:[], waste:[], foundations:[[],[],[],[]], tableau:[[],[],[],[],[],[],[]],
+  selected:null, moves:0, score:0, startTime:0, elapsed:0, timerId:null, countdown:600,
+  gameOver:false
+};
+
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+function showScreen(id){if(id!=='game')GameLifecycle.begin(); $$('.screen').forEach(x=>x.classList.remove('active')); $('#'+id).classList.add('active'); }
+function toast(msg){ const t=$('#toast'); t.textContent=msg; t.classList.add('show'); GameLifecycle.cancel(t._h); t._h=GameLifecycle.schedule(()=>t.classList.remove('show'),1800);} 
+function resultModal(...args){modal(...args);window.GalaxyPresentation?.result($('#modal'))}
+function modal(title, text, buttons=[{label:'ОК'}]){ $('#modal').classList.remove('galaxy-result'); $('#modal').querySelector('.galaxy-result-exit')?.remove(); $('#modalTitle').textContent=title; $('#modalText').innerHTML=text; const wrap=$('#modalActions'); wrap.innerHTML=''; buttons.forEach(btn=>{ const b=document.createElement('button'); b.textContent=btn.label; b.onclick=()=>{ $('#modal').classList.remove('show'); btn.onClick && btn.onClick();}; wrap.appendChild(b); }); $('#modal').classList.add('show'); }
+function shuffle(arr){ for(let i=arr.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [arr[i],arr[j]]=[arr[j],arr[i]]; } return arr; }
+function cardId(suit, rank){ return suit+rank; }
+function makeDeck(){ const d=[]; for(const s of SUITS){ for(let r=1;r<=13;r++) d.push({suit:s, rank:r, color:COLOR[s], faceUp:false, id:cardId(s,r)}); } return shuffle(d); }
+function startGame(){GameLifecycle.begin();
+  state.stock=[]; state.waste=[]; state.foundations=[[],[],[],[],]; state.tableau=[[],[],[],[],[],[],[]]; state.selected=null; state.moves=0; state.score=0; state.elapsed=0; state.gameOver=false;
+  const deck = makeDeck();
+  for(let col=0; col<7; col++){
+    for(let row=0; row<=col; row++){
+      const c=deck.pop();
+      c.faceUp = row===col;
+      state.tableau[col].push(c);
+    }
+  }
+  state.stock = deck.map(c=>({...c, faceUp:false}));
+  state.startTime = Date.now();
+  state.countdown = state.mode==='timed' ? 600 : 0;
+  GameLifecycle.cancel(state.timerId);
+  state.timerId = GameLifecycle.repeat(tick, 1000);
+  $('#gameSub').textContent = state.mode==='timed' ? 'На время' : 'Классика';
+  $('#modeSlot').textContent = state.mode==='timed' ? 'таймер' : '1 карта';
+  renderAll();
+}
+function tick(){
+  if(state.gameOver) return;
+  if(state.mode==='timed'){
+    state.countdown--; if(state.countdown<=0){ state.countdown=0; renderMetrics(); loseByTime(); return; }
+  } else {
+    state.elapsed = Math.floor((Date.now()-state.startTime)/1000);
+  }
+  renderMetrics();
+}
+function loseByTime(){ state.gameOver=true; GameLifecycle.cancel(state.timerId); saveRecord(); resultModal('Время вышло','Попробуйте ещё раз и соберите космический пасьянс быстрее!',[{label:'Новая игра', onClick:startGame},{label:'В меню', onClick:()=>showScreen('menu')}]); }
+function fmt(sec){ const m=Math.floor(sec/60).toString().padStart(2,'0'); const s=(sec%60).toString().padStart(2,'0'); return `${m}:${s}`; }
+function renderMetrics(){ $('#metricTimer').textContent = state.mode==='timed' ? fmt(state.countdown) : fmt(state.elapsed); $('#metricMoves').textContent=`Ходы ${state.moves}`; $('#metricScore').textContent=`Очки ${state.score}`; }
+function renderHero(){ const h=HEROES[state.hero]; $('#chosenHeroLabel').textContent=h.name; $('#heroImgMini').src=h.img; $('#heroNameMini').textContent=h.name; $$('.heroCard').forEach(c=>{ const on=c.dataset.hero===state.hero; c.classList.toggle('selected',on); c.querySelector('.badge')?.remove(); if(on){ const b=document.createElement('div'); b.className='badge'; b.textContent='ВЫБРАН'; c.appendChild(b);} }); }
+function createCardEl(card){ const el=document.createElement('div'); el.className='card '+(card.faceUp ? card.color : 'back'); el.dataset.id=card.id; if(card.faceUp){ el.innerHTML = `<div class="corner">${RANKS[card.rank]}<br>${card.suit}</div><div class="big">${card.suit}</div><div class="corner" style="align-self:flex-end;text-align:right">${RANKS[card.rank]}<br>${card.suit}</div>`; } return el; }
+function clearSelected(){ state.selected=null; renderAll(); }
+function getTableauSequence(col, idx){ return state.tableau[col].slice(idx); }
+function isMovableSequence(seq){ for(let i=0;i<seq.length-1;i++){ if(!seq[i].faceUp || !seq[i+1].faceUp) return false; if(seq[i].color===seq[i+1].color) return false; if(seq[i].rank!==seq[i+1].rank+1) return false; } return true; }
+function canMoveToTableau(card, targetCol){ const pile=state.tableau[targetCol]; if(pile.length===0) return card.rank===13; const top=pile[pile.length-1]; if(!top.faceUp) return false; return top.color!==card.color && top.rank===card.rank+1; }
+function foundationIndexForSuit(suit){ return SUITS.indexOf(suit); }
+function canMoveToFoundation(card, fIdx){ const pile=state.foundations[fIdx]; if(SUITS[fIdx]!==card.suit) return false; if(pile.length===0) return card.rank===1; const top=pile[pile.length-1]; return top.suit===card.suit && top.rank+1===card.rank; }
+function selectFromTableau(col, idx){ const seq=getTableauSequence(col,idx); if(!seq[0].faceUp || !isMovableSequence(seq)) return; state.selected={type:'tableau', col, idx, cards:seq}; renderAll(); }
+function selectWaste(){ if(!state.waste.length) return; state.selected={type:'waste', cards:[state.waste[state.waste.length-1]]}; renderAll(); }
+function selectFoundation(idx){ const pile=state.foundations[idx]; if(!pile.length) return; state.selected={type:'foundation', idx, cards:[pile[pile.length-1]]}; renderAll(); }
+function dealStock(){ if(state.stock.length){ const c=state.stock.pop(); c.faceUp=true; state.waste.push(c); state.moves++; } else if(state.waste.length){ while(state.waste.length){ const c=state.waste.pop(); c.faceUp=false; state.stock.push(c); } state.score=Math.max(0,state.score-10); } renderAll(); }
+function afterSourceRemoved(src){ if(src.type==='tableau'){ const pile=state.tableau[src.col]; if(pile.length && !pile[pile.length-1].faceUp){ pile[pile.length-1].faceUp=true; state.score += 5; } }
+}
+function moveSelectedToTableau(targetCol){ if(!state.selected) return false; const first=state.selected.cards[0]; if(!canMoveToTableau(first,targetCol)) return false; if(state.selected.type==='tableau' && state.selected.col===targetCol) return false;
+  let moving=[];
+  if(state.selected.type==='tableau'){ moving = state.tableau[state.selected.col].splice(state.selected.idx); afterSourceRemoved(state.selected); }
+  else if(state.selected.type==='waste'){ moving=[state.waste.pop()]; }
+  else if(state.selected.type==='foundation'){ moving=[state.foundations[state.selected.idx].pop()]; }
+  state.tableau[targetCol].push(...moving); state.moves++; state.score += moving.length===1 ? 3 : 5; state.selected=null; renderAll(); checkWin(); return true;
+}
+function moveSelectedToFoundation(fIdx){ if(!state.selected || state.selected.cards.length!==1) return false; const card=state.selected.cards[0]; if(!canMoveToFoundation(card,fIdx)) return false;
+  let moving;
+  if(state.selected.type==='tableau'){ moving=state.tableau[state.selected.col].pop(); afterSourceRemoved(state.selected); }
+  else if(state.selected.type==='waste'){ moving=state.waste.pop(); }
+  else if(state.selected.type==='foundation'){ return false; }
+  state.foundations[fIdx].push(moving); state.moves++; state.score += 10; state.selected=null; renderAll(); checkWin(); return true;
+}
+function autoMoveSelection(){ if(!state.selected || state.selected.cards.length!==1) return false; const card=state.selected.cards[0]; const fIdx=foundationIndexForSuit(card.suit); if(canMoveToFoundation(card,fIdx)) return moveSelectedToFoundation(fIdx); for(let t=0;t<7;t++){ if(moveSelectedToTableau(t)) return true; } return false; }
+function autoMoveAny(){
+  // waste first
+  if(state.waste.length){ const c=state.waste[state.waste.length-1]; const f=foundationIndexForSuit(c.suit); if(canMoveToFoundation(c,f)){ state.selected={type:'waste', cards:[c]}; moveSelectedToFoundation(f); return true; } }
+  for(let col=0; col<7; col++){
+    const pile=state.tableau[col]; if(!pile.length) continue; const top=pile[pile.length-1]; if(!top.faceUp) continue; const f=foundationIndexForSuit(top.suit); if(canMoveToFoundation(top,f)){ state.selected={type:'tableau', col, idx:pile.length-1, cards:[top]}; moveSelectedToFoundation(f); return true; }
+  }
+  return false;
+}
+function checkWin(){ if(state.foundations.every(p=>p.length===13)){ state.gameOver=true; GameLifecycle.cancel(state.timerId); if(state.mode==='timed') state.score += state.countdown*2; else state.score += Math.max(0, 1000-state.elapsed*2); renderMetrics(); saveRecord(); resultModal('Победа!','Вы собрали весь космический пасьянс.<br><br><b>Очки:</b> '+state.score+'<br><b>Ходы:</b> '+state.moves, [{label:'Новая игра', onClick:startGame},{label:'В меню', onClick:()=>showScreen('menu')}]); } }
+function saveRecord(){ const key = 'youth_solitaire_records'; const records = window.YouthRecords?.safeJSON(key,{})||{}; const modeKey = state.mode; const current = records[modeKey] || {score:0,bestTime:null}; if(state.score > (current.score||0)) current.score = state.score; const currentTime = state.mode==='timed' ? (600-state.countdown) : state.elapsed; if(current.bestTime===null || currentTime < current.bestTime) current.bestTime = currentTime; records[modeKey]=current; localStorage.setItem(key, JSON.stringify(records)); }
+function showRecords(){ const records = window.YouthRecords?.safeJSON('youth_solitaire_records',{})||{}; const c=records.classic||{}; const t=records.timed||{}; modal('Рекорды',`<b>Классика</b><br>Лучшие очки: ${c.score||0}<br>Лучшее время: ${c.bestTime!=null?fmt(c.bestTime):'—'}<br><br><b>На время</b><br>Лучшие очки: ${t.score||0}<br>Лучшее время: ${t.bestTime!=null?fmt(t.bestTime):'—'}`,[{label:'Закрыть'}]); }
+function renderAll(){ renderHero(); renderMetrics(); renderStockWaste(); renderFoundations(); renderTableau(); }
+function renderStockWaste(){ const stock = $('#stockSlot'); stock.innerHTML=''; if(state.stock.length){ const c=document.createElement('div'); c.className='card back'; c.onclick=(e)=>{e.stopPropagation();dealStock();}; stock.appendChild(c);} else { stock.textContent='↺'; }
+  const waste = $('#wasteSlot'); waste.innerHTML=''; if(state.waste.length){ const c=createCardEl(state.waste[state.waste.length-1]); if(state.selected?.type==='waste') c.classList.add('selected'); c.onclick=(e)=>{e.stopPropagation(); if(state.selected?.type==='waste') clearSelected(); else selectWaste();}; waste.appendChild(c);} else { waste.textContent='Сброс'; }
+}
+function renderFoundations(){ for(let i=0;i<4;i++){ const f = $('#foundation'+i); f.innerHTML=''; const pile=state.foundations[i]; if(pile.length){ const c=createCardEl(pile[pile.length-1]); if(state.selected?.type==='foundation' && state.selected.idx===i) c.classList.add('selected'); c.onclick=(e)=>{e.stopPropagation(); if(state.selected){ if(!moveSelectedToFoundation(i)){ if(state.selected.type==='foundation' && state.selected.idx===i) clearSelected(); else selectFoundation(i); } } else selectFoundation(i);}; f.appendChild(c); } else { f.dataset.suit=SUITS[i]; }
+    f.onclick=(e)=>{ if(e.target===f && state.selected) moveSelectedToFoundation(i); else if(e.target===f && !state.selected) selectFoundation(i); };
+  }
+}
+function renderTableau(){ const wrap = $('#tableau'); wrap.innerHTML='';
+  for(let col=0; col<7; col++){
+    const colEl=document.createElement('div'); colEl.className='tableauCol'; colEl.dataset.col=col;
+    const pile=state.tableau[col];colEl.style.setProperty('--fan-height',(Math.max(0,pile.length-1)*24)+'px');
+    pile.forEach((card, idx)=>{
+      const el=createCardEl(card); el.style.position='absolute'; el.style.left='0'; const overlap=24; el.style.top=(idx*overlap)+'px';
+      if(state.selected?.type==='tableau' && state.selected.col===col && idx>=state.selected.idx) el.classList.add('selected');
+      el.onclick=(e)=>{
+        e.stopPropagation();
+        if(!card.faceUp){ if(idx===pile.length-1){ card.faceUp=true; state.score+=5; state.moves++; renderAll(); } return; }
+        if(state.selected){
+          const moved=moveSelectedToTableau(col);
+          if(!moved){ if(state.selected.type==='tableau' && state.selected.col===col && state.selected.idx===idx) clearSelected(); else selectFromTableau(col,idx); }
+        } else selectFromTableau(col,idx);
+      };
+      colEl.appendChild(el);
+    });
+    colEl.onclick=(e)=>{ if(e.target!==colEl) return; if(state.selected) moveSelectedToTableau(col); else if(!pile.length) toast('Пустая колонка: сюда можно положить короля'); };
+    wrap.appendChild(colEl);
+  }
+}
+
+$('#startSplash').onclick=()=>showScreen('menu');
+$$('.heroCard').forEach(c=>c.onclick=()=>{ state.hero=c.dataset.hero; renderHero(); });
+$$('.modeCard').forEach(c=>c.onclick=()=>{ state.mode=c.dataset.mode; $$('.modeCard').forEach(x=>x.classList.remove('selected')); c.classList.add('selected'); });
+$('#recordsBtn').onclick=showRecords;
+$('#soundBtn').onclick=()=>{ state.sound=!state.sound; $('#soundBtn').textContent = state.sound ? '🔊' : '🔈'; toast(state.sound?'Звук включён':'Звук выключен'); };
+$('#hintBtn').onclick=()=>{
+  if(autoMoveAny()) { toast('Подходящий ход подсвечен и выполнен'); return; }
+  // simple hint search without move
+  if(state.waste.length){ const c=state.waste[state.waste.length-1]; for(let t=0;t<7;t++){ if(canMoveToTableau(c,t)){ toast('Подсказка: карту из сброса можно перенести на поле'); return; } } }
+  toast('Подходящих подсказок сейчас нет');
+};
+$('#autoBtn').onclick=()=>{ let moved=false; while(autoMoveAny()) moved=true; if(!moved) toast('Автосбор пока недоступен'); };
+$('#backMenuBtn').onclick=()=>{ GameLifecycle.cancel(state.timerId); showScreen('menu'); };
+$('#newGameBtn').onclick=startGame;
+$('#restartBtn').onclick=()=>{ if(!document.fullscreenElement){ document.documentElement.requestFullscreen?.().catch(()=>{}); } else { document.exitFullscreen?.(); } };
+$('#stockSlot').onclick=(e)=>{ if(e.target.id==='stockSlot' || e.currentTarget===e.target) dealStock(); };
+$('#modeSlot').onclick=()=>toast(state.mode==='timed' ? 'Режим на время: 10:00 на прохождение' : 'Классический режим');
+
+document.addEventListener('keydown',e=>{ if(e.key==='Escape') clearSelected(); });
+
+document.querySelectorAll('.modeCard').forEach(card=>card.addEventListener('dblclick',()=>{}));
+// Start buttons from menu by clicking mode cards again? add explicit game start on double tap not convenient. Use recordsBtn? No.
+const startFromMenu = async () => { showScreen('game'); startGame(); };
+$$('.modeCard').forEach(c=>c.addEventListener('dblclick', startFromMenu));
+$$('.modeCard').forEach(c=>{
+  let timer=null; c.addEventListener('click', ()=>{ GameLifecycle.cancel(timer); timer=GameLifecycle.schedule(()=>{}, 10); });
+});
+// add click on selected mode to start
+$$('.modeCard').forEach(c=>c.addEventListener('click', ()=>{}));
+const playBtn = document.createElement('button');
+playBtn.className='glowBtn'; playBtn.textContent='Играть'; playBtn.style.margin='18px 0 10px';
+playBtn.onclick=startFromMenu; $('#menu').appendChild(playBtn);
+
+showScreen('splash');
+renderHero(); renderMetrics();
+
+window.GameLifecycle.engineInitialized=true;
+</script>
+
+
+
+
+<script src="../../records.js"></script>
+
+
+
+<button id="allGames" type="button" aria-label="Вернуться в каталог">⌂ Все игры</button>
+<script src="../../game-shell.js"></script>
+</body>
+</html>

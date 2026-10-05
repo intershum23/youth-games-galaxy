@@ -1,0 +1,18 @@
+(()=>{
+'use strict';
+const ROOT='youthGalaxy.records.v2', PLAYER='youthGalaxy.playerLocalId', SCHEMA=2;
+const legacy={
+ '2048':['youth2048Records'],backgammon:['youth_backgammon_short_records_v2','youth_backgammon_long_records_v2'],checkers:['youthCheckersRecords'],chess:['mm_games_chess_scores_v1','mm_games_global_profiles_v1'],connect4:['youthConnect4Records'],corners:['youthCornersRecords'],domino:['youthDominoRecords'],fifteen:['youthFifteenRecords'],gomoku:['youthGomokuRecords'],mahjong:['youthMahjongV4Records'],memory:['youthMemoryRecords'],reversi:['youthReversiRecords'],solitaire:['youth_solitaire_records'],starbattle:['youthStarBattleRecords'],sudoku:['youthSudokuRecords'],tictactoe:['youthTttRecords']};
+const keyToGame={}; Object.entries(legacy).forEach(([g,ks])=>ks.forEach(k=>keyToGame[k]=g));
+function uid(){let v;try{v=localStorage.getItem(PLAYER)}catch(e){} if(!v){v='local-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,12);try{localStorage.setItem(PLAYER,v)}catch(e){}}return v||'local-unknown'}
+function fresh(){return {schemaVersion:SCHEMA,playerLocalId:uid(),games:{},updatedAt:new Date().toISOString()}}
+function read(){try{const x=JSON.parse(localStorage.getItem(ROOT)||'null');if(x&&x.games&&typeof x.games==='object')return {...fresh(),...x,schemaVersion:SCHEMA,playerLocalId:uid()}}catch(e){}return fresh()}
+function write(x){try{x.schemaVersion=SCHEMA;x.playerLocalId=uid();x.updatedAt=new Date().toISOString();localStorage.setItem(ROOT,JSON.stringify(x));return true}catch(e){return false}}
+function storeLegacy(k,raw){const gid=keyToGame[k];if(!gid)return;const x=read();x.games[gid]=x.games[gid]||{legacy:{}};x.games[gid].legacy=x.games[gid].legacy||{};x.games[gid].legacy[k]=String(raw);x.games[gid].updatedAt=new Date().toISOString();write(x)}
+function restore(){const x=read();for(const [gid,ks] of Object.entries(legacy)){for(const k of ks){let cur=null;try{cur=localStorage.getItem(k)}catch(e){};const backup=x.games?.[gid]?.legacy?.[k];if(cur==null&&backup!=null){try{localStorage.setItem(k,backup)}catch(e){}}else if(cur!=null&&cur!==backup)storeLegacy(k,cur)}}}
+// Capture record changes at the moment games write them, instead of polling only.
+try{const original=Storage.prototype.setItem;Storage.prototype.setItem=function(k,v){const r=original.call(this,k,v);if(this===localStorage && keyToGame[k] && k!==ROOT){try{storeLegacy(k,v)}catch(e){}}return r}}catch(e){}
+function gameId(){return document.body?.dataset.game||location.pathname.match(/\/games\/([^/]+)/)?.[1]||'unknown'}
+window.YouthRecords={schemaVersion:SCHEMA,playerLocalId:uid(),legacyKeys:legacy,getBest(mode='default',id=gameId()){return Number(read().games[id]?.bests?.[mode]||0)},updateBest(mode,value,id=gameId()){const x=read();x.games[id]=x.games[id]||{legacy:{}};const g=x.games[id];g.bests=g.bests||{};g.bests[mode]=Math.max(Number(g.bests[mode]||0),Number(value)||0);write(x);return g.bests[mode]},getGame(id=gameId()){return read().games[id]||null},saveGame(data,id=gameId()){const x=read();x.games[id]={...(x.games[id]||{}),...data,updatedAt:new Date().toISOString()};write(x);return x.games[id]},safeJSON(key,fallback){try{const r=localStorage.getItem(key);return r==null?fallback:JSON.parse(r)}catch(e){return fallback}},exportPayload(){return read()},backendAdapter:{mode:'local-ready-for-remote',endpoint:null,async push(payload){return {ok:false,queued:true,reason:'backend-not-configured',payloadVersion:SCHEMA}},async pull(){return null}}};
+try{restore();addEventListener('pagehide',restore);document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden')restore()})}catch(e){}
+})();

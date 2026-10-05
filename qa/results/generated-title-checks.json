@@ -1,0 +1,130 @@
+[
+  {
+    "id": "2048",
+    "width": 1024,
+    "height": 341,
+    "transparentPixels": 118340,
+    "opaquePixels": 28,
+    "size": 663573
+  },
+  {
+    "id": "chess",
+    "width": 1024,
+    "height": 341,
+    "transparentPixels": 129759,
+    "opaquePixels": 744,
+    "size": 657456
+  },
+  {
+    "id": "backgammon",
+    "width": 1024,
+    "height": 341,
+    "transparentPixels": 120020,
+    "opaquePixels": 144,
+    "size": 656840
+  },
+  {
+    "id": "checkers",
+    "width": 1024,
+    "height": 341,
+    "transparentPixels": 130669,
+    "opaquePixels": 20,
+    "size": 605182
+  },
+  {
+    "id": "connect4",
+    "width": 1024,
+    "height": 341,
+    "transparentPixels": 167476,
+    "opaquePixels": 237,
+    "size": 543844
+  },
+  {
+    "id": "corners",
+    "width": 1024,
+    "height": 341,
+    "transparentPixels": 136042,
+    "opaquePixels": 16,
+    "size": 611674
+  },
+  {
+    "id": "domino",
+    "width": 1024,
+    "height": 341,
+    "transparentPixels": 138959,
+    "opaquePixels": 230,
+    "size": 592316
+  },
+  {
+    "id": "gomoku",
+    "width": 1024,
+    "height": 341,
+    "transparentPixels": 130042,
+    "opaquePixels": 30,
+    "size": 634485
+  },
+  {
+    "id": "fifteen",
+    "width": 1024,
+    "height": 341,
+    "transparentPixels": 132991,
+    "opaquePixels": 591,
+    "size": 627475
+  },
+  {
+    "id": "mahjong",
+    "width": 1024,
+    "height": 341,
+    "transparentPixels": 134963,
+    "opaquePixels": 15,
+    "size": 617851
+  },
+  {
+    "id": "memory",
+    "width": 1024,
+    "height": 341,
+    "transparentPixels": 132073,
+    "opaquePixels": 107,
+    "size": 628131
+  },
+  {
+    "id": "reversi",
+    "width": 1024,
+    "height": 341,
+    "transparentPixels": 150965,
+    "opaquePixels": 186,
+    "size": 571621
+  },
+  {
+    "id": "sudoku",
+    "width": 1024,
+    "height": 341,
+    "transparentPixels": 112842,
+    "opaquePixels": 4,
+    "size": 674518
+  },
+  {
+    "id": "starbattle",
+    "width": 1024,
+    "height": 341,
+    "transparentPixels": 136749,
+    "opaquePixels": 245,
+    "size": 643128
+  },
+  {
+    "id": "solitaire",
+    "width": 1024,
+    "height": 341,
+    "transparentPixels": 122067,
+    "opaquePixels": 85,
+    "size": 634507
+  },
+  {
+    "id": "tictactoe",
+    "width": 1024,
+    "height": 341,
+    "transparentPixels": 152664,
+    "opaquePixels": 246,
+    "size": 582910
+  }
+]

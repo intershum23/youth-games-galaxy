@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "dom": "node dom-qa.cjs",
+    "protocol": "node protocol-qa.cjs",
+    "browser": "node browser-qa.cjs",
+    "variants": "node variant-qa.cjs"
+  },
+  "devDependencies": {
+    "jsdom": "30.1.2",
+    "playwright": "1.62.1"
+  }
+}

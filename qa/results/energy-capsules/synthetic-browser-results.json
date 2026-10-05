@@ -1,0 +1,55 @@
+[
+  {
+    "viewport": "360x800",
+    "type": "synthetic-standalone-browser",
+    "status": "PASS",
+    "checks": [
+      "natural catch",
+      "pause freeze",
+      "rotation"
+    ],
+    "errors": []
+  },
+  {
+    "viewport": "390x844",
+    "type": "synthetic-standalone-browser",
+    "status": "PASS",
+    "checks": [
+      "natural catch",
+      "pause freeze",
+      "rotation",
+      "natural 3-miss end + storage",
+      "B/Turbo select"
+    ],
+    "errors": []
+  },
+  {
+    "viewport": "430x932",
+    "type": "synthetic-standalone-browser",
+    "status": "PASS",
+    "checks": [
+      "natural catch",
+      "pause freeze",
+      "rotation"
+    ],
+    "errors": []
+  },
+  {
+    "viewport": "1280x800",
+    "type": "synthetic-standalone-browser",
+    "status": "PASS",
+    "checks": [
+      "desktop keyboard/layout"
+    ],
+    "errors": []
+  },
+  {
+    "viewport": "1920x1080",
+    "type": "synthetic-standalone-browser",
+    "status": "PASS",
+    "checks": [
+      "desktop keyboard/layout"
+    ],
+    "errors": []
+  }
+]

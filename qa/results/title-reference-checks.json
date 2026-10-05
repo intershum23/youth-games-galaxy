@@ -1,0 +1,98 @@
+[
+  {
+    "id": "2048",
+    "catalog": "assets/titles/2048.png",
+    "gameDocumentRefs": 2,
+    "status": "PASS"
+  },
+  {
+    "id": "backgammon",
+    "catalog": "assets/titles/backgammon.png",
+    "gameDocumentRefs": 2,
+    "status": "PASS"
+  },
+  {
+    "id": "checkers",
+    "catalog": "assets/titles/checkers.png",
+    "gameDocumentRefs": 2,
+    "status": "PASS"
+  },
+  {
+    "id": "chess",
+    "catalog": "assets/titles/chess.png",
+    "gameDocumentRefs": 2,
+    "status": "PASS"
+  },
+  {
+    "id": "connect4",
+    "catalog": "assets/titles/connect4.png",
+    "gameDocumentRefs": 2,
+    "status": "PASS"
+  },
+  {
+    "id": "corners",
+    "catalog": "assets/titles/corners.png",
+    "gameDocumentRefs": 2,
+    "status": "PASS"
+  },
+  {
+    "id": "domino",
+    "catalog": "assets/titles/domino.png",
+    "gameDocumentRefs": 2,
+    "status": "PASS"
+  },
+  {
+    "id": "fifteen",
+    "catalog": "assets/titles/fifteen.png",
+    "gameDocumentRefs": 2,
+    "status": "PASS"
+  },
+  {
+    "id": "gomoku",
+    "catalog": "assets/titles/gomoku.png",
+    "gameDocumentRefs": 2,
+    "status": "PASS"
+  },
+  {
+    "id": "mahjong",
+    "catalog": "assets/titles/mahjong.png",
+    "gameDocumentRefs": 2,
+    "status": "PASS"
+  },
+  {
+    "id": "memory",
+    "catalog": "assets/titles/memory.png",
+    "gameDocumentRefs": 2,
+    "status": "PASS"
+  },
+  {
+    "id": "reversi",
+    "catalog": "assets/titles/reversi.png",
+    "gameDocumentRefs": 2,
+    "status": "PASS"
+  },
+  {
+    "id": "solitaire",
+    "catalog": "assets/titles/solitaire.png",
+    "gameDocumentRefs": 2,
+    "status": "PASS"
+  },
+  {
+    "id": "starbattle",
+    "catalog": "assets/titles/starbattle.png",
+    "gameDocumentRefs": 2,
+    "status": "PASS"
+  },
+  {
+    "id": "sudoku",
+    "catalog": "assets/titles/sudoku.png",
+    "gameDocumentRefs": 2,
+    "status": "PASS"
+  },
+  {
+    "id": "tictactoe",
+    "catalog": "assets/titles/tictactoe.png",
+    "gameDocumentRefs": 2,
+    "status": "PASS"
+  }
+]

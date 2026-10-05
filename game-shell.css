@@ -1,0 +1,250 @@
+/* One owned layout shell. Engine styles own pieces and rules, shell owns screens. */
+:root{--glass-surface:rgba(22,32,68,.34);--glass-raised:rgba(42,59,96,.46);--surface:#12163e;--surface-raised:#1b2051;--text-muted:#bac6e9;--focus:#8eeaff;--radius-card:22px;--motion-fast:180ms;--galaxy-bg:url('assets/v14_space_bg.webp');--shell-line:#a0b8f32b;--shell-panel:linear-gradient(150deg,#30406366,#18234155)}
+html,body{margin:0;width:100%;min-height:100%;color:#fff;background:#04082a var(--galaxy-bg) center/cover fixed no-repeat}
+body{display:block;padding:0;overflow:hidden;font-family:var(--font-ui)}
+*{box-sizing:border-box}
+#app{position:fixed;inset:0;width:100%;height:100dvh;max-width:100%;aspect-ratio:auto;background:transparent;overflow:hidden}
+body .screen{position:fixed;inset:0;transform:none;box-sizing:border-box;width:100%;height:100dvh;max-width:100%;max-height:none;box-shadow:none;background:linear-gradient(180deg,#12153866,#080b2477);overflow:auto}
+body .screen:not(.active){display:none}
+#splash.screen{padding:0;background:#04082a var(--game-splash) center/contain no-repeat;overflow:hidden}
+#splash button{display:flex;align-items:center;justify-content:center;position:absolute;left:50%;bottom:max(24px,env(safe-area-inset-bottom));transform:translateX(-50%);width:min(82%,440px);min-height:60px;padding:16px;border:0;border-radius:999px;background:linear-gradient(100deg,#ff42a7,#ff9c42);color:white;font:900 clamp(20px,5.8vw,30px)/1.1 var(--font-accent);z-index:2;cursor:pointer;opacity:1}
+#allGames{position:fixed;left:max(10px,env(safe-area-inset-left));top:max(10px,env(safe-area-inset-top));z-index:80;border:1px solid #62eaff99;border-radius:999px;padding:10px 14px;background:#121164ed;color:white;font:800 13px var(--font-ui);cursor:pointer;min-height:40px}
+/* Selection screens use normal flow, including Domino and Solitaire. */
+body #menu.screen{background:linear-gradient(180deg,#12153888,#080b24a8);position:fixed;inset:60px 0 0;transform:none;width:100%;height:calc(100dvh - 60px);padding:8px 14px 24px;overflow:auto;flex-direction:column;align-items:center;gap:0}
+#menu .menuWrap,#menu .menuInner,#menu .wrap,#menu .content{width:min(100%,560px);margin:0 auto;min-height:0}
+#menu h1,#menu h2,#menu .menuTitle,#menu .title{margin:8px auto 10px;font:900 clamp(30px,8vw,42px)/1.08 var(--font-accent);text-align:center;letter-spacing:-.03em;max-width:100%;overflow-wrap:break-word}
+#menu .sub,#menu .menuSub,#menu .subtitle{position:static;width:100%;max-width:520px;margin:0 auto 14px;font:400 13px/1.45 var(--font-ui);text-align:center;color:#d3ddff}
+#app::before,#app::after,#menu::before,#menu::after,#game::before,body::before,body::after{content:none}
+#menu .heroChooser,#menu .heroPanel,#menu .heroWrap{width:100%;max-width:560px;margin:10px auto 16px;padding:12px;border-radius:24px;background:var(--shell-panel);border:1px solid var(--shell-line)}
+#menu .heroChooser,#menu .heroPanel,#menu .heroWrap,#menu .modeCard,#menu .sizeBox,#menu .variantChooser{backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+#menu .recordsBtn,#menu .records{background:var(--shell-panel);border:1px solid var(--shell-line)}
+#menu .heroHead,#menu .heroHeader,#menu .heroChooserHead,#menu .heroTop{display:block;margin:0 0 10px}
+#menu .heroHead strong,#menu .heroHeader strong,#menu .heroChooserHead strong,#menu .sectionH{font:800 19px/1.2 var(--font-accent)}
+#menu .heroHead>span,#menu .heroHeader>span,#menu .heroChooserHead>span,#menu .heroTop>.smallText{display:none}
+#menu .heroRow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;width:100%;margin:0}
+#menu [data-hero]{display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;width:100%;min-width:0;max-width:none;height:auto;min-height:174px;gap:8px;padding:12px 8px 10px;border-radius:20px;background:linear-gradient(160deg,#33466866,#16244044);border:2px solid #a0b8f32b;overflow:visible;text-align:center}
+#menu [data-hero].on,#menu [data-hero].selected{border-color:var(--focus);background:linear-gradient(160deg,#31557888,#23395a77);box-shadow:0 4px 16px #0003}
+#menu [data-hero] .badge{display:none}
+#menu [data-hero]::before{content:none}
+
+#menu [data-hero]::after{content:"✓";position:absolute;top:10px;right:10px;display:none;place-items:center;width:23px;height:23px;border-radius:50%;background:var(--focus);color:#102038;font:800 14px var(--font-ui);opacity:1;filter:none;z-index:4;transform:none;left:auto;bottom:auto}
+#menu [data-hero].on::after,#menu [data-hero].selected::after{display:grid}
+#menu .heroPortrait,#menu .heroPic{display:block;width:100%;height:124px;max-width:none;max-height:none;overflow:visible;background:none;border:0;box-shadow:none}
+#menu [data-hero]>img,#menu .heroPortrait img,#menu .heroPic img{position:static;display:block;width:100%;height:124px;max-width:100%;max-height:none;object-fit:contain;object-position:center;transform:none;background:none;border:0;border-radius:0;box-shadow:none;flex:none}
+#menu .heroName,#menu .heroLabel,#menu [data-hero] .name,#menu [data-hero]>b{display:block;font:800 13px/1.15 var(--font-ui);margin:0;color:#eef7ff}
+#menu .modeGrid,#menu .modeList,#menu .modes{width:100%;max-width:560px;display:grid;grid-template-columns:minmax(0,1fr);gap:10px;margin:0 auto 12px}
+#menu .modeCard{display:block;position:relative;min-height:92px;width:100%;padding:17px 18px;text-align:left;border-radius:22px;background:var(--shell-panel);border:1px solid var(--shell-line);box-shadow:0 10px 24px #0003;overflow:hidden}
+#menu .modeCard strong,#menu .modeTitle{display:block;position:static;margin:0;font:700 clamp(17px,4.6vw,22px)/1.25 var(--font-accent);color:#fff;max-width:100%}
+#menu .modeCard>span:not(.modeThumb):not(.modeIcon):not(.modeArrow):not(.arrow),#menu .modeDesc,#menu .modeCard .desc{display:block;position:static;margin-top:7px;max-width:100%;font:400 13px/1.35 var(--font-ui);color:#cddfff}
+#menu .modeCard::before,#menu .modeCard::after,#menu .modeIcon,#menu .modeThumb,#menu .modeArrow,#menu .arrow,#menu .previewTiles,#menu .domDecor,#menu .speedLines{display:none}
+#menu .sizeBox,#menu .variantChooser{width:100%;max-width:560px;margin:0 auto 12px;padding:12px;border-radius:20px;background:var(--shell-panel)}
+#menu .sizeSeg,#menu .variantChooser{display:flex;gap:8px;flex-wrap:wrap}
+#menu .sizeSeg button,#menu .variantChooser button{flex:1;min-height:44px;font-size:14px}
+#menu .menuActions{display:flex;flex-wrap:wrap;gap:10px;width:100%;max-width:560px;align-items:center;justify-content:center}
+#menu .recordsBtn,#menu .records{display:block;width:min(100%,560px);margin:8px auto;min-height:44px;padding:12px 18px;font:800 15px/1.2 var(--font-ui);border-radius:18px}
+#menu .playBtn,#menu .glowBtn{display:block;min-height:52px;padding:14px 24px;margin:8px auto;font-size:20px;border-radius:18px}
+/* Game screens have intrinsic rows: the board never gets a zero remainder. */
+body #game.screen.active{background:linear-gradient(180deg,#12153866,#080b2477);position:fixed;inset:60px 0 0;transform:none;width:100%;height:calc(100dvh - 60px);display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:8px;padding:8px 10px max(16px,env(safe-area-inset-bottom));overflow:auto}
+#game>*{flex-shrink:0;min-width:0;max-width:100%}
+#game .topbar,#game .topBar{display:grid;grid-template-columns:minmax(0,1fr) 42px;align-items:center;width:min(100%,560px);padding:0;margin:0;min-height:50px;gap:8px}
+#game .miniLogo,#game .brandDot,#game .logo{display:none}
+#game .titleStack,#game .gameTitle{min-width:0;text-align:center}
+#game .galaxy-title{font:900 clamp(25px,6.4vw,35px)/1.12 var(--font-accent);letter-spacing:-.035em;margin:0;padding:2px 0 5px;background:linear-gradient(110deg,#fff 10%,#c0eaff 65%,#cfbdff);background-clip:text;-webkit-background-clip:text;color:transparent;text-shadow:none;overflow-wrap:break-word}
+#game .gameTitle>div,#modeBadge,#gameModeText,#modeText,#gameSub{font:700 11px/1.3 var(--font-ui);letter-spacing:.04em;color:#d5e6ff;margin:0}
+#game .iconBtn,#game .sound,#game .soundBtn,#game .roundIcon{width:42px;height:42px;min-height:42px;aspect-ratio:1;border-radius:14px;font-size:20px}
+#game .hud,#game .metrics{display:flex;flex-direction:row;align-items:center;flex-wrap:wrap;gap:6px;justify-content:center;width:min(100%,560px);height:auto}
+#game .hud>*,#game .metrics>*{background:#1c2245;border:1px solid var(--shell-line);flex:1 1 72px;min-width:0;min-height:36px;padding:6px 7px;font-size:11px;line-height:1.35;text-align:center;border-radius:12px}
+#game .scoreCard strong{font-size:22px}
+#game .scorebar,#game .statusRow{width:min(100%,560px);margin:0;font-size:12px;gap:6px}
+#game .boardShell,#game .boardWrap,#game .boardPanel,#game .boardFrame,#game .gameArea,#game .gameStage{width:min(100%,560px);max-width:100%;box-sizing:border-box;flex:none}
+#game .controls,#game .bottomBar{position:static;inset:auto;transform:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(72px,1fr));gap:7px;width:min(100%,560px);height:auto;margin:0;padding:8px 0;flex:none}
+#game .controls button,#game .bottomBar button{min-width:0;min-height:46px;padding:9px 5px;font:800 12px/1.2 var(--font-ui);border-radius:16px}
+/* Compact avatars are siblings of the playing surface, never overlaid on it. */
+#game .actorMeta,#game .actorInfo,#game .actorTxt,#game .actorSub,#game .actorName,#game .actorRole,#game .actorSide,#game #oppName,#game #oppSub,#game #playerName,#game #heroNameMini{display:none}
+#game .playerBar,#game .actorRow,#game .actorbar,#game .heroBar{display:flex;align-items:center;justify-content:space-between;width:min(100%,560px);height:auto;min-height:56px;gap:8px;padding:4px 8px;margin:0}
+#game .playerBar>img,#game #actorImg,#game #heroImgMini,#game #playerImg{width:52px;height:52px;object-fit:contain;background:none;border-radius:0;position:static;flex:none}
+#game .actorRow>.actor{display:flex;flex:0 0 60px;min-width:0;width:60px;height:56px;padding:2px;gap:0}
+#game .actorRow>.actor>div,#game .heroMini>div{display:none}
+#game .actorRow .toolRow,#game .actorRow .miniTools{margin-left:auto}
+#game .heroMini{display:flex;align-items:center}
+#game .actors{display:flex;justify-content:space-between;width:min(100%,560px);min-height:56px;gap:8px}
+#game .actors .actor,#game .actorbar .actor{position:static;inset:auto;width:58px;min-width:58px;height:56px;padding:2px;overflow:hidden;border-radius:16px}
+#game .actors .actor img,#game .actorbar .actor img{width:100%;height:100%;object-fit:contain}
+#game .actorbar .actor>div{display:none}
+body[data-game="checkers"] #boardStage,body[data-game="chess"] #boardStage{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:56px auto;gap:8px;position:relative;width:min(100%,560px);height:auto;min-height:0;padding:0}
+body[data-game="checkers"] #leftActor,body[data-game="chess"] #leftActor{grid-column:1;grid-row:1;justify-self:start}
+body[data-game="checkers"] #rightActor,body[data-game="chess"] #rightActor{grid-column:2;grid-row:1;justify-self:end}
+body[data-game="checkers"] #boardPanel,body[data-game="chess"] #boardPanel{grid-column:1/-1;grid-row:2;position:relative;inset:auto;margin:0;transform:none;width:100%;height:auto;aspect-ratio:1}
+#game .sideActor{position:static;inset:auto;width:58px;min-width:58px;height:56px;padding:2px;border-radius:16px;overflow:hidden;background:#17277388;border:1px solid var(--shell-line)}
+#game .sideActor .actorImageWrap{position:static;width:100%;height:100%;padding:0;transform:none}
+#game .sideActor img{position:static;width:100%;height:100%;object-fit:contain;transform:none}
+body[data-game="backgammon"] .matchGroup,body[data-game="connect4"] .gameArea,body[data-game="reversi"] #boardWrap,body[data-game="tictactoe"] .matchCluster{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:56px auto;gap:8px;position:relative;width:min(100%,560px);height:auto;aspect-ratio:auto;padding:0;overflow:visible}
+body[data-game="connect4"] .actorRow,body[data-game="tictactoe"] .actorRow{display:contents}
+#game #bottomActor,#game .actorRow.bottom .actorMini{grid-column:1;grid-row:1;justify-self:start}
+#game #topActor,#game .actorRow.top .actorMini{grid-column:2;grid-row:1;justify-self:end}
+body[data-game="backgammon"] .matchGroup>.boardWrap,body[data-game="connect4"] .boardWrap,body[data-game="reversi"] #boardWrap>.boardPanel,body[data-game="tictactoe"] .boardMount{grid-column:1/-1;grid-row:2;position:relative;inset:auto;margin:0;width:100%;height:auto;transform:none}
+body[data-game="reversi"] #boardWrap>.boardPanel{aspect-ratio:1}
+#game #topActor,#game #bottomActor,#game .actorMini{position:static;inset:auto;width:58px;min-width:58px;height:56px;padding:2px;overflow:hidden;border-radius:16px}
+#game .actorCard,#game .actorPic{width:100%;height:100%;border-radius:14px}
+#game #topActor img,#game #bottomActor img,#game .actorCard img,#game .actorPic img{width:100%;height:100%;object-fit:contain}
+/* Mahjong has an explicit playable surface, independent of flex free space. */
+body[data-game="mahjong"] #game .boardShell{height:auto;min-height:0;padding:8px}
+body[data-game="mahjong"] #board{width:100%;height:auto;aspect-ratio:1.12;min-height:0}
+/* Memory grows with its selected rows, retaining practical mobile hit targets. */
+body[data-game="memory"] #game .boardShell{height:auto;padding:8px}
+body[data-game="memory"] #board{height:auto;width:100%;grid-auto-rows:auto;aspect-ratio:calc(var(--memory-cols,4)/var(--memory-rows,4));padding:6px;gap:6px;place-content:stretch}
+body[data-game="memory"] .memoryCard{min-height:44px;aspect-ratio:1}
+body[data-game="memory"] .cardFace{border-radius:12px}
+body[data-game="memory"] #game .actorbar>div{display:none}
+/* Solitaire: seven flexible columns, readable fan spacing and content-owned height. */
+body[data-game="solitaire"] #game .boardShell{padding:6px;margin:0;height:auto;min-height:0;flex:none;border-radius:22px}
+body[data-game="solitaire"] #game .boardInner{height:auto;min-height:0;padding:6px;overflow:visible;border-radius:18px;container-type:inline-size}
+body[data-game="solitaire"] #game .topPiles{grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;margin-bottom:12px}
+body[data-game="solitaire"] #game .tableau{grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;height:auto;min-height:220px}
+body[data-game="solitaire"] #game .tableauCol{min-width:0;height:auto;border-radius:10px;min-height:calc(var(--fan-height,0px) + (100cqi - 24px)/7*1.42)}
+body[data-game="solitaire"] #game .slot{display:grid;grid-template-columns:minmax(0,1fr);justify-content:stretch;place-items:center;height:auto;aspect-ratio:1/1.42;min-width:0;border-radius:8px;font-size:9px;padding:0}
+body[data-game="solitaire"] #game .card{width:100%;height:auto;aspect-ratio:1/1.42;max-height:none;padding:0;border-radius:7px;max-width:100%;container-type:inline-size;display:block;box-sizing:border-box;overflow:hidden}
+body[data-game="solitaire"] #game .card .corner{position:absolute;top:4%;left:8%;font:800 clamp(8px,22cqi,15px)/1 var(--font-ui)}
+body[data-game="solitaire"] #game .card .corner:last-child{top:auto;left:auto;right:8%;bottom:4%;transform:rotate(180deg)}
+body[data-game="solitaire"] #game .card .big{position:absolute;inset:0;display:grid;place-items:center;font-size:clamp(16px,48cqi,34px);line-height:1}
+body[data-game="solitaire"] #game .heroBar{min-height:56px}
+body[data-game="solitaire"] #gameSub{align-self:flex-start;margin:0}
+/* Domino scrolls its table locally, screens remain portrait-safe in every orientation. */
+body[data-game="domino"] #game .tableShell{height:auto;min-height:0;padding:8px;flex:none;width:min(100%,560px)}
+body[data-game="domino"] .table{height:auto;min-height:0;padding:8px;display:flex;flex-direction:column;gap:8px}
+body[data-game="domino"] .cpuHand{height:48px;overflow:hidden;flex:none;justify-content:flex-start}
+body[data-game="domino"] .backTile{width:44px;height:30px;flex:none;border-radius:8px}
+body[data-game="domino"] .boneyard,body[data-game="domino"] .centerBtn{position:static;inset:auto;align-self:flex-start;padding:8px;max-width:100%;font-size:12px}
+body[data-game="domino"] .boneStack{width:44px;height:28px}
+body[data-game="domino"] .chainArea{height:220px;min-height:220px;padding:8px;flex:none;overflow:auto}
+body[data-game="domino"] .handArea{height:96px;min-height:96px;padding:10px 6px;justify-content:flex-start;flex:none}
+body[data-game="domino"] .handArea .domino{width:92px;height:64px}
+body[data-game="domino"] .handArea .half{width:32px;height:40px}
+body[data-game="domino"] .sideButtons{position:static;inset:auto;transform:none;justify-content:center;flex-wrap:wrap}
+body[data-game="domino"] .crossBoard{height:260px;min-height:260px;flex:none}
+body[data-game="domino"] .actorbar{min-height:56px}
+/* Fleet, Sudoku and symbols. */
+body[data-game="starbattle"] .boardCard{display:block;width:100%;height:auto;margin:0;padding:8px}
+body[data-game="starbattle"] .boardHead{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:56px;margin-bottom:6px;font-size:11px}
+body[data-game="starbattle"] .boardHead .left{display:flex;align-items:center;gap:6px;min-width:0}
+body[data-game="starbattle"] .face{width:50px;height:50px;flex:none}
+body[data-game="starbattle"] #boardFace{width:50px;height:50px;object-fit:contain}
+body[data-game="starbattle"] .boardFrame{width:100%;overflow:visible;padding:0}
+body[data-game="starbattle"] #mainBoard{width:100%;aspect-ratio:1;height:auto;max-width:100%;margin:0}
+body[data-game="sudoku"] #game .boardWrap{width:min(100%,560px);margin:0;padding:8px}
+body[data-game="sudoku"] #board{width:100%;aspect-ratio:1;height:auto}
+body[data-game="sudoku"] .gameTools,body[data-game="sudoku"] .keypad{width:min(100%,560px)}
+body[data-game="sudoku"] .keypad button{min-height:40px;aspect-ratio:auto}
+body[data-game="tictactoe"] #board{width:100%;max-width:100%;height:auto;aspect-ratio:1}
+body[data-game="tictactoe"] .mark{display:block;width:66%;height:66%;font-size:0!important;position:relative;filter:drop-shadow(0 4px 8px #0005)}
+body[data-game="tictactoe"] .mark.x::before,body[data-game="tictactoe"] .mark.x::after{content:'';position:absolute;left:39%;top:0;width:22%;height:100%;border-radius:999px;background:linear-gradient(#ffacd9,#ff40a2,#ff973d);box-shadow:inset 2px 0 2px #fff7,0 0 10px #ff60ba70;transform:rotate(45deg)}
+body[data-game="tictactoe"] .mark.x::after{transform:rotate(-45deg)}
+body[data-game="tictactoe"] #board .cell{container-type:inline-size}
+body[data-game="tictactoe"] .mark.o{border:clamp(6px,12cqi,18px) solid #6eefff;border-radius:50%;box-shadow:inset 2px 2px 4px #fff7,0 0 12px #4de6ff88;background:transparent}
+/* Exactly one vertical modal card, preserving the v15 focus/lifecycle protocol. */
+body #aiSetup.game-modal,body #setup.game-modal,body #setupOverlay.game-modal{display:none;position:fixed;inset:0;width:100%;height:100dvh;max-width:100%;transform:none;transition:none;padding:64px 14px 20px;background:#01031cc9;backdrop-filter:blur(8px);border:0;border-radius:0;z-index:100;overflow:auto;align-items:center;justify-content:center;box-sizing:border-box}
+body #aiSetup.game-modal.open,body #setup.game-modal.open,body #setupOverlay.game-modal.open{display:flex}
+.game-modal::before{content:none}
+body .game-modal>.modal-card{display:block;flex:none;width:min(100%,560px);max-height:100%;overflow:auto;margin:auto;padding:22px 18px;border-radius:26px;background:linear-gradient(165deg,#304563aa,#18243aaa);border:1px solid var(--shell-line);box-shadow:0 24px 70px #0008}
+.game-modal .setupTitle{font:800 24px/1.2 var(--font-accent);margin-bottom:16px}
+.game-modal .seg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.game-modal .seg button{min-width:0;min-height:44px;padding:10px 4px;white-space:normal;font-size:12px}
+.game-modal .setupHeroLine{display:none}
+.overlay,.modal{max-width:100%;box-sizing:border-box}
+.overlay .sheet,.modal .sheet,.modalBox{max-height:85dvh;overflow:auto}
+body #game.active #rotateNotice,body #game.active #rotateOverlay,.logo,.menuLogo,.menuGameLogo,.splashLogo,.s2048Logo,.brand,.finalCosmicLogo,.miniLogo,img[src*="logo" i]{display:none}
+@media(orientation:landscape){body #menu.screen,body #game.screen{padding-top:8px;padding-inline:max(16px,calc((100vw - 560px)/2));overflow:auto}#splash button{min-height:46px;padding:10px;bottom:12px}#menu [data-hero]{min-height:150px}#menu [data-hero]>img,#menu .heroPortrait,#menu .heroPic,#menu .heroPortrait img,#menu .heroPic img{height:100px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Typography roles shared across all engines; dimensions remain game-owned. */
+#menu .playBtn,#menu .glowBtn,.game-modal .go,.game-modal .primary,.game-modal .start,.game-modal .setupActions button:last-child,#game .scoreCard strong,#game .hud .metric,#game .metrics .metric,#game #scoreValue,#game #bestValue,#game #maxTile,#game #movesValue,#game #timeValue,#game #recordValue,#game #pairsBox,#game #scoreBox,#game #timeBox,#game #resultScore,#game .keypad button{font-family:var(--font-accent);font-variant-numeric:tabular-nums}
+#game .hud,#game .metrics{font-variant-numeric:tabular-nums}
+button,input,select,textarea{font-family:inherit}
+
+#game .scorebar b,#game .statusPill b,#game #boardStats,#game .card .corner,body[data-game="sudoku"] #game .cell{font-family:var(--font-accent);font-variant-numeric:tabular-nums}
+.go,.primary,.glowBtn,.start,.playBtn,.saveRecord,#readyBtn,#resultReplay,#saveRecordBtn{font-family:var(--font-accent)}
+
+/* Playing surfaces retain engine geometry with a common material and edge treatment. */
+#game .boardShell,#game .boardPanel,#game .boardFrame,#game .tableShell{box-shadow:inset 0 1px 0 #ffffff24,0 8px 20px #0004;border-color:#a0b8f333}
+body[data-game="connect4"] #game .disc,body[data-game="corners"] #game .piece,body[data-game="gomoku"] #game .stone{box-shadow:inset 0 2px 4px #ffffff55,inset 0 -3px 5px #0003,0 3px 6px #0004}
+body[data-game="chess"] #game .pieceSvg{filter:drop-shadow(0 3px 2px #0005)}
+body[data-game="fifteen"] #game .tile{box-shadow:inset 0 1px 0 #ffffff55,0 3px 6px #0003}
+body[data-game="sudoku"] #game .keypad button{background:#25375d;box-shadow:0 2px 4px #0003}
+body[data-game="sudoku"] #game .cell.selected{box-shadow:inset 0 0 0 2px #8eeaff;background:linear-gradient(145deg,#31578e,#25456f)}
+body[data-game="domino"] .table::before,body[data-game="domino"] .table::after{content:none}
+/* Presentation components: interaction, player cards and native result dialogs. */
+button{touch-action:manipulation;transition:background-color var(--motion-fast),border-color var(--motion-fast),box-shadow var(--motion-fast)}
+button:focus-visible,[tabindex]:focus-visible,input:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+button:disabled{cursor:default;opacity:.5}
+#menu .modeCard:active,#menu [data-hero]:active{box-shadow:inset 0 0 0 2px #8eeaff88}
+#menu .modeCard:focus-visible{border-color:var(--focus)}
+#game .galaxy-title::before{content:'✦';display:inline-block;font-size:.55em;vertical-align:middle;margin-right:.45em;color:var(--focus);-webkit-text-fill-color:var(--focus)}
+#game #turnLabel{border-color:#8eeaff70;background:#183449;color:#e9faff;font-weight:700}
+#game #stateLabel{color:var(--text-muted)}
+#game .controls button,#game .bottomBar button{background:#1c2245;border:1px solid var(--shell-line);box-shadow:0 2px 5px #0002}
+#game .galaxy-player{display:flex!important;align-items:center;gap:7px;width:clamp(100px,40vw,155px)!important;min-width:0!important;height:56px!important;padding:5px 7px!important;border:1px solid var(--shell-line);border-radius:15px;background:#171d3e;overflow:hidden}
+#game .galaxy-player>img,#game .galaxy-player>.actorPic,#game .galaxy-player>.actorCard,#game .galaxy-player>.actorImageWrap{position:static;width:42px!important;min-width:42px;height:44px!important;flex:none;padding:0;transform:none;background:none;box-shadow:none;border:0}
+#game .galaxy-player>img,#game .galaxy-player img{object-fit:contain}
+#game .galaxy-player .galaxy-player-label{display:block!important;min-width:0;font:600 10px/1.3 var(--font-ui);color:#c4ceea;overflow-wrap:anywhere}
+#game .galaxy-player.active,#game .galaxy-player:has(.active){border-color:#8eeaffbb;background:#1a354a;box-shadow:inset 0 0 0 1px #8eeaff22}
+#game .galaxy-player.active .galaxy-player-label,#game .galaxy-player:has(.active) .galaxy-player-label{color:#fff}
+#game .checker,#game .disc{filter:drop-shadow(0 3px 3px #0005)}
+#game .domino{box-shadow:0 4px 9px #0004,inset 0 1px 0 #fff;border-color:#d5dff1}
+#game .domino.playable{border-color:#7bd9ff;box-shadow:0 4px 9px #0004,inset 0 0 0 1px #7bd9ff}
+#game .card:not(.back){background:linear-gradient(145deg,#fff,#edf2fa);box-shadow:0 3px 6px #0004;border-color:#dae2ef}
+#game .card.selected{outline-width:2px}
+body[data-game="memory"] .cardFace{border:1px solid #d1e5ff40;box-shadow:0 4px 9px #0003}
+body[data-game="memory"] .memoryCard.matched{filter:saturate(.8)}
+body[data-game="mahjong"] .tile.free{filter:drop-shadow(2px 4px 2px #0006)}
+body[data-game="mahjong"] .tile.selected{filter:drop-shadow(0 0 3px #fff) drop-shadow(0 0 7px #8eeaff)}
+body[data-game="2048"] .tile{box-shadow:inset 0 1px 0 #ffffff66,0 3px 7px #0003;font-family:var(--font-accent)}
+.galaxy-result{position:fixed!important;inset:0!important;z-index:110!important;width:100%;height:100dvh;box-sizing:border-box;padding:18px!important;background:#030716cf!important;backdrop-filter:blur(10px);overflow:auto!important}
+.galaxy-result>.sheet,.galaxy-result>.modal,.galaxy-result>.resultCard,.galaxy-result>.modalBox,.galaxy-result>.modalCard{position:relative;inset:auto;transform:none;width:min(100%,440px);max-width:440px;max-height:calc(100dvh - 36px);height:auto;margin:auto;padding:24px 20px;border-radius:26px;border:1px solid #a0b8f340;background:linear-gradient(145deg,#304563aa,#18243aaa);box-shadow:0 20px 60px #0008;overflow:auto}
+.galaxy-result h2,.galaxy-result h3,.galaxy-result #resultTitle{font:800 clamp(23px,6vw,30px)/1.2 var(--font-accent);letter-spacing:-.03em;margin:0 0 12px;color:#f3f8ff}
+.galaxy-result p,.galaxy-result #resultText,.galaxy-result #modalText{font:400 14px/1.55 var(--font-ui);color:#c4ceea;margin:0 0 18px}
+.galaxy-result #resultScore,.galaxy-result .scoreSummary{display:block;background:#192f47;border:1px solid #7edbff44;border-radius:16px;padding:14px;margin:12px 0 18px;color:#c3f3ff;font:700 22px/1.3 var(--font-accent);font-variant-numeric:tabular-nums}
+.galaxy-result .resultMascot{width:80px;height:80px;object-fit:contain;margin:0 auto 12px}
+.galaxy-result #modalText b{font-family:var(--font-accent);color:#e8f6ff}
+.galaxy-result input{width:100%;min-height:48px;border-radius:12px;border:1px solid #a0b8f355;background:#0d1530;color:#fff;padding:12px;font:500 16px var(--font-ui)}
+.galaxy-result .resultActions,.galaxy-result .sheetActions,.galaxy-result #modalActions{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.galaxy-result button{min-height:46px;border-radius:14px;padding:12px 14px;font:600 12px/1.25 var(--font-ui);background:#253052;color:#fff;border:1px solid #a0b8f33b}
+.galaxy-result .go,.galaxy-result .primary,.galaxy-result #resultReplay{flex:1;background:linear-gradient(110deg,#785ef0,#526ee7);font-family:var(--font-accent);border-color:#b6b1ff77}
+.galaxy-result .galaxy-result-exit{width:100%;margin-top:10px;background:transparent;border-color:#94afd15c}
+@keyframes galaxy-feedback{0%{box-shadow:inset 0 0 0 2px #b7f0ffbb}100%{box-shadow:inset 0 0 0 2px #b7f0ff00}}
+@keyframes galaxy-dialog-enter{from{opacity:0;translate:0 8px}to{opacity:1;translate:0 0}}
+.galaxy-feedback{animation:galaxy-feedback 200ms ease-out}
+.galaxy-result.open>*,.galaxy-result.show>*{animation:galaxy-dialog-enter 200ms ease-out}
+@media(hover:hover){#menu .modeCard:hover{border-color:#8eeaff80;background:linear-gradient(150deg,#283663aa,#18204499)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Transparent title artwork, outlined from the real local Unbounded font. */
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;margin:-1px!important;padding:0!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+#menu h1:has(.gameTitleArt),#menu h2:has(.gameTitleArt),#menu .title:has(.gameTitleArt){margin:6px auto 12px;width:min(100%,480px);padding:0}
+#menu .gameTitleArt{display:block;width:100%;height:94px;object-fit:contain;margin:0 auto}
+#game .galaxy-title:has(.gameTitleArt){padding:0;margin:0;background:none;text-shadow:none;line-height:1}
+#game .galaxy-title:has(.gameTitleArt)::before{content:none}
+#game .gameTitleArt{display:block;width:100%;height:70px;object-fit:contain;object-position:center}
+/* Glass surfaces own only UI materials, never the board's rules or hit targets. */
+#game .hud>*,#game .metrics>*,#game .controls button,#game .bottomBar button,#game .galaxy-player,#game .scoreCard,#game .statusPill,#game .boardShell,#game .boardPanel,#game .boardFrame,#game .tableShell,#game .boardCard,#game .boardWrap{background:var(--glass-surface);border-color:#c4e2ff40;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);box-shadow:inset 0 1px 0 #ffffff20,0 5px 14px #0003}
+#game #turnLabel,#game .galaxy-player.active,#game .galaxy-player:has(.active){background:rgba(42,106,130,.4);border-color:#8eeaffaa}
+#game .boardInner,body[data-game="domino"] .table{background:rgba(18,32,53,.2)}
+.galaxy-result>.sheet,.galaxy-result>.modal,.galaxy-result>.resultCard,.galaxy-result>.modalBox,.galaxy-result>.modalCard,.game-modal>.modal-card{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.galaxy-result #resultScore,.galaxy-result .scoreSummary,.galaxy-result input{background:rgba(20,42,63,.38)}
+#allGames{background:rgba(23,40,67,.48);border-color:#c4e2ff66;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+@media(orientation:landscape){#menu .gameTitleArt{height:72px}#game .gameTitleArt{height:58px}}
+@supports not (backdrop-filter:blur(1px)){#game .hud>*,#game .metrics>*,#menu .modeCard,.game-modal>.modal-card{background:rgba(20,30,58,.7)}}
+
+/* The same glass material for records and informational dialogs. */
+.overlay>.sheet,.overlay>.modal,#modal>.modalBox,#modal>.modalCard,#recordsOverlay>.sheet,#resultOverlay>.resultCard,.game-modal>.modal-card{background:linear-gradient(145deg,#304563aa,#18243aaa);border:1px solid #c4e2ff40;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+#game .playerBar,#game .actorbar,#game .heroBar,#game .scorebar,#game .statusRow{background:var(--glass-surface);border-color:#c4e2ff40}
+
+/* No alternate galaxy paints before the splash is decoded. */
+html:has(body:not(.galaxy-ready)),body:not(.galaxy-ready){background:#04082a}
+body:not(.galaxy-ready) #app{visibility:hidden}
+body:has(#splash.active) #allGames,body:not(.galaxy-ready) #allGames{display:none}
+
+/* Balanced header columns center title art on the screen, independent of sound control. */
+#game .topbar:has(.gameTitleArt),#game .topBar:has(.gameTitleArt){grid-template-columns:42px minmax(0,1fr) 42px;gap:8px}
+#game .topbar> :has(.gameTitleArt),#game .topBar> :has(.gameTitleArt){grid-column:2;grid-row:1;text-align:center;width:100%;min-width:0}
+#game .topbar>button,#game .topBar>button{grid-column:3;grid-row:1}
+#menu .gameTitleArt,#game .gameTitleArt{object-position:center;transform-origin:center}

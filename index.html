@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#05031d">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Игровая галактика — 17 игр</title>
+  
+
+
+<link rel="stylesheet" href="platform.css">
+<link rel="stylesheet" href="typography.css">
+</head>
+<body>
+<div class="spaceFog"></div>
+<div class="app">
+  <header class="topbar">
+    <button class="brand brandButton brandImageButton" data-panel="games" aria-label="На главную">
+      <span class="brandTextOnly">✦ Игровая галактика</span>
+    </button>
+    <nav class="navActions desktopNav" aria-label="Навигация">
+      <button class="navBtn active" data-panel="games">🎮 Игры</button>
+      <button class="navBtn" data-panel="records">🏆 Мои рекорды</button>
+      <button class="navBtn infoBtn" data-info="how">❔ Как играть</button>
+      <button class="navBtn infoBtn" data-info="about">✦ О проекте</button>
+    </nav>
+  </header>
+
+  <main id="gamesPanel" class="panel active">
+    <section class="heroPortal">
+      <div class="heroGlow"></div>
+      <div class="heroCore heroCoreLogo">
+        <div class="seriesPill">🚀 17 игр • один космический мир</div>
+        <img class="portalArt" src="assets/galaxy-hero-v16-11.webp" alt="Игровая галактика">
+        <p>Выбирайте игру и запускайте её прямо в браузере. Никакой регистрации и установки.</p>
+        <div class="heroSearch"><span>⌕</span><input id="search" placeholder="Найти игру..." aria-label="Поиск игры"><button id="searchFocus">Найти</button></div>
+      </div>
+      <div class="heroDeck"></div>
+    </section>
+
+    <section id="catalogSection" class="catalogSection">
+      <div class="catalogHead">
+        <div><h2 class="u">Все игры</h2><p>Выберите космическую миссию.</p></div>
+        <div class="categoryBar" id="categoryBar">
+          <button class="catBtn active" data-cat="all">▦ Все</button>
+          <button class="catBtn" data-cat="logic">◉ Логика</button>
+          <button class="catBtn" data-cat="strategy">♛ Стратегия</button>
+          <button class="catBtn" data-cat="arcade">🎮 Аркада</button>
+          <button class="catBtn" data-cat="board">🎲 Настольные</button>
+        </div>
+      </div>
+      <div id="gameGrid" class="grid"></div>
+    </section>
+  </main>
+
+  <main id="recordsPanel" class="panel">
+    <section class="recordsHero">
+      <div class="recordsHeroCopy">
+        <div class="seriesPill">🏆 Личный журнал на этом устройстве</div>
+        <h1 class="u">Мои <span>рекорды</span></h1>
+        <p>Без аккаунта и регистрации. Платформа показывает результаты, которые игры сохранили в этом браузере.</p>
+      </div>
+      <div class="trophyOrb">🏆</div>
+    </section>
+    <section class="recordsShell">
+      <aside class="recordSidebar">
+        <div class="deviceRecordCard">
+          <div class="deviceRecordIcon">✦</div>
+          <div><b>Личные достижения</b><span>Хранятся только на этом устройстве</span></div>
+        </div>
+        <div class="summary">
+          <div class="sum"><b id="gamesWithRecords">0</b><span>игр с результатами</span></div>
+          <div class="sum"><b id="totalRecords">0</b><span>сохранённых результатов</span></div>
+        </div>
+        <div class="localNotice"><b>Как работают рекорды сейчас</b><br>Они сохраняются локально в браузере. Общий рейтинг между разными людьми можно добавить позже через серверную базу, не вводя обязательную регистрацию.</div>
+      </aside>
+      <div class="recordMain">
+        <div class="recordHead"><h2 class="u">Рекорды по играм</h2><span>Лучшие результаты этого устройства</span></div>
+        <div id="recordGrid" class="recordGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><span>✦</span> Игровая галактика • 17 браузерных игр • Web<br><b class="authorCredit">by Alexey Kuznetsov</b></footer>
+</div>
+
+<nav class="mobileBottomNav" aria-label="Мобильная навигация">
+  <button class="mobileNavBtn active" data-panel="games"><span>🎮</span><b>Игры</b></button>
+  <button class="mobileNavBtn" data-panel="records"><span>🏆</span><b>Рекорды</b></button>
+  <button class="mobileNavBtn infoBtn" data-info="how"><span>❔</span><b>Как играть</b></button>
+  <button class="mobileNavBtn infoBtn" data-info="about"><span>✦</span><b>О проекте</b></button>
+</nav>
+
+<div id="gameModal" class="gameModal">
+  <div class="gameBar">
+    <div class="gameBarTitle"><span class="miniMark">✦</span><span id="gameTitle">Игра</span></div>
+    <div class="gameBarActions"><button id="fullGame" title="Полный экран">⛶</button><button id="closeGame">✕</button></div>
+  </div>
+  <div class="portraitHint">↻ Для некоторых игр удобнее повернуть телефон горизонтально</div>
+  <div class="frameWrap"><div id="gameLoading" class="loading">🚀 Загрузка игры…</div><iframe id="gameFrame" class="gameFrame" allow="fullscreen; autoplay" title="Игра"></iframe></div>
+</div>
+
+<div id="infoModal" class="infoModal" aria-hidden="true"><div class="infoCard"><button class="infoClose" id="infoClose">✕</button><div class="infoIcon" id="infoIcon">✦</div><h3 class="u" id="infoTitle"></h3><div id="infoContent" class="infoContent"></div></div></div>
+<script src="records.js"></script>
+<script src="platform-config.js"></script><script src="catalog.generated.js"></script><script src="platform.js"></script>
+
+</body></html>

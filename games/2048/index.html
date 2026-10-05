@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#08031f">
+<title>Молодёжные 2048</title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+:root{--bg:#07011f;--panel:rgba(34,29,118,.90);--panel2:rgba(20,15,78,.98);--line:rgba(255,255,255,.12);--txt:#fff;--muted:#d6d9ef;--pink:#ff4db6;--pink2:#ff7a78;--orange:#ffad3d;--cyan:#54ddff;--cyan2:#a5f6ff;--violet:#7062ff;--green:#7ff6a6;--shadow:0 18px 38px rgba(0,0,0,.30)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#040113;color:#fff;font-family:var(--font-ui)}button,input{font:inherit}button{border:0;background:none;color:inherit;cursor:pointer}img{display:block;max-width:100%}.u{font-family:var(--font-accent)}
+body{display:grid;place-items:center;background:radial-gradient(circle at 12% 12%,rgba(67,214,255,.16),transparent 22%),radial-gradient(circle at 86% 86%,rgba(255,74,196,.14),transparent 26%),linear-gradient(145deg,#020012,#100435 56%,#030114)}
+#app{position:relative;height:min(100dvh,100vh);aspect-ratio:9/16;max-width:100vw;overflow:hidden;background:linear-gradient(180deg,#18207b,#090735 58%,#040118);box-shadow:0 0 80px rgba(0,0,0,.48)}
+#app::before,#app::after{content:"";position:absolute;border-radius:50%;pointer-events:none;z-index:0}#app::before{width:44vw;height:44vw;left:-14vw;bottom:-11vw;background:radial-gradient(circle at 34% 36%,#24c6ff,#1a64d4 48%,rgba(20,40,120,0) 74%)}#app::after{width:34vw;height:34vw;right:-8vw;top:-6vw;background:radial-gradient(circle at 42% 38%,#c65dff,#6c21ce 52%,rgba(60,0,120,0) 76%)}
+.space,.space::before,.space::after{position:absolute;inset:0;content:"";pointer-events:none;z-index:0}.space{background-image:radial-gradient(circle at 16% 18%,#fff 0 1px,transparent 1.4px),radial-gradient(circle at 84% 26%,#6be6ff 0 1.2px,transparent 1.7px),radial-gradient(circle at 18% 48%,#ff72cf 0 1px,transparent 1.5px),radial-gradient(circle at 72% 68%,#fff 0 1px,transparent 1.5px),radial-gradient(circle at 58% 88%,#72eaff 0 1px,transparent 1.5px),radial-gradient(circle at 38% 12%,#c2cbff 0 1px,transparent 1.5px);background-size:240px 240px,300px 300px,340px 340px,270px 270px,330px 330px,360px 360px;opacity:.58}.space::before{background:radial-gradient(circle at 90% 16%,rgba(183,63,255,.18),transparent 10%),radial-gradient(circle at 86% 88%,rgba(223,81,255,.22),transparent 13%),radial-gradient(circle at 10% 90%,rgba(44,142,255,.18),transparent 15%)}
+.screen{position:absolute;inset:0;display:none;flex-direction:column;align-items:center;z-index:1}.screen.active{display:flex}.scroll{overflow-y:auto;scrollbar-width:none}.scroll::-webkit-scrollbar{display:none}
+.primary{padding:16px 26px;border-radius:999px;background:linear-gradient(90deg,var(--pink),var(--pink2) 58%,var(--orange));box-shadow:0 14px 32px rgba(255,68,140,.26),inset 0 1px 0 rgba(255,255,255,.35);font-family:var(--font-accent);font-weight:900}.ghost{padding:14px 16px;border-radius:20px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.10);font-weight:800}.pill{padding:8px 12px;border-radius:999px;background:linear-gradient(180deg,rgba(50,65,182,.88),rgba(26,28,109,.94));border:1px solid rgba(115,200,255,.28);box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 8px 18px rgba(0,0,0,.16)}
+
+/* splash */
+#splash{background:#05031f;overflow:hidden}#splash .poster{position:absolute;inset:0;background:url('assets/splash_2048.png') center/cover no-repeat}#splash .splashHit{position:absolute;inset:0;z-index:3;opacity:0}
+
+/* menu */
+#menu{padding:3.8% 4.8% 3.2%;justify-content:flex-start;background:linear-gradient(180deg,#18207b,#0a073a 57%,#040118)}.menuWrap{position:relative;z-index:2;width:100%;max-width:720px;padding-bottom:16px}.menuLogo{width:76px;height:76px;margin:0 auto 6px;object-fit:contain;filter:drop-shadow(0 8px 16px rgba(63,165,255,.18))}.menuTitle{margin:0;text-align:center;font-size:clamp(34px,6.4vw,58px);line-height:.92;letter-spacing:-.065em}.menuSub{margin:8px auto 14px;max-width:94%;text-align:center;color:var(--muted);font-size:clamp(11px,2.2vw,16px);line-height:1.26}
+.heroPanel{padding:14px 15px;border-radius:30px;background:linear-gradient(145deg,rgba(56,63,167,.54),rgba(28,22,104,.78));border:1px solid rgba(255,255,255,.12);box-shadow:var(--shadow),inset 0 1px 0 rgba(255,255,255,.05)}.heroHeader{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;margin-bottom:10px}.heroHeader strong{font-size:clamp(18px,4vw,28px);line-height:1}.heroHeader span{display:block;max-width:46%;text-align:right;color:#d5d8ee;font-size:clamp(9px,1.9vw,13px);line-height:1.2}.heroRow{display:grid;grid-template-columns:1fr 1fr;gap:10px}.heroOption{position:relative;height:86px;padding:9px 10px;display:grid;grid-template-columns:62px minmax(0,1fr);align-items:center;gap:9px;border-radius:22px;background:linear-gradient(145deg,rgba(49,52,160,.76),rgba(31,23,107,.90));border:1px solid rgba(255,255,255,.09);overflow:hidden;text-align:left}.heroOption::after{content:"";position:absolute;right:-24px;top:-14px;width:96px;height:96px;border-radius:50%;opacity:.18;filter:blur(16px);background:var(--glow,#47ddff)}.heroOption[data-hero="cat"]{--glow:#ff63bc}.heroOption.on{background:linear-gradient(145deg,rgba(45,102,191,.84),rgba(77,30,157,.90));border-color:rgba(102,231,255,.85);box-shadow:0 0 0 2px rgba(102,231,255,.12),0 0 20px rgba(102,231,255,.16),inset 0 0 20px rgba(255,73,190,.10)}.heroOption img{position:relative;z-index:2;width:62px;height:62px;object-fit:contain;border-radius:16px;background:linear-gradient(145deg,#17156f,#0f0d47);border:1px solid rgba(255,255,255,.11)}.heroName{position:relative;z-index:2;font-size:clamp(13px,2.7vw,19px);font-weight:900;line-height:1.02;letter-spacing:-.03em}
+.modeGrid{display:grid;gap:10px;margin-top:12px}.modeCard{position:relative;min-height:92px;padding:13px 64px 12px 72px;border-radius:26px;text-align:left;overflow:hidden;background:linear-gradient(145deg,rgba(44,50,155,.86),rgba(28,22,104,.94));border:1px solid rgba(255,255,255,.10);box-shadow:0 13px 28px rgba(0,0,0,.17),inset 0 1px 0 rgba(255,255,255,.04)}.modeCard::after{content:"";position:absolute;right:-24px;top:50%;transform:translateY(-50%);width:120px;height:120px;border-radius:50%;opacity:.8}.modeCard.classic::after{background:radial-gradient(circle,#55e8ff 0%,#42d8f4 48%,#7af6c6 100%)}.modeCard.big::after{background:radial-gradient(circle,#7758ff 0%,#ef56d6 58%,#ff7fa8 100%)}.modeCard.duo::after{background:radial-gradient(circle,#ff59bf 0%,#fd667f 52%,#ffb23f 100%)}.modeIcon{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-size:24px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.10);z-index:2}.modeCard strong,.modeCard span,.modeArrow{position:relative;z-index:2;display:block}.modeCard strong{font-size:clamp(18px,3.8vw,28px);line-height:1;letter-spacing:-.04em}.modeCard span{margin-top:5px;max-width:77%;color:#d7d9ef;font-size:clamp(10px,2vw,14px);line-height:1.18}.modeArrow{position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:30px;font-weight:300;opacity:.9}.recordsBtn{display:block;margin:11px auto 0;padding:10px 23px;border-radius:999px;background:linear-gradient(180deg,rgba(45,43,136,.90),rgba(24,18,86,.96));border:1px solid rgba(118,78,255,.38);font-weight:800;font-size:clamp(13px,2.5vw,17px)}
+
+/* game */
+#game{padding:9px 8px 11px;display:none;grid-template-rows:auto auto auto 1fr auto;gap:8px;justify-items:center;align-content:start;background:linear-gradient(180deg,#10106a,#080636 65%,#040118)}#game.active{display:grid}.topbar,.hud,.playerBar,.boardShell,.controls{width:min(100%,720px)}.topbar{display:grid;grid-template-columns:52px 1fr 50px;align-items:center;gap:8px}.miniLogo{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(160deg,rgba(255,255,255,.16),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.12)}.miniLogo img{width:80%;height:80%;object-fit:contain}.gameTitle{text-align:center}.gameTitle h2{margin:0;font-size:clamp(24px,4.7vw,38px);line-height:.92;letter-spacing:-.05em}.gameTitle .n2048{background:linear-gradient(90deg,#5de7ff,#a66dff 40%,#ff5bbf 70%,#ffc049);-webkit-background-clip:text;background-clip:text;color:transparent}.gameTitle div{color:#d6d9ee;font-size:clamp(10px,2vw,14px);margin-top:3px}.sound{width:50px;height:50px;border-radius:18px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.10);display:grid;place-items:center;font-size:23px}
+.hud{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}.scoreCard{min-height:58px;padding:8px 10px;border-radius:22px;text-align:center;background:linear-gradient(145deg,rgba(38,42,139,.86),rgba(22,18,92,.96));border:1px solid rgba(94,188,255,.24);box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}.scoreCard span{display:block;color:#cfd3eb;font-size:clamp(10px,2vw,13px)}.scoreCard strong{display:block;font-family:var(--font-accent);font-size:clamp(18px,3.4vw,25px);line-height:1.05;margin-top:2px}.playerBar{display:grid;grid-template-columns:58px 1fr auto;align-items:center;gap:10px;padding:8px 12px;border-radius:24px;background:linear-gradient(145deg,rgba(36,40,133,.84),rgba(19,16,81,.94));border:1px solid rgba(255,255,255,.10)}.playerBar img{width:56px;height:56px;object-fit:contain;border-radius:16px;background:linear-gradient(145deg,#18186c,#0d0c42);border:1px solid rgba(255,255,255,.10)}.playerName{font-size:clamp(15px,3vw,21px);line-height:1.02}.playerSub{font-size:clamp(10px,2vw,13px);color:#c9cde6;margin-top:3px}.modeBadge{padding:8px 11px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.10);font-weight:800;font-size:clamp(10px,2vw,13px)}
+.boardShell{padding:10px;border-radius:30px;background:linear-gradient(180deg,#4d3ee5,#29177f);box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 18px 34px rgba(0,0,0,.28)}.board{display:grid;gap:9px;aspect-ratio:1;padding:10px;border-radius:24px;background:linear-gradient(180deg,#16166d,#11114f);box-shadow:inset 0 0 0 1px rgba(255,255,255,.07)}.board.size4{grid-template-columns:repeat(4,1fr)}.board.size5{grid-template-columns:repeat(5,1fr);gap:7px;padding:8px}.cell{position:relative;aspect-ratio:1;border-radius:20px;background:linear-gradient(145deg,#28266f,#1c1b55);box-shadow:inset 0 2px 0 rgba(255,255,255,.04),inset 0 -5px 12px rgba(0,0,0,.18);display:grid;place-items:center;overflow:hidden}.board.size5 .cell{border-radius:15px}.tile{width:100%;height:100%;border-radius:inherit;display:grid;place-items:center;font-family:var(--font-accent);font-weight:900;font-size:clamp(24px,7vw,54px);line-height:1;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.18);box-shadow:inset 0 1px 0 rgba(255,255,255,.26),inset 0 -8px 14px rgba(0,0,0,.14),0 0 20px rgba(0,0,0,.12);animation:pop .14s ease-out}.board.size5 .tile{font-size:clamp(17px,5vw,38px)}.tile.v2{background:linear-gradient(145deg,#5bdfff,#399df8)}.tile.v4{background:linear-gradient(145deg,#8ed7ff,#7668ff)}.tile.v8{background:linear-gradient(145deg,#ff78d1,#f536ae)}.tile.v16{background:linear-gradient(145deg,#ec5fff,#b43cff)}.tile.v32{background:linear-gradient(145deg,#ff8a70,#ff5b4e)}.tile.v64{background:linear-gradient(145deg,#ffb55f,#ff7449)}.tile.v128{background:linear-gradient(145deg,#ffe66f,#ffb32f);color:#33220a}.tile.v256{background:linear-gradient(145deg,#ffcc4a,#ff8f28)}.tile.v512{background:linear-gradient(145deg,#94f49a,#34c983)}.tile.v1024{background:linear-gradient(145deg,#66f3e8,#19bbd4);font-size:.72em}.tile.v2048{background:linear-gradient(145deg,#fff18a,#ffb227 55%,#ff6d45);color:#361b00;box-shadow:0 0 26px rgba(255,205,64,.46),inset 0 1px 0 rgba(255,255,255,.5)}.tile.bigNum{font-size:.55em}@keyframes pop{from{transform:scale(.74);opacity:.4}to{transform:scale(1);opacity:1}}
+.controls{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.controls .ghost{padding:13px 10px;text-align:center;font-weight:900;font-size:clamp(14px,2.5vw,17px);border-radius:22px;background:linear-gradient(145deg,rgba(29,33,120,.92),rgba(17,14,68,.96));border:1px solid rgba(91,143,255,.28)}
+
+/* overlays */
+.overlay{position:absolute;inset:0;background:rgba(5,2,26,.72);backdrop-filter:blur(7px);display:none;align-items:flex-end;justify-content:center;padding:10px;z-index:40}.overlay.open{display:flex}.sheet{width:min(100%,660px);padding:24px 18px 18px;border-radius:30px;background:linear-gradient(160deg,rgba(14,8,58,.985),rgba(7,4,33,.99));border:1px solid rgba(105,90,255,.28);box-shadow:0 -18px 48px rgba(0,0,0,.42)}.sheet h3{margin:0 0 9px;font-size:clamp(24px,4.2vw,33px)}.sheet p{margin:0;color:#ced1ec;line-height:1.35}.resultScore{margin-top:10px;font-weight:900;color:#95f5ff}.nameEntry{display:flex;gap:8px;margin-top:14px}.nameEntry input{flex:1;min-width:0;padding:13px 14px;border-radius:16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.10);color:#fff;outline:none}.error{min-height:18px;margin-top:5px;color:#ff9fc8;font-size:12px}.sheetActions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.recordsList{display:grid;gap:8px;max-height:55vh;overflow:auto;padding-right:4px}.record{display:grid;grid-template-columns:28px 1fr auto;align-items:center;gap:10px;padding:10px 12px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}.record small{display:block;color:#c4c6dd}.hide{display:none}
+@media(max-height:820px){.menuLogo{width:66px;height:66px}.heroOption{height:78px;grid-template-columns:56px 1fr}.heroOption img{width:56px;height:56px}.modeCard{min-height:82px}.modeCard strong{font-size:clamp(17px,3.4vw,24px)}.modeCard span{font-size:clamp(9px,1.8vw,12px)}.board{gap:7px;padding:8px}.hud .scoreCard{min-height:52px}.controls .ghost{padding:11px 8px}}
+@media(max-width:760px){body{display:block}#app{width:100vw;height:100dvh;max-width:none;aspect-ratio:auto;box-shadow:none}.menuWrap,.topbar,.hud,.playerBar,.boardShell,.controls{width:100%;max-width:720px}.boardShell{width:min(96%,720px)}}
+</style>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../game-shell.css">
+<script src="../../game-lifecycle.js"></script>
+<link rel="stylesheet" href="../../typography.css">
+</head>
+<body data-game="2048">
+<div id="app">
+  <div class="space"></div>
+
+  <section id="splash" class="screen active"><button id="startBtn" class="v12Start" type="button" aria-label="Начать игру">Начать игру</button></section>
+
+  <section id="menu" class="screen scroll">
+    <div class="menuWrap">
+      
+      <h1 class="menuTitle u"><span class="sr-only">2048</span><img class="gameTitleArt" src="../../assets/titles/2048.png" alt="" aria-hidden="true"></h1>
+      <p class="menuSub">Молодёжные 2048 • выберите героя и формат партии</p>
+      <div class="heroPanel">
+        <div class="heroHeader"><strong class="u">Выберите героя</strong><span id="heroNote">Выбран герой: Капитан Корги</span></div>
+        <div class="heroRow">
+          <button class="heroOption on" data-hero="corgi"><img src="../../assets/corgi.png" alt="Капитан Корги"><div class="heroName u">Капитан<br>Корги</div></button>
+          <button class="heroOption" data-hero="cat"><img src="../../assets/cat.png" alt="Космо-Кот"><div class="heroName u">Космо-<br>Кот</div></button>
+        </div>
+      </div>
+      <div class="modeGrid">
+        <button class="modeCard classic" data-mode="classic"><span class="modeIcon">▦</span><strong class="u">Классика 4×4</strong><span>Стандартный 2048 • соберите плитку 2048</span><span class="modeArrow">›</span></button>
+        <button class="modeCard big" data-mode="big"><span class="modeIcon">▦</span><strong class="u">Большое поле 5×5</strong><span>Больше пространства • длиннее партия • новые рекорды</span><span class="modeArrow">›</span></button>
+        <button class="modeCard duo" data-mode="duo"><span class="modeIcon">👥</span><strong class="u">На двоих</strong><span>По очереди на одном поле • очки считаются каждому</span><span class="modeArrow">›</span></button>
+      </div>
+      <button id="recordsBtn" class="recordsBtn">🏆&nbsp; Рекорды</button>
+    </div>
+  </section>
+
+  <section id="game" class="screen">
+    <div class="topbar">
+      <div class="miniLogo"></div>
+      <div class="gameTitle"><h2 class="galaxy-title"><span class="sr-only">2048</span><img class="gameTitleArt" src="../../assets/titles/2048.png" alt="" aria-hidden="true"></h2><div id="gameModeText">Классика • 4×4</div></div>
+      <button id="soundBtn" class="sound" aria-label="Звук">🔊</button>
+    </div>
+    <div class="hud">
+      <div class="scoreCard"><span id="scoreLabel">Счёт</span><strong id="scoreValue">0</strong></div>
+      <div class="scoreCard"><span id="bestLabel">Рекорд</span><strong id="bestValue">0</strong></div>
+      <div class="scoreCard"><span>Максимум</span><strong id="maxTile">2</strong></div>
+    </div>
+    <div class="playerBar">
+      <img id="playerImg" src="assets/dog_head.png" alt="Герой">
+      <div><div id="playerName" class="playerName u">Капитан Корги</div><div id="playerSub" class="playerSub">Соберите 2048</div></div>
+      <div id="fieldBadge" class="modeBadge">Поле 4×4</div>
+    </div>
+    <div class="boardShell"><div id="board" class="board size4"></div></div>
+    <div class="controls"><button id="homeBtn" class="ghost">В начало</button><button id="newBtn" class="ghost">Новая</button><button id="screenBtn" class="ghost">Экран</button></div>
+  </section>
+
+  <div id="resultOverlay" class="overlay"><div class="sheet"><h3 id="resultTitle" class="u">Игра окончена</h3><p id="resultText"></p><div id="resultScore" class="resultScore"></div><div id="nameEntry" class="nameEntry"><input id="recordName" maxlength="18" placeholder="Ваше имя"><button id="saveRecordBtn" class="primary" style="padding:12px 16px">Сохранить</button></div><div id="nameError" class="error"></div><div class="sheetActions"><button id="resultMenu" class="ghost">В меню</button><button id="resultReplay" class="primary">Ещё раз</button></div></div></div>
+  <div id="milestoneOverlay" class="overlay"><div class="sheet"><h3 class="u">2048! ✨</h3><p>Главная плитка собрана. Можно продолжить и идти дальше.</p><div class="sheetActions"><button id="milestoneMenu" class="ghost">В меню</button><button id="milestoneContinue" class="primary">Продолжить</button></div></div></div>
+  <div id="recordsOverlay" class="overlay"><div class="sheet"><h3 class="u">Рекорды</h3><div id="recordsList" class="recordsList"></div><div class="sheetActions" style="grid-template-columns:1fr"><button id="recordsClose" class="primary">Закрыть</button></div></div></div>
+</div>
+<script>
+(()=>{
+const $=s=>document.querySelector(s),$$=s=>Array.from(document.querySelectorAll(s));
+const HERO={corgi:{name:'Капитан Корги',img:'../../assets/corgi.png'},cat:{name:'Космо-Кот',img:'../../assets/cat.png'}};
+const BAD=['fuck','shit','bitch','сука','хер','пизд','еба','нах'];
+let selectedHero='corgi',mode='classic',size=4,board=[],score=0,best=0,maxTile=2,soundOn=true,duoScores={p1:0,p2:0},duoTurn='p1',milestoneShown=false,gameEnded=false;
+let touchStart=null;
+function show(id){if(id!=='game')GameLifecycle.begin();['splash','menu','game'].forEach(k=>$('#'+k).classList.toggle('active',k===id))}
+function modeKey(){return mode==='big'?'5x5':mode==='duo'?'duo':'4x4'}
+function records(){try{return JSON.parse(localStorage.getItem('youth2048Records')||'[]')}catch{return []}}
+function bestForMode(){const arr=records().filter(r=>r.mode===modeKey());return Math.max(arr.length?Math.max(...arr.map(r=>r.score)):0,window.YouthRecords?.getBest(modeKey(),'2048')||0)}
+function startGame(m){GameLifecycle.begin();mode=m;size=m==='big'?5:4;score=0;duoScores={p1:0,p2:0};duoTurn='p1';milestoneShown=false;gameEnded=false;best=bestForMode();board=Array(size*size).fill(0);addTile();addTile();updateGameHeader();render();show('game');sound('start')}
+function addTile(){const empty=[];board.forEach((v,i)=>{if(!v)empty.push(i)});if(!empty.length)return;const i=empty[Math.floor(Math.random()*empty.length)];board[i]=Math.random()<.9?2:4}
+function compressLine(line){const vals=line.filter(Boolean);const out=[];let gained=0;for(let i=0;i<vals.length;i++){if(i<vals.length-1&&vals[i]===vals[i+1]){const v=vals[i]*2;out.push(v);gained+=v;i++;}else out.push(vals[i])}while(out.length<size)out.push(0);return{line:out,gained}}
+function move(dir){if(gameEnded)return;const old=board.slice();let gained=0;const b=Array(size*size).fill(0);const get=(r,c)=>board[r*size+c],set=(r,c,v)=>{b[r*size+c]=v};
+ if(dir==='left'||dir==='right'){for(let r=0;r<size;r++){let line=[];for(let c=0;c<size;c++)line.push(get(r,c));if(dir==='right')line.reverse();const res=compressLine(line);gained+=res.gained;let arr=res.line;if(dir==='right')arr=arr.reverse();for(let c=0;c<size;c++)set(r,c,arr[c])}}
+ else{for(let c=0;c<size;c++){let line=[];for(let r=0;r<size;r++)line.push(get(r,c));if(dir==='down')line.reverse();const res=compressLine(line);gained+=res.gained;let arr=res.line;if(dir==='down')arr=arr.reverse();for(let r=0;r<size;r++)set(r,c,arr[r])}}
+ if(b.every((v,i)=>v===old[i])){sound('blocked');return}
+ board=b;if(mode==='duo'){duoScores[duoTurn]+=gained;duoTurn=duoTurn==='p1'?'p2':'p1'}else{score+=gained}
+ addTile();maxTile=Math.max(...board);if(mode!=='duo'&&score>best){best=score;window.YouthRecords?.updateBest(modeKey(),score,'2048')};sound(gained>0?'merge':'move');render();
+ if(maxTile>=2048&&!milestoneShown&&mode!=='duo'){milestoneShown=true;GameLifecycle.schedule(()=>$('#milestoneOverlay').classList.add('open'),160)}
+ if(!canMove()){gameEnded=true;GameLifecycle.schedule(endGame,220)}
+}
+function canMove(){if(board.some(v=>v===0))return true;for(let r=0;r<size;r++)for(let c=0;c<size;c++){const v=board[r*size+c];if(c+1<size&&board[r*size+c+1]===v)return true;if(r+1<size&&board[(r+1)*size+c]===v)return true}return false}
+function render(){const el=$('#board');el.className='board '+(size===5?'size5':'size4');el.innerHTML='';for(const v of board){const cell=document.createElement('div');cell.className='cell';if(v){const t=document.createElement('div');t.className='tile v'+Math.min(v,2048)+(v>=1024?' bigNum':'');t.textContent=v;cell.appendChild(t)}el.appendChild(cell)}maxTile=Math.max(2,...board);$('#maxTile').textContent=maxTile;updateHud()}
+function updateGameHeader(){const hero=HERO[selectedHero];$('#playerImg').src=hero.img;$('#playerName').textContent=hero.name;$('#fieldBadge').textContent='Поле '+size+'×'+size;$('#gameModeText').textContent=mode==='classic'?'Классика • 4×4':mode==='big'?'Большое поле • 5×5':'На двоих • 4×4';$('#scoreLabel').textContent=mode==='duo'?'Игрок 1':'Счёт';$('#bestLabel').textContent=mode==='duo'?'Игрок 2':'Рекорд';$('#playerSub').textContent=mode==='duo'?'Ход: '+(duoTurn==='p1'?HERO[selectedHero].name:HERO[selectedHero==='corgi'?'cat':'corgi'].name):'Соберите плитку 2048'}
+function updateHud(){if(mode==='duo'){$('#scoreValue').textContent=duoScores.p1;$('#bestValue').textContent=duoScores.p2;const h=duoTurn==='p1'?selectedHero:(selectedHero==='corgi'?'cat':'corgi');$('#playerImg').src=HERO[h].img;$('#playerName').textContent=HERO[h].name;$('#playerSub').textContent='Ход игрока • '+(duoTurn==='p1'?'розовые':'голубые')}else{$('#scoreValue').textContent=score;$('#bestValue').textContent=Math.max(best,score)}}
+function endGame(){let finalScore=score,title='Игра окончена',text='Свободных ходов больше нет.';if(mode==='duo'){finalScore=Math.max(duoScores.p1,duoScores.p2);const h1=HERO[selectedHero].name,h2=HERO[selectedHero==='corgi'?'cat':'corgi'].name;if(duoScores.p1===duoScores.p2){title='Ничья';text=`${h1}: ${duoScores.p1} • ${h2}: ${duoScores.p2}`}else{const w=duoScores.p1>duoScores.p2?h1:h2;title='Победа!';text=`${w} набрал больше очков. ${duoScores.p1} : ${duoScores.p2}`}}$('#resultTitle').textContent=title;$('#resultText').textContent=text;$('#resultScore').textContent='Результат '+finalScore;const arr=records().filter(r=>r.mode===modeKey());const qualify=arr.length<10||finalScore>(arr[arr.length-1]?.score||0);$('#nameEntry').classList.toggle('hide',!qualify);$('#recordName').value='';$('#nameError').textContent='';$('#resultOverlay').classList.add('open');sound('end')}
+function saveRecord(name){const finalScore=mode==='duo'?Math.max(duoScores.p1,duoScores.p2):score;const arr=records();arr.push({name,score:finalScore,mode:modeKey(),max:maxTile,date:Date.now()});arr.sort((a,b)=>b.score-a.score);localStorage.setItem('youth2048Records',JSON.stringify(arr.slice(0,30)))}
+function renderRecords(){const box=$('#recordsList'),arr=records();box.innerHTML='';if(!arr.length){box.innerHTML='<div class="record"><div>—</div><div>Пока нет результатов<small>Сыграйте первую партию</small></div><div>0</div></div>';return}arr.slice(0,12).forEach((r,i)=>{const modeLabel=r.mode==='5x5'?'5×5':r.mode==='duo'?'На двоих':'4×4';const row=document.createElement('div');row.className='record';row.innerHTML=`<div>${i+1}</div><div>${esc(r.name)}<small>${modeLabel} • максимум ${r.max||2}</small></div><div>${r.score}</div>`;box.appendChild(row)})}
+function clean(s){return s.trim().replace(/\s+/g,' ').slice(0,18)}function badName(s){const t=s.toLowerCase().replace(/[^a-zа-яё0-9]/gi,'');return BAD.some(x=>t.includes(x))}function esc(s){return s.replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+let actx=null;function sound(kind){if(!soundOn)return;try{actx=actx||new(window.AudioContext||window.webkitAudioContext)();const t=actx.currentTime,g=actx.createGain();g.connect(actx.destination);g.gain.setValueAtTime(.055,t);const mk=(f,type,d,at=0)=>{const o=actx.createOscillator();o.type=type;o.frequency.setValueAtTime(f,t+at);o.connect(g);o.start(t+at);o.stop(t+at+d)};if(kind==='merge'){mk(520,'triangle',.08);mk(780,'sine',.10,.05)}else if(kind==='move'){mk(350,'sine',.06)}else if(kind==='blocked'){mk(180,'sine',.05)}else if(kind==='end'){mk(220,'triangle',.12);mk(170,'sine',.13,.10)}else{mk(420,'sine',.08)}g.gain.exponentialRampToValueAtTime(.001,t+.35)}catch(e){}}
+function keyDir(k){return({ArrowLeft:'left',a:'left',A:'left',ArrowRight:'right',d:'right',D:'right',ArrowUp:'up',w:'up',W:'up',ArrowDown:'down',s:'down',S:'down'})[k]}
+window.addEventListener('keydown',e=>{const d=keyDir(e.key);if(d&&$('#game').classList.contains('active')){e.preventDefault();move(d)}});
+const app=$('#app');app.addEventListener('touchstart',e=>{if(!$('#game').classList.contains('active'))return;const t=e.changedTouches[0];touchStart={x:t.clientX,y:t.clientY}},{passive:true});app.addEventListener('touchend',e=>{if(!touchStart||!$('#game').classList.contains('active'))return;const t=e.changedTouches[0],dx=t.clientX-touchStart.x,dy=t.clientY-touchStart.y;touchStart=null;if(Math.max(Math.abs(dx),Math.abs(dy))<24)return;move(Math.abs(dx)>Math.abs(dy)?(dx>0?'right':'left'):(dy>0?'down':'up'))},{passive:true});
+$('#startBtn').onclick=()=>show('menu');$$('.heroOption').forEach(b=>b.onclick=()=>{selectedHero=b.dataset.hero;$$('.heroOption').forEach(x=>x.classList.toggle('on',x===b));$('#heroNote').textContent='Выбран герой: '+HERO[selectedHero].name});$$('.modeCard').forEach(b=>b.onclick=()=>startGame(b.dataset.mode));$('#homeBtn').onclick=()=>show('menu');$('#newBtn').onclick=()=>startGame(mode);$('#screenBtn').onclick=()=>document.fullscreenElement?document.exitFullscreen?.():document.documentElement.requestFullscreen?.();$('#soundBtn').onclick=()=>{soundOn=!soundOn;$('#soundBtn').textContent=soundOn?'🔊':'🔇'};$('#resultMenu').onclick=()=>{$('#resultOverlay').classList.remove('open');show('menu')};$('#resultReplay').onclick=()=>{$('#resultOverlay').classList.remove('open');startGame(mode)};$('#milestoneMenu').onclick=()=>{$('#milestoneOverlay').classList.remove('open');show('menu')};$('#milestoneContinue').onclick=()=>$('#milestoneOverlay').classList.remove('open');$('#saveRecordBtn').onclick=()=>{const n=clean($('#recordName').value);if(n.length<2){$('#nameError').textContent='Введите имя от 2 символов';return}if(badName(n)){ $('#nameError').textContent='Это имя нельзя использовать';return}saveRecord(n);$('#nameError').textContent='Сохранено';$('#nameEntry').classList.add('hide')};$('#recordsBtn').onclick=()=>{renderRecords();$('#recordsOverlay').classList.add('open')};$('#recordsClose').onclick=()=>$('#recordsOverlay').classList.remove('open');
+show('splash');
+})();
+
+window.GameLifecycle.engineInitialized=true;
+</script>
+
+
+
+
+<script src="../../records.js"></script>
+
+
+
+<button id="allGames" type="button" aria-label="Вернуться в каталог">⌂ Все игры</button>
+<script src="../../game-shell.js"></script>
+</body>
+</html>

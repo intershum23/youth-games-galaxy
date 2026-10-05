@@ -1,0 +1,1187 @@
+[
+  {
+    "game": "solitaire",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "actions": "3 stock draws, visible waste",
+    "cards": [
+      {
+        "ratio": 1.4198093659345215,
+        "contains": true,
+        "height": 53.53125,
+        "width": 37.703125
+      },
+      {
+        "ratio": 1.4196354598177299,
+        "contains": true,
+        "height": 53.546875,
+        "width": 37.71875
+      },
+      {
+        "ratio": 1.4196328212813787,
+        "contains": true,
+        "height": 59.203125,
+        "width": 41.703125
+      },
+      {
+        "ratio": 1.4198501872659175,
+        "contains": true,
+        "height": 59.234375,
+        "width": 41.71875
+      },
+      {
+        "ratio": 1.4198501872659175,
+        "contains": true,
+        "height": 59.234375,
+        "width": 41.71875
+      },
+      {
+        "ratio": 1.4198501872659175,
+        "contains": true,
+        "height": 59.234375,
+        "width": 41.71875
+      },
+      {
+        "ratio": 1.4198501872659175,
+        "contains": true,
+        "height": 59.234375,
+        "width": 41.71875
+      },
+      {
+        "ratio": 1.4198501872659175,
+        "contains": true,
+        "height": 59.234375,
+        "width": 41.71875
+      },
+      {
+        "ratio": 1.4196328212813787,
+        "contains": true,
+        "height": 59.203125,
+        "width": 41.703125
+      },
+      {
+        "ratio": 1.4196328212813787,
+        "contains": true,
+        "height": 59.203125,
+        "width": 41.703125
+      },
+      {
+        "ratio": 1.4196328212813787,
+        "contains": true,
+        "height": 59.203125,
+        "width": 41.703125
+      },
+      {
+        "ratio": 1.4196328212813787,
+        "contains": true,
+        "height": 59.203125,
+        "width": 41.703125
+      },
+      {
+        "ratio": 1.4198501872659175,
+        "contains": true,
+        "height": 59.234375,
+        "width": 41.71875
+      },
+      {
+        "ratio": 1.4198501872659175,
+        "contains": true,
+        "height": 59.234375,
+        "width": 41.71875
+      },
+      {
+        "ratio": 1.4198501872659175,
+        "contains": true,
+        "height": 59.234375,
+        "width": 41.71875
+      },
+      {
+        "ratio": 1.4198501872659175,
+        "contains": true,
+        "height": 59.234375,
+        "width": 41.71875
+      },
+      {
+        "ratio": 1.4198501872659175,
+        "contains": true,
+        "height": 59.234375,
+        "width": 41.71875
+      },
+      {
+        "ratio": 1.4198501872659175,
+        "contains": true,
+        "height": 59.234375,
+        "width": 41.71875
+      },
+      {
+        "ratio": 1.4198501872659175,
+        "contains": true,
+        "height": 59.234375,
+        "width": 41.71875
+      },
+      {
+        "ratio": 1.4198501872659175,
+        "contains": true,
+        "height": 59.234375,
+        "width": 41.71875
+      },
+      {
+        "ratio": 1.4198501872659175,
+        "contains": true,
+        "height": 59.234375,
+        "width": 41.71875
+      },
+      {
+        "ratio": 1.4198501872659175,
+        "contains": true,
+        "height": 59.234375,
+        "width": 41.71875
+      },
+      {
+        "ratio": 1.4198501872659175,
+        "contains": true,
+        "height": 59.234375,
+        "width": 41.71875
+      },
+      {
+        "ratio": 1.4198501872659175,
+        "contains": true,
+        "height": 59.234375,
+        "width": 41.71875
+      },
+      {
+        "ratio": 1.4198501872659175,
+        "contains": true,
+        "height": 59.234375,
+        "width": 41.71875
+      },
+      {
+        "ratio": 1.4198501872659175,
+        "contains": true,
+        "height": 59.234375,
+        "width": 41.71875
+      },
+      {
+        "ratio": 1.4198501872659175,
+        "contains": true,
+        "height": 59.234375,
+        "width": 41.71875
+      },
+      {
+        "ratio": 1.4198501872659175,
+        "contains": true,
+        "height": 59.234375,
+        "width": 41.71875
+      },
+      {
+        "ratio": 1.4198501872659175,
+        "contains": true,
+        "height": 59.234375,
+        "width": 41.71875
+      },
+      {
+        "ratio": 1.4198501872659175,
+        "contains": true,
+        "height": 59.234375,
+        "width": 41.71875
+      }
+    ]
+  },
+  {
+    "game": "tictactoe",
+    "size": 3,
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "actions": "actual X and O moves",
+    "marks": [
+      {
+        "symbol": "mark x",
+        "width": 58.953125,
+        "height": 65.546875,
+        "stroke": 12.9688,
+        "inside": true
+      },
+      {
+        "symbol": "mark o",
+        "width": 58.953125,
+        "height": 65.546875,
+        "stroke": 10,
+        "inside": true
+      }
+    ]
+  },
+  {
+    "game": "tictactoe",
+    "size": 5,
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "actions": "actual X and O moves",
+    "marks": [
+      {
+        "symbol": "mark x",
+        "width": 30.875,
+        "height": 37.484375,
+        "stroke": 6.78125,
+        "inside": true
+      },
+      {
+        "symbol": "mark o",
+        "width": 30.875,
+        "height": 37.484375,
+        "stroke": 6,
+        "inside": true
+      }
+    ]
+  },
+  {
+    "game": "solitaire",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "actions": "3 stock draws, visible waste",
+    "cards": [
+      {
+        "ratio": 1.4196428571428572,
+        "contains": true,
+        "height": 59.625,
+        "width": 42
+      },
+      {
+        "ratio": 1.4196428571428572,
+        "contains": true,
+        "height": 59.625,
+        "width": 42
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      },
+      {
+        "ratio": 1.419836956521739,
+        "contains": true,
+        "height": 65.3125,
+        "width": 46
+      }
+    ]
+  },
+  {
+    "game": "tictactoe",
+    "size": 3,
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "actions": "actual X and O moves",
+    "marks": [
+      {
+        "symbol": "mark x",
+        "width": 65.546875,
+        "height": 72.15625,
+        "stroke": 14.4062,
+        "inside": true
+      },
+      {
+        "symbol": "mark o",
+        "width": 65.546875,
+        "height": 72.15625,
+        "stroke": 11,
+        "inside": true
+      }
+    ]
+  },
+  {
+    "game": "tictactoe",
+    "size": 5,
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "actions": "actual X and O moves",
+    "marks": [
+      {
+        "symbol": "mark x",
+        "width": 34.84375,
+        "height": 41.4375,
+        "stroke": 7.65625,
+        "inside": true
+      },
+      {
+        "symbol": "mark o",
+        "width": 34.84375,
+        "height": 41.4375,
+        "stroke": 6,
+        "inside": true
+      }
+    ]
+  },
+  {
+    "game": "solitaire",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "actions": "3 stock draws, visible waste",
+    "cards": [
+      {
+        "ratio": 1.4199148378643958,
+        "contains": true,
+        "height": 67.734375,
+        "width": 47.703125
+      },
+      {
+        "ratio": 1.4197773411918795,
+        "contains": true,
+        "height": 67.75,
+        "width": 47.71875
+      },
+      {
+        "ratio": 1.4197642792384406,
+        "contains": true,
+        "height": 73.40625,
+        "width": 51.703125
+      },
+      {
+        "ratio": 1.4199395770392749,
+        "contains": true,
+        "height": 73.4375,
+        "width": 51.71875
+      },
+      {
+        "ratio": 1.4199395770392749,
+        "contains": true,
+        "height": 73.4375,
+        "width": 51.71875
+      },
+      {
+        "ratio": 1.4199395770392749,
+        "contains": true,
+        "height": 73.4375,
+        "width": 51.71875
+      },
+      {
+        "ratio": 1.4199395770392749,
+        "contains": true,
+        "height": 73.4375,
+        "width": 51.71875
+      },
+      {
+        "ratio": 1.4199395770392749,
+        "contains": true,
+        "height": 73.4375,
+        "width": 51.71875
+      },
+      {
+        "ratio": 1.4197642792384406,
+        "contains": true,
+        "height": 73.40625,
+        "width": 51.703125
+      },
+      {
+        "ratio": 1.4197642792384406,
+        "contains": true,
+        "height": 73.40625,
+        "width": 51.703125
+      },
+      {
+        "ratio": 1.4197642792384406,
+        "contains": true,
+        "height": 73.40625,
+        "width": 51.703125
+      },
+      {
+        "ratio": 1.4197642792384406,
+        "contains": true,
+        "height": 73.40625,
+        "width": 51.703125
+      },
+      {
+        "ratio": 1.4199395770392749,
+        "contains": true,
+        "height": 73.4375,
+        "width": 51.71875
+      },
+      {
+        "ratio": 1.4199395770392749,
+        "contains": true,
+        "height": 73.4375,
+        "width": 51.71875
+      },
+      {
+        "ratio": 1.4199395770392749,
+        "contains": true,
+        "height": 73.4375,
+        "width": 51.71875
+      },
+      {
+        "ratio": 1.4199395770392749,
+        "contains": true,
+        "height": 73.4375,
+        "width": 51.71875
+      },
+      {
+        "ratio": 1.4199395770392749,
+        "contains": true,
+        "height": 73.4375,
+        "width": 51.71875
+      },
+      {
+        "ratio": 1.4199395770392749,
+        "contains": true,
+        "height": 73.4375,
+        "width": 51.71875
+      },
+      {
+        "ratio": 1.4199395770392749,
+        "contains": true,
+        "height": 73.4375,
+        "width": 51.71875
+      },
+      {
+        "ratio": 1.4199395770392749,
+        "contains": true,
+        "height": 73.4375,
+        "width": 51.71875
+      },
+      {
+        "ratio": 1.4199395770392749,
+        "contains": true,
+        "height": 73.4375,
+        "width": 51.71875
+      },
+      {
+        "ratio": 1.4199395770392749,
+        "contains": true,
+        "height": 73.4375,
+        "width": 51.71875
+      },
+      {
+        "ratio": 1.4199395770392749,
+        "contains": true,
+        "height": 73.4375,
+        "width": 51.71875
+      },
+      {
+        "ratio": 1.4199395770392749,
+        "contains": true,
+        "height": 73.4375,
+        "width": 51.71875
+      },
+      {
+        "ratio": 1.4199395770392749,
+        "contains": true,
+        "height": 73.4375,
+        "width": 51.71875
+      },
+      {
+        "ratio": 1.4199395770392749,
+        "contains": true,
+        "height": 73.4375,
+        "width": 51.71875
+      },
+      {
+        "ratio": 1.4199395770392749,
+        "contains": true,
+        "height": 73.4375,
+        "width": 51.71875
+      },
+      {
+        "ratio": 1.4199395770392749,
+        "contains": true,
+        "height": 73.4375,
+        "width": 51.71875
+      },
+      {
+        "ratio": 1.4199395770392749,
+        "contains": true,
+        "height": 73.4375,
+        "width": 51.71875
+      },
+      {
+        "ratio": 1.4199395770392749,
+        "contains": true,
+        "height": 73.4375,
+        "width": 51.71875
+      }
+    ]
+  },
+  {
+    "game": "tictactoe",
+    "size": 3,
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "actions": "actual X and O moves",
+    "marks": [
+      {
+        "symbol": "mark x",
+        "width": 74.34375,
+        "height": 80.953125,
+        "stroke": 16.3438,
+        "inside": true
+      },
+      {
+        "symbol": "mark o",
+        "width": 74.359375,
+        "height": 80.953125,
+        "stroke": 13,
+        "inside": true
+      }
+    ]
+  },
+  {
+    "game": "tictactoe",
+    "size": 5,
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "actions": "actual X and O moves",
+    "marks": [
+      {
+        "symbol": "mark x",
+        "width": 40.125,
+        "height": 46.71875,
+        "stroke": 8.8125,
+        "inside": true
+      },
+      {
+        "symbol": "mark o",
+        "width": 40.125,
+        "height": 46.71875,
+        "stroke": 7,
+        "inside": true
+      }
+    ]
+  },
+  {
+    "game": "solitaire",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "actions": "3 stock draws, visible waste",
+    "cards": [
+      {
+        "ratio": 1.4198870056497175,
+        "contains": true,
+        "height": 98.171875,
+        "width": 69.140625
+      },
+      {
+        "ratio": 1.4198870056497175,
+        "contains": true,
+        "height": 98.171875,
+        "width": 69.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199060230670653,
+        "contains": true,
+        "height": 103.875,
+        "width": 73.15625
+      },
+      {
+        "ratio": 1.4199060230670653,
+        "contains": true,
+        "height": 103.875,
+        "width": 73.15625
+      },
+      {
+        "ratio": 1.4199060230670653,
+        "contains": true,
+        "height": 103.875,
+        "width": 73.15625
+      },
+      {
+        "ratio": 1.4199060230670653,
+        "contains": true,
+        "height": 103.875,
+        "width": 73.15625
+      },
+      {
+        "ratio": 1.4199060230670653,
+        "contains": true,
+        "height": 103.875,
+        "width": 73.15625
+      },
+      {
+        "ratio": 1.4199060230670653,
+        "contains": true,
+        "height": 103.875,
+        "width": 73.15625
+      },
+      {
+        "ratio": 1.4199060230670653,
+        "contains": true,
+        "height": 103.875,
+        "width": 73.15625
+      }
+    ]
+  },
+  {
+    "game": "tictactoe",
+    "size": 3,
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "actions": "actual X and O moves",
+    "marks": [
+      {
+        "symbol": "mark x",
+        "width": 105.15625,
+        "height": 111.75,
+        "stroke": 23.125,
+        "inside": true
+      },
+      {
+        "symbol": "mark o",
+        "width": 105.15625,
+        "height": 111.75,
+        "stroke": 18,
+        "inside": true
+      }
+    ]
+  },
+  {
+    "game": "tictactoe",
+    "size": 5,
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "actions": "actual X and O moves",
+    "marks": [
+      {
+        "symbol": "mark x",
+        "width": 58.859375,
+        "height": 65.453125,
+        "stroke": 12.9375,
+        "inside": true
+      },
+      {
+        "symbol": "mark o",
+        "width": 58.859375,
+        "height": 65.46875,
+        "stroke": 10,
+        "inside": true
+      }
+    ]
+  },
+  {
+    "game": "solitaire",
+    "width": 1920,
+    "height": 1080,
+    "status": "PASS",
+    "actions": "3 stock draws, visible waste",
+    "cards": [
+      {
+        "ratio": 1.4198870056497175,
+        "contains": true,
+        "height": 98.171875,
+        "width": 69.140625
+      },
+      {
+        "ratio": 1.4198870056497175,
+        "contains": true,
+        "height": 98.171875,
+        "width": 69.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199957274086734,
+        "contains": true,
+        "height": 103.859375,
+        "width": 73.140625
+      },
+      {
+        "ratio": 1.4199060230670653,
+        "contains": true,
+        "height": 103.875,
+        "width": 73.15625
+      },
+      {
+        "ratio": 1.4199060230670653,
+        "contains": true,
+        "height": 103.875,
+        "width": 73.15625
+      },
+      {
+        "ratio": 1.4199060230670653,
+        "contains": true,
+        "height": 103.875,
+        "width": 73.15625
+      },
+      {
+        "ratio": 1.4199060230670653,
+        "contains": true,
+        "height": 103.875,
+        "width": 73.15625
+      },
+      {
+        "ratio": 1.4199060230670653,
+        "contains": true,
+        "height": 103.875,
+        "width": 73.15625
+      },
+      {
+        "ratio": 1.4199060230670653,
+        "contains": true,
+        "height": 103.875,
+        "width": 73.15625
+      },
+      {
+        "ratio": 1.4199060230670653,
+        "contains": true,
+        "height": 103.875,
+        "width": 73.15625
+      }
+    ]
+  },
+  {
+    "game": "tictactoe",
+    "size": 3,
+    "width": 1920,
+    "height": 1080,
+    "status": "PASS",
+    "actions": "actual X and O moves",
+    "marks": [
+      {
+        "symbol": "mark x",
+        "width": 105.15625,
+        "height": 111.75,
+        "stroke": 23.125,
+        "inside": true
+      },
+      {
+        "symbol": "mark o",
+        "width": 105.15625,
+        "height": 111.75,
+        "stroke": 18,
+        "inside": true
+      }
+    ]
+  },
+  {
+    "game": "tictactoe",
+    "size": 5,
+    "width": 1920,
+    "height": 1080,
+    "status": "PASS",
+    "actions": "actual X and O moves",
+    "marks": [
+      {
+        "symbol": "mark x",
+        "width": 58.859375,
+        "height": 65.453125,
+        "stroke": 12.9375,
+        "inside": true
+      },
+      {
+        "symbol": "mark o",
+        "width": 58.859375,
+        "height": 65.46875,
+        "stroke": 10,
+        "inside": true
+      }
+    ]
+  }
+]

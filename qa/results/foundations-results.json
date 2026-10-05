@@ -1,0 +1,134 @@
+[
+  {
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "sawAce": true,
+    "sawFollowingRank": true,
+    "manualTransfers": [
+      {
+        "deal": 0,
+        "step": 6,
+        "source": "#wasteSlot .card",
+        "i": 0,
+        "rank": 1
+      },
+      {
+        "deal": 0,
+        "step": 17,
+        "source": "#wasteSlot .card",
+        "i": 2,
+        "rank": 1
+      },
+      {
+        "deal": 0,
+        "step": 27,
+        "source": "#wasteSlot .card",
+        "i": 0,
+        "rank": 2
+      }
+    ],
+    "autoCollection": true,
+    "consoleErrors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "sawAce": true,
+    "sawFollowingRank": true,
+    "manualTransfers": [
+      {
+        "deal": 0,
+        "step": 0,
+        "source": ".tableauCol[data-col=\"2\"] .card:last-child",
+        "i": 3,
+        "rank": 1
+      },
+      {
+        "deal": 0,
+        "step": 3,
+        "source": "#wasteSlot .card",
+        "i": 0,
+        "rank": 2
+      }
+    ],
+    "autoCollection": true,
+    "consoleErrors": []
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "sawAce": true,
+    "sawFollowingRank": true,
+    "manualTransfers": [
+      {
+        "deal": 0,
+        "step": 0,
+        "source": ".tableauCol[data-col=\"0\"] .card:last-child",
+        "i": 1,
+        "rank": 1
+      },
+      {
+        "deal": 0,
+        "step": 19,
+        "source": "#wasteSlot .card",
+        "i": 2,
+        "rank": 1
+      },
+      {
+        "deal": 0,
+        "step": 24,
+        "source": "#wasteSlot .card",
+        "i": 0,
+        "rank": 1
+      }
+    ],
+    "autoCollection": true,
+    "consoleErrors": []
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "sawAce": true,
+    "sawFollowingRank": true,
+    "manualTransfers": [
+      {
+        "deal": 0,
+        "step": 10,
+        "source": "#wasteSlot .card",
+        "i": 3,
+        "rank": 1
+      }
+    ],
+    "autoCollection": true,
+    "consoleErrors": []
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "status": "PASS",
+    "sawAce": true,
+    "sawFollowingRank": true,
+    "manualTransfers": [
+      {
+        "deal": 0,
+        "step": 0,
+        "source": ".tableauCol[data-col=\"1\"] .card:last-child",
+        "i": 0,
+        "rank": 1
+      },
+      {
+        "deal": 0,
+        "step": 1,
+        "source": "#wasteSlot .card",
+        "i": 3,
+        "rank": 1
+      }
+    ],
+    "autoCollection": true,
+    "consoleErrors": []
+  }
+]

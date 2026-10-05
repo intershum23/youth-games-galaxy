@@ -1,0 +1,770 @@
+[
+  {
+    "id": "2048",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "backgammon",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "checkers",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "chess",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "connect4",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "corners",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "domino",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "fifteen",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "gomoku",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "mahjong",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "memory",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "reversi",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "solitaire",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "starbattle",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "sudoku",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "tictactoe",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "2048",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "backgammon",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "checkers",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "chess",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "connect4",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "corners",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "domino",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "fifteen",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "gomoku",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "mahjong",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "memory",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "reversi",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "solitaire",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "starbattle",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "sudoku",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "tictactoe",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "2048",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "backgammon",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "checkers",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "chess",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "connect4",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "corners",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "domino",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "fifteen",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "gomoku",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "mahjong",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "memory",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "reversi",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "solitaire",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "starbattle",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "sudoku",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "tictactoe",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "menu": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "game": {
+      "offset": 0,
+      "position": "50% 50%"
+    },
+    "status": "PASS"
+  }
+]

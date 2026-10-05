@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": {
+    "inputZipSha256": "24967fb8490a0205c3e26f7842ba4b4735261bbc56afc869fe1afa8b5fb578d1",
+    "manifestGameCount": 17,
+    "existing16GameFilesChanged": 0,
+    "newGameHtmlMissingReferences": 0,
+    "newAssetsDecodeErrors": 0,
+    "catalogBuild": "PASS",
+    "javascriptSyntax": "PASS"
+  }
+}

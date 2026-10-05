@@ -1,0 +1,146 @@
+[
+  {
+    "path": "assets/splashes/2048.webp",
+    "sha256": "189a9b4df7cebc241c254fe38b53cbdf2b33b717d25ef0a86879322c0ecc7be0",
+    "unchanged": true
+  },
+  {
+    "path": "assets/splashes/backgammon.webp",
+    "sha256": "483b25175e48a4c238b7555cdc6815446afa389feb5fe198952b2e9a639a09d3",
+    "unchanged": true
+  },
+  {
+    "path": "assets/splashes/checkers.webp",
+    "sha256": "5bc4219538b566440c2df297beff0882d921fec9440ad72b0da431a39a254c01",
+    "unchanged": true
+  },
+  {
+    "path": "assets/splashes/chess.webp",
+    "sha256": "452a715b63d9ba55c1717f8786ddb67af4550d0d7558a373ef89d303b4ab95e5",
+    "unchanged": true
+  },
+  {
+    "path": "assets/splashes/connect4.webp",
+    "sha256": "2d4e349728bf2507d6e5dea18af6235e8d2f1363d1d1c08561aef8ed6d35d16c",
+    "unchanged": true
+  },
+  {
+    "path": "assets/splashes/corners.webp",
+    "sha256": "a39f8bcefb5a4da5ae3dbe4f05c0bda2cceeedc5e0e1aebc899ce8a491270b14",
+    "unchanged": true
+  },
+  {
+    "path": "assets/splashes/domino.webp",
+    "sha256": "135f330f8ceb40952aeaba5eb2a715c988a0444608a2d047b60e24a79739aae1",
+    "unchanged": true
+  },
+  {
+    "path": "assets/splashes/fifteen.webp",
+    "sha256": "c83cd29e90de63f4204bbec42d36f6f9eafc2b5df4e5c00713b836f494917731",
+    "unchanged": true
+  },
+  {
+    "path": "assets/splashes/gomoku.webp",
+    "sha256": "6ab7f535687d060a50b7c12b545915f09ce4ed01d3cf7760985a712d4fcac469",
+    "unchanged": true
+  },
+  {
+    "path": "assets/splashes/mahjong.webp",
+    "sha256": "1923679fd8b2929e9ae24f4390e836ff7a57f53a9df93ac95ff7ce4584e455a0",
+    "unchanged": true
+  },
+  {
+    "path": "assets/splashes/memory.webp",
+    "sha256": "5eae3684bc1311208c3fce27fac6b0822dcaefff40b61ba3f887f2ff3d124be4",
+    "unchanged": true
+  },
+  {
+    "path": "assets/splashes/reversi.webp",
+    "sha256": "52466694c899d9b8dfdb90ec253c20ee83b8067d88b10b812a015f30402dd2c9",
+    "unchanged": true
+  },
+  {
+    "path": "assets/splashes/solitaire.webp",
+    "sha256": "56acc76552c0836da867ec1d4ed4aa6b55ef3737fdc2df602d32687f699e58c8",
+    "unchanged": true
+  },
+  {
+    "path": "assets/splashes/starbattle.webp",
+    "sha256": "509b688468db60037283b41afaf27b7178e2a2085691058a0c0f76ae6e1aedb4",
+    "unchanged": true
+  },
+  {
+    "path": "assets/splashes/sudoku.webp",
+    "sha256": "fe877ded24af44f17c3f2a42a614d60e8d9ee0c1b3e49e3fac9085d980cd59f3",
+    "unchanged": true
+  },
+  {
+    "path": "assets/splashes/tictactoe.webp",
+    "sha256": "bf275ebe63d243c27b28c86f00b54bc74b7d0ff1d0e15beef42af3051e1e9153",
+    "unchanged": true
+  },
+  {
+    "path": "games/2048/index.html",
+    "unchanged": true
+  },
+  {
+    "path": "games/backgammon/index.html",
+    "unchanged": true
+  },
+  {
+    "path": "games/checkers/index.html",
+    "unchanged": true
+  },
+  {
+    "path": "games/chess/index.html",
+    "unchanged": true
+  },
+  {
+    "path": "games/connect4/index.html",
+    "unchanged": true
+  },
+  {
+    "path": "games/corners/index.html",
+    "unchanged": true
+  },
+  {
+    "path": "games/domino/index.html",
+    "unchanged": true
+  },
+  {
+    "path": "games/fifteen/index.html",
+    "unchanged": true
+  },
+  {
+    "path": "games/gomoku/index.html",
+    "unchanged": true
+  },
+  {
+    "path": "games/mahjong/index.html",
+    "unchanged": true
+  },
+  {
+    "path": "games/memory/index.html",
+    "unchanged": true
+  },
+  {
+    "path": "games/reversi/index.html",
+    "unchanged": true
+  },
+  {
+    "path": "games/solitaire/index.html",
+    "unchanged": true
+  },
+  {
+    "path": "games/starbattle/index.html",
+    "unchanged": true
+  },
+  {
+    "path": "games/sudoku/index.html",
+    "unchanged": true
+  },
+  {
+    "path": "games/tictactoe/index.html",
+    "unchanged": true
+  }
+]

@@ -1,0 +1,2414 @@
+{
+  "version": "v16.13 ENERGY CAPSULES QA CANDIDATE",
+  "fileCount": 602,
+  "files": [
+    {
+      "path": "ADDING_GAMES_RU.md",
+      "size": 4507
+    },
+    {
+      "path": "API_CONTRACT.md",
+      "size": 1183
+    },
+    {
+      "path": "FILE_MAP.json",
+      "size": 89253
+    },
+    {
+      "path": "FILE_MAP.txt",
+      "size": 19123
+    },
+    {
+      "path": "NEW_GAME_PROMPT_RU.md",
+      "size": 6559
+    },
+    {
+      "path": "QA_LIVE_V16_3_RU.md",
+      "size": 10761
+    },
+    {
+      "path": "QA_TITLE_GLASS_V16_5_RU.md",
+      "size": 7174
+    },
+    {
+      "path": "QA_TYPOGRAPHY_V16_2_RU.md",
+      "size": 3127
+    },
+    {
+      "path": "QA_V15_RU.md",
+      "size": 23438
+    },
+    {
+      "path": "QA_V16_6_INTERACTIVE_ICONS_RU.md",
+      "size": 9694
+    },
+    {
+      "path": "QA_V16_7_VISUAL_INTERACTION_RU.md",
+      "size": 8288
+    },
+    {
+      "path": "QA_V16_RU.md",
+      "size": 15290
+    },
+    {
+      "path": "QA_VISUAL_V16_4_RU.md",
+      "size": 15534
+    },
+    {
+      "path": "QA_v16_10_RU.md",
+      "size": 2469
+    },
+    {
+      "path": "QA_v16_11_RU.md",
+      "size": 6949
+    },
+    {
+      "path": "QA_v16_12_RU.md",
+      "size": 7754
+    },
+    {
+      "path": "QA_v16_13_ENERGY_CAPSULES_RU.md",
+      "size": 7369
+    },
+    {
+      "path": "QA_v16_8_RU.md",
+      "size": 6484
+    },
+    {
+      "path": "QA_v16_9_RU.md",
+      "size": 7654
+    },
+    {
+      "path": "README_FINAL_RU.txt",
+      "size": 863
+    },
+    {
+      "path": "README_RU.txt",
+      "size": 863
+    },
+    {
+      "path": "RECORDS_MODEL_RU.md",
+      "size": 1842
+    },
+    {
+      "path": "REQUIREMENTS_RU.md",
+      "size": 34674
+    },
+    {
+      "path": "SOURCE_SHA256.txt",
+      "size": 116
+    },
+    {
+      "path": "SOURCE_V15_SHA256.txt",
+      "size": 108
+    },
+    {
+      "path": "SOURCE_V16_12_SHA256.txt",
+      "size": 125
+    },
+    {
+      "path": "SOURCE_V16_1_SHA256.txt",
+      "size": 121
+    },
+    {
+      "path": "SOURCE_V16_2_SHA256.txt",
+      "size": 118
+    },
+    {
+      "path": "SOURCE_V16_3_SHA256.txt",
+      "size": 125
+    },
+    {
+      "path": "SOURCE_V16_4_SHA256.txt",
+      "size": 125
+    },
+    {
+      "path": "SOURCE_V16_5_SHA256.txt",
+      "size": 127
+    },
+    {
+      "path": "SOURCE_V16_6_SHA256.txt",
+      "size": 123
+    },
+    {
+      "path": "SOURCE_V16_8_SHA256.txt",
+      "size": 65
+    },
+    {
+      "path": "SOURCE_V16_SHA256.txt",
+      "size": 119
+    },
+    {
+      "path": "TITLE_ART_V16_7_PREVIEW.png",
+      "size": 332085
+    },
+    {
+      "path": "TITLE_ART_V16_9_PREVIEW.png",
+      "size": 2267852
+    },
+    {
+      "path": "TITLE_GENERATION_PROMPTS.json",
+      "size": 21634
+    },
+    {
+      "path": "VERSION.txt",
+      "size": 36
+    },
+    {
+      "path": "assets/cat.png",
+      "size": 1956428
+    },
+    {
+      "path": "assets/corgi.png",
+      "size": 2021824
+    },
+    {
+      "path": "assets/embedded/0a942b0dbe729ae3ecd6.png",
+      "size": 92095
+    },
+    {
+      "path": "assets/embedded/1ea0c05410c52130778a.png",
+      "size": 105424
+    },
+    {
+      "path": "assets/embedded/3cd3c46f81fd5cc4ee44.png",
+      "size": 359736
+    },
+    {
+      "path": "assets/embedded/3d92c2f2fe6a7f3236a1.png",
+      "size": 77022
+    },
+    {
+      "path": "assets/embedded/5d2efbb67c1e1f32fe5d.png",
+      "size": 93005
+    },
+    {
+      "path": "assets/embedded/707e234bccb1ae16a4bb.png",
+      "size": 362170
+    },
+    {
+      "path": "assets/embedded/81013af2c9c2ef70c2a9.png",
+      "size": 90094
+    },
+    {
+      "path": "assets/embedded/81cd0e5fa0ddfbd48c88.png",
+      "size": 78290
+    },
+    {
+      "path": "assets/embedded/845c343af45fa69d67b9.png",
+      "size": 82494
+    },
+    {
+      "path": "assets/embedded/8f487e99804f37137434.png",
+      "size": 182761
+    },
+    {
+      "path": "assets/embedded/8f7ffdf05df121f17d2e.png",
+      "size": 89095
+    },
+    {
+      "path": "assets/embedded/aef5ee378724920b3d19.png",
+      "size": 68145
+    },
+    {
+      "path": "assets/embedded/bd34406673213571c437.png",
+      "size": 294972
+    },
+    {
+      "path": "assets/embedded/e30c408057a75e6c49e3.png",
+      "size": 77528
+    },
+    {
+      "path": "assets/fonts/FONT_SOURCES.json",
+      "size": 2957
+    },
+    {
+      "path": "assets/fonts/MONTSERRAT-OFL.txt",
+      "size": 4509
+    },
+    {
+      "path": "assets/fonts/UNBOUNDED-OFL.txt",
+      "size": 4390
+    },
+    {
+      "path": "assets/fonts/montserrat-cyrillic-400-normal.woff2",
+      "size": 10980
+    },
+    {
+      "path": "assets/fonts/montserrat-cyrillic-500-normal.woff2",
+      "size": 11128
+    },
+    {
+      "path": "assets/fonts/montserrat-cyrillic-600-normal.woff2",
+      "size": 11120
+    },
+    {
+      "path": "assets/fonts/montserrat-cyrillic-700-normal.woff2",
+      "size": 11160
+    },
+    {
+      "path": "assets/fonts/montserrat-cyrillic-800-normal.woff2",
+      "size": 11180
+    },
+    {
+      "path": "assets/fonts/montserrat-cyrillic-900-normal.woff2",
+      "size": 10908
+    },
+    {
+      "path": "assets/fonts/montserrat-cyrillic-ext-400-normal.woff2",
+      "size": 11940
+    },
+    {
+      "path": "assets/fonts/montserrat-cyrillic-ext-500-normal.woff2",
+      "size": 11956
+    },
+    {
+      "path": "assets/fonts/montserrat-cyrillic-ext-600-normal.woff2",
+      "size": 12060
+    },
+    {
+      "path": "assets/fonts/montserrat-cyrillic-ext-700-normal.woff2",
+      "size": 12060
+    },
+    {
+      "path": "assets/fonts/montserrat-cyrillic-ext-800-normal.woff2",
+      "size": 12144
+    },
+    {
+      "path": "assets/fonts/montserrat-cyrillic-ext-900-normal.woff2",
+      "size": 11572
+    },
+    {
+      "path": "assets/fonts/montserrat-latin-400-normal.woff2",
+      "size": 18780
+    },
+    {
+      "path": "assets/fonts/montserrat-latin-500-normal.woff2",
+      "size": 18748
+    },
+    {
+      "path": "assets/fonts/montserrat-latin-600-normal.woff2",
+      "size": 18688
+    },
+    {
+      "path": "assets/fonts/montserrat-latin-700-normal.woff2",
+      "size": 18824
+    },
+    {
+      "path": "assets/fonts/montserrat-latin-800-normal.woff2",
+      "size": 19012
+    },
+    {
+      "path": "assets/fonts/montserrat-latin-900-normal.woff2",
+      "size": 18020
+    },
+    {
+      "path": "assets/fonts/montserrat-latin-ext-400-normal.woff2",
+      "size": 32272
+    },
+    {
+      "path": "assets/fonts/montserrat-latin-ext-500-normal.woff2",
+      "size": 32292
+    },
+    {
+      "path": "assets/fonts/montserrat-latin-ext-600-normal.woff2",
+      "size": 33192
+    },
+    {
+      "path": "assets/fonts/montserrat-latin-ext-700-normal.woff2",
+      "size": 33532
+    },
+    {
+      "path": "assets/fonts/montserrat-latin-ext-800-normal.woff2",
+      "size": 33624
+    },
+    {
+      "path": "assets/fonts/montserrat-latin-ext-900-normal.woff2",
+      "size": 32420
+    },
+    {
+      "path": "assets/fonts/montserrat-vietnamese-400-normal.woff2",
+      "size": 7896
+    },
+    {
+      "path": "assets/fonts/montserrat-vietnamese-500-normal.woff2",
+      "size": 7872
+    },
+    {
+      "path": "assets/fonts/montserrat-vietnamese-600-normal.woff2",
+      "size": 7904
+    },
+    {
+      "path": "assets/fonts/montserrat-vietnamese-700-normal.woff2",
+      "size": 7904
+    },
+    {
+      "path": "assets/fonts/montserrat-vietnamese-800-normal.woff2",
+      "size": 7900
+    },
+    {
+      "path": "assets/fonts/montserrat-vietnamese-900-normal.woff2",
+      "size": 7832
+    },
+    {
+      "path": "assets/fonts/unbounded-cyrillic-400-normal.woff2",
+      "size": 12208
+    },
+    {
+      "path": "assets/fonts/unbounded-cyrillic-500-normal.woff2",
+      "size": 12500
+    },
+    {
+      "path": "assets/fonts/unbounded-cyrillic-600-normal.woff2",
+      "size": 12516
+    },
+    {
+      "path": "assets/fonts/unbounded-cyrillic-700-normal.woff2",
+      "size": 12812
+    },
+    {
+      "path": "assets/fonts/unbounded-cyrillic-800-normal.woff2",
+      "size": 13156
+    },
+    {
+      "path": "assets/fonts/unbounded-cyrillic-900-normal.woff2",
+      "size": 12900
+    },
+    {
+      "path": "assets/fonts/unbounded-cyrillic-ext-400-normal.woff2",
+      "size": 1052
+    },
+    {
+      "path": "assets/fonts/unbounded-cyrillic-ext-500-normal.woff2",
+      "size": 1068
+    },
+    {
+      "path": "assets/fonts/unbounded-cyrillic-ext-600-normal.woff2",
+      "size": 1084
+    },
+    {
+      "path": "assets/fonts/unbounded-cyrillic-ext-700-normal.woff2",
+      "size": 1036
+    },
+    {
+      "path": "assets/fonts/unbounded-cyrillic-ext-800-normal.woff2",
+      "size": 1064
+    },
+    {
+      "path": "assets/fonts/unbounded-cyrillic-ext-900-normal.woff2",
+      "size": 1068
+    },
+    {
+      "path": "assets/fonts/unbounded-latin-400-normal.woff2",
+      "size": 19980
+    },
+    {
+      "path": "assets/fonts/unbounded-latin-500-normal.woff2",
+      "size": 20740
+    },
+    {
+      "path": "assets/fonts/unbounded-latin-600-normal.woff2",
+      "size": 20952
+    },
+    {
+      "path": "assets/fonts/unbounded-latin-700-normal.woff2",
+      "size": 21092
+    },
+    {
+      "path": "assets/fonts/unbounded-latin-800-normal.woff2",
+      "size": 21828
+    },
+    {
+      "path": "assets/fonts/unbounded-latin-900-normal.woff2",
+      "size": 21112
+    },
+    {
+      "path": "assets/fonts/unbounded-latin-ext-400-normal.woff2",
+      "size": 45592
+    },
+    {
+      "path": "assets/fonts/unbounded-latin-ext-500-normal.woff2",
+      "size": 49052
+    },
+    {
+      "path": "assets/fonts/unbounded-latin-ext-600-normal.woff2",
+      "size": 49520
+    },
+    {
+      "path": "assets/fonts/unbounded-latin-ext-700-normal.woff2",
+      "size": 49924
+    },
+    {
+      "path": "assets/fonts/unbounded-latin-ext-800-normal.woff2",
+      "size": 54284
+    },
+    {
+      "path": "assets/fonts/unbounded-latin-ext-900-normal.woff2",
+      "size": 52500
+    },
+    {
+      "path": "assets/fonts/unbounded-vietnamese-400-normal.woff2",
+      "size": 5892
+    },
+    {
+      "path": "assets/fonts/unbounded-vietnamese-500-normal.woff2",
+      "size": 6124
+    },
+    {
+      "path": "assets/fonts/unbounded-vietnamese-600-normal.woff2",
+      "size": 6064
+    },
+    {
+      "path": "assets/fonts/unbounded-vietnamese-700-normal.woff2",
+      "size": 6128
+    },
+    {
+      "path": "assets/fonts/unbounded-vietnamese-800-normal.woff2",
+      "size": 6608
+    },
+    {
+      "path": "assets/fonts/unbounded-vietnamese-900-normal.woff2",
+      "size": 6288
+    },
+    {
+      "path": "assets/galaxy-hero-v16-11.webp",
+      "size": 614276
+    },
+    {
+      "path": "assets/galaxy_bg_4k.webp",
+      "size": 490606
+    },
+    {
+      "path": "assets/icons/2048-active.webp",
+      "size": 69564
+    },
+    {
+      "path": "assets/icons/2048.webp",
+      "size": 67906
+    },
+    {
+      "path": "assets/icons/backgammon-active.webp",
+      "size": 61340
+    },
+    {
+      "path": "assets/icons/backgammon.webp",
+      "size": 58258
+    },
+    {
+      "path": "assets/icons/checkers-active.webp",
+      "size": 61364
+    },
+    {
+      "path": "assets/icons/checkers.webp",
+      "size": 62336
+    },
+    {
+      "path": "assets/icons/chess-active.webp",
+      "size": 67384
+    },
+    {
+      "path": "assets/icons/chess.webp",
+      "size": 60000
+    },
+    {
+      "path": "assets/icons/connect4-active.webp",
+      "size": 56560
+    },
+    {
+      "path": "assets/icons/connect4.webp",
+      "size": 52702
+    },
+    {
+      "path": "assets/icons/corners-active.webp",
+      "size": 59630
+    },
+    {
+      "path": "assets/icons/corners.webp",
+      "size": 57542
+    },
+    {
+      "path": "assets/icons/domino-active.webp",
+      "size": 67900
+    },
+    {
+      "path": "assets/icons/domino.webp",
+      "size": 65520
+    },
+    {
+      "path": "assets/icons/energy-capsules-active.webp",
+      "size": 254922
+    },
+    {
+      "path": "assets/icons/energy-capsules.webp",
+      "size": 252040
+    },
+    {
+      "path": "assets/icons/fifteen-active.webp",
+      "size": 59310
+    },
+    {
+      "path": "assets/icons/fifteen.webp",
+      "size": 56458
+    },
+    {
+      "path": "assets/icons/gomoku-active.webp",
+      "size": 54624
+    },
+    {
+      "path": "assets/icons/gomoku.webp",
+      "size": 53076
+    },
+    {
+      "path": "assets/icons/mahjong-active.webp",
+      "size": 60774
+    },
+    {
+      "path": "assets/icons/mahjong.webp",
+      "size": 57022
+    },
+    {
+      "path": "assets/icons/memory-active.webp",
+      "size": 60636
+    },
+    {
+      "path": "assets/icons/memory.webp",
+      "size": 59440
+    },
+    {
+      "path": "assets/icons/reversi-active.webp",
+      "size": 61416
+    },
+    {
+      "path": "assets/icons/reversi.webp",
+      "size": 58290
+    },
+    {
+      "path": "assets/icons/solitaire-active.webp",
+      "size": 63980
+    },
+    {
+      "path": "assets/icons/solitaire.webp",
+      "size": 62082
+    },
+    {
+      "path": "assets/icons/starbattle-active.webp",
+      "size": 67496
+    },
+    {
+      "path": "assets/icons/starbattle.webp",
+      "size": 64804
+    },
+    {
+      "path": "assets/icons/sudoku-active.webp",
+      "size": 60848
+    },
+    {
+      "path": "assets/icons/sudoku.webp",
+      "size": 59550
+    },
+    {
+      "path": "assets/icons/tictactoe-active.webp",
+      "size": 67298
+    },
+    {
+      "path": "assets/icons/tictactoe.webp",
+      "size": 62768
+    },
+    {
+      "path": "assets/source/galaxy-hero-v16-11.png",
+      "size": 2320489
+    },
+    {
+      "path": "assets/splashes/2048.webp",
+      "size": 387958
+    },
+    {
+      "path": "assets/splashes/backgammon.webp",
+      "size": 389664
+    },
+    {
+      "path": "assets/splashes/checkers.webp",
+      "size": 370294
+    },
+    {
+      "path": "assets/splashes/chess.webp",
+      "size": 393954
+    },
+    {
+      "path": "assets/splashes/connect4.webp",
+      "size": 372252
+    },
+    {
+      "path": "assets/splashes/corners.webp",
+      "size": 385262
+    },
+    {
+      "path": "assets/splashes/domino.webp",
+      "size": 371024
+    },
+    {
+      "path": "assets/splashes/energy-capsules.webp",
+      "size": 460584
+    },
+    {
+      "path": "assets/splashes/fifteen.webp",
+      "size": 345790
+    },
+    {
+      "path": "assets/splashes/gomoku.webp",
+      "size": 341880
+    },
+    {
+      "path": "assets/splashes/mahjong.webp",
+      "size": 322242
+    },
+    {
+      "path": "assets/splashes/memory.webp",
+      "size": 367420
+    },
+    {
+      "path": "assets/splashes/reversi.webp",
+      "size": 317084
+    },
+    {
+      "path": "assets/splashes/solitaire.webp",
+      "size": 323082
+    },
+    {
+      "path": "assets/splashes/starbattle.webp",
+      "size": 397768
+    },
+    {
+      "path": "assets/splashes/sudoku.webp",
+      "size": 385508
+    },
+    {
+      "path": "assets/splashes/tictactoe.webp",
+      "size": 370436
+    },
+    {
+      "path": "assets/titles/2048.png",
+      "size": 663573
+    },
+    {
+      "path": "assets/titles/2048.svg",
+      "size": 4705
+    },
+    {
+      "path": "assets/titles/backgammon.png",
+      "size": 656840
+    },
+    {
+      "path": "assets/titles/backgammon.svg",
+      "size": 5053
+    },
+    {
+      "path": "assets/titles/checkers.png",
+      "size": 605182
+    },
+    {
+      "path": "assets/titles/checkers.svg",
+      "size": 3517
+    },
+    {
+      "path": "assets/titles/chess.png",
+      "size": 657456
+    },
+    {
+      "path": "assets/titles/chess.svg",
+      "size": 5209
+    },
+    {
+      "path": "assets/titles/connect4.png",
+      "size": 543844
+    },
+    {
+      "path": "assets/titles/connect4.svg",
+      "size": 8970
+    },
+    {
+      "path": "assets/titles/corners.png",
+      "size": 611674
+    },
+    {
+      "path": "assets/titles/corners.svg",
+      "size": 3857
+    },
+    {
+      "path": "assets/titles/domino.png",
+      "size": 592316
+    },
+    {
+      "path": "assets/titles/domino.svg",
+      "size": 4840
+    },
+    {
+      "path": "assets/titles/energy-capsules.png",
+      "size": 191017
+    },
+    {
+      "path": "assets/titles/fifteen.png",
+      "size": 627475
+    },
+    {
+      "path": "assets/titles/fifteen.svg",
+      "size": 4600
+    },
+    {
+      "path": "assets/titles/gomoku.png",
+      "size": 634485
+    },
+    {
+      "path": "assets/titles/gomoku.svg",
+      "size": 6197
+    },
+    {
+      "path": "assets/titles/mahjong.png",
+      "size": 617851
+    },
+    {
+      "path": "assets/titles/mahjong.svg",
+      "size": 5157
+    },
+    {
+      "path": "assets/titles/memory.png",
+      "size": 628131
+    },
+    {
+      "path": "assets/titles/memory.svg",
+      "size": 5371
+    },
+    {
+      "path": "assets/titles/reversi.png",
+      "size": 571621
+    },
+    {
+      "path": "assets/titles/reversi.svg",
+      "size": 6933
+    },
+    {
+      "path": "assets/titles/solitaire.png",
+      "size": 634507
+    },
+    {
+      "path": "assets/titles/solitaire.svg",
+      "size": 5908
+    },
+    {
+      "path": "assets/titles/source/2048.svg",
+      "size": 4000
+    },
+    {
+      "path": "assets/titles/source/backgammon.svg",
+      "size": 4316
+    },
+    {
+      "path": "assets/titles/source/checkers.svg",
+      "size": 2838
+    },
+    {
+      "path": "assets/titles/source/chess.svg",
+      "size": 4618
+    },
+    {
+      "path": "assets/titles/source/connect4.svg",
+      "size": 8270
+    },
+    {
+      "path": "assets/titles/source/corners.svg",
+      "size": 3236
+    },
+    {
+      "path": "assets/titles/source/domino.svg",
+      "size": 4136
+    },
+    {
+      "path": "assets/titles/source/fifteen.svg",
+      "size": 3864
+    },
+    {
+      "path": "assets/titles/source/gomoku.svg",
+      "size": 5456
+    },
+    {
+      "path": "assets/titles/source/mahjong.svg",
+      "size": 4520
+    },
+    {
+      "path": "assets/titles/source/memory.svg",
+      "size": 4602
+    },
+    {
+      "path": "assets/titles/source/reversi.svg",
+      "size": 6350
+    },
+    {
+      "path": "assets/titles/source/solitaire.svg",
+      "size": 5316
+    },
+    {
+      "path": "assets/titles/source/starbattle.svg",
+      "size": 10694
+    },
+    {
+      "path": "assets/titles/source/sudoku.svg",
+      "size": 4680
+    },
+    {
+      "path": "assets/titles/source/tictactoe.svg",
+      "size": 7822
+    },
+    {
+      "path": "assets/titles/starbattle.png",
+      "size": 643128
+    },
+    {
+      "path": "assets/titles/starbattle.svg",
+      "size": 11321
+    },
+    {
+      "path": "assets/titles/sudoku.png",
+      "size": 674518
+    },
+    {
+      "path": "assets/titles/sudoku.svg",
+      "size": 5359
+    },
+    {
+      "path": "assets/titles/tictactoe.png",
+      "size": 582910
+    },
+    {
+      "path": "assets/titles/tictactoe.svg",
+      "size": 8474
+    },
+    {
+      "path": "assets/v12_platform_bg.webp",
+      "size": 297484
+    },
+    {
+      "path": "assets/v13_space_bg.webp",
+      "size": 264598
+    },
+    {
+      "path": "assets/v14_portal_art.webp",
+      "size": 161416
+    },
+    {
+      "path": "assets/v14_space_bg.webp",
+      "size": 275004
+    },
+    {
+      "path": "catalog.generated.js",
+      "size": 8278
+    },
+    {
+      "path": "game-lifecycle.js",
+      "size": 1576
+    },
+    {
+      "path": "game-shell.css",
+      "size": 31557
+    },
+    {
+      "path": "game-shell.js",
+      "size": 6192
+    },
+    {
+      "path": "games/2048/assets/cat_head.png",
+      "size": 359736
+    },
+    {
+      "path": "games/2048/assets/dog_head.png",
+      "size": 362170
+    },
+    {
+      "path": "games/2048/assets/splash_2048.png",
+      "size": 2133712
+    },
+    {
+      "path": "games/2048/index.html",
+      "size": 29655
+    },
+    {
+      "path": "games/backgammon/index.html",
+      "size": 48386
+    },
+    {
+      "path": "games/checkers/assets/space_logo.png",
+      "size": 1928904
+    },
+    {
+      "path": "games/checkers/index.html",
+      "size": 41088
+    },
+    {
+      "path": "games/chess/assets/logo.png",
+      "size": 1347053
+    },
+    {
+      "path": "games/chess/index.html",
+      "size": 73257
+    },
+    {
+      "path": "games/connect4/assets/splash_custom.png",
+      "size": 1578020
+    },
+    {
+      "path": "games/connect4/index.html",
+      "size": 36079
+    },
+    {
+      "path": "games/corners/assets/splash_custom.png",
+      "size": 2470096
+    },
+    {
+      "path": "games/corners/index.html",
+      "size": 31676
+    },
+    {
+      "path": "games/domino/assets/splash.png",
+      "size": 2500120
+    },
+    {
+      "path": "games/domino/index.html",
+      "size": 47620
+    },
+    {
+      "path": "games/energy-capsules/ASSET_MANIFEST_energy-capsules.json",
+      "size": 1331
+    },
+    {
+      "path": "games/energy-capsules/SPEC_energy-capsules.md",
+      "size": 6088
+    },
+    {
+      "path": "games/energy-capsules/assets/catalog-composition-source.png",
+      "size": 418358
+    },
+    {
+      "path": "games/energy-capsules/game.css",
+      "size": 11501
+    },
+    {
+      "path": "games/energy-capsules/game.js",
+      "size": 11356
+    },
+    {
+      "path": "games/energy-capsules/index.html",
+      "size": 7315
+    },
+    {
+      "path": "games/fifteen/assets/splash_fifteen.png",
+      "size": 2221809
+    },
+    {
+      "path": "games/fifteen/index.html",
+      "size": 26090
+    },
+    {
+      "path": "games/gomoku/assets/cat_head.png",
+      "size": 359736
+    },
+    {
+      "path": "games/gomoku/assets/dog_head.png",
+      "size": 362170
+    },
+    {
+      "path": "games/gomoku/assets/splash_poster.png",
+      "size": 2051688
+    },
+    {
+      "path": "games/gomoku/index.html",
+      "size": 33464
+    },
+    {
+      "path": "games/mahjong/assets/splash.png",
+      "size": 2493905
+    },
+    {
+      "path": "games/mahjong/assets/tile_cat.png",
+      "size": 140328
+    },
+    {
+      "path": "games/mahjong/assets/tile_cat_helmet.png",
+      "size": 150592
+    },
+    {
+      "path": "games/mahjong/assets/tile_comet.png",
+      "size": 126091
+    },
+    {
+      "path": "games/mahjong/assets/tile_dog.png",
+      "size": 147922
+    },
+    {
+      "path": "games/mahjong/assets/tile_dog_helmet.png",
+      "size": 150998
+    },
+    {
+      "path": "games/mahjong/assets/tile_duo.png",
+      "size": 146725
+    },
+    {
+      "path": "games/mahjong/assets/tile_galaxy.png",
+      "size": 152360
+    },
+    {
+      "path": "games/mahjong/assets/tile_helmet.png",
+      "size": 139206
+    },
+    {
+      "path": "games/mahjong/assets/tile_moon.png",
+      "size": 120449
+    },
+    {
+      "path": "games/mahjong/assets/tile_paw_orange.png",
+      "size": 141597
+    },
+    {
+      "path": "games/mahjong/assets/tile_paw_pink.png",
+      "size": 134631
+    },
+    {
+      "path": "games/mahjong/assets/tile_planet.png",
+      "size": 122546
+    },
+    {
+      "path": "games/mahjong/assets/tile_rocket.png",
+      "size": 126399
+    },
+    {
+      "path": "games/mahjong/assets/tile_satellite.png",
+      "size": 150277
+    },
+    {
+      "path": "games/mahjong/assets/tile_star.png",
+      "size": 108324
+    },
+    {
+      "path": "games/mahjong/assets/tile_ufo.png",
+      "size": 135296
+    },
+    {
+      "path": "games/mahjong/index.html",
+      "size": 26467
+    },
+    {
+      "path": "games/memory/assets/splash_v2.png",
+      "size": 2573212
+    },
+    {
+      "path": "games/memory/index.html",
+      "size": 26768
+    },
+    {
+      "path": "games/reversi/index.html",
+      "size": 35811
+    },
+    {
+      "path": "games/solitaire/assets/splash.png",
+      "size": 2450000
+    },
+    {
+      "path": "games/solitaire/index.html",
+      "size": 30937
+    },
+    {
+      "path": "games/starbattle/index.html",
+      "size": 43753
+    },
+    {
+      "path": "games/sudoku/assets/splash.png",
+      "size": 2493854
+    },
+    {
+      "path": "games/sudoku/index.html",
+      "size": 29436
+    },
+    {
+      "path": "games/tictactoe/index.html",
+      "size": 32138
+    },
+    {
+      "path": "games-manifest.json",
+      "size": 10802
+    },
+    {
+      "path": "image-qa-results.json",
+      "size": 34
+    },
+    {
+      "path": "index.html",
+      "size": 6382
+    },
+    {
+      "path": "platform-config.js",
+      "size": 63
+    },
+    {
+      "path": "platform.css",
+      "size": 27328
+    },
+    {
+      "path": "platform.js",
+      "size": 17045
+    },
+    {
+      "path": "pruned-assets.json",
+      "size": 6288
+    },
+    {
+      "path": "qa/README_RU.md",
+      "size": 2898
+    },
+    {
+      "path": "qa/browser-qa.cjs",
+      "size": 14207
+    },
+    {
+      "path": "qa/cards-symbols-qa.cjs",
+      "size": 3549
+    },
+    {
+      "path": "qa/catalog-art-qa.cjs",
+      "size": 2638
+    },
+    {
+      "path": "qa/desktop-splash-qa.cjs",
+      "size": 2393
+    },
+    {
+      "path": "qa/dom-qa.cjs",
+      "size": 11517
+    },
+    {
+      "path": "qa/first-tap-qa.cjs",
+      "size": 2149
+    },
+    {
+      "path": "qa/foundations-qa.cjs",
+      "size": 3648
+    },
+    {
+      "path": "qa/gesture-delay-qa.cjs",
+      "size": 4314
+    },
+    {
+      "path": "qa/hero-qa.cjs",
+      "size": 1984
+    },
+    {
+      "path": "qa/mobile-lab.html",
+      "size": 2508
+    },
+    {
+      "path": "qa/package.json",
+      "size": 265
+    },
+    {
+      "path": "qa/poses-browser-qa.cjs",
+      "size": 5448
+    },
+    {
+      "path": "qa/presentation-qa.cjs",
+      "size": 5681
+    },
+    {
+      "path": "qa/protocol-qa.cjs",
+      "size": 4600
+    },
+    {
+      "path": "qa/results/2048-360-game.webp",
+      "size": 24620
+    },
+    {
+      "path": "qa/results/2048-360-landscape.webp",
+      "size": 17078
+    },
+    {
+      "path": "qa/results/2048-360-menu.webp",
+      "size": 37494
+    },
+    {
+      "path": "qa/results/2048-360-splash.webp",
+      "size": 50848
+    },
+    {
+      "path": "qa/results/2048-390-game.webp",
+      "size": 25832
+    },
+    {
+      "path": "qa/results/2048-390-landscape.webp",
+      "size": 17414
+    },
+    {
+      "path": "qa/results/2048-390-menu.webp",
+      "size": 39106
+    },
+    {
+      "path": "qa/results/2048-390-splash.webp",
+      "size": 57294
+    },
+    {
+      "path": "qa/results/2048-430-game.webp",
+      "size": 28332
+    },
+    {
+      "path": "qa/results/2048-430-landscape.webp",
+      "size": 17486
+    },
+    {
+      "path": "qa/results/2048-430-menu.webp",
+      "size": 41646
+    },
+    {
+      "path": "qa/results/2048-430-splash.webp",
+      "size": 64760
+    },
+    {
+      "path": "qa/results/all-game-390-contact.webp",
+      "size": 179290
+    },
+    {
+      "path": "qa/results/all-menu-390-contact.webp",
+      "size": 191302
+    },
+    {
+      "path": "qa/results/backgammon-360-game.webp",
+      "size": 36952
+    },
+    {
+      "path": "qa/results/backgammon-360-landscape.webp",
+      "size": 21918
+    },
+    {
+      "path": "qa/results/backgammon-360-menu.webp",
+      "size": 34948
+    },
+    {
+      "path": "qa/results/backgammon-360-settings.webp",
+      "size": 9998
+    },
+    {
+      "path": "qa/results/backgammon-360-splash.webp",
+      "size": 52200
+    },
+    {
+      "path": "qa/results/backgammon-390-game.webp",
+      "size": 40154
+    },
+    {
+      "path": "qa/results/backgammon-390-landscape.webp",
+      "size": 24046
+    },
+    {
+      "path": "qa/results/backgammon-390-menu.webp",
+      "size": 37458
+    },
+    {
+      "path": "qa/results/backgammon-390-settings.webp",
+      "size": 9962
+    },
+    {
+      "path": "qa/results/backgammon-390-splash.webp",
+      "size": 58560
+    },
+    {
+      "path": "qa/results/backgammon-430-game.webp",
+      "size": 43470
+    },
+    {
+      "path": "qa/results/backgammon-430-landscape.webp",
+      "size": 25884
+    },
+    {
+      "path": "qa/results/backgammon-430-menu.webp",
+      "size": 39834
+    },
+    {
+      "path": "qa/results/backgammon-430-settings.webp",
+      "size": 10386
+    },
+    {
+      "path": "qa/results/backgammon-430-splash.webp",
+      "size": 66084
+    },
+    {
+      "path": "qa/results/browser-results-progress.json",
+      "size": 12492
+    },
+    {
+      "path": "qa/results/browser-results.json",
+      "size": 12591
+    },
+    {
+      "path": "qa/results/cards-symbols-results.json",
+      "size": 25424
+    },
+    {
+      "path": "qa/results/catalog-360-footer.webp",
+      "size": 23864
+    },
+    {
+      "path": "qa/results/catalog-360-hero.webp",
+      "size": 41602
+    },
+    {
+      "path": "qa/results/catalog-390-footer.webp",
+      "size": 29924
+    },
+    {
+      "path": "qa/results/catalog-390-hero.webp",
+      "size": 45952
+    },
+    {
+      "path": "qa/results/catalog-430-footer.webp",
+      "size": 35564
+    },
+    {
+      "path": "qa/results/catalog-430-hero.webp",
+      "size": 53274
+    },
+    {
+      "path": "qa/results/checkers-360-game.webp",
+      "size": 35158
+    },
+    {
+      "path": "qa/results/checkers-360-landscape.webp",
+      "size": 19846
+    },
+    {
+      "path": "qa/results/checkers-360-menu.webp",
+      "size": 34102
+    },
+    {
+      "path": "qa/results/checkers-360-settings.webp",
+      "size": 9962
+    },
+    {
+      "path": "qa/results/checkers-360-splash.webp",
+      "size": 49838
+    },
+    {
+      "path": "qa/results/checkers-390-game.webp",
+      "size": 37418
+    },
+    {
+      "path": "qa/results/checkers-390-landscape.webp",
+      "size": 21644
+    },
+    {
+      "path": "qa/results/checkers-390-menu.webp",
+      "size": 35386
+    },
+    {
+      "path": "qa/results/checkers-390-settings.webp",
+      "size": 9832
+    },
+    {
+      "path": "qa/results/checkers-390-splash.webp",
+      "size": 55888
+    },
+    {
+      "path": "qa/results/checkers-430-game.webp",
+      "size": 41116
+    },
+    {
+      "path": "qa/results/checkers-430-landscape.webp",
+      "size": 23474
+    },
+    {
+      "path": "qa/results/checkers-430-menu.webp",
+      "size": 38252
+    },
+    {
+      "path": "qa/results/checkers-430-settings.webp",
+      "size": 10588
+    },
+    {
+      "path": "qa/results/checkers-430-splash.webp",
+      "size": 63914
+    },
+    {
+      "path": "qa/results/chess-360-game.webp",
+      "size": 34596
+    },
+    {
+      "path": "qa/results/chess-360-landscape.webp",
+      "size": 20734
+    },
+    {
+      "path": "qa/results/chess-360-menu.webp",
+      "size": 36006
+    },
+    {
+      "path": "qa/results/chess-360-settings.webp",
+      "size": 10026
+    },
+    {
+      "path": "qa/results/chess-360-splash.webp",
+      "size": 52102
+    },
+    {
+      "path": "qa/results/chess-390-game.webp",
+      "size": 37622
+    },
+    {
+      "path": "qa/results/chess-390-landscape.webp",
+      "size": 22758
+    },
+    {
+      "path": "qa/results/chess-390-menu.webp",
+      "size": 37442
+    },
+    {
+      "path": "qa/results/chess-390-settings.webp",
+      "size": 9844
+    },
+    {
+      "path": "qa/results/chess-390-splash.webp",
+      "size": 58908
+    },
+    {
+      "path": "qa/results/chess-430-game.webp",
+      "size": 40798
+    },
+    {
+      "path": "qa/results/chess-430-landscape.webp",
+      "size": 24814
+    },
+    {
+      "path": "qa/results/chess-430-menu.webp",
+      "size": 39774
+    },
+    {
+      "path": "qa/results/chess-430-settings.webp",
+      "size": 10604
+    },
+    {
+      "path": "qa/results/chess-430-splash.webp",
+      "size": 66016
+    },
+    {
+      "path": "qa/results/connect4-360-game.webp",
+      "size": 27592
+    },
+    {
+      "path": "qa/results/connect4-360-landscape.webp",
+      "size": 19148
+    },
+    {
+      "path": "qa/results/connect4-360-menu.webp",
+      "size": 34556
+    },
+    {
+      "path": "qa/results/connect4-360-settings.webp",
+      "size": 9210
+    },
+    {
+      "path": "qa/results/connect4-360-splash.webp",
+      "size": 50720
+    },
+    {
+      "path": "qa/results/connect4-390-game.webp",
+      "size": 29790
+    },
+    {
+      "path": "qa/results/connect4-390-landscape.webp",
+      "size": 20184
+    },
+    {
+      "path": "qa/results/connect4-390-menu.webp",
+      "size": 35974
+    },
+    {
+      "path": "qa/results/connect4-390-settings.webp",
+      "size": 9718
+    },
+    {
+      "path": "qa/results/connect4-390-splash.webp",
+      "size": 57186
+    },
+    {
+      "path": "qa/results/connect4-430-game.webp",
+      "size": 33254
+    },
+    {
+      "path": "qa/results/connect4-430-landscape.webp",
+      "size": 20964
+    },
+    {
+      "path": "qa/results/connect4-430-menu.webp",
+      "size": 38360
+    },
+    {
+      "path": "qa/results/connect4-430-settings.webp",
+      "size": 10282
+    },
+    {
+      "path": "qa/results/connect4-430-splash.webp",
+      "size": 64374
+    },
+    {
+      "path": "qa/results/corners-360-game.webp",
+      "size": 33666
+    },
+    {
+      "path": "qa/results/corners-360-landscape.webp",
+      "size": 19422
+    },
+    {
+      "path": "qa/results/corners-360-menu.webp",
+      "size": 37012
+    },
+    {
+      "path": "qa/results/corners-360-settings.webp",
+      "size": 8158
+    },
+    {
+      "path": "qa/results/corners-360-splash.webp",
+      "size": 50396
+    },
+    {
+      "path": "qa/results/corners-390-game.webp",
+      "size": 36420
+    },
+    {
+      "path": "qa/results/corners-390-landscape.webp",
+      "size": 20536
+    },
+    {
+      "path": "qa/results/corners-390-menu.webp",
+      "size": 38026
+    },
+    {
+      "path": "qa/results/corners-390-settings.webp",
+      "size": 8682
+    },
+    {
+      "path": "qa/results/corners-390-splash.webp",
+      "size": 56898
+    },
+    {
+      "path": "qa/results/corners-430-game.webp",
+      "size": 39978
+    },
+    {
+      "path": "qa/results/corners-430-landscape.webp",
+      "size": 22340
+    },
+    {
+      "path": "qa/results/corners-430-menu.webp",
+      "size": 40966
+    },
+    {
+      "path": "qa/results/corners-430-settings.webp",
+      "size": 9360
+    },
+    {
+      "path": "qa/results/corners-430-splash.webp",
+      "size": 64090
+    },
+    {
+      "path": "qa/results/delayed-launch.webp",
+      "size": 56884
+    },
+    {
+      "path": "qa/results/domino-360-game.webp",
+      "size": 26494
+    },
+    {
+      "path": "qa/results/domino-360-landscape.webp",
+      "size": 18190
+    },
+    {
+      "path": "qa/results/domino-360-menu.webp",
+      "size": 38230
+    },
+    {
+      "path": "qa/results/domino-360-settings.webp",
+      "size": 9410
+    },
+    {
+      "path": "qa/results/domino-360-splash.webp",
+      "size": 50828
+    },
+    {
+      "path": "qa/results/domino-390-game.webp",
+      "size": 29092
+    },
+    {
+      "path": "qa/results/domino-390-landscape.webp",
+      "size": 18332
+    },
+    {
+      "path": "qa/results/domino-390-menu.webp",
+      "size": 39146
+    },
+    {
+      "path": "qa/results/domino-390-settings.webp",
+      "size": 9296
+    },
+    {
+      "path": "qa/results/domino-390-splash.webp",
+      "size": 57596
+    },
+    {
+      "path": "qa/results/domino-430-game.webp",
+      "size": 32510
+    },
+    {
+      "path": "qa/results/domino-430-landscape.webp",
+      "size": 20056
+    },
+    {
+      "path": "qa/results/domino-430-menu.webp",
+      "size": 42488
+    },
+    {
+      "path": "qa/results/domino-430-settings.webp",
+      "size": 9868
+    },
+    {
+      "path": "qa/results/domino-430-splash.webp",
+      "size": 65200
+    },
+    {
+      "path": "qa/results/energy-capsules/1280-desktop.png",
+      "size": 970829
+    },
+    {
+      "path": "qa/results/energy-capsules/1920-desktop.png",
+      "size": 1663625
+    },
+    {
+      "path": "qa/results/energy-capsules/360-failure.png",
+      "size": 425098
+    },
+    {
+      "path": "qa/results/energy-capsules/360-game.png",
+      "size": 349289
+    },
+    {
+      "path": "qa/results/energy-capsules/360-landscape.png",
+      "size": 289460
+    },
+    {
+      "path": "qa/results/energy-capsules/360-menu.png",
+      "size": 389713
+    },
+    {
+      "path": "qa/results/energy-capsules/360-result.png",
+      "size": 94658
+    },
+    {
+      "path": "qa/results/energy-capsules/360-splash.png",
+      "size": 425098
+    },
+    {
+      "path": "qa/results/energy-capsules/390-failure.png",
+      "size": 487220
+    },
+    {
+      "path": "qa/results/energy-capsules/390-game.png",
+      "size": 388644
+    },
+    {
+      "path": "qa/results/energy-capsules/390-landscape.png",
+      "size": 318758
+    },
+    {
+      "path": "qa/results/energy-capsules/390-menu.png",
+      "size": 427677
+    },
+    {
+      "path": "qa/results/energy-capsules/390-result.png",
+      "size": 102902
+    },
+    {
+      "path": "qa/results/energy-capsules/390-splash.png",
+      "size": 487220
+    },
+    {
+      "path": "qa/results/energy-capsules/430-game.png",
+      "size": 456952
+    },
+    {
+      "path": "qa/results/energy-capsules/430-landscape.png",
+      "size": 366883
+    },
+    {
+      "path": "qa/results/energy-capsules/430-menu.png",
+      "size": 499522
+    },
+    {
+      "path": "qa/results/energy-capsules/430-splash.png",
+      "size": 572744
+    },
+    {
+      "path": "qa/results/energy-capsules/catalog-synthetic-results.json",
+      "size": 562
+    },
+    {
+      "path": "qa/results/energy-capsules/static-results.json",
+      "size": 328
+    },
+    {
+      "path": "qa/results/energy-capsules/synthetic-browser-results.json",
+      "size": 1027
+    },
+    {
+      "path": "qa/results/fifteen-360-game.webp",
+      "size": 33568
+    },
+    {
+      "path": "qa/results/fifteen-360-landscape.webp",
+      "size": 18658
+    },
+    {
+      "path": "qa/results/fifteen-360-menu.webp",
+      "size": 35598
+    },
+    {
+      "path": "qa/results/fifteen-360-splash.webp",
+      "size": 50028
+    },
+    {
+      "path": "qa/results/fifteen-390-game.webp",
+      "size": 35420
+    },
+    {
+      "path": "qa/results/fifteen-390-landscape.webp",
+      "size": 20028
+    },
+    {
+      "path": "qa/results/fifteen-390-menu.webp",
+      "size": 36952
+    },
+    {
+      "path": "qa/results/fifteen-390-splash.webp",
+      "size": 56194
+    },
+    {
+      "path": "qa/results/fifteen-430-game.webp",
+      "size": 37766
+    },
+    {
+      "path": "qa/results/fifteen-430-landscape.webp",
+      "size": 20596
+    },
+    {
+      "path": "qa/results/fifteen-430-menu.webp",
+      "size": 39642
+    },
+    {
+      "path": "qa/results/fifteen-430-splash.webp",
+      "size": 63834
+    },
+    {
+      "path": "qa/results/first-tap-results.json",
+      "size": 6347
+    },
+    {
+      "path": "qa/results/foundations-results.json",
+      "size": 2496
+    },
+    {
+      "path": "qa/results/generated-title-checks.json",
+      "size": 2317
+    },
+    {
+      "path": "qa/results/gesture-delay-results.json",
+      "size": 234
+    },
+    {
+      "path": "qa/results/gomoku-360-game.webp",
+      "size": 32882
+    },
+    {
+      "path": "qa/results/gomoku-360-landscape.webp",
+      "size": 20776
+    },
+    {
+      "path": "qa/results/gomoku-360-menu.webp",
+      "size": 37844
+    },
+    {
+      "path": "qa/results/gomoku-360-settings.webp",
+      "size": 8356
+    },
+    {
+      "path": "qa/results/gomoku-360-splash.webp",
+      "size": 46218
+    },
+    {
+      "path": "qa/results/gomoku-390-game.webp",
+      "size": 35206
+    },
+    {
+      "path": "qa/results/gomoku-390-landscape.webp",
+      "size": 22414
+    },
+    {
+      "path": "qa/results/gomoku-390-menu.webp",
+      "size": 39172
+    },
+    {
+      "path": "qa/results/gomoku-390-settings.webp",
+      "size": 8970
+    },
+    {
+      "path": "qa/results/gomoku-390-splash.webp",
+      "size": 51400
+    },
+    {
+      "path": "qa/results/gomoku-430-game.webp",
+      "size": 39894
+    },
+    {
+      "path": "qa/results/gomoku-430-landscape.webp",
+      "size": 23364
+    },
+    {
+      "path": "qa/results/gomoku-430-menu.webp",
+      "size": 41998
+    },
+    {
+      "path": "qa/results/gomoku-430-settings.webp",
+      "size": 9500
+    },
+    {
+      "path": "qa/results/gomoku-430-splash.webp",
+      "size": 59624
+    },
+    {
+      "path": "qa/results/hero-results.json",
+      "size": 1496
+    },
+    {
+      "path": "qa/results/large-pose-preview-mobile.webp",
+      "size": 32592
+    },
+    {
+      "path": "qa/results/mahjong-360-game.webp",
+      "size": 43076
+    },
+    {
+      "path": "qa/results/mahjong-360-landscape.webp",
+      "size": 21168
+    },
+    {
+      "path": "qa/results/mahjong-360-menu.webp",
+      "size": 36420
+    },
+    {
+      "path": "qa/results/mahjong-360-splash.webp",
+      "size": 48860
+    },
+    {
+      "path": "qa/results/mahjong-390-game.webp",
+      "size": 50628
+    },
+    {
+      "path": "qa/results/mahjong-390-landscape.webp",
+      "size": 23660
+    },
+    {
+      "path": "qa/results/mahjong-390-menu.webp",
+      "size": 38390
+    },
+    {
+      "path": "qa/results/mahjong-390-splash.webp",
+      "size": 54162
+    },
+    {
+      "path": "qa/results/mahjong-430-game.webp",
+      "size": 57370
+    },
+    {
+      "path": "qa/results/mahjong-430-landscape.webp",
+      "size": 28562
+    },
+    {
+      "path": "qa/results/mahjong-430-menu.webp",
+      "size": 40150
+    },
+    {
+      "path": "qa/results/mahjong-430-splash.webp",
+      "size": 61286
+    },
+    {
+      "path": "qa/results/memory-360-game.webp",
+      "size": 30696
+    },
+    {
+      "path": "qa/results/memory-360-landscape.webp",
+      "size": 18002
+    },
+    {
+      "path": "qa/results/memory-360-menu.webp",
+      "size": 37172
+    },
+    {
+      "path": "qa/results/memory-360-splash.webp",
+      "size": 50350
+    },
+    {
+      "path": "qa/results/memory-390-game.webp",
+      "size": 32894
+    },
+    {
+      "path": "qa/results/memory-390-landscape.webp",
+      "size": 19168
+    },
+    {
+      "path": "qa/results/memory-390-menu.webp",
+      "size": 39134
+    },
+    {
+      "path": "qa/results/memory-390-splash.webp",
+      "size": 56884
+    },
+    {
+      "path": "qa/results/memory-430-game.webp",
+      "size": 34944
+    },
+    {
+      "path": "qa/results/memory-430-landscape.webp",
+      "size": 20166
+    },
+    {
+      "path": "qa/results/memory-430-menu.webp",
+      "size": 42240
+    },
+    {
+      "path": "qa/results/memory-430-splash.webp",
+      "size": 64440
+    },
+    {
+      "path": "qa/results/poses-desktop.webp",
+      "size": 96912
+    },
+    {
+      "path": "qa/results/preserved-splashes-engines.json",
+      "size": 3656
+    },
+    {
+      "path": "qa/results/reversi-360-game.webp",
+      "size": 27600
+    },
+    {
+      "path": "qa/results/reversi-360-landscape.webp",
+      "size": 17064
+    },
+    {
+      "path": "qa/results/reversi-360-menu.webp",
+      "size": 36054
+    },
+    {
+      "path": "qa/results/reversi-360-settings.webp",
+      "size": 9606
+    },
+    {
+      "path": "qa/results/reversi-360-splash.webp",
+      "size": 45944
+    },
+    {
+      "path": "qa/results/reversi-390-game.webp",
+      "size": 28972
+    },
+    {
+      "path": "qa/results/reversi-390-landscape.webp",
+      "size": 17586
+    },
+    {
+      "path": "qa/results/reversi-390-menu.webp",
+      "size": 37728
+    },
+    {
+      "path": "qa/results/reversi-390-settings.webp",
+      "size": 9806
+    },
+    {
+      "path": "qa/results/reversi-390-splash.webp",
+      "size": 51512
+    },
+    {
+      "path": "qa/results/reversi-430-game.webp",
+      "size": 32118
+    },
+    {
+      "path": "qa/results/reversi-430-landscape.webp",
+      "size": 18238
+    },
+    {
+      "path": "qa/results/reversi-430-menu.webp",
+      "size": 40008
+    },
+    {
+      "path": "qa/results/reversi-430-settings.webp",
+      "size": 10636
+    },
+    {
+      "path": "qa/results/reversi-430-splash.webp",
+      "size": 58600
+    },
+    {
+      "path": "qa/results/solitaire-360-game.webp",
+      "size": 33722
+    },
+    {
+      "path": "qa/results/solitaire-360-landscape.webp",
+      "size": 19212
+    },
+    {
+      "path": "qa/results/solitaire-360-menu.webp",
+      "size": 38488
+    },
+    {
+      "path": "qa/results/solitaire-360-splash.webp",
+      "size": 46238
+    },
+    {
+      "path": "qa/results/solitaire-390-game.webp",
+      "size": 35250
+    },
+    {
+      "path": "qa/results/solitaire-390-landscape.webp",
+      "size": 20470
+    },
+    {
+      "path": "qa/results/solitaire-390-menu.webp",
+      "size": 40342
+    },
+    {
+      "path": "qa/results/solitaire-390-splash.webp",
+      "size": 52014
+    },
+    {
+      "path": "qa/results/solitaire-430-game.webp",
+      "size": 39184
+    },
+    {
+      "path": "qa/results/solitaire-430-landscape.webp",
+      "size": 22238
+    },
+    {
+      "path": "qa/results/solitaire-430-menu.webp",
+      "size": 42656
+    },
+    {
+      "path": "qa/results/solitaire-430-splash.webp",
+      "size": 58816
+    },
+    {
+      "path": "qa/results/splash-readiness-results.json",
+      "size": 13604
+    },
+    {
+      "path": "qa/results/starbattle-360-game.webp",
+      "size": 33444
+    },
+    {
+      "path": "qa/results/starbattle-360-landscape.webp",
+      "size": 19918
+    },
+    {
+      "path": "qa/results/starbattle-360-menu.webp",
+      "size": 35830
+    },
+    {
+      "path": "qa/results/starbattle-360-settings.webp",
+      "size": 8322
+    },
+    {
+      "path": "qa/results/starbattle-360-splash.webp",
+      "size": 52496
+    },
+    {
+      "path": "qa/results/starbattle-390-game.webp",
+      "size": 36196
+    },
+    {
+      "path": "qa/results/starbattle-390-landscape.webp",
+      "size": 20920
+    },
+    {
+      "path": "qa/results/starbattle-390-menu.webp",
+      "size": 37322
+    },
+    {
+      "path": "qa/results/starbattle-390-settings.webp",
+      "size": 8762
+    },
+    {
+      "path": "qa/results/starbattle-390-splash.webp",
+      "size": 59908
+    },
+    {
+      "path": "qa/results/starbattle-430-game.webp",
+      "size": 40304
+    },
+    {
+      "path": "qa/results/starbattle-430-landscape.webp",
+      "size": 21292
+    },
+    {
+      "path": "qa/results/starbattle-430-menu.webp",
+      "size": 39412
+    },
+    {
+      "path": "qa/results/starbattle-430-settings.webp",
+      "size": 9100
+    },
+    {
+      "path": "qa/results/starbattle-430-splash.webp",
+      "size": 67568
+    },
+    {
+      "path": "qa/results/sudoku-360-game.webp",
+      "size": 32392
+    },
+    {
+      "path": "qa/results/sudoku-360-landscape.webp",
+      "size": 18898
+    },
+    {
+      "path": "qa/results/sudoku-360-menu.webp",
+      "size": 39358
+    },
+    {
+      "path": "qa/results/sudoku-360-settings.webp",
+      "size": 8254
+    },
+    {
+      "path": "qa/results/sudoku-360-splash.webp",
+      "size": 52180
+    },
+    {
+      "path": "qa/results/sudoku-390-game.webp",
+      "size": 35396
+    },
+    {
+      "path": "qa/results/sudoku-390-landscape.webp",
+      "size": 19786
+    },
+    {
+      "path": "qa/results/sudoku-390-menu.webp",
+      "size": 41414
+    },
+    {
+      "path": "qa/results/sudoku-390-settings.webp",
+      "size": 8480
+    },
+    {
+      "path": "qa/results/sudoku-390-splash.webp",
+      "size": 58816
+    },
+    {
+      "path": "qa/results/sudoku-430-game.webp",
+      "size": 38356
+    },
+    {
+      "path": "qa/results/sudoku-430-landscape.webp",
+      "size": 20308
+    },
+    {
+      "path": "qa/results/sudoku-430-menu.webp",
+      "size": 44176
+    },
+    {
+      "path": "qa/results/sudoku-430-settings.webp",
+      "size": 8958
+    },
+    {
+      "path": "qa/results/sudoku-430-splash.webp",
+      "size": 66062
+    },
+    {
+      "path": "qa/results/tictactoe-360-game.webp",
+      "size": 24510
+    },
+    {
+      "path": "qa/results/tictactoe-360-landscape.webp",
+      "size": 17770
+    },
+    {
+      "path": "qa/results/tictactoe-360-menu.webp",
+      "size": 35548
+    },
+    {
+      "path": "qa/results/tictactoe-360-settings.webp",
+      "size": 10354
+    },
+    {
+      "path": "qa/results/tictactoe-360-splash.webp",
+      "size": 50428
+    },
+    {
+      "path": "qa/results/tictactoe-390-game.webp",
+      "size": 25828
+    },
+    {
+      "path": "qa/results/tictactoe-390-landscape.webp",
+      "size": 18894
+    },
+    {
+      "path": "qa/results/tictactoe-390-menu.webp",
+      "size": 36914
+    },
+    {
+      "path": "qa/results/tictactoe-390-settings.webp",
+      "size": 10918
+    },
+    {
+      "path": "qa/results/tictactoe-390-splash.webp",
+      "size": 56464
+    },
+    {
+      "path": "qa/results/tictactoe-430-game.webp",
+      "size": 28686
+    },
+    {
+      "path": "qa/results/tictactoe-430-landscape.webp",
+      "size": 19306
+    },
+    {
+      "path": "qa/results/tictactoe-430-menu.webp",
+      "size": 39526
+    },
+    {
+      "path": "qa/results/tictactoe-430-settings.webp",
+      "size": 11080
+    },
+    {
+      "path": "qa/results/tictactoe-430-splash.webp",
+      "size": 63836
+    },
+    {
+      "path": "qa/results/title-center-results.json",
+      "size": 12107
+    },
+    {
+      "path": "qa/results/title-reference-checks.json",
+      "size": 1960
+    },
+    {
+      "path": "qa/results/v16-11-hero-1280.webp",
+      "size": 78820
+    },
+    {
+      "path": "qa/results/v16-11-hero-1920.webp",
+      "size": 128074
+    },
+    {
+      "path": "qa/results/v16-11-hero-360.webp",
+      "size": 41606
+    },
+    {
+      "path": "qa/results/v16-11-hero-390.webp",
+      "size": 45996
+    },
+    {
+      "path": "qa/results/v16-11-hero-430.webp",
+      "size": 53306
+    },
+    {
+      "path": "qa/results/v16-11-solitaire-1280.webp",
+      "size": 52678
+    },
+    {
+      "path": "qa/results/v16-11-solitaire-1920.webp",
+      "size": 69244
+    },
+    {
+      "path": "qa/results/v16-11-solitaire-360.webp",
+      "size": 33136
+    },
+    {
+      "path": "qa/results/v16-11-solitaire-390.webp",
+      "size": 35938
+    },
+    {
+      "path": "qa/results/v16-11-solitaire-430.webp",
+      "size": 39428
+    },
+    {
+      "path": "qa/results/v16-11-tictactoe-1280.webp",
+      "size": 39732
+    },
+    {
+      "path": "qa/results/v16-11-tictactoe-1920.webp",
+      "size": 62592
+    },
+    {
+      "path": "qa/results/v16-11-tictactoe-360.webp",
+      "size": 27588
+    },
+    {
+      "path": "qa/results/v16-11-tictactoe-390.webp",
+      "size": 28714
+    },
+    {
+      "path": "qa/results/v16-11-tictactoe-430.webp",
+      "size": 32274
+    },
+    {
+      "path": "qa/results/v16-12-foundations-1280.webp",
+      "size": 54722
+    },
+    {
+      "path": "qa/results/v16-12-foundations-1920.webp",
+      "size": 69318
+    },
+    {
+      "path": "qa/results/v16-12-foundations-360.webp",
+      "size": 35894
+    },
+    {
+      "path": "qa/results/v16-12-foundations-390.webp",
+      "size": 36396
+    },
+    {
+      "path": "qa/results/v16-12-foundations-430.webp",
+      "size": 40804
+    },
+    {
+      "path": "qa/splash-readiness-qa.cjs",
+      "size": 3549
+    },
+    {
+      "path": "qa/title-center-qa.cjs",
+      "size": 2905
+    },
+    {
+      "path": "qa/variant-qa.cjs",
+      "size": 11530
+    },
+    {
+      "path": "records.js",
+      "size": 3658
+    },
+    {
+      "path": "static-qa-results.json",
+      "size": 2286
+    },
+    {
+      "path": "tools/build-catalog.cjs",
+      "size": 858
+    },
+    {
+      "path": "tools/build-energy-capsules-art.py",
+      "size": 9329
+    },
+    {
+      "path": "tools/build-title-art.cjs",
+      "size": 4807
+    },
+    {
+      "path": "typography.css",
+      "size": 19743
+    }
+  ]
+}

@@ -1,0 +1,587 @@
+{
+  "results": [
+    {
+      "id": "2048",
+      "width": 360,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "backgammon",
+      "width": 360,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "checkers",
+      "width": 360,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "chess",
+      "width": 360,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "connect4",
+      "width": 360,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "corners",
+      "width": 360,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "domino",
+      "width": 360,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "fifteen",
+      "width": 360,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "gomoku",
+      "width": 360,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "mahjong",
+      "width": 360,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "memory",
+      "width": 360,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "reversi",
+      "width": 360,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "solitaire",
+      "width": 360,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "starbattle",
+      "width": 360,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "sudoku",
+      "width": 360,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "tictactoe",
+      "width": 360,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "2048",
+      "width": 390,
+      "height": 844,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "backgammon",
+      "width": 390,
+      "height": 844,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "checkers",
+      "width": 390,
+      "height": 844,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "chess",
+      "width": 390,
+      "height": 844,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "connect4",
+      "width": 390,
+      "height": 844,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "corners",
+      "width": 390,
+      "height": 844,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "domino",
+      "width": 390,
+      "height": 844,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "fifteen",
+      "width": 390,
+      "height": 844,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "gomoku",
+      "width": 390,
+      "height": 844,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "mahjong",
+      "width": 390,
+      "height": 844,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "memory",
+      "width": 390,
+      "height": 844,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "reversi",
+      "width": 390,
+      "height": 844,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "solitaire",
+      "width": 390,
+      "height": 844,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "starbattle",
+      "width": 390,
+      "height": 844,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "sudoku",
+      "width": 390,
+      "height": 844,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "tictactoe",
+      "width": 390,
+      "height": 844,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "2048",
+      "width": 430,
+      "height": 932,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "backgammon",
+      "width": 430,
+      "height": 932,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "checkers",
+      "width": 430,
+      "height": 932,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "chess",
+      "width": 430,
+      "height": 932,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "connect4",
+      "width": 430,
+      "height": 932,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "corners",
+      "width": 430,
+      "height": 932,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "domino",
+      "width": 430,
+      "height": 932,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "fifteen",
+      "width": 430,
+      "height": 932,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "gomoku",
+      "width": 430,
+      "height": 932,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "mahjong",
+      "width": 430,
+      "height": 932,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "memory",
+      "width": 430,
+      "height": 932,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "reversi",
+      "width": 430,
+      "height": 932,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "solitaire",
+      "width": 430,
+      "height": 932,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "starbattle",
+      "width": 430,
+      "height": 932,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "sudoku",
+      "width": 430,
+      "height": 932,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "tictactoe",
+      "width": 430,
+      "height": 932,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "2048",
+      "width": 1280,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "backgammon",
+      "width": 1280,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "checkers",
+      "width": 1280,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "chess",
+      "width": 1280,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "connect4",
+      "width": 1280,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "corners",
+      "width": 1280,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "domino",
+      "width": 1280,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "fifteen",
+      "width": 1280,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "gomoku",
+      "width": 1280,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "mahjong",
+      "width": 1280,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "memory",
+      "width": 1280,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "reversi",
+      "width": 1280,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "solitaire",
+      "width": 1280,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "starbattle",
+      "width": 1280,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "sudoku",
+      "width": 1280,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "id": "tictactoe",
+      "width": 1280,
+      "height": 800,
+      "delayedPosterHidden": true,
+      "firstScreenOnlySplashAndStart": true,
+      "menuNavigation": true,
+      "status": "PASS"
+    },
+    {
+      "resourceFailureRetry": "PASS"
+    },
+    {
+      "cancelPendingLaunch": "PASS"
+    }
+  ],
+  "errors": []
+}
