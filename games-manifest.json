@@ -308,21 +308,22 @@
     },
     {
       "id": "energy-capsules",
-      "title": "Энергокапсулы",
-      "full": "Энергокапсулы",
+      "title": "Капсулы",
+      "full": "Капсулы",
       "keys": [],
       "entry": "games/energy-capsules/index.html",
-      "desc": "Ловите энергокапсулы с четырёх линий и удерживайте реактор в рабочем состоянии.",
+      "desc": "Ловите капсулы с четырёх линий и удерживайте реактор в рабочем состоянии.",
       "color": "pink",
       "cat": "arcade",
       "assets": {
-        "icon": "assets/corgi.png",
+        "icon": "assets/icons/energy-capsules.webp",
         "title": "assets/titles/energy-capsules.png",
-        "splash": "assets/splashes/energy-capsules.webp"
+        "splash": "assets/splashes/energy-capsules.webp",
+        "iconActive": "assets/icons/energy-capsules-active.webp"
       },
-      "version": "1.1.0"
+      "version": "1.2.0"
     }
   ],
   "leaderboard": "local-browser",
-  "version": "16.13"
+  "version": "16.14"
 }

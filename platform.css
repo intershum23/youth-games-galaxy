@@ -108,15 +108,3 @@ button:disabled{opacity:.5;cursor:default}
 @media(prefers-reduced-motion:reduce){.catalogTitleArt{transition:none;transform:none!important}}
 
 
-/* Energy Capsules catalog harmonization. */
-.gameLaunch[data-play="energy-capsules"] .catalogTitleArt{
-  width:112%;
-  max-width:none;
-  height:58px;
-  margin-left:-6%;
-  filter:drop-shadow(0 0 8px rgba(255,74,181,.22));
-}
-.gameLaunch[data-play="energy-capsules"] .gameIconImg{
-  max-width:178px;
-  object-position:center bottom;
-}

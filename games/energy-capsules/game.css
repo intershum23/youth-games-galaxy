@@ -116,17 +116,18 @@ body[data-game="energy-capsules"] .fieldHero{
   position:absolute;
   left:50%;
   bottom:-1%;
-  width:43%;
-  height:48%;
-  object-fit:contain;
-  object-position:center bottom;
+  width:46%;
+  aspect-ratio:1;
+  background-repeat:no-repeat;
+  background-size:200% 200%;
+  background-position:0 0;
   transform-origin:50% 90%;
   transform:translateX(-50%);
   filter:drop-shadow(0 12px 20px #0008) drop-shadow(0 0 12px #66e9ff33);
   pointer-events:none;
   user-select:none;
   z-index:4;
-  transition:transform 120ms ease-out,filter 120ms ease-out;
+  transition:transform 120ms ease-out,filter 120ms ease-out,background-position 90ms linear;
 }
 body[data-game="energy-capsules"] .fieldHero.reach-0{transform:translateX(-50%) translate(-13%,-8%) rotate(-9deg) scale(1.045)}
 body[data-game="energy-capsules"] .fieldHero.reach-1{transform:translateX(-50%) translate(13%,-8%) rotate(9deg) scale(1.045)}
@@ -165,3 +166,26 @@ body[data-game="energy-capsules"] .fieldHint{z-index:8;pointer-events:none}
 @media(prefers-reduced-motion:reduce){
   body[data-game="energy-capsules"] .fieldHero{transition:none}
 }
+
+body[data-game="energy-capsules"] #splash::before{
+  content:"";
+  position:absolute;
+  left:0;right:0;top:0;
+  height:28%;
+  background:linear-gradient(180deg,rgba(4,8,42,.82),rgba(4,8,42,.72) 68%,rgba(4,8,42,0));
+  z-index:1;
+  pointer-events:none;
+}
+body[data-game="energy-capsules"] #splash .splashTitleArt{
+  position:absolute;
+  left:50%;
+  top:clamp(24px,5.5dvh,58px);
+  transform:translateX(-50%);
+  width:min(82%,560px);
+  height:auto;
+  object-fit:contain;
+  z-index:2;
+  filter:drop-shadow(0 0 14px rgba(255,92,189,.32));
+  pointer-events:none;
+}
+body[data-game="energy-capsules"] #splash #startBtn{z-index:3}
