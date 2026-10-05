@@ -6,7 +6,7 @@
     "FILE_MAP.txt",
     "FILES_SHA256SUMS.txt"
   ],
-  "fileCount": 670,
+  "fileCount": 671,
   "files": [
     {
       "path": ".gitignore",
@@ -95,8 +95,8 @@
     },
     {
       "path": "QA_v16_16_RADIO_BEACON_RU.md",
-      "size": 10913,
-      "sha256": "39ab001487db00f3d4aeabd07911bda531b30ff4a544ff3e01f55e81a867149a"
+      "size": 12135,
+      "sha256": "f50f380263c9305b128b3c800de2238f118719b33f8b357e3858644d4f9b6922"
     },
     {
       "path": "QA_v16_8_RU.md",
@@ -1725,8 +1725,8 @@
     },
     {
       "path": "qa/radio-beacon-published-qa.cjs",
-      "size": 2956,
-      "sha256": "83a6602ba624f54eadd63c946b6c15bc2a7f88f686fd1b9fc2017303826febe6"
+      "size": 3001,
+      "sha256": "5b2efdfffc8f073fbe28bda2f08135d67a26d18096376dfca15db02249c1eabc"
     },
     {
       "path": "qa/radio-beacon-qa.cjs",
@@ -3242,6 +3242,11 @@
       "path": "qa/results/v16-16/platform.json",
       "size": 371,
       "sha256": "b4dcdfb53f021e76520c689f059f98166e9101abc775dd05a242e50a27ab05b9"
+    },
+    {
+      "path": "qa/results/v16-16/published.json",
+      "size": 1481,
+      "sha256": "f006c697184f03e33e5497be6490e2c069cf9878d1e4b0bfb7bd788e8f5468ba"
     },
     {
       "path": "qa/results/v16-16/records-unit.json",
