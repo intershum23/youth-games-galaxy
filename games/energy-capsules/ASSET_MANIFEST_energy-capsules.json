@@ -4,41 +4,48 @@
   "version": "1.2.0",
   "assets": [
     {
-      "path": "assets/icons/energy-capsules.webp",
-      "role": "catalog-icon",
+      "path": "assets/icons/energy-capsules.png",
+      "size": "240px long edge",
       "alpha": true,
-      "notes": "Капитан Корги ловит капсулы; утверждённая основная поза."
+      "purpose": "catalog default illustration: Captain Corgi with capsules"
     },
     {
-      "path": "assets/icons/energy-capsules-active.webp",
-      "role": "catalog-icon-active",
+      "path": "assets/icons/energy-capsules-active.png",
+      "size": "240px long edge",
       "alpha": true,
-      "notes": "Та же композиция, Корги подмигивает."
+      "purpose": "catalog active illustration: same Corgi winking"
     },
     {
       "path": "assets/titles/energy-capsules.png",
-      "role": "title-art",
+      "size": "600px long edge",
       "alpha": true,
-      "notes": "Текст «Капсулы», тёплая ivory/peach→hot-pink палитра с violet depth, как у остальных игр."
+      "purpose": "final «Капсулы» wordmark in the shared warm ivory/peach, hot-pink/magenta and violet title style"
     },
     {
-      "path": "assets/splashes/energy-capsules.webp",
-      "role": "splash",
+      "path": "assets/splashes/energy-capsules.png",
+      "size": "480px long edge",
       "alpha": false,
-      "notes": "Существующий portrait splash; поверх старого title-art показывается новый «Капсулы»."
+      "purpose": "portrait splash with Corgi, Cosmic Cat and capsules; HTML launch button remains separate"
     },
     {
-      "path": "games/energy-capsules/assets/corgi-poses.webp",
-      "role": "gameplay-sprite-sheet",
+      "path": "games/energy-capsules/assets/corgi-poses.png",
+      "size": "320px long edge",
       "alpha": true,
-      "notes": "2×2: верх-лево, верх-право, низ-лево, низ-право."
+      "purpose": "2x2 gameplay pose sheet: upper-left, upper-right, lower-left, lower-right"
     },
     {
-      "path": "games/energy-capsules/assets/cat-poses.webp",
-      "role": "gameplay-sprite-sheet",
+      "path": "games/energy-capsules/assets/cat-poses.png",
+      "size": "320px long edge",
       "alpha": true,
-      "notes": "2×2: верх-лево, верх-право, низ-лево, низ-право."
+      "purpose": "2x2 gameplay pose sheet: upper-left, upper-right, lower-left, lower-right"
     }
   ],
-  "generatedBy": "image_gen + deterministic export"
+  "generatedBy": "image_gen + deterministic export",
+  "generation": "AI-generated final artwork approved in chat, installed as PNG assets; hero gameplay uses dedicated 2x2 pose sheets for four catching directions.",
+  "notes": [
+    "The internal game id remains energy-capsules for compatibility; visible UI title is «Капсулы».",
+    "Catalog default and active poses are separate approved assets.",
+    "Gameplay switches sprite-sheet position instead of stretching one static hero image.",
+    "All generated image files are installed in-repository and do not depend on external URLs."
+  ]
 }
