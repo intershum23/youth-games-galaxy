@@ -7,7 +7,7 @@ const MODE={
  turbo:{label:'TURBO',baseSpawn:720,minSpawn:300,baseTravel:1950,minTravel:1050,maxActive:3,guard:300,scoreMul:2}
 };
 const HERO={corgi:{src:'../../assets/corgi.png',alt:'Капитан Корги'},cat:{src:'../../assets/cat.png',alt:'Космо-Кот'}};
-const LANE_POINTS=[{sx:7,sy:18,ex:36,ey:57},{sx:93,sy:18,ex:64,ey:57},{sx:7,sy:48,ex:36,ey:78},{sx:93,sy:48,ex:64,ey:78}];
+const LANE_POINTS=[{sx:5,sy:15,ex:39,ey:47},{sx:95,sy:15,ex:61,ey:47},{sx:5,sy:52,ex:39,ey:70},{sx:95,sy:52,ex:61,ey:70}];
 let hero='corgi',mode='a',running=false,paused=false,autoPaused=false,score=0,lives=3,streak=0,bestStreak=0,caught=0,missed=0,selectedLane=0,capsules=[],spawnElapsed=0,lastTs=0,raf=0,seq=0,resultSaved=false,soundOn=true,actx=null;
 function show(id){$$('.screen').forEach(s=>s.classList.toggle('active',s.id===id));if(id!=='game')stopLoop();}
 function modeCfg(){return MODE[mode]||MODE.a}
@@ -18,8 +18,8 @@ function updateHud(){
  $('#livesValue').textContent='●'.repeat(Math.max(0,lives))+'○'.repeat(Math.max(0,3-lives));$('#streakValue').textContent=streak;
  const cfg=modeCfg();const level=Math.max(1,Math.min(9,1+Math.floor(caught/12)));$('#speedText').textContent='Скорость '+level;
 }
-function setHero(id){hero=HERO[id]?id:'corgi';$$('[data-hero]').forEach(b=>b.classList.toggle('on',b.dataset.hero===hero));const h=HERO[hero];$('#playerImg').src=h.src;$('#playerImg').alt=h.alt;}
-function selectLane(lane){if(!running||paused||!Number.isInteger(lane)||lane<0||lane>3)return;selectedLane=lane;$$('.catchBtn').forEach(b=>b.classList.toggle('on',Number(b.dataset.lane)===lane));$$('.catchPoint').forEach(p=>p.classList.toggle('on',Number(p.dataset.lane)===lane));$('#fieldHint').textContent=['Верхний левый','Верхний правый','Нижний левый','Нижний правый'][lane];sound('move');}
+function setHero(id){hero=HERO[id]?id:'corgi';$('[data-hero]').forEach(b=>b.classList.toggle('on',b.dataset.hero===hero));const h=HERO[hero];$('#playerImg').src=h.src;$('#playerImg').alt=h.alt;const fieldHero=$('#fieldHero');if(fieldHero){fieldHero.src=h.src;fieldHero.alt=h.alt;}}
+function selectLane(lane){if(!running||paused||!Number.isInteger(lane)||lane<0||lane>3)return;selectedLane=lane;$('.catchBtn').forEach(b=>b.classList.toggle('on',Number(b.dataset.lane)===lane));$('.catchPoint').forEach(p=>p.classList.toggle('on',Number(p.dataset.lane)===lane));const fieldHero=$('#fieldHero');if(fieldHero){fieldHero.classList.remove('reach-0','reach-1','reach-2','reach-3','reaching');fieldHero.classList.add(`reach-${lane}`);if(!window.matchMedia?.('(prefers-reduced-motion: reduce)').matches){void fieldHero.offsetWidth;fieldHero.classList.add('reaching')}}$('#fieldHint').textContent=['Верхний левый','Верхний правый','Нижний левый','Нижний правый'][lane];sound('move');}
 function speedParams(){const cfg=modeCfg(),progress=Math.min(1,caught/70);return {spawn:Math.round(cfg.baseSpawn-(cfg.baseSpawn-cfg.minSpawn)*progress),travel:Math.round(cfg.baseTravel-(cfg.baseTravel-cfg.minTravel)*progress)}}
 function safeLane(travel){let lane=Math.floor(Math.random()*4),closest=null;for(const c of capsules){const remain=(1-c.p)*c.travel;if(Math.abs(remain-travel)<modeCfg().guard){closest=c.lane;break}}if(closest!=null)lane=closest;return lane;}
 function spawn(){const cfg=modeCfg();if(capsules.length>=cfg.maxActive)return false;const sp=speedParams(),lane=safeLane(sp.travel),bonus=Math.random()<0.085;const el=document.createElement('div');el.className='capsule'+(bonus?' bonus':'');el.dataset.lane=lane;el.dataset.id=String(++seq);$('#capsuleLayer').appendChild(el);capsules.push({id:seq,lane,p:0,travel:sp.travel*(bonus?.88:1),bonus,el});return true;}
@@ -44,7 +44,7 @@ function init(){
  $('#startBtn').addEventListener('click',()=>show('menu'));
  $$('[data-hero]').forEach(b=>b.addEventListener('click',()=>setHero(b.dataset.hero)));
  $$('.modeCard[data-mode]').forEach(b=>b.addEventListener('click',()=>startGame(b.dataset.mode)));
- $$('.catchBtn').forEach(b=>b.addEventListener('pointerdown',e=>{e.preventDefault();selectLane(Number(b.dataset.lane))}));
+ $('.catchBtn,.laneHit').forEach(b=>b.addEventListener('pointerdown',e=>{e.preventDefault();selectLane(Number(b.dataset.lane))}));
  $('#pauseBtn').addEventListener('click',()=>togglePause());
  $('#homeBtn').addEventListener('click',()=>{stopLoop();show('menu')});
  $('#newBtn').addEventListener('click',()=>startGame(mode));
