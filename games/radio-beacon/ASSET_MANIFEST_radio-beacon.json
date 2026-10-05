@@ -60,11 +60,30 @@
     {
       "path": "assets/titles/radio-beacon.png",
       "purpose": "actual Unbounded PNG title",
-      "width": 1600,
-      "height": 500,
+      "width": 2048,
+      "height": 680,
       "alpha": true,
-      "bytes": 283455,
-      "sha256": "c785ed3abcb0964d4b0f6f76f83dff41d6616cc8a8c12807be621ad94231b9ae"
+      "bytes": 1686697,
+      "sha256": "0ce943ffd179a766c6b04d3da463fdafe024b0ea37a1088e816469506fd574d1"
+    },
+    {
+      "path": "assets/retro-props/radio-receiver.webp",
+      "purpose": "v16.17 illustrated game prop or title ornament",
+      "bytes": 400588,
+      "sha256": "5b1b87f00cb2914984048ec2860bb49eee40b8ee78442b96776a4b44ec96a235",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true
+    },
+    {
+      "path": "assets/retro-props/radio-title-frame.png",
+      "purpose": "v16.17 illustrated game prop or title ornament",
+      "bytes": 1510380,
+      "sha256": "e252affbfb54adb34ec3bcb0afccd9e17dd8c0307ed0cc357a277b3d94327936",
+      "width": 2172,
+      "height": 724,
+      "alpha": true
     }
-  ]
+  ],
+  "presentationVersion": "16.17.0"
 }

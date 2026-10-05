@@ -39,3 +39,17 @@ body[data-game="space-mail"].paused .pauseCurtain{display:grid}
 /* Two-line wordmark retains readable letter size instead of inheriting a one-line height. */
 body[data-game="space-mail"] #game .gameTitleArt{height:84px}
 @media(orientation:landscape) and (max-height:500px){body[data-game="space-mail"] #game .gameTitleArt{height:58px}}
+/* Real illustrated parcel and miniature destination planets retain engine symbols. */
+body[data-game="space-mail"] .mailField{background:radial-gradient(ellipse at 50% 48%,#d250ae30,transparent 60%),var(--retro-glass)}
+body[data-game="space-mail"] .mailStations>div{background:linear-gradient(160deg,#b96ab82e,#4a377a1c);border-color:#ffb1e65c;min-height:72px;gap:5px}
+body[data-game="space-mail"] .mailStations span{display:grid;place-content:center;width:38px;height:38px;margin:auto;border-radius:50%;font-size:22px;color:#fff5de;background:radial-gradient(circle at 30% 25%,#ffdab7,#ed71ba 45%,#6d35a7 85%);box-shadow:inset -5px -5px 9px #46126077,0 0 14px #db58b233}
+body[data-game="space-mail"] .mailStations [data-station="1"] span{background:radial-gradient(circle at 30% 25%,#e4d0ff,#aa7bd8 50%,#5b3785)}
+body[data-game="space-mail"] .mailStations [data-station="2"] span{background:radial-gradient(circle at 30% 25%,#fedbe6,#dc73bd 45%,#7c42ac);border:2px solid #f6b0e677}
+body[data-game="space-mail"] .parcelStage{min-height:134px;margin:10px 0}
+body[data-game="space-mail"] .parcel{width:150px;height:128px;border:0;border-radius:0;background:none;box-shadow:none;padding:0;transform:none;gap:0;display:block}
+body[data-game="space-mail"] .parcelArt{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 5px 12px #db66c444);pointer-events:none}
+body[data-game="space-mail"] .parcelGlyph{position:absolute;top:46%;left:58%;transform:translate(-50%,-50%);font-size:25px;color:#63215c;text-shadow:none}
+body[data-game="space-mail"] .parcelName{position:absolute;left:39%;top:62%;width:43%;font-size:9px;color:#63215c}
+body[data-game="space-mail"] .queueParcel{background:linear-gradient(140deg,#ec9bca44,#9b59c93b);border:1px solid #ffbce399;color:#fff0e8;box-shadow:inset 0 1px 0 #fff4,0 4px 10px #0002}
+body[data-game="space-mail"] .routeBtn[aria-pressed="true"]{background:linear-gradient(145deg,#de67b447,#8d52c233);border-color:#ffb3e2;box-shadow:0 0 12px #d954b02a}
+body[data-game="space-mail"] #dispatchBtn{background:linear-gradient(105deg,#d43e9ecc,#a859c7bb,#ed8569aa);border:1px solid #ffd2f477;box-shadow:0 4px 18px #ab398833}

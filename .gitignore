@@ -6,3 +6,8 @@ qa/results/v16-16/**/*.png
 qa/results/v16-16/**/*.webp
 qa/results/v16-16/*.png
 qa/results/v16-16/*.webp
+
+qa/results/v16-17/**/*.png
+qa/results/v16-17/**/*.webp
+qa/results/v16-17/*.png
+qa/results/v16-17/*.webp

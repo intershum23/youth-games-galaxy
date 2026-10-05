@@ -6,6 +6,15 @@ document.documentElement.style.setProperty('--game-splash',`url("${splashUrl}")`
 const splashEl=document.getElementById('splash');if(splashEl)splashEl.style.backgroundImage=`url("${splashUrl}")`;
 function exitToCatalog(){if(parent!==window)parent.postMessage({type:'mm-exit-to-platform',game:id},location.origin);else location.href='../../index.html#games'}
 document.getElementById('allGames').addEventListener('click',exitToCatalog);
+// Splash actions belong to the shell; no engine handlers or state are replaced.
+if(splashEl){
+ const actions=document.createElement('div');actions.className='splashActions';
+ const start=document.getElementById('startBtn');if(start)actions.append(start);
+ const rules=document.createElement('button');rules.type='button';rules.id='splashRules';rules.className='splashRules';rules.textContent='Как играть';rules.setAttribute('aria-label','Правила игры');rules.onclick=()=>window.GalaxyRules.open(id,document.title,rules);actions.append(rules);splashEl.append(actions);
+ const hostDesktop=()=>document.body.classList.toggle('desktop-host',(parent!==window?parent.innerWidth:innerWidth)>=900);
+ hostDesktop();addEventListener('resize',hostDesktop);
+}
+
 // Presentation only: engines retain game state, timers, scoring and restart handlers.
 const reduced=()=>window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 function decorateResult(modal){
@@ -68,6 +77,6 @@ addEventListener('message',e=>{if(e.source===parent&&e.origin===location.origin&
 addEventListener('DOMContentLoaded',async()=>{
  const reportScreen=()=>{const screen=document.querySelector('.screen.active')?.id||'splash';if(parent!==window)parent.postMessage({type:'mm-game-screen',game:id,launch:Number(new URLSearchParams(location.search).get('launch')),screen},location.origin)};
  for(const screen of document.querySelectorAll('.screen'))new MutationObserver(reportScreen).observe(screen,{attributes:true,attributeFilter:['class']});
- try{const image=new Image();image.src=splashUrl;await image.decode();await Promise.all([...document.querySelectorAll('.gameTitleArt')].map(img=>img.decode()).concat((window.GameLifecycle?.requiredImages||[]).map(async src=>{const asset=new Image();asset.src=new URL(src,document.baseURI).href;await asset.decode()})));await document.fonts.ready;document.body.classList.add('galaxy-ready');reportScreen();window.GameLifecycle?.ready(id)}catch(error){window.GameLifecycle?.fail('Не загружен обязательный ресурс игры: заставка, название или персонаж')}
+ try{const image=new Image();image.src=splashUrl;await image.decode();await Promise.all([...document.querySelectorAll('.gameTitleArt,.parcelArt,.receiverArt')].map(img=>img.decode()).concat((window.GameLifecycle?.requiredImages||[]).map(async src=>{const asset=new Image();asset.src=new URL(src,document.baseURI).href;await asset.decode()})));await document.fonts.ready;document.body.classList.add('galaxy-ready');reportScreen();window.GameLifecycle?.ready(id)}catch(error){window.GameLifecycle?.fail('Не загружен обязательный ресурс игры: заставка, название или персонаж')}
 });
 })();

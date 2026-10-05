@@ -28,3 +28,13 @@ body[data-game="radio-beacon"].paused .pauseCurtain{display:grid}
 @media(min-width:700px) and (orientation:landscape){body[data-game="radio-beacon"] #game.screen.active{display:grid;grid-template-columns:minmax(280px,500px) minmax(190px,300px);grid-template-rows:auto auto auto auto auto;align-content:start;justify-content:center;gap:12px}body[data-game="radio-beacon"] #game .topbar,body[data-game="radio-beacon"] #game .hud{grid-column:1/-1;width:100%;max-width:814px}body[data-game="radio-beacon"] .gameArea{grid-column:1;grid-row:3/6}body[data-game="radio-beacon"] .beaconField{padding:20px;min-height:360px}body[data-game="radio-beacon"] #game .playerBar{grid-column:2;grid-row:3}body[data-game="radio-beacon"] .tuneControls{grid-column:2;grid-row:4}body[data-game="radio-beacon"] #game .controls{grid-column:2;grid-row:5}}
 body[data-game="radio-beacon"] #game .gameTitleArt{height:70px}
 @media(orientation:landscape) and (max-height:500px){body[data-game="radio-beacon"] #game .gameTitleArt{height:48px}}
+/* Illustrated receiver; all tuning and percentages stay real HTML controls. */
+body[data-game="radio-beacon"] .beaconField{background:radial-gradient(ellipse at 50% 20%,#bf54b72b,transparent 56%),var(--retro-glass)}
+body[data-game="radio-beacon"] .antennaScene{height:116px;isolation:isolate}
+body[data-game="radio-beacon"] .receiverArt{position:relative;z-index:2;width:160px;height:116px;object-fit:contain;filter:drop-shadow(0 7px 12px #dd68c644);pointer-events:none}
+body[data-game="radio-beacon"] .signalHalo{position:absolute;z-index:0;width:170px;height:100px;top:12px;border:1px solid #d888de55;border-radius:50%;box-shadow:0 0 20px #cc64bb22,inset 0 0 18px #cc64bb22;transform:rotate(-12deg)}
+body[data-game="radio-beacon"] .linkBadge{z-index:3;background:#b54d9640;border-color:#ffc3e666;color:#ffe1ef}
+body[data-game="radio-beacon"] .frequencyDisplay b{color:#ffe0d9;text-shadow:0 0 15px #ed67ae55}
+body[data-game="radio-beacon"] .meter{height:12px;background:linear-gradient(90deg,#aa719722,#b480d522);border-color:#efb9e144}
+body[data-game="radio-beacon"] .meter>div{background:linear-gradient(90deg,#d159cf,#ff7ebd,#ffd0ae);box-shadow:0 0 12px #ff82c777}
+body[data-game="radio-beacon"] #lockBtn[aria-pressed="true"]{background:linear-gradient(130deg,#cf67b255,#925acd44);border-color:#ffc3e6;box-shadow:0 0 16px #df6cbd33}

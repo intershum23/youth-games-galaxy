@@ -7,7 +7,13 @@ body{display:block;padding:0;overflow:hidden;font-family:var(--font-ui)}
 body .screen{position:fixed;inset:0;transform:none;box-sizing:border-box;width:100%;height:100dvh;max-width:100%;max-height:none;box-shadow:none;background:linear-gradient(180deg,#12153866,#080b2477);overflow:auto}
 body .screen:not(.active){display:none}
 #splash.screen{padding:0;background:#04082a var(--game-splash) center/contain no-repeat;overflow:hidden}
-#splash button{display:flex;align-items:center;justify-content:center;position:absolute;left:50%;bottom:max(24px,env(safe-area-inset-bottom));transform:translateX(-50%);width:min(82%,440px);min-height:60px;padding:16px;border:0;border-radius:999px;background:linear-gradient(100deg,#ff42a7,#ff9c42);color:white;font:900 clamp(20px,5.8vw,30px)/1.1 var(--font-accent);z-index:2;cursor:pointer;opacity:1}
+#splash .splashActions{position:absolute;z-index:3;left:50%;bottom:max(16px,env(safe-area-inset-bottom));transform:translateX(-50%);width:min(88%,440px);display:grid;gap:7px}
+#splash #startBtn{position:static;display:flex;align-items:center;justify-content:center;transform:none;width:100%;min-height:56px;padding:14px;border:1px solid #ffd3ea55;border-radius:999px;background:linear-gradient(100deg,#ff42a7,#ff9c42);color:white;font:800 clamp(18px,5vw,26px)/1.1 var(--font-accent);cursor:pointer;opacity:1}
+#splash .splashRules{position:static;width:100%;min-height:44px;padding:10px;border-radius:999px;border:1px solid #ffe2ff55;background:rgba(16,24,51,.64);backdrop-filter:blur(12px);color:#fff;font:700 13px var(--font-ui);cursor:pointer}
+body.desktop-host #splash .splashActions{padding:12px;border-radius:28px;background:linear-gradient(140deg,#271c46df,#14213fdf);border:1px solid #ecc5ff66;box-shadow:0 12px 36px #0006,0 0 26px #ff4fbd1a}
+body.desktop-host #splash.screen{background-position:center top;background-size:auto calc(100% - 122px)}
+@media(orientation:landscape) and (max-height:500px){#splash .splashActions{grid-template-columns:1.6fr 1fr;gap:8px;bottom:10px}#splash #startBtn{font-size:16px;min-height:44px;padding:10px}body.desktop-host #splash.screen{background-size:auto calc(100% - 68px)}body.desktop-host #splash .splashActions{padding:7px}}
+
 #allGames{position:fixed;left:max(10px,env(safe-area-inset-left));top:max(10px,env(safe-area-inset-top));z-index:80;border:1px solid #62eaff99;border-radius:999px;padding:10px 14px;background:#121164ed;color:white;font:800 13px var(--font-ui);cursor:pointer;min-height:40px}
 /* Selection screens use normal flow, including Domino and Solitaire. */
 body #menu.screen{background:linear-gradient(180deg,#12153888,#080b24a8);position:fixed;inset:60px 0 0;transform:none;width:100%;height:calc(100dvh - 60px);padding:8px 14px 24px;overflow:auto;flex-direction:column;align-items:center;gap:0}
@@ -153,7 +159,7 @@ body .game-modal>.modal-card{display:block;flex:none;width:min(100%,560px);max-h
 .overlay,.modal{max-width:100%;box-sizing:border-box}
 .overlay .sheet,.modal .sheet,.modalBox{max-height:85dvh;overflow:auto}
 body #game.active #rotateNotice,body #game.active #rotateOverlay,.logo,.menuLogo,.menuGameLogo,.splashLogo,.s2048Logo,.brand,.finalCosmicLogo,.miniLogo,img[src*="logo" i]{display:none}
-@media(orientation:landscape){body #menu.screen,body #game.screen{padding-top:8px;padding-inline:max(16px,calc((100vw - 560px)/2));overflow:auto}#splash button{min-height:46px;padding:10px;bottom:12px}#menu [data-hero]{min-height:150px}#menu [data-hero]>img,#menu .heroPortrait,#menu .heroPic,#menu .heroPortrait img,#menu .heroPic img{height:100px}}
+@media(orientation:landscape){body #menu.screen,body #game.screen{padding-top:8px;padding-inline:max(16px,calc((100vw - 560px)/2));overflow:auto}#splash #startBtn{min-height:46px;padding:10px}#menu [data-hero]{min-height:150px}#menu [data-hero]>img,#menu .heroPortrait,#menu .heroPic,#menu .heroPortrait img,#menu .heroPic img{height:100px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 
 /* Typography roles shared across all engines; dimensions remain game-owned. */
@@ -241,7 +247,7 @@ body[data-game="2048"] .tile{box-shadow:inset 0 1px 0 #ffffff66,0 3px 7px #0003;
 /* No alternate galaxy paints before the splash is decoded. */
 html:has(body:not(.galaxy-ready)),body:not(.galaxy-ready){background:#04082a}
 body:not(.galaxy-ready) #app{visibility:hidden}
-body:has(#splash.active) #allGames,body:not(.galaxy-ready) #allGames{display:none}
+body:not(.galaxy-ready) #allGames{display:none}
 
 /* Balanced header columns center title art on the screen, independent of sound control. */
 #game .topbar:has(.gameTitleArt),#game .topBar:has(.gameTitleArt){grid-template-columns:42px minmax(0,1fr) 42px;gap:8px}

@@ -108,3 +108,5 @@ button:disabled{opacity:.5;cursor:default}
 @media(prefers-reduced-motion:reduce){.catalogTitleArt{transition:none;transform:none!important}}
 
 
+/* Independent launch and rules targets, never a button inside another button. */
+.card>.gameLaunch{display:flex;flex-direction:column;flex:1;min-width:0;border-radius:26px 26px 0 0}.cardRules{position:relative;z-index:3;margin:0 16px 14px;padding:10px 13px;min-height:44px;display:flex;justify-content:space-between;gap:8px;align-items:center;border:1px solid #ffc1ed55;border-radius:14px;background:#9f55c522;color:#ffe2f3;font:700 12px var(--font-ui);text-align:left}.cardRules:hover{background:#c557ac35}.cardRules:focus-visible{outline:3px solid #9ceee8;outline-offset:2px}

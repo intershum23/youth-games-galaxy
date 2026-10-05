@@ -5,51 +5,57 @@
   "assets": [
     {
       "path": "assets/icons/energy-capsules.png",
-      "size": "240×240",
       "alpha": true,
       "purpose": "catalog default illustration: Captain Corgi with capsules",
       "bytes": 80511,
-      "sha256": "aec3f08e444601236b66bb0c6c8abdca08a0d8592f07f3dea3b2ddcf3cb03b01"
+      "sha256": "aec3f08e444601236b66bb0c6c8abdca08a0d8592f07f3dea3b2ddcf3cb03b01",
+      "width": 240,
+      "height": 240
     },
     {
       "path": "assets/icons/energy-capsules-active.png",
-      "size": "240×240",
       "alpha": true,
       "purpose": "catalog active illustration: same Corgi winking",
       "bytes": 81630,
-      "sha256": "aa6f860f49bb3f5560f636e2bf04dda985b24f0333f60dadca10d54047a0079d"
+      "sha256": "aa6f860f49bb3f5560f636e2bf04dda985b24f0333f60dadca10d54047a0079d",
+      "width": 240,
+      "height": 240
     },
     {
       "path": "assets/titles/energy-capsules.png",
-      "size": "600×200",
       "alpha": true,
       "purpose": "final «Капсулы» wordmark in the shared warm ivory/peach, hot-pink/magenta and violet title style",
       "bytes": 114849,
-      "sha256": "a31f7c387e61b255e33889158c3a4e908247b4a459405f66c6f42eaa8509173d"
+      "sha256": "a31f7c387e61b255e33889158c3a4e908247b4a459405f66c6f42eaa8509173d",
+      "width": 600,
+      "height": 200
     },
     {
       "path": "assets/splashes/energy-capsules.png",
-      "size": "270×480",
       "alpha": false,
       "purpose": "portrait splash with Corgi, Cosmic Cat and capsules; HTML launch button remains separate",
-      "bytes": 34353,
-      "sha256": "cfaaf5044c2e0ee46f06037c0e666c2a4816475641534a277dc16b0090ecf6cf"
+      "bytes": 2855732,
+      "sha256": "939e47b06761f0bb5624bf6eb01706c4a39b86949388d663e68358752d15d1d3",
+      "width": 941,
+      "height": 1672
     },
     {
       "path": "games/energy-capsules/assets/corgi-poses.png",
-      "size": "1254×1254",
       "alpha": true,
       "purpose": "2x2 gameplay pose sheet: upper-left, upper-right, lower-left, lower-right",
       "bytes": 1379990,
-      "sha256": "fade2f1d86a31afd35d47926345b8092c3c006ee0ac8caa541105e46e122aa9d"
+      "sha256": "fade2f1d86a31afd35d47926345b8092c3c006ee0ac8caa541105e46e122aa9d",
+      "width": 1254,
+      "height": 1254
     },
     {
       "path": "games/energy-capsules/assets/cat-poses.png",
-      "size": "1254×1254",
       "alpha": true,
       "purpose": "2x2 gameplay pose sheet: upper-left, upper-right, lower-left, lower-right",
       "bytes": 1283017,
-      "sha256": "24db62620d34faf0cf9ab8f368a3ef383b2fcbf29f35f997c909346dc2c7aa3e"
+      "sha256": "24db62620d34faf0cf9ab8f368a3ef383b2fcbf29f35f997c909346dc2c7aa3e",
+      "width": 1254,
+      "height": 1254
     }
   ],
   "generatedBy": "image_gen + deterministic export",
@@ -59,5 +65,6 @@
     "Catalog default and active poses are separate approved assets.",
     "Gameplay switches sprite-sheet position instead of stretching one static hero image.",
     "All generated image files are installed in-repository and do not depend on external URLs."
-  ]
+  ],
+  "presentationVersion": "16.17.0"
 }
