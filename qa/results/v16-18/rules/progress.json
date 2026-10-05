@@ -1,0 +1,1294 @@
+[
+  {
+    "id": "2048",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "backgammon",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "checkers",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "chess",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "connect4",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "corners",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "domino",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "fifteen",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "gomoku",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "mahjong",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "memory",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "reversi",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "solitaire",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "starbattle",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "sudoku",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "tictactoe",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "energy-capsules",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "space-mail",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "radio-beacon",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "2048",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "backgammon",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "checkers",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "chess",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "connect4",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "corners",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "domino",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "fifteen",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "gomoku",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "mahjong",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "memory",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "reversi",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "solitaire",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "starbattle",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "sudoku",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "tictactoe",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "energy-capsules",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "space-mail",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "radio-beacon",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "2048",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "backgammon",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "checkers",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "chess",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "connect4",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "corners",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "domino",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "fifteen",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "gomoku",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "mahjong",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "memory",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "reversi",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "solitaire",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "starbattle",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "sudoku",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "tictactoe",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "energy-capsules",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "space-mail",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "radio-beacon",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "2048",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "backgammon",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "checkers",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "chess",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "connect4",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "corners",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "domino",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "fifteen",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "gomoku",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "mahjong",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "memory",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "reversi",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "solitaire",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "starbattle",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "sudoku",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "tictactoe",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "energy-capsules",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "space-mail",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  },
+  {
+    "id": "radio-beacon",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "errors": [],
+    "checks": [
+      "separate rules target does not launch",
+      "3 actual per-game rule paragraphs",
+      "Escape restores focus",
+      "launch src assigned in native click event without delay",
+      "splash exit visible and works",
+      "splash rules visible and modal fits",
+      "desktop action dock when applicable",
+      "no console/page/HTTP errors"
+    ]
+  }
+]

@@ -1,0 +1,264 @@
+{
+  "engine": "Chromium 153 / native touch and mouse",
+  "rows": [
+    {
+      "id": "energy-capsules",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "real catch; all four poses; guide mask retained",
+        "live illustrated field, centered title, no nav/control overlap, assets"
+      ],
+      "errors": []
+    },
+    {
+      "id": "space-mail",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "live label glyph/name fully inside label; one native delivery; animation cleanup",
+        "live illustrated field, centered title, no nav/control overlap, assets"
+      ],
+      "errors": []
+    },
+    {
+      "id": "radio-beacon",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "real signal drives spectrum; natural message drives delivered node",
+        "live illustrated field, centered title, no nav/control overlap, assets"
+      ],
+      "errors": []
+    },
+    {
+      "id": "ambient-music",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "gesture unlock, decoded MP3 advances, quiet volume, mute, persisted preference/reload, game pause/exit resume, records pause/catalog resume"
+      ],
+      "errors": []
+    },
+    {
+      "id": "energy-capsules",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "real catch; all four poses; guide mask retained",
+        "live illustrated field, centered title, no nav/control overlap, assets"
+      ],
+      "errors": []
+    },
+    {
+      "id": "space-mail",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "live label glyph/name fully inside label; one native delivery; animation cleanup",
+        "live illustrated field, centered title, no nav/control overlap, assets"
+      ],
+      "errors": []
+    },
+    {
+      "id": "radio-beacon",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "real signal drives spectrum; natural message drives delivered node",
+        "live illustrated field, centered title, no nav/control overlap, assets"
+      ],
+      "errors": []
+    },
+    {
+      "id": "ambient-music",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "checks": [
+        "gesture unlock, decoded MP3 advances, quiet volume, mute, persisted preference/reload, game pause/exit resume, records pause/catalog resume"
+      ],
+      "errors": []
+    },
+    {
+      "id": "energy-capsules",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "real catch; all four poses; guide mask retained",
+        "live illustrated field, centered title, no nav/control overlap, assets"
+      ],
+      "errors": []
+    },
+    {
+      "id": "space-mail",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "live label glyph/name fully inside label; one native delivery; animation cleanup",
+        "live illustrated field, centered title, no nav/control overlap, assets"
+      ],
+      "errors": []
+    },
+    {
+      "id": "radio-beacon",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "real signal drives spectrum; natural message drives delivered node",
+        "live illustrated field, centered title, no nav/control overlap, assets"
+      ],
+      "errors": []
+    },
+    {
+      "id": "ambient-music",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "checks": [
+        "gesture unlock, decoded MP3 advances, quiet volume, mute, persisted preference/reload, game pause/exit resume, records pause/catalog resume"
+      ],
+      "errors": []
+    },
+    {
+      "id": "energy-capsules",
+      "width": 1280,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "real catch; all four poses; guide mask retained",
+        "live illustrated field, centered title, no nav/control overlap, assets"
+      ],
+      "errors": []
+    },
+    {
+      "id": "space-mail",
+      "width": 1280,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "live label glyph/name fully inside label; one native delivery; animation cleanup",
+        "live illustrated field, centered title, no nav/control overlap, assets"
+      ],
+      "errors": []
+    },
+    {
+      "id": "radio-beacon",
+      "width": 1280,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "real signal drives spectrum; natural message drives delivered node",
+        "live illustrated field, centered title, no nav/control overlap, assets"
+      ],
+      "errors": []
+    },
+    {
+      "id": "ambient-music",
+      "width": 1280,
+      "height": 800,
+      "status": "PASS",
+      "checks": [
+        "gesture unlock, decoded MP3 advances, quiet volume, mute, persisted preference/reload, game pause/exit resume, records pause/catalog resume"
+      ],
+      "errors": []
+    },
+    {
+      "id": "energy-capsules",
+      "width": 1920,
+      "height": 1080,
+      "status": "PASS",
+      "checks": [
+        "real catch; all four poses; guide mask retained",
+        "live illustrated field, centered title, no nav/control overlap, assets"
+      ],
+      "errors": []
+    },
+    {
+      "id": "space-mail",
+      "width": 1920,
+      "height": 1080,
+      "status": "PASS",
+      "checks": [
+        "live label glyph/name fully inside label; one native delivery; animation cleanup",
+        "live illustrated field, centered title, no nav/control overlap, assets"
+      ],
+      "errors": []
+    },
+    {
+      "id": "radio-beacon",
+      "width": 1920,
+      "height": 1080,
+      "status": "PASS",
+      "checks": [
+        "real signal drives spectrum; natural message drives delivered node",
+        "live illustrated field, centered title, no nav/control overlap, assets"
+      ],
+      "errors": []
+    },
+    {
+      "id": "ambient-music",
+      "width": 1920,
+      "height": 1080,
+      "status": "PASS",
+      "checks": [
+        "actual 64s audio playback and loop wrap",
+        "gesture unlock, decoded MP3 advances, quiet volume, mute, persisted preference/reload, game pause/exit resume, records pause/catalog resume"
+      ],
+      "errors": []
+    },
+    {
+      "id": "energy-capsules",
+      "width": 844,
+      "height": 390,
+      "status": "PASS",
+      "checks": [
+        "real catch; all four poses; guide mask retained",
+        "live illustrated field, centered title, no nav/control overlap, assets"
+      ],
+      "errors": []
+    },
+    {
+      "id": "space-mail",
+      "width": 844,
+      "height": 390,
+      "status": "PASS",
+      "checks": [
+        "live label glyph/name fully inside label; one native delivery; animation cleanup",
+        "live illustrated field, centered title, no nav/control overlap, assets"
+      ],
+      "errors": []
+    },
+    {
+      "id": "radio-beacon",
+      "width": 844,
+      "height": 390,
+      "status": "PASS",
+      "checks": [
+        "real signal drives spectrum; natural message drives delivered node",
+        "live illustrated field, centered title, no nav/control overlap, assets"
+      ],
+      "errors": []
+    },
+    {
+      "id": "ambient-music",
+      "width": 844,
+      "height": 390,
+      "status": "PASS",
+      "checks": [
+        "gesture unlock, decoded MP3 advances, quiet volume, mute, persisted preference/reload, game pause/exit resume, records pause/catalog resume"
+      ],
+      "errors": []
+    }
+  ]
+}

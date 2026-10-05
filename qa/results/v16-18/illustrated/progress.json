@@ -1,0 +1,259 @@
+[
+  {
+    "id": "energy-capsules",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "checks": [
+      "real catch; all four poses; guide mask retained",
+      "live illustrated field, centered title, no nav/control overlap, assets"
+    ],
+    "errors": []
+  },
+  {
+    "id": "space-mail",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "checks": [
+      "live label glyph/name fully inside label; one native delivery; animation cleanup",
+      "live illustrated field, centered title, no nav/control overlap, assets"
+    ],
+    "errors": []
+  },
+  {
+    "id": "radio-beacon",
+    "width": 360,
+    "height": 800,
+    "status": "PASS",
+    "checks": [
+      "real signal drives spectrum; natural message drives delivered node",
+      "live illustrated field, centered title, no nav/control overlap, assets"
+    ],
+    "errors": []
+  },
+  {
+    "id": "ambient-music",
+    "width": 360,
+    "height": 800,
+    "status": "FAIL",
+    "checks": [],
+    "errors": [],
+    "failure": "locator.scrollIntoViewIfNeeded: Timeout 29978.296000000002ms exceeded.\nCall log:\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    2 × waiting for element to be stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying scroll into view action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying scroll into view action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying scroll into view action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at press (/workspace/scratch/f97e7cd33a7f/galaxy/qa/radio-beacon-qa.cjs:3:65)\n    at /workspace/scratch/f97e7cd33a7f/galaxy/qa/illustrated-worlds-qa.cjs:9:388"
+  },
+  {
+    "id": "energy-capsules",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "checks": [
+      "real catch; all four poses; guide mask retained",
+      "live illustrated field, centered title, no nav/control overlap, assets"
+    ],
+    "errors": []
+  },
+  {
+    "id": "space-mail",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "checks": [
+      "live label glyph/name fully inside label; one native delivery; animation cleanup",
+      "live illustrated field, centered title, no nav/control overlap, assets"
+    ],
+    "errors": []
+  },
+  {
+    "id": "radio-beacon",
+    "width": 390,
+    "height": 844,
+    "status": "PASS",
+    "checks": [
+      "real signal drives spectrum; natural message drives delivered node",
+      "live illustrated field, centered title, no nav/control overlap, assets"
+    ],
+    "errors": []
+  },
+  {
+    "id": "ambient-music",
+    "width": 390,
+    "height": 844,
+    "status": "FAIL",
+    "checks": [],
+    "errors": [],
+    "failure": "locator.scrollIntoViewIfNeeded: Timeout 29960.468ms exceeded.\nCall log:\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    2 × waiting for element to be stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying scroll into view action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying scroll into view action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying scroll into view action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at press (/workspace/scratch/f97e7cd33a7f/galaxy/qa/radio-beacon-qa.cjs:3:65)\n    at /workspace/scratch/f97e7cd33a7f/galaxy/qa/illustrated-worlds-qa.cjs:9:388"
+  },
+  {
+    "id": "energy-capsules",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "checks": [
+      "real catch; all four poses; guide mask retained",
+      "live illustrated field, centered title, no nav/control overlap, assets"
+    ],
+    "errors": []
+  },
+  {
+    "id": "space-mail",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "checks": [
+      "live label glyph/name fully inside label; one native delivery; animation cleanup",
+      "live illustrated field, centered title, no nav/control overlap, assets"
+    ],
+    "errors": []
+  },
+  {
+    "id": "radio-beacon",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "checks": [
+      "real signal drives spectrum; natural message drives delivered node",
+      "live illustrated field, centered title, no nav/control overlap, assets"
+    ],
+    "errors": []
+  },
+  {
+    "id": "ambient-music",
+    "width": 430,
+    "height": 932,
+    "status": "PASS",
+    "checks": [
+      "gesture unlock, decoded MP3 advances, quiet volume, mute, persisted preference/reload, game pause/exit resume, records pause/catalog resume"
+    ],
+    "errors": []
+  },
+  {
+    "id": "energy-capsules",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "checks": [
+      "real catch; all four poses; guide mask retained",
+      "live illustrated field, centered title, no nav/control overlap, assets"
+    ],
+    "errors": []
+  },
+  {
+    "id": "space-mail",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "checks": [
+      "live label glyph/name fully inside label; one native delivery; animation cleanup",
+      "live illustrated field, centered title, no nav/control overlap, assets"
+    ],
+    "errors": []
+  },
+  {
+    "id": "radio-beacon",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "checks": [
+      "real signal drives spectrum; natural message drives delivered node",
+      "live illustrated field, centered title, no nav/control overlap, assets"
+    ],
+    "errors": []
+  },
+  {
+    "id": "ambient-music",
+    "width": 1280,
+    "height": 800,
+    "status": "PASS",
+    "checks": [
+      "gesture unlock, decoded MP3 advances, quiet volume, mute, persisted preference/reload, game pause/exit resume, records pause/catalog resume"
+    ],
+    "errors": []
+  },
+  {
+    "id": "energy-capsules",
+    "width": 1920,
+    "height": 1080,
+    "status": "PASS",
+    "checks": [
+      "real catch; all four poses; guide mask retained",
+      "live illustrated field, centered title, no nav/control overlap, assets"
+    ],
+    "errors": []
+  },
+  {
+    "id": "space-mail",
+    "width": 1920,
+    "height": 1080,
+    "status": "PASS",
+    "checks": [
+      "live label glyph/name fully inside label; one native delivery; animation cleanup",
+      "live illustrated field, centered title, no nav/control overlap, assets"
+    ],
+    "errors": []
+  },
+  {
+    "id": "radio-beacon",
+    "width": 1920,
+    "height": 1080,
+    "status": "PASS",
+    "checks": [
+      "real signal drives spectrum; natural message drives delivered node",
+      "live illustrated field, centered title, no nav/control overlap, assets"
+    ],
+    "errors": []
+  },
+  {
+    "id": "ambient-music",
+    "width": 1920,
+    "height": 1080,
+    "status": "PASS",
+    "checks": [
+      "actual 64s audio playback and loop wrap",
+      "gesture unlock, decoded MP3 advances, quiet volume, mute, persisted preference/reload, game pause/exit resume, records pause/catalog resume"
+    ],
+    "errors": []
+  },
+  {
+    "id": "energy-capsules",
+    "width": 844,
+    "height": 390,
+    "status": "PASS",
+    "checks": [
+      "real catch; all four poses; guide mask retained",
+      "live illustrated field, centered title, no nav/control overlap, assets"
+    ],
+    "errors": []
+  },
+  {
+    "id": "space-mail",
+    "width": 844,
+    "height": 390,
+    "status": "PASS",
+    "checks": [
+      "live label glyph/name fully inside label; one native delivery; animation cleanup",
+      "live illustrated field, centered title, no nav/control overlap, assets"
+    ],
+    "errors": []
+  },
+  {
+    "id": "radio-beacon",
+    "width": 844,
+    "height": 390,
+    "status": "PASS",
+    "checks": [
+      "real signal drives spectrum; natural message drives delivered node",
+      "live illustrated field, centered title, no nav/control overlap, assets"
+    ],
+    "errors": []
+  },
+  {
+    "id": "ambient-music",
+    "width": 844,
+    "height": 390,
+    "status": "PASS",
+    "checks": [
+      "gesture unlock, decoded MP3 advances, quiet volume, mute, persisted preference/reload, game pause/exit resume, records pause/catalog resume"
+    ],
+    "errors": []
+  }
+]

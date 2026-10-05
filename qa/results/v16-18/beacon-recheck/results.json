@@ -1,0 +1,42 @@
+{
+  "engine": "Chromium 153",
+  "date": "2026-10-05T14:45:57.972Z",
+  "rows": [
+    {
+      "width": 390,
+      "height": 844,
+      "mode": "turbo",
+      "status": "PASS",
+      "checks": [
+        "actual touch/mouse buttons",
+        "both heroes + one checkmark",
+        "signal-only search, no target access",
+        "three natural messages and victory",
+        "pause freezes resources/input",
+        "rotation/layout/fonts/assets",
+        "one saved record/replay/records/catalog/reload"
+      ],
+      "errors": [],
+      "final": {
+        "phase": "result",
+        "hero": "cat",
+        "mode": "turbo",
+        "frequency": 55,
+        "signal": 98,
+        "step": 1,
+        "energy": 69.96127840000493,
+        "score": 669,
+        "messages": 3,
+        "progress": 4.516600000000004,
+        "clock": 25032.267999999996,
+        "locked": true,
+        "noise": "clear",
+        "framePending": false,
+        "soundOn": true,
+        "audioState": "suspended",
+        "activeVoices": 0
+      },
+      "noiseSeen": true
+    }
+  ]
+}

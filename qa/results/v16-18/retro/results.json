@@ -1,0 +1,711 @@
+{
+  "engine": "Playwright Chromium 153 / touch emulation",
+  "date": "2026-10-05T14:44:53.754Z",
+  "results": [
+    {
+      "gameId": "energy-capsules",
+      "width": 360,
+      "height": 800,
+      "pageType": "iframe",
+      "mode": "a",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 3,
+        "lives": 0,
+        "caught": 3
+      }
+    },
+    {
+      "gameId": "energy-capsules",
+      "width": 430,
+      "height": 932,
+      "pageType": "iframe",
+      "mode": "a",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 3,
+        "lives": 0,
+        "caught": 3
+      }
+    },
+    {
+      "gameId": "energy-capsules",
+      "width": 390,
+      "height": 844,
+      "pageType": "iframe",
+      "mode": "a",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 3,
+        "lives": 0,
+        "caught": 3
+      }
+    },
+    {
+      "gameId": "energy-capsules",
+      "width": 430,
+      "height": 932,
+      "pageType": "iframe",
+      "mode": "b",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 3,
+        "lives": 0,
+        "caught": 3
+      }
+    },
+    {
+      "gameId": "energy-capsules",
+      "width": 360,
+      "height": 800,
+      "pageType": "iframe",
+      "mode": "b",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 3,
+        "lives": 0,
+        "caught": 3
+      }
+    },
+    {
+      "gameId": "energy-capsules",
+      "width": 390,
+      "height": 844,
+      "pageType": "iframe",
+      "mode": "b",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 3,
+        "lives": 0,
+        "caught": 3
+      }
+    },
+    {
+      "gameId": "energy-capsules",
+      "width": 430,
+      "height": 932,
+      "pageType": "iframe",
+      "mode": "turbo",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 12,
+        "lives": 0,
+        "caught": 4
+      }
+    },
+    {
+      "gameId": "energy-capsules",
+      "width": 360,
+      "height": 800,
+      "pageType": "iframe",
+      "mode": "turbo",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 6,
+        "lives": 0,
+        "caught": 3
+      }
+    },
+    {
+      "gameId": "energy-capsules",
+      "width": 390,
+      "height": 844,
+      "pageType": "iframe",
+      "mode": "turbo",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 6,
+        "lives": 0,
+        "caught": 3
+      }
+    },
+    {
+      "gameId": "space-mail",
+      "width": 430,
+      "height": 932,
+      "pageType": "iframe",
+      "mode": "a",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural finite victory",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 300,
+        "lives": 3,
+        "delivered": 15,
+        "errors": 0
+      }
+    },
+    {
+      "gameId": "space-mail",
+      "width": 360,
+      "height": 800,
+      "pageType": "iframe",
+      "mode": "a",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural finite victory",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 300,
+        "lives": 3,
+        "delivered": 15,
+        "errors": 0
+      }
+    },
+    {
+      "gameId": "space-mail",
+      "width": 390,
+      "height": 844,
+      "pageType": "iframe",
+      "mode": "a",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural finite victory",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 300,
+        "lives": 3,
+        "delivered": 15,
+        "errors": 0
+      }
+    },
+    {
+      "gameId": "space-mail",
+      "width": 430,
+      "height": 932,
+      "pageType": "iframe",
+      "mode": "b",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 30,
+        "lives": 0,
+        "delivered": 3,
+        "errors": 3
+      }
+    },
+    {
+      "gameId": "space-mail",
+      "width": 360,
+      "height": 800,
+      "pageType": "iframe",
+      "mode": "b",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 30,
+        "lives": 0,
+        "delivered": 3,
+        "errors": 3
+      }
+    },
+    {
+      "gameId": "space-mail",
+      "width": 390,
+      "height": 844,
+      "pageType": "iframe",
+      "mode": "b",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 30,
+        "lives": 0,
+        "delivered": 3,
+        "errors": 3
+      }
+    },
+    {
+      "gameId": "space-mail",
+      "width": 430,
+      "height": 932,
+      "pageType": "iframe",
+      "mode": "turbo",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 60,
+        "lives": 0,
+        "delivered": 3,
+        "errors": 3
+      }
+    },
+    {
+      "gameId": "space-mail",
+      "width": 360,
+      "height": 800,
+      "pageType": "iframe",
+      "mode": "turbo",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 60,
+        "lives": 0,
+        "delivered": 3,
+        "errors": 3
+      }
+    },
+    {
+      "gameId": "space-mail",
+      "width": 390,
+      "height": 844,
+      "pageType": "iframe",
+      "mode": "turbo",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 60,
+        "lives": 0,
+        "delivered": 3,
+        "errors": 3
+      }
+    },
+    {
+      "gameId": "energy-capsules",
+      "width": 1280,
+      "height": 800,
+      "pageType": "iframe",
+      "mode": "a",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 5,
+        "lives": 0,
+        "caught": 3
+      }
+    },
+    {
+      "gameId": "energy-capsules",
+      "width": 1920,
+      "height": 1080,
+      "pageType": "iframe",
+      "mode": "a",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 5,
+        "lives": 0,
+        "caught": 3
+      }
+    },
+    {
+      "gameId": "energy-capsules",
+      "width": 1280,
+      "height": 800,
+      "pageType": "iframe",
+      "mode": "b",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 4,
+        "lives": 0,
+        "caught": 4
+      }
+    },
+    {
+      "gameId": "energy-capsules",
+      "width": 1920,
+      "height": 1080,
+      "pageType": "iframe",
+      "mode": "b",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 3,
+        "lives": 0,
+        "caught": 3
+      }
+    },
+    {
+      "gameId": "energy-capsules",
+      "width": 1280,
+      "height": 800,
+      "pageType": "iframe",
+      "mode": "turbo",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 10,
+        "lives": 0,
+        "caught": 3
+      }
+    },
+    {
+      "gameId": "energy-capsules",
+      "width": 1920,
+      "height": 1080,
+      "pageType": "iframe",
+      "mode": "turbo",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 6,
+        "lives": 0,
+        "caught": 3
+      }
+    },
+    {
+      "gameId": "space-mail",
+      "width": 1280,
+      "height": 800,
+      "pageType": "iframe",
+      "mode": "a",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural finite victory",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 300,
+        "lives": 3,
+        "delivered": 15,
+        "errors": 0
+      }
+    },
+    {
+      "gameId": "space-mail",
+      "width": 1920,
+      "height": 1080,
+      "pageType": "iframe",
+      "mode": "a",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural finite victory",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 300,
+        "lives": 3,
+        "delivered": 15,
+        "errors": 0
+      }
+    },
+    {
+      "gameId": "space-mail",
+      "width": 1280,
+      "height": 800,
+      "pageType": "iframe",
+      "mode": "b",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 30,
+        "lives": 0,
+        "delivered": 3,
+        "errors": 3
+      }
+    },
+    {
+      "gameId": "space-mail",
+      "width": 1920,
+      "height": 1080,
+      "pageType": "iframe",
+      "mode": "b",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 30,
+        "lives": 0,
+        "delivered": 3,
+        "errors": 3
+      }
+    },
+    {
+      "gameId": "space-mail",
+      "width": 1280,
+      "height": 800,
+      "pageType": "iframe",
+      "mode": "turbo",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 60,
+        "lives": 0,
+        "delivered": 3,
+        "errors": 3
+      }
+    },
+    {
+      "gameId": "space-mail",
+      "width": 1920,
+      "height": 1080,
+      "pageType": "iframe",
+      "mode": "turbo",
+      "status": "PASS",
+      "checks": [
+        "single touch/catalog/category/search/heroes/centered title/field geometry",
+        "multiple real actions / distinct mechanical loop",
+        "pause freezes clock, objects, input; resume",
+        "rotation safe, automatic pause on phone",
+        "natural terminal loss",
+        "idempotent storage/game records/catalog/Мои рекорды/reload/replay/menu/exit"
+      ],
+      "errors": [],
+      "naturalPlay": true,
+      "final": {
+        "score": 60,
+        "lives": 0,
+        "delivered": 3,
+        "errors": 3
+      }
+    }
+  ]
+}
