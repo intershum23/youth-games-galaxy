@@ -1,0 +1,230 @@
+{
+  "engine": "Chromium 153",
+  "rows": [
+    {
+      "id": "energy-capsules",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "errors": [],
+      "checks": [
+        "standalone splash/exit/rules",
+        "real native touch or mouse action",
+        "one message/catch/delivery",
+        "field/assets/no nav overlap",
+        "safe short landscape scroll",
+        "masked tracks for capsules"
+      ]
+    },
+    {
+      "id": "space-mail",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "errors": [],
+      "checks": [
+        "standalone splash/exit/rules",
+        "real native touch or mouse action",
+        "one message/catch/delivery",
+        "field/assets/no nav overlap",
+        "safe short landscape scroll",
+        "masked tracks for capsules"
+      ]
+    },
+    {
+      "id": "radio-beacon",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "errors": [],
+      "checks": [
+        "standalone splash/exit/rules",
+        "real native touch or mouse action",
+        "one message/catch/delivery",
+        "field/assets/no nav overlap",
+        "safe short landscape scroll",
+        "masked tracks for capsules"
+      ]
+    },
+    {
+      "id": "energy-capsules",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "errors": [],
+      "checks": [
+        "standalone splash/exit/rules",
+        "real native touch or mouse action",
+        "one message/catch/delivery",
+        "field/assets/no nav overlap",
+        "safe short landscape scroll",
+        "masked tracks for capsules"
+      ]
+    },
+    {
+      "id": "space-mail",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "errors": [],
+      "checks": [
+        "standalone splash/exit/rules",
+        "real native touch or mouse action",
+        "one message/catch/delivery",
+        "field/assets/no nav overlap",
+        "safe short landscape scroll",
+        "masked tracks for capsules"
+      ]
+    },
+    {
+      "id": "radio-beacon",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "errors": [],
+      "checks": [
+        "standalone splash/exit/rules",
+        "real native touch or mouse action",
+        "one message/catch/delivery",
+        "field/assets/no nav overlap",
+        "safe short landscape scroll",
+        "masked tracks for capsules"
+      ]
+    },
+    {
+      "id": "energy-capsules",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "errors": [],
+      "checks": [
+        "standalone splash/exit/rules",
+        "real native touch or mouse action",
+        "one message/catch/delivery",
+        "field/assets/no nav overlap",
+        "safe short landscape scroll",
+        "masked tracks for capsules"
+      ]
+    },
+    {
+      "id": "space-mail",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "errors": [],
+      "checks": [
+        "standalone splash/exit/rules",
+        "real native touch or mouse action",
+        "one message/catch/delivery",
+        "field/assets/no nav overlap",
+        "safe short landscape scroll",
+        "masked tracks for capsules"
+      ]
+    },
+    {
+      "id": "radio-beacon",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "errors": [],
+      "checks": [
+        "standalone splash/exit/rules",
+        "real native touch or mouse action",
+        "one message/catch/delivery",
+        "field/assets/no nav overlap",
+        "safe short landscape scroll",
+        "masked tracks for capsules"
+      ]
+    },
+    {
+      "id": "energy-capsules",
+      "width": 1280,
+      "height": 800,
+      "status": "PASS",
+      "errors": [],
+      "checks": [
+        "standalone splash/exit/rules",
+        "real native touch or mouse action",
+        "one message/catch/delivery",
+        "field/assets/no nav overlap",
+        "safe short landscape scroll",
+        "masked tracks for capsules"
+      ]
+    },
+    {
+      "id": "space-mail",
+      "width": 1280,
+      "height": 800,
+      "status": "PASS",
+      "errors": [],
+      "checks": [
+        "standalone splash/exit/rules",
+        "real native touch or mouse action",
+        "one message/catch/delivery",
+        "field/assets/no nav overlap",
+        "safe short landscape scroll",
+        "masked tracks for capsules"
+      ]
+    },
+    {
+      "id": "radio-beacon",
+      "width": 1280,
+      "height": 800,
+      "status": "PASS",
+      "errors": [],
+      "checks": [
+        "standalone splash/exit/rules",
+        "real native touch or mouse action",
+        "one message/catch/delivery",
+        "field/assets/no nav overlap",
+        "safe short landscape scroll",
+        "masked tracks for capsules"
+      ]
+    },
+    {
+      "id": "energy-capsules",
+      "width": 844,
+      "height": 390,
+      "status": "PASS",
+      "errors": [],
+      "checks": [
+        "standalone splash/exit/rules",
+        "real native touch or mouse action",
+        "one message/catch/delivery",
+        "field/assets/no nav overlap",
+        "safe short landscape scroll",
+        "masked tracks for capsules"
+      ]
+    },
+    {
+      "id": "space-mail",
+      "width": 844,
+      "height": 390,
+      "status": "PASS",
+      "errors": [],
+      "checks": [
+        "standalone splash/exit/rules",
+        "real native touch or mouse action",
+        "one message/catch/delivery",
+        "field/assets/no nav overlap",
+        "safe short landscape scroll",
+        "masked tracks for capsules"
+      ]
+    },
+    {
+      "id": "radio-beacon",
+      "width": 844,
+      "height": 390,
+      "status": "PASS",
+      "errors": [],
+      "checks": [
+        "standalone splash/exit/rules",
+        "real native touch or mouse action",
+        "one message/catch/delivery",
+        "field/assets/no nav overlap",
+        "safe short landscape scroll",
+        "masked tracks for capsules"
+      ]
+    }
+  ]
+}

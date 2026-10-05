@@ -1,27 +1,32 @@
 {
-  "version": "v16.16.0 RETRO ORBIT — RADIO BEACON",
+  "version": "v16.17.0 RETRO ORBIT — VISUAL POLISH AND RULES",
   "scope": "repository source; ignored browser screenshot exports are additional release ZIP evidence",
   "exclusions": [
     "FILE_MAP.json",
     "FILE_MAP.txt",
     "FILES_SHA256SUMS.txt"
   ],
-  "fileCount": 671,
+  "fileCount": 700,
   "files": [
     {
       "path": ".gitignore",
-      "size": 208,
-      "sha256": "01b11cbae279eb71ff302ccaeb4676da38be2d99b7db16668c0d05d1c68d083e"
+      "size": 343,
+      "sha256": "aee2a96c83712edb08ed248cd864c6118f86de37465c7be5ff59eb0cf364ba59"
     },
     {
       "path": "ADDING_GAMES_RU.md",
-      "size": 6872,
-      "sha256": "ae63af647e1d12e9934d983fe73cbdf7bf59abfcc7e9f91f0ced59e3583c75f4"
+      "size": 7671,
+      "sha256": "590445b0f6ae2c94a9672c3dacb0a8700b6dd6e79b99d4786cc725aa93521a2d"
     },
     {
       "path": "API_CONTRACT.md",
       "size": 1183,
       "sha256": "4451a588fd83fff789d012cf6c22bd83231ec2edb51c35cd0a35bb427a250ced"
+    },
+    {
+      "path": "ART_v16_17_PROMPTS_RU.md",
+      "size": 4658,
+      "sha256": "b3f9652513ccf98c7d5ed20daa07e0ce3847f4d9a2126a7f6144c8d75c5239a8"
     },
     {
       "path": "NEW_GAME_PROMPT_RU.md",
@@ -97,6 +102,11 @@
       "path": "QA_v16_16_RADIO_BEACON_RU.md",
       "size": 12135,
       "sha256": "f50f380263c9305b128b3c800de2238f118719b33f8b357e3858644d4f9b6922"
+    },
+    {
+      "path": "QA_v16_17_VISUAL_RULES_RU.md",
+      "size": 12594,
+      "sha256": "1e019adbf91c7dcff067a23b49d7fe346a232244dae74d0fe32c3678f5e3cc76"
     },
     {
       "path": "QA_v16_8_RU.md",
@@ -205,8 +215,8 @@
     },
     {
       "path": "VERSION.txt",
-      "size": 38,
-      "sha256": "ca5252720c1413164b2bc38fa532ee2e65c25b7bd8c5fb9f4db4b2e0779e494e"
+      "size": 49,
+      "sha256": "5e8af2f297207e0defddc751af5e5fd58e3b5a659ef7e31583790df0cc0ff15d"
     },
     {
       "path": "assets/cat.png",
@@ -834,6 +844,46 @@
       "sha256": "add0236ca8cdb21df54e1382d7f75ecb164dd5b5eda99b529e33ec68fa071b01"
     },
     {
+      "path": "assets/retro-props/mail-parcel.png",
+      "size": 1797096,
+      "sha256": "98c7aa4cd30052c098fb9912aff9ca44b260649d0a5ba0078e970de1064269ad"
+    },
+    {
+      "path": "assets/retro-props/mail-parcel.webp",
+      "size": 367978,
+      "sha256": "05e5f90f5d90871e23290b93edf85881f81bae92974d856de5694d0992b1a726"
+    },
+    {
+      "path": "assets/retro-props/mail-title-frame.png",
+      "size": 1509928,
+      "sha256": "cd7efc335832433b9b505b00a597b839bf0fa63f273884443642a53c283dccf5"
+    },
+    {
+      "path": "assets/retro-props/mail-title-frame.webp",
+      "size": 526726,
+      "sha256": "0696a3cd1f261a86aa7c7c5597b0211e83de65337cb63ed164cca5be16100b66"
+    },
+    {
+      "path": "assets/retro-props/radio-receiver.png",
+      "size": 1826435,
+      "sha256": "41f574e9e13483b24b3e7503faa11666bef53c5906687c04dec7f036480281e8"
+    },
+    {
+      "path": "assets/retro-props/radio-receiver.webp",
+      "size": 400588,
+      "sha256": "5b1b87f00cb2914984048ec2860bb49eee40b8ee78442b96776a4b44ec96a235"
+    },
+    {
+      "path": "assets/retro-props/radio-title-frame.png",
+      "size": 1510380,
+      "sha256": "e252affbfb54adb34ec3bcb0afccd9e17dd8c0307ed0cc357a277b3d94327936"
+    },
+    {
+      "path": "assets/retro-props/radio-title-frame.webp",
+      "size": 478592,
+      "sha256": "7b202022019b47fc5365c477ed25b705c2308484e01457c36fa139c2319819a8"
+    },
+    {
       "path": "assets/source/galaxy-hero-v16-11.png",
       "size": 2320489,
       "sha256": "340076a38c7c904d8ccc02318041478bf829a1c42f8214ad31fc965c3e08668c"
@@ -875,13 +925,13 @@
     },
     {
       "path": "assets/splashes/energy-capsules.png",
-      "size": 34353,
-      "sha256": "cfaaf5044c2e0ee46f06037c0e666c2a4816475641534a277dc16b0090ecf6cf"
+      "size": 2855732,
+      "sha256": "939e47b06761f0bb5624bf6eb01706c4a39b86949388d663e68358752d15d1d3"
     },
     {
       "path": "assets/splashes/energy-capsules.webp",
-      "size": 460584,
-      "sha256": "223380dade15d361e971913fcf69276f3dec0fe79a58f387097e29d966981530"
+      "size": 594406,
+      "sha256": "abaff6a7547c869c2e9aab1152bdf26b3ce22d0a81de7b64c8f2e7f89293b533"
     },
     {
       "path": "assets/splashes/fifteen.webp",
@@ -1065,8 +1115,8 @@
     },
     {
       "path": "assets/titles/radio-beacon.png",
-      "size": 283455,
-      "sha256": "c785ed3abcb0964d4b0f6f76f83dff41d6616cc8a8c12807be621ad94231b9ae"
+      "size": 1686697,
+      "sha256": "0ce943ffd179a766c6b04d3da463fdafe024b0ea37a1088e816469506fd574d1"
     },
     {
       "path": "assets/titles/reversi.png",
@@ -1170,8 +1220,8 @@
     },
     {
       "path": "assets/titles/space-mail.png",
-      "size": 305865,
-      "sha256": "f3a9552d434bb460c84b3ef43b9ccf58a949920ac0618f1d2280f4e444c08b43"
+      "size": 1682081,
+      "sha256": "f2526ca681130289b43f25218c0248407630c32f939325386ef8a72a203db7ce"
     },
     {
       "path": "assets/titles/starbattle.png",
@@ -1226,7 +1276,7 @@
     {
       "path": "catalog.generated.js",
       "size": 9563,
-      "sha256": "1f795afd38ccbb872e6ec92fe14cf8ece56a969c724e091208e141d8d829ab4b"
+      "sha256": "b84dc7ccaae11061376d9f009c4a57b65c6a1bdf8a21faac427393fc2e946106"
     },
     {
       "path": "game-lifecycle.js",
@@ -1234,19 +1284,24 @@
       "sha256": "104f257e7847c3f0819c2a264c81591db623172d7bde946daef4d34896527743"
     },
     {
+      "path": "game-rules.js",
+      "size": 12856,
+      "sha256": "d0799c7bea16dc4bf6ee976df4386e646d2f391563aabded081cd9b17c913bf1"
+    },
+    {
       "path": "game-shell.css",
-      "size": 32451,
-      "sha256": "4e3786172bb7c8ebaf27d119c1faf5954f31b749caf1a92385d429b13767fa56"
+      "size": 33377,
+      "sha256": "aa2e2def21c8001c6582ae592be0da7362151f791cdbb856fea6736bab327fba"
     },
     {
       "path": "game-shell.js",
-      "size": 6624,
-      "sha256": "f96fa7eb149460d54462f42a0da63f0384c40aa14bee97bf7ea7c84abf811a81"
+      "size": 7418,
+      "sha256": "80979c6a3bc8927fbea61b7f47b2824ba1287529943f0fcc60f86dd6401d7a2e"
     },
     {
       "path": "games-manifest.json",
       "size": 12451,
-      "sha256": "3f9b7fb8b5a64ab748c21639e210d89e50ba8e13feabb72fce062764261d7b69"
+      "sha256": "46b39e4d934cb72bf1a6b3dc1bc1566124babae653b34c24b6372258640d9ca9"
     },
     {
       "path": "games/2048/assets/cat_head.png",
@@ -1265,13 +1320,13 @@
     },
     {
       "path": "games/2048/index.html",
-      "size": 29655,
-      "sha256": "5847bd05bad5649f96c6a9a0e63a3fd106ab87a2659917aefc3e37dd941c86f9"
+      "size": 29723,
+      "sha256": "ceadc6bdef313bbab5c38b41072618b6be8d9bab0990f7658b1ed49b46bbb76a"
     },
     {
       "path": "games/backgammon/index.html",
-      "size": 48386,
-      "sha256": "64d13ad09b8348e480db1fd135a97c7d358d1b83c4048f71d6f7eabeba9d0368"
+      "size": 48454,
+      "sha256": "ba9fb417bb5fe3ddb92b0eb67c928c5e6ec31e494e91243041f1f6959d852a20"
     },
     {
       "path": "games/checkers/assets/space_logo.png",
@@ -1280,8 +1335,8 @@
     },
     {
       "path": "games/checkers/index.html",
-      "size": 41088,
-      "sha256": "f40b51e95e2d2d3cdc9e8cc89b39e0cc367ce2e75423048677e660ed88ba2f05"
+      "size": 41156,
+      "sha256": "76982e7999142945d8115ea8525a5c4ee4c346cacab0b8a49c654d44ee256096"
     },
     {
       "path": "games/chess/assets/logo.png",
@@ -1290,8 +1345,8 @@
     },
     {
       "path": "games/chess/index.html",
-      "size": 73257,
-      "sha256": "4f4fe2ae29ccac6ef6f65d8decd954c3109f644bf720c6d5b4f5dc70ae4d19f5"
+      "size": 73325,
+      "sha256": "36c1816f1ca6c5e647b89217468562311ba765620d2e5c803f84f400605103d6"
     },
     {
       "path": "games/connect4/assets/splash_custom.png",
@@ -1300,8 +1355,8 @@
     },
     {
       "path": "games/connect4/index.html",
-      "size": 36079,
-      "sha256": "b94488367a0d6c49966cc2502ddb67a42e9a7a3e0b90dc9c5905b18bcff3377b"
+      "size": 36144,
+      "sha256": "0644b861a69bf3350f1a4837346ef5b182a787b806c1b19372921f18a0c710de"
     },
     {
       "path": "games/corners/assets/splash_custom.png",
@@ -1310,8 +1365,8 @@
     },
     {
       "path": "games/corners/index.html",
-      "size": 31676,
-      "sha256": "d899f393484d8b824e68289b7e64cf8ee3ce5dd2f694eb09723e1d555efe927e"
+      "size": 31741,
+      "sha256": "4912dca181e10e3d23d29c82fc1a2e87fab675232ed2b567a33411efd285f271"
     },
     {
       "path": "games/domino/assets/splash.png",
@@ -1320,8 +1375,8 @@
     },
     {
       "path": "games/domino/index.html",
-      "size": 47620,
-      "sha256": "6ec793c9d5df62ed791147e8d90a1f0d1f6df3a56d8e03a31cdcdda68acd2e55"
+      "size": 47688,
+      "sha256": "2bdcfc6cb334d270842572c03745faba486942ec71e4f702a10586ccd7a8fcea"
     },
     {
       "path": "games/energy-capsules/ART_PROMPTS_v16_15_RU.md",
@@ -1330,8 +1385,8 @@
     },
     {
       "path": "games/energy-capsules/ASSET_MANIFEST_energy-capsules.json",
-      "size": 2655,
-      "sha256": "2ddd3faf16f3326596970392335c13cfe6971be7577b784d2b7fbcc2f9da5cf7"
+      "size": 2784,
+      "sha256": "aae8ae5470069044afda147da547068aee2bb19c96e44be9dc30ee379d5f2589"
     },
     {
       "path": "games/energy-capsules/SPEC_energy-capsules.md",
@@ -1365,18 +1420,18 @@
     },
     {
       "path": "games/energy-capsules/game.css",
-      "size": 4890,
-      "sha256": "babdfaa0278e3885332a2003f446bc395ba9618fea12d3f284890ad792424938"
+      "size": 6311,
+      "sha256": "797e31533d1caed06c8ae8304c8984162f7c79b2029a309fca5e4ddd8722bd39"
     },
     {
       "path": "games/energy-capsules/game.js",
-      "size": 11940,
-      "sha256": "f31539c923c0bf3cfd54990d8be09417f5fc5525b855fa4b7970f71248cd47bd"
+      "size": 12937,
+      "sha256": "f91484c7c5b55be7684a2e6cfe0724ba074b726bd143ab44703da2344267bd77"
     },
     {
       "path": "games/energy-capsules/index.html",
-      "size": 8223,
-      "sha256": "84996939b295321ac1adaf638f1858847395b6a872cd4a63c91a2d764fde3f30"
+      "size": 8313,
+      "sha256": "c4c43a53af97115bfdf3a7cf06d9242478cfe7d1aa87d2097dda2c8bd854045e"
     },
     {
       "path": "games/fifteen/assets/splash_fifteen.png",
@@ -1385,8 +1440,8 @@
     },
     {
       "path": "games/fifteen/index.html",
-      "size": 26090,
-      "sha256": "3a9028448992eb0616b96f01d508338b38d29d4cce08ba8cd545483becc00a71"
+      "size": 26158,
+      "sha256": "5b956b7861106c9addf6ff7a185787125640cac45e253d7ae59504fc26776f6b"
     },
     {
       "path": "games/gomoku/assets/cat_head.png",
@@ -1405,8 +1460,8 @@
     },
     {
       "path": "games/gomoku/index.html",
-      "size": 33464,
-      "sha256": "c82d55bd3514c162a2b1438be8e295925a1f8d9e217d2a3c41d0fa2e35b0965d"
+      "size": 33532,
+      "sha256": "802ba0f6e45d84b9ceb0300ece3980545bfe467685992ed9c44dd32e3e2dd16f"
     },
     {
       "path": "games/mahjong/assets/splash.png",
@@ -1495,8 +1550,8 @@
     },
     {
       "path": "games/mahjong/index.html",
-      "size": 26467,
-      "sha256": "67bc10fc8a693a502d89dab4470a757e2e436ec7d0b1e3117cc93af3a081596e"
+      "size": 26520,
+      "sha256": "09c41d848799bb00948a9c2c2e85251a9712ff4f60a4769c9c19e0b64bf01ea0"
     },
     {
       "path": "games/memory/assets/splash_v2.png",
@@ -1505,18 +1560,18 @@
     },
     {
       "path": "games/memory/index.html",
-      "size": 26768,
-      "sha256": "e7389738d09b509e267b2798b9815b85bd456122b0da448aab46f7ed92ce7ada"
+      "size": 26836,
+      "sha256": "4b1120f2603472bb4bd56822f70eb7ce4dc6bc530858ab74aa7fa4c526c1386f"
     },
     {
       "path": "games/radio-beacon/ART_PROMPTS_RU.md",
-      "size": 2603,
-      "sha256": "3ece60e05ce37e7db8717bb510cd4f1012e74c683d9f2344d9bd4d12916feeb0"
+      "size": 2943,
+      "sha256": "5ef4b90a239989b79f0b102d0aa10836ce630d827320da36a09ccdda96392707"
     },
     {
       "path": "games/radio-beacon/ASSET_MANIFEST_radio-beacon.json",
-      "size": 2104,
-      "sha256": "7607736c83aa2c8ceea80cbdcfd20b1869738109e388c6cf8aeddc56da011010"
+      "size": 2755,
+      "sha256": "e805d85c3449a07a521ed990262f3709745ea37d20087ef5a991cc5577ac686f"
     },
     {
       "path": "games/radio-beacon/SPEC_radio-beacon.md",
@@ -1525,8 +1580,8 @@
     },
     {
       "path": "games/radio-beacon/game.css",
-      "size": 4247,
-      "sha256": "c4bada9d893e7b8bf5f1edc2d32ed3a59f4d40cbbb29a1aa0a3bdc6be0eac9ff"
+      "size": 5585,
+      "sha256": "3aa734dbebf3294ae64425b11ca3190423eab6769595adf27166c5f39afb62ff"
     },
     {
       "path": "games/radio-beacon/game.js",
@@ -1535,8 +1590,8 @@
     },
     {
       "path": "games/radio-beacon/index.html",
-      "size": 7612,
-      "sha256": "4f6da473a4d43993603b9a731861c7dd3d51abf8511e4a884089ff69d18a91e0"
+      "size": 7485,
+      "sha256": "8fc70be51150efb057e4f46f531501873731e2d151758c04108c409c7f55be48"
     },
     {
       "path": "games/retro-orbit.css",
@@ -1545,8 +1600,8 @@
     },
     {
       "path": "games/reversi/index.html",
-      "size": 35811,
-      "sha256": "06e456113a774b54dc355c1214b9a5797bb20c30bdb9620e25bc485efe05bde1"
+      "size": 35879,
+      "sha256": "7edf15dc3f759134ffb7209827836039c482aefd7285de001d288cfbc0db814e"
     },
     {
       "path": "games/solitaire/assets/splash.png",
@@ -1555,8 +1610,8 @@
     },
     {
       "path": "games/solitaire/index.html",
-      "size": 30937,
-      "sha256": "1de4124eaa6b00b5d15e4908ef231202ce43d63d8c1debaa6250bf5ce858b55a"
+      "size": 31005,
+      "sha256": "13e9e4f14a34ae8e29ece39fe909136bf0ff8c70338d54b4a9ffa329f33bd00b"
     },
     {
       "path": "games/space-mail/ART_PROMPTS_RU.md",
@@ -1565,8 +1620,8 @@
     },
     {
       "path": "games/space-mail/ASSET_MANIFEST_space-mail.json",
-      "size": 2743,
-      "sha256": "b115f8fd6291da7a1ea5c4127692b29e3c41f22ead9a7164f4110d96a1ca77cc"
+      "size": 3684,
+      "sha256": "a30b5f19e2a2d3e7083070ef772bda60ac740023492a4b4adfd662ced4607334"
     },
     {
       "path": "games/space-mail/SPEC_space-mail.md",
@@ -1575,8 +1630,8 @@
     },
     {
       "path": "games/space-mail/game.css",
-      "size": 5884,
-      "sha256": "c49f0ccc3305764cec38530fa4efea8e11a5fdab29a9192dcbe1735a83b53f76"
+      "size": 8068,
+      "sha256": "56c4a18ed9c91a8b9b4bbea47a258347cf4ea5f68fd0da57508b8db7b292e2ce"
     },
     {
       "path": "games/space-mail/game.js",
@@ -1585,13 +1640,13 @@
     },
     {
       "path": "games/space-mail/index.html",
-      "size": 6870,
-      "sha256": "47ef6836d94beb50422c1653df3f01cc42551da25ce5c9495b28d2dda851ac78"
+      "size": 7056,
+      "sha256": "6c0cf4ccb39122e0454d270212d2eb6f34fdbeab94cea5821e0168f3b58cb18f"
     },
     {
       "path": "games/starbattle/index.html",
-      "size": 43753,
-      "sha256": "0c9b236e200cd767e83e8d31cdcaa6192d8b16ea453152730f6be8a58470bab5"
+      "size": 43821,
+      "sha256": "677dff381b0aebac4f2671cb2b0d92ea6330b37cb7df499f781a37288d2479b3"
     },
     {
       "path": "games/sudoku/assets/splash.png",
@@ -1600,13 +1655,13 @@
     },
     {
       "path": "games/sudoku/index.html",
-      "size": 29436,
-      "sha256": "da91a2eec49097320b1b3fee40d90cedc6228d147b2aa453b029ca90a7e3bc09"
+      "size": 29504,
+      "sha256": "09bfb4199b039d37c7357c3d72e610ee1cb7d0dbca75e512c068f16269a28436"
     },
     {
       "path": "games/tictactoe/index.html",
-      "size": 32138,
-      "sha256": "9033255806c44ce31f3864209ccaa6605b9802cfe6b38b85598f066b0c26443f"
+      "size": 32206,
+      "sha256": "39b189cd4c0e4a3aa99b5f4bf72df93031545f2379fc51c7361cebc0785b82db"
     },
     {
       "path": "image-qa-results.json",
@@ -1615,8 +1670,8 @@
     },
     {
       "path": "index.html",
-      "size": 6470,
-      "sha256": "871d40b2fe56d692ae6bd32bc231ffd7a44c0dadab92e535dba53637b42097d5"
+      "size": 6547,
+      "sha256": "4dcc3a647ee3d8797c5cdf5e36d03ef7238d7bb9fe8b7258f2f29cab7303bdaa"
     },
     {
       "path": "platform-config.js",
@@ -1625,13 +1680,13 @@
     },
     {
       "path": "platform.css",
-      "size": 27330,
-      "sha256": "d33655e31b9528997e714c7a69e1ff1a8438edf90253ccac48a79a7cc888ea20"
+      "size": 27909,
+      "sha256": "274ab80757f79f33b8635b607c2407295da0468bd958708a4395ae29f4b75e02"
     },
     {
       "path": "platform.js",
-      "size": 17629,
-      "sha256": "ddc0d928249bf5f91877b273bc2a9bf6b9dfb6eaf260d77c0cf46cf760d10d88"
+      "size": 17865,
+      "sha256": "a09a74f57bf1bb923f79d6b1889c51c91ef240c11f505e3cbf3211713e5fda17"
     },
     {
       "path": "pruned-assets.json",
@@ -1645,8 +1700,8 @@
     },
     {
       "path": "qa/browser-qa.cjs",
-      "size": 14744,
-      "sha256": "d6156b5e083c1aafda20ba10a2dcbb35d80bdd7e1a0fe712b71989d126a40da9"
+      "size": 14750,
+      "sha256": "289d827f7e25442899fe85c77872ae5d6ef72030f59d612bd7423f219ce44927"
     },
     {
       "path": "qa/cards-symbols-qa.cjs",
@@ -1699,6 +1754,21 @@
       "sha256": "eff15b051dd30e7acc4701398179ebcae16788839ed737018f541c6dc6b935d1"
     },
     {
+      "path": "qa/polish-published-qa.cjs",
+      "size": 3603,
+      "sha256": "afd63c6ff7ec14fa3525736c94ee01767e9f8bb8b2a388331a44c2fa7ad98a35"
+    },
+    {
+      "path": "qa/polish-rules-qa.cjs",
+      "size": 3767,
+      "sha256": "ec6c02f52c21fe286251ccc3b9c28be968b75ee579d1f4df516a266bf9f2d857"
+    },
+    {
+      "path": "qa/polish-standalone-qa.cjs",
+      "size": 3722,
+      "sha256": "70f5791112bffe85a815845903f26d5891761b81ed924059033ff15b94bb0c68"
+    },
+    {
       "path": "qa/poses-browser-qa.cjs",
       "size": 5448,
       "sha256": "f7d0a5aefbeed74769d6514406b27e02fb7654c769c13fa9c328eaa32d4951ae"
@@ -1730,8 +1800,8 @@
     },
     {
       "path": "qa/radio-beacon-qa.cjs",
-      "size": 7763,
-      "sha256": "5b8b03b5139fe2ff56077597e11559b0949b114afb4d6d40ddc27a12b19d8235"
+      "size": 7787,
+      "sha256": "8271ed70c4d2d42472698ea07cd1a5310593d16d83ff8b32664fd200ddbd0ace"
     },
     {
       "path": "qa/results/2048-360-game.webp",
@@ -3264,6 +3334,71 @@
       "sha256": "94a9c55dd32853415918da51d3a2aacbee396d79b7e90fc4c50874b5e4ccfe82"
     },
     {
+      "path": "qa/results/v16-17/beacon-repeat/progress.json",
+      "size": 13387,
+      "sha256": "ed23cf2f5e7c1abbe7d0c50068fd4a79e1f2c345b7c780d1cb072d5168b0acb7"
+    },
+    {
+      "path": "qa/results/v16-17/beacon-repeat/results.json",
+      "size": 14549,
+      "sha256": "d50ac04490da92f1f99f8de9320bd384a19d16d8912877d30e4f31af9b4be152"
+    },
+    {
+      "path": "qa/results/v16-17/beacon/progress.json",
+      "size": 13004,
+      "sha256": "720e635f793fc52fbc0bdaa6c587757704f32931c5b40c86d5a4de5ddc5dd0d7"
+    },
+    {
+      "path": "qa/results/v16-17/beacon/results.json",
+      "size": 14112,
+      "sha256": "30382cf5bbecd2a519751d43c25a88fb72be4c26213e6342f80a0731490d6f25"
+    },
+    {
+      "path": "qa/results/v16-17/published.json",
+      "size": 1921,
+      "sha256": "735c769e19611b667f35bc251a3071ea8472a0bec55c3ba480b0355b8af3d9ba"
+    },
+    {
+      "path": "qa/results/v16-17/records-unit.json",
+      "size": 3532,
+      "sha256": "967b9d65094e349fad166b4d46c0784451d0fb887df4a394e016e5010e0d9657"
+    },
+    {
+      "path": "qa/results/v16-17/regression/browser-results-progress.json",
+      "size": 14790,
+      "sha256": "ac19ba72266db7daabc32a5926fb0e63aaaa4c6dd81d3c8b2f99bae8e43b2e02"
+    },
+    {
+      "path": "qa/results/v16-17/regression/browser-results.json",
+      "size": 14889,
+      "sha256": "8dc67581818fad9116d7107f80c0aca98d2cd7b1be7085961f5011a648a97bf7"
+    },
+    {
+      "path": "qa/results/v16-17/retro/results-progress.json",
+      "size": 19936,
+      "sha256": "9ccec68de1b55849a408d9fb120e712b7b8986b4869c8db0ab8b86e1da8f14d8"
+    },
+    {
+      "path": "qa/results/v16-17/retro/results.json",
+      "size": 21460,
+      "sha256": "ba2f05e88f2ce765fb991bafa48402783270f0ce5a71aca2f8ea1076193e75b4"
+    },
+    {
+      "path": "qa/results/v16-17/rules/progress.json",
+      "size": 36577,
+      "sha256": "cb4111ea3f57518001aac0b33fc3afbd6c41ffdc21ecc702d840b981191d1cfd"
+    },
+    {
+      "path": "qa/results/v16-17/rules/results.json",
+      "size": 39243,
+      "sha256": "49852fea9ab797b820d02bd255a2ab0f46d361e08e53dd7bf63fd3fb89d8071f"
+    },
+    {
+      "path": "qa/results/v16-17/standalone-final/results.json",
+      "size": 5904,
+      "sha256": "98375ae4d469aa0e499d8136bb730d3ca8cbc1feb270acd0219d6624e9d0c0c2"
+    },
+    {
       "path": "qa/retro-controls-qa.cjs",
       "size": 2999,
       "sha256": "3a8e6e9ee6daa406c0b9f12884eb99fe5397c13f1f8f76e9b241ee8a3dcf9026"
@@ -3275,8 +3410,8 @@
     },
     {
       "path": "qa/retro-orbit-qa.cjs",
-      "size": 10475,
-      "sha256": "a668683a51535d09b44bde443ce15b2adb68aab6caf6694fe823d27181e42ccd"
+      "size": 10499,
+      "sha256": "81792077d437ceab7b1971337d0bcf8aed05a84c3db538ad0e7f18e8d721c8e1"
     },
     {
       "path": "qa/retro-published-qa.cjs",
@@ -3314,14 +3449,19 @@
       "sha256": "ed4a685fceb282e3a6150a98f2a06fb657ae1cb9cb35a60f03e2eed2726997ae"
     },
     {
+      "path": "rules.css",
+      "size": 1019,
+      "sha256": "103c1f7ab9de46a137e6af956f1bc0988efdabb8763831ebbe9e94efb04f3cc6"
+    },
+    {
       "path": "static-qa-results.json",
       "size": 2286,
       "sha256": "35345ab90bfd65a00b24d7afa7ce67c53982c31b626423003c6dc4dadfcdea63"
     },
     {
       "path": "tools/build-catalog.cjs",
-      "size": 1081,
-      "sha256": "9da808dd3ad18a4769a87648b199bcdf95fb53c7af02c6df934fc0928ac423fa"
+      "size": 1296,
+      "sha256": "d23206cfb39e6b48a2f556272e4a09d52c24ddfa01dff2b9f554e1aae9d21a0e"
     },
     {
       "path": "tools/build-energy-capsules-art.py",
@@ -3332,6 +3472,11 @@
       "path": "tools/build-file-map.cjs",
       "size": 1384,
       "sha256": "be428d9428ef5890a0f8c19134e57a4e41d2e94aea8d3b52648455e1dd090b7e"
+    },
+    {
+      "path": "tools/build-polished-titles.cjs",
+      "size": 1774,
+      "sha256": "ca225e6f114c4b4bfbedc611f6268a85009c1c0a625941467c242963cdc6b3bc"
     },
     {
       "path": "tools/build-radio-beacon-title.cjs",

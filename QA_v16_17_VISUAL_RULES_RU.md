@@ -26,9 +26,9 @@ Chromium 153 через Playwright, native touch/mouse/keyboard, действу�
 | Правила на главной и заставках; независимый target, русский title, focus/Escape, exit; src назначается в том же click event, без timeout | 19 игр × 4 размера, включая 1280×800 | PASS 76/76 | qa/results/v16-17/rules/results.json |
 | Капсулы и Почта: все три режима, несколько реальных действий, pause/rotation, естественный terminal, replay/records/reload | три телефона + 1280×800 и 1920×1080 | PASS 30/30 | qa/results/v16-17/retro/results.json |
 | Радиомаяк: три настоящие передачи и победа, drift/noise, pause/rotation, replay/one record/catalog/reload | три режима × пять размеров | PASS 15/15 во втором полном прогоне | qa/results/v16-17/beacon-repeat/results.json |
-| Прямое открытие трёх новых игр, правила/выход, реальные catch/delivery/message, ресурсы/layout, masked tracks | три телефона, 1280×800, 844×390 | PENDING | qa/results/v16-17/standalone/results.json |
+| Прямое открытие трёх новых игр, правила/выход, реальные catch/delivery/message, ресурсы/layout, masked tracks | три телефона, 1280×800, 844×390 | PASS 15/15 | qa/results/v16-17/standalone-final/results.json |
 | Канонические рекорды: malformed, NaN, negative, monotonic, unrelated keys | unit fixtures всех 19 gameId | PASS 19/19 | qa/results/v16-17/records-unit.json |
-| Опубликованный сайт после deployment | три телефона + ПК | PENDING | qa/results/v16-17/published.json |
+| Опубликованный сайт после deployment | три телефона + ПК | PASS 4/4 | qa/results/v16-17/published.json |
 
 ## Честный перечень промежуточных непрошедших проверок
 
@@ -38,10 +38,14 @@ Chromium 153 через Playwright, native touch/mouse/keyboard, действу�
 - Первый глубокий прогон Радиомаяка: 14/15 PASS. 1920×1080 TURBO достиг двух сообщений, но не успел закончить третье за deadline 85 секунд (остаток связи 1%). Это не выдаётся за победу. Код механики не изменён; следующий полный прогон всех 15 естественных партий — 15/15 PASS. Начальная матрица сохранена в qa/results/v16-17/beacon/results.json. Автоматический агент может проиграть сложный режим; этот результат не доказывает отсутствие проблем баланса у людей.
 - Первая свободная генерация заставки Капсул добавила Корги очки: она отвергнута и в проект не установлена. Финальная генерация сделана с исходником как референсом.
 
+- Начальный standalone harness ждал видимого body, хотя body содержит fixed children и не имеет собственного прямоугольника. Класс готовности уже был установлен и заставка отображалась. Ожидание изменено на presence класса (state=attached), проверка повторена целиком: 15/15. Исходный fixture не выдаётся за проверку играбельности.
+
 ## NOT_RUN / ограничения
 
 Физический Samsung Galaxy S24 Ultra/One UI и другие реальные Android устройства; iOS/Safari/Firefox; прослушивание звука человеком; длительный playtest и оценка баланса человеком. Baseline прежних 16 классических игр проверяет реальные действия, но не все их варианты и terminal states. Все 13 edge-сценариев Радиомаяка из v16.16 повторно не прогонялись: они остаются историческим доказательством, не новым PASS этого этапа. Новые варианты изображений не заменяют функционального QA.
 
 ## Публикация и архив
 
-Существующий GitHub main; никаких старых compatibility-слоёв v12/v13/v14. Исходники/промпты/manifest/SHA в репозитории. ZIP содержит всю платформу и QA. FILES_SHA256SUMS.txt проверяет repository source, RELEASE_FILES_SHA256SUMS.txt — всё содержимое ZIP, включая дополнительные браузерные WebP. CRC архива и SHA-256 проверяются после сборки. Статус опубликованного smoke будет записан после deployment.
+Существующий GitHub main; никаких старых compatibility-слоёв v12/v13/v14. Исходники/промпты/manifest/SHA в репозитории. ZIP содержит всю платформу и QA. FILES_SHA256SUMS.txt проверяет repository source, RELEASE_FILES_SHA256SUMS.txt — всё содержимое ZIP, включая дополнительные браузерные WebP. CRC архива и SHA-256 проверяются после сборки. Runtime опубликован: 2b283de81e252aaaef66f99657291ecb729e5450. GitHub Pages workflow 37322333247 завершён success. Публичная версия проверена после завершения deployment на всех четырёх размерах: правила всех 19 карточек, правила/выход заставок трёх новых игр, PNG titles с native width 2048, одно настоящее сообщение Радиомаяка, перехват Капсулы, доставка Почты, возврат, отсутствие console/page/HTTP errors. Эти четыре live smoke не выдаются за три полные live-партии: глубокие terminal-сценарии перечислены отдельно.
+
+Live браузер использует HTTPS proxy данного окружения и ignoreHTTPSErrors для его сертификата. Это не проверка цепочки доверия TLS на физическом телефоне.
